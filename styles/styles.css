@@ -1,0 +1,14 @@
+.body {
+  font-family: Arial,serif;
+}
+.chapter {
+  cursor: pointer;
+}
+.bracket {
+  stroke: black;
+  fill: none;
+}
+.bracket-label {
+  font-weight: bold;
+  fill: black;
+}
