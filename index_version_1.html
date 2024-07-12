@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scripture Chapters Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    .chapter {
+      cursor: pointer;
+    }
+    .bracket {
+      stroke: black;
+      fill: none;
+    }
+    .bracket-label {
+      font-weight: bold;
+      fill: black;
+    }
+    .button {
+      margin: 5px;
+      padding: 5px;
+      cursor: pointer;
+      background-color: #ddd;
+      border: 1px solid #aaa;
+    }
+    .button:hover {
+      background-color: #ccc;
+    }
+    .button.active {
+      background-color: #bbb;
+    }
+  </style>
+</head>
+<body>
+<button class="level-btn button" value="1">Records</button>
+<button class="level-btn button" value="2">Events</button>
+<button class="level-btn button" value="3">Speakers</button>
+<button class="level-btn button" value="4">Topics</button>
+<button class="level-btn button" value="5">Locations</button>
+
+<div id="chart"></div>
+
+<script>
+  const data = {
+    "Book of Mormon": {
+      "Alma": {
+        "chapters": 63,
+        "topics": [
+          { "level": 1, "range": "1-44", "title": "Record of Alma" },
+          { "level": 1, "range": "45-62", "title": "Record of Helaman" },
+          { "level": 1, "range": "63", "title": "Record of Shiblon" },
+
+          { "level": 2, "range": "1-2", "title": "Rebellion of Amlici"},
+          { "level": 2, "range": "5-7", "title": "Alma's Preaching"},
+          { "level": 2, "range": "9-14", "title": "Alma and Amulek in Ammonihah"},
+          { "level": 2, "range": "17-27", "title": "Missions of the Sons of Mosiah"},
+          { "level": 2, "range": "30-31", "title": "Korihor and Zoramites"},
+          { "level": 2, "range": "32-35", "title": "Alma's Preaching to the Zoramites"},
+          { "level": 2, "range": "36-42", "title": "Alma's Counsel to His Sons"},
+          { "level": 2, "range": "43-62", "title": "Wars and Contentions" },
+
+          { "level": 3, "range": "1-7", "title": "Alma" },
+          { "level": 3, "range": "8-10", "title": "Alma and Amulek" },
+          { "level": 3, "range": "11-14", "title": "Amulek" },
+          { "level": 3, "range": "17-19", "title": "Ammon" },
+          { "level": 3, "range": "20-22", "title": "Aaron" },
+          { "level": 3, "range": "23-42", "title": "Alma" },
+          { "level": 3, "range": "43-44", "title": "Captain Moroni" },
+          { "level": 3, "range": "45-47", "title": "Moroni?" },
+          { "level": 3, "range": "48-50", "title": "Amalickiah" },
+          { "level": 3, "range": "51-52", "title": "Teancum" },
+          { "level": 3, "range": "53-54", "title": "Captain Moroni" },
+          { "level": 3, "range": "55-59", "title": "Various Nephite Leaders" },
+          { "level": 3, "range": "60-61", "title": "Pahoran" },
+          { "level": 3, "range": "62", "title": "Moroni" },
+          { "level": 3, "range": "63", "title": "Shiblon" },
+
+          { "level": 4, "range": "1-7", "title": "Repentance and Conversion" },
+          { "level": 4, "range": "8-10", "title": "Testimony of Alma and Amulek" },
+          { "level": 4, "range": "11-14", "title": "Faith and Prayer" },
+          { "level": 4, "range": "15-16", "title": "God's Deliverance" },
+          { "level": 4, "range": "17-42", "title": "Spiritual Growth and Trials" },
+          { "level": 4, "range": "43-44", "title": "Trust in God's Protection" },
+          { "level": 4, "range": "45-47", "title": "Leadership and Strategy" },
+          { "level": 4, "range": "48-50", "title": "Deception and Warfare" },
+          { "level": 4, "range": "51-52", "title": "Valiant Defense" },
+          { "level": 4, "range": "53-54", "title": "Freedom and Justice" },
+          { "level": 4, "range": "55-59", "title": "Steadfastness in Adversity" },
+          { "level": 4, "range": "60-61", "title": "Support and Governance" },
+          { "level": 4, "range": "62", "title": "Final Exhortations" },
+          { "level": 4, "range": "63", "title": "Faithfulness and Legacy" },
+
+          { "level": 5, "range": "1-7", "title": "Zarahemla" },
+          { "level": 5, "range": "8-14", "title": "Ammonihah" },
+          { "level": 5, "range": "17-20", "title": "Alma" },
+          { "level": 5, "range": "21-25", "title": "Melek" },
+          { "level": 5, "range": "26-30", "title": "Sidom" },
+          { "level": 5, "range": "31-35", "title": "Gideon" },
+          { "level": 5, "range": "36-42", "title": "Zarahemla" },
+          { "level": 5, "range": "43-44", "title": "Jershon" },
+          { "level": 5, "range": "45-47", "title": "Bountiful, Teancum, and other Nephite lands" },
+          { "level": 5, "range": "48-50", "title": "Nephite cities and wilderness" },
+          { "level": 5, "range": "51-52", "title": "Bountiful and Morianton" },
+          { "level": 5, "range": "53-54", "title": "Various Nephite cities" },
+          { "level": 5, "range": "55-59", "title": "Cumenihah" },
+          { "level": 5, "range": "60-63", "title": "Zarahemla" }
+        ],
+        "descriptions": [
+          { "chapter": 1, "desc": "Alma preaches in Zarahemla", "years": "91-90 B.C." },
+          { "chapter": 2, "desc": "Amlici incites rebellion", "years": "90-87 B.C." },
+          { "chapter": 3, "desc": "Amlici defeated in battle", "years": "87 B.C." },
+          { "chapter": 4, "desc": "Alma resigns the judgment seat", "years": "86-83 B.C." },
+          { "chapter": 5, "desc": "Alma's sermon to the people of Zarahemla", "years": "83 B.C." },
+          { "chapter": 6, "desc": "Church reestablished in Zarahemla", "years": "83 B.C." },
+          { "chapter": 7, "desc": "Alma's sermon to the people of Gideon", "years": "83 B.C." },
+          { "chapter": 8, "desc": "Alma preaches in Melek and Ammonihah", "years": "82 B.C." },
+          { "chapter": 9, "desc": "Alma preaches in Ammonihah", "years": "82 B.C." },
+          { "chapter": 10, "desc": "Amulek preaches to the people", "years": "82 B.C." },
+          { "chapter": 11, "desc": "Amulek contends with Zeezrom", "years": "82 B.C." },
+          { "chapter": 12, "desc": "Alma teaches about resurrection and judgment", "years": "82 B.C." },
+          { "chapter": 13, "desc": "Alma ordains priests", "years": "82 B.C." },
+          { "chapter": 14, "desc": "Alma and Amulek imprisoned", "years": "82 B.C." },
+          { "chapter": 15, "desc": "Alma and Amulek freed from prison", "years": "82 B.C." },
+          { "chapter": 16, "desc": "Ammonihah destroyed by Lamanites", "years": "81 B.C." },
+          { "chapter": 17, "desc": "Sons of Mosiah preach to the Lamanites", "years": "77 B.C." },
+          { "chapter": 18, "desc": "Ammon teaches King Lamoni", "years": "77 B.C." },
+          { "chapter": 19, "desc": "Conversion of King Lamoni", "years": "77 B.C." },
+          { "chapter": 20, "desc": "Ammon and Lamoni deliver Aaron", "years": "77 B.C." },
+          { "chapter": 21, "desc": "Aaron teaches in Jerusalem", "years": "77 B.C." },
+          { "chapter": 22, "desc": "Aaron teaches the father of King Lamoni", "years": "77 B.C." },
+          { "chapter": 23, "desc": "Lamanites convert and lay down arms", "years": "77 B.C." },
+          { "chapter": 24, "desc": "Lamanites suffer martyrdom", "years": "77 B.C." },
+          { "chapter": 25, "desc": "Lamanites continue to attack", "years": "77 B.C." },
+          { "chapter": 26, "desc": "Ammon glories in the Lord", "years": "77 B.C." },
+          { "chapter": 27, "desc": "Anti-Nephi-Lehies migrate to Zarahemla", "years": "77-76 B.C." },
+          { "chapter": 28, "desc": "Great destruction among the Nephites", "years": "76 B.C." },
+          { "chapter": 29, "desc": "Alma's joy in the success of the sons of Mosiah", "years": "76 B.C." },
+          { "chapter": 30, "desc": "Korihor, the anti-Christ", "years": "74 B.C." },
+          { "chapter": 31, "desc": "Zoramites and their worship", "years": "74 B.C." },
+          { "chapter": 32, "desc": "Alma's sermon on faith", "years": "74 B.C." },
+          { "chapter": 33, "desc": "Zenos and Zenock on prayer", "years": "74 B.C." },
+          { "chapter": 34, "desc": "Amulek speaks on the atonement", "years": "74 B.C." },
+          { "chapter": 35, "desc": "Zoramites cast out the believers", "years": "74 B.C." },
+          { "chapter": 36, "desc": "Alma's conversion story", "years": "73 B.C." },
+          { "chapter": 37, "desc": "Alma counsels Helaman", "years": "73 B.C." },
+          { "chapter": 38, "desc": "Alma counsels Shiblon", "years": "73 B.C." },
+          { "chapter": 39, "desc": "Alma counsels Corianton", "years": "73 B.C." },
+          { "chapter": 40, "desc": "Resurrection and the afterlife", "years": "73 B.C." },
+          { "chapter": 41, "desc": "Restoration through Christ", "years": "73 B.C." },
+          { "chapter": 42, "desc": "Justice and mercy", "years": "73 B.C." },
+          { "chapter": 43, "desc": "Captain Moroni and the Lamanite wars", "years": "74-73 B.C." },
+          { "chapter": 44, "desc": "Moroni's victory over Zerahemnah", "years": "73 B.C." },
+          { "chapter": 45, "desc": "Alma's final instructions and disappearance", "years": "73-72 B.C." },
+          { "chapter": 46, "desc": "Title of Liberty", "years": "73-72 B.C." },
+          { "chapter": 47, "desc": "Amalickiah's conspiracy", "years": "72-70 B.C." },
+          { "chapter": 48, "desc": "Preparation for war", "years": "72-70 B.C." },
+          { "chapter": 49, "desc": "Lamanites' unsuccessful attacks", "years": "72-70 B.C." },
+          { "chapter": 50, "desc": "Moroni fortifies the lands", "years": "72-70 B.C." },
+          { "chapter": 51, "desc": "Internal dissensions", "years": "67-66 B.C." },
+          { "chapter": 52, "desc": "Lamanites take the city of Moroni", "years": "66-64 B.C." },
+          { "chapter": 53, "desc": "The stripling warriors", "years": "64-62 B.C." },
+          { "chapter": 54, "desc": "Moroni and Ammoron exchange epistles", "years": "63 B.C." },
+          { "chapter": 55, "desc": "Moroni frees the prisoners of war", "years": "63 B.C." },
+          { "chapter": 56, "desc": "Helaman's stripling warriors", "years": "63 B.C." },
+          { "chapter": 57, "desc": "Helaman's letter to Moroni", "years": "62 B.C." },
+          { "chapter": 58, "desc": "Helaman's continued success", "years": "62 B.C." },
+          { "chapter": 59, "desc": "Moroni's anger at the government's neglect", "years": "62 B.C." },
+          { "chapter": 60, "desc": "Moroni's epistle to Pahoran", "years": "62 B.C." },
+          { "chapter": 61, "desc": "Pahoran's response to Moroni", "years": "62 B.C." },
+          { "chapter": 62, "desc": "Moroni marches to aid Pahoran", "years": "61 B.C." },
+          { "chapter": 63, "desc": "Shiblon and Helaman's stewardship", "years": "56-53 B.C." }
+        ]
+      }
+    }
+  };
+
+  const width = 1200;
+  const height = 1500;
+  const centerX = width / 2;
+
+  const svg = d3.select("#chart")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  const chapters = d3.range(1, data["Book of Mormon"]["Alma"]["chapters"] + 1);
+
+  const descriptions = data["Book of Mormon"]["Alma"]["descriptions"].reduce((acc, val) => {
+    acc[val.chapter] = val.desc;
+    return acc;
+  }, {});
+
+  const yearRanges = data["Book of Mormon"]["Alma"]["descriptions"].reduce((acc, val) => {
+    acc[val.chapter] = val.years;
+    return acc;
+  }, {});
+
+  svg.selectAll(".chapter")
+    .data(chapters)
+    .enter()
+    .append("text")
+    .attr("class", "chapter")
+    .attr("x", centerX)  // Centered X coordinate
+    .attr("y", (d, i) => i * 20 + 20)
+    .attr("text-anchor", "middle")  // Align text to the middle
+    .text(d => d)
+    .on("click", (event, d) => {
+      window.location.href = `https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/${d}?lang=eng`;
+    });
+
+  svg.selectAll(".description")
+    .data(chapters)
+    .enter()
+    .append("text")
+    .attr("class", "description")
+    .attr("x", centerX + 30)  // Adjusted x coordinate for descriptions
+    .attr("y", (d, i) => i * 20 + 20)
+    .text(d => descriptions[d] || "");
+
+  svg.selectAll(".year-range")
+    .data(chapters)
+    .enter()
+    .append("text")
+    .attr("class", "year-range")
+    .attr("x", centerX + 400)  // Adjusted x coordinate for year ranges
+    .attr("y", (d, i) => i * 20 + 20)
+    .text(d => yearRanges[d] || "");
+
+  function clearBrackets() {
+    svg.selectAll('.bracket').remove();
+    svg.selectAll('.bracket-label').remove();
+  }
+
+  function drawTopic(topic) {
+    let [start, end] = topic.range.split('-').map(Number);
+    end = end || start;
+    let yStart = (start - 1) * 20 + 10;
+    let yEnd = (end - 1) * 20 + 30;
+    const bracketShift = 35;
+    const bracketDepth = 20;
+
+    svg.append("line")
+      .attr("class", "bracket level-bracket")
+      .attr("x1", centerX - bracketShift)
+      .attr("x2", centerX - bracketShift)
+      .attr("y1", yStart)
+      .attr("y2", yEnd);
+
+    svg.append("line")
+      .attr("class", "bracket")
+      .attr("x1", centerX - bracketShift)
+      .attr("x2", centerX - bracketShift + bracketDepth)
+      .attr("y1", yStart)
+      .attr("y2", yStart);
+
+    svg.append("line")
+      .attr("class", "bracket")
+      .attr("x1", centerX - bracketShift)
+      .attr("x2", centerX - bracketShift + bracketDepth)
+      .attr("y1", yEnd)
+      .attr("y2", yEnd);
+
+    svg.append("text")
+      .attr("class", "bracket-label")
+      .attr("x", centerX - bracketShift - 25)
+      .attr("y", (yStart + yEnd) / 2)
+      .attr("dy", ".35em")
+      .attr("text-anchor", "end")
+      .text(topic.title);
+  }
+
+  function drawLevel(level) {
+    clearBrackets();
+
+    // If All is selected, show all topics. Otherwise, only show the topics from the selected level
+    const displayedTopics = data["Book of Mormon"]["Alma"]["topics"].filter(t => t.level === level);
+
+    displayedTopics.forEach(drawTopic);
+  }
+
+  window.onload = function() {
+    // Add click event listener to all buttons with class 'level-btn'
+    document.querySelectorAll('.level-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const selectedLevel = parseInt(this.value);
+        drawLevel(selectedLevel);
+      });
+    });
+
+    // Automatically click the Level 1 button when the page loads
+    document.querySelector('button[value="1"]').click();
+  };
+
+</script>
+</body>
+</html>

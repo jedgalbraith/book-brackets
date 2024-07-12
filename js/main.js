@@ -5,7 +5,7 @@ const centerX = width / 2;
 
 async function fetchAndDrawData() {
   try {
-    const response = await fetch('./data/bood_of_mormon.json');
+    const response = await fetch('./data/book_of_mormon.json');
     const data = await response.json();
 
     const svg = d3.select("#chart")
@@ -14,23 +14,40 @@ async function fetchAndDrawData() {
       .attr("height", height);
 
     // Data formatting
-    const chapters = createChaptersArray(data);
+    const units = createUnitsArray(data);
     const descriptions = createDescriptionsMap(data);
-    const yearRanges = createYearRangesMap(data);
 
-    drawText(svg, "chapter", centerX, chapters, (d) => `${d}`);
-    drawText(svg, "description", centerX + 30, chapters, (d) => descriptions[d] || "");
-    drawText(svg, "year-range", centerX + 400, chapters, (d) => yearRanges[d] || "");
+    drawText(svg, "unit", centerX, units, (d) => `${d}`);
+    drawText(svg, "description", centerX + 30, units, (d) => descriptions[d] || "");
 
-    window.onload = function() {
-      document.querySelectorAll('.level-btn').forEach(button => {
-        button.addEventListener('click', function() {
-          const selectedLevel = parseInt(this.value);
+    // Buttons
+
+    // Get all titles of the topic types
+    const topicTypes = data.divisions.flatMap(division => division.topic_types.map(topic_type => topic_type.title));
+    // Get unique topic types
+    const uniqueTopicTypes = [...new Set(topicTypes)];
+
+    const buttonContainer = document.getElementById('buttonContainer');
+
+    // Create buttons for each unique topic type
+    uniqueTopicTypes.forEach((topicType) => {
+      const button = document.createElement('button');
+      button.classList.add('level-btn');
+      button.value = topicType; // the value is now the topic type title
+      button.innerHTML = topicType; // Change it according to the content you want on buttons.
+      buttonContainer.appendChild(button);
+    });
+
+    // Modify event listener for these dynamic buttons
+    window.onload = function () {
+      document.getElementById('buttonContainer').addEventListener('click', function (e) {
+        if (e.target && e.target.nodeName === "BUTTON") {
+          const selectedLevel = e.target.value; // 'selectedLevel' now contains the title of the topic type
+          // you must implement or update your 'drawLevel' function to handle this 'selectedLevel' based on your requirements.
           drawLevel(svg, data, selectedLevel);
-        });
+        }
       });
-
-      document.querySelector('button[value="1"]').click();
+      document.querySelector('button').click(); // clicks on the first button
     };
 
   } catch (error) {
@@ -40,22 +57,24 @@ async function fetchAndDrawData() {
 
 fetchAndDrawData();
 
-function createChaptersArray(data) {
-  return d3.range(1, data["Book of Mormon"]["Alma"]["chapters"] + 1);
+function createUnitsArray(data) {
+  const units = [];
+  data.divisions.forEach(division => {
+    division.divisions.forEach(subdivision => {
+      units.push(subdivision);
+    });
+  });
+  return units.map((_, i) => i + 1);
 }
 
 function createDescriptionsMap(data) {
-  return data["Book of Mormon"]["Alma"]["descriptions"].reduce((acc, val) => {
-    acc[val.chapter] = val.desc;
-    return acc;
-  }, {});
-}
-
-function createYearRangesMap(data) {
-  return data["Book of Mormon"]["Alma"]["descriptions"].reduce((acc, val) => {
-    acc[val.chapter] = val.years;
-    return acc;
-  }, {});
+  const descriptions = {};
+  data.divisions.forEach(division => {
+    division.divisions.forEach((subdivision, i) => {
+      descriptions[i + 1] = subdivision.description;
+    });
+  });
+  return descriptions;
 }
 
 function drawText(svg, className, x, data, textCallback) {
@@ -67,9 +86,9 @@ function drawText(svg, className, x, data, textCallback) {
     .attr("x", x)
     .attr("y", (d, i) => i * 20 + 20)
     .text(textCallback)
-    .attr("text-anchor", className === "chapter" ? "middle" : undefined)
+    .attr("text-anchor", className === "unit" ? "middle" : undefined)
     .on("click", (event, d) => {
-      if (className === "chapter")
+      if (className === "unit")
         window.location.href = `https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/${d}?lang=eng`;
     });
 }
@@ -120,6 +139,14 @@ function drawTopic(svg, centerX, topic) {
 function drawLevel(svg, data, level) {
   clearBrackets(svg);
 
-  const displayedTopics = data["Book of Mormon"]["Alma"]["topics"].filter(t => t.level === level);
+  const displayedTopics = [];
+  data.divisions.forEach(division => {
+    division.topic_types.forEach(topicType => {
+      if (topicType.level === level) {
+        topicType.topics.forEach(topic => displayedTopics.push(topic));
+      }
+    });
+  });
+
   displayedTopics.forEach(topic => drawTopic(svg, centerX, topic));
 }

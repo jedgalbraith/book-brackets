@@ -1,0 +1,96 @@
+{
+  "title": "Book of Mormon",
+  "description": "The Book of Mormon is a sacred text of the Latter-day Saint movement, regarded by its adherents as scripture comparable to the Bible. It narrates the history, teachings, and spiritual experiences of ancient civilizations in the Americas, primarily focusing on the journey of a prophet named Lehi and his descendants. The book covers a period from roughly 600 B.C. to 400 A.D. and emphasizes themes of faith, repentance, and salvation through Jesus Christ.",
+  "divisions_type": "Book",
+  "divisions": [
+    {
+      "title": "1 Nephi",
+      "description": "1 Nephi details the journey of Lehi's family from Jerusalem to the promised land.",
+      "divisions_type": "Chapter",
+      "divisions": [
+        { "description": "Lehi's vision and prophecies; his call to preach repentance to Jerusalem." },
+        { "description": "Lehi's family departs into the wilderness." },
+        { "description": "Nephi and his brothers return to Jerusalem to obtain the plates of brass." },
+        { "description": "Nephi and his brothers attempt to obtain the plates; Laman and Lemuel murmur." },
+        { "description": "Nephi and his brothers return with gold and silver to barter for the plates; Laban steals their property." },
+        { "description": "Nephi returns to Jerusalem and is guided by the Spirit to obtain the plates of brass." },
+        { "description": "The family of Lehi offers sacrifices and gives thanks; Nephi and his brothers return to Jerusalem to bring Ishmael's family." },
+        { "description": "Lehi has a vision of the tree of life; Nephi desires to know its meaning." },
+        { "description": "Nephi sees the vision of the tree of life and learns its meaning." },
+        { "description": "Nephi sees the vision of the tree of life and learns of the coming of the Son of God." },
+        { "description": "Nephi sees the land of promise and the future of his seed and the seed of his brothers." },
+        { "description": "Nephi sees the final destruction of his people and the coming forth of the Book of Mormon." },
+        { "description": "Nephi sees the events leading up to the latter days, including the discovery and colonization of America." },
+        { "description": "Lehi's family continues their journey in the wilderness; they find the Liahona." },
+        { "description": "Lehi's family is instructed by the Liahona; Nephi breaks his bow and makes a new one." },
+        { "description": "Lehi's family continues their journey; Nephi's ship is driven to the promised land." },
+        { "description": "Nephi teaches his brethren from the scriptures; Nephi's ship is finished." },
+        { "description": "Nephi and his family set sail for the promised land." },
+        { "description": "Nephi recounts the prophecies of Isaiah about the house of Israel." },
+        { "description": "Nephi continues to teach his brethren from the scriptures; Nephi exhorts his brethren to have faith in the Lord." },
+        { "description": "Nephi expounds Isaiah's prophecies regarding the redemption of Israel." },
+        { "description": "Nephi speaks of the gathering of Israel and the coming forth of the Book of Mormon." }
+      ],
+      "topic_types": [
+        {
+          "title": "Locations",
+          "description": "The locations where the chapters took place.",
+          "topics": [
+            {
+              "range": "1-17",
+              "title": "Jerusalem and wilderness"
+            },
+            {
+              "range": "18",
+              "title": "Ocean"
+            },
+            {
+              "range": "19-22",
+              "title": "Promised Land"
+            }
+          ]
+        },
+        {
+          "title": "Events",
+          "description": "The events that occur in the chapters.",
+          "topics": [
+            {
+              "range": "3-5",
+              "title": "Return for plates"
+            },
+            {
+              "range": "8",
+              "title": "Lehi's vision of the Tree of Life"
+            }
+          ]
+        },
+        {
+          "title": "Years",
+          "description": "The years that the chapters took place.",
+          "topics": [
+            {
+              "range": "1-16",
+              "title": "600 B.C"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "topic_types": [
+    {
+      "title": "Locations",
+      "description": "The locations where the chapters took place.",
+      "topics": [
+        {
+          "range": "1-6",
+          "title": "Small Plates of Nephi"
+        },
+        {
+          "range": "8-13",
+          "title": "Mormon's Abridgement of Large Plates of Nephi"
+        }
+      ]
+    }
+  ]
+}
