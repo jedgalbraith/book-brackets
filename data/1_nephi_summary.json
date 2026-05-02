@@ -1,0 +1,129 @@
+{
+  "title": "1 Nephi Summary",
+  "description": "A detailed chronological summary of the 1st Book of Nephi, covering Lehi's prophetic ministry, the family's journey from Jerusalem, and Nephi's visions and leadership.",
+  "divisions_type": "Chapter",
+  "chapter_url_template": "https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/{chapter}?lang=eng",
+  "divisions": [
+    { "description": "Lehi prophesies about Jerusalem's destruction (600 BC)" },
+    { "description": "Lehi's vision of the tree of life" },
+    { "description": "Jews seek to kill Lehi, family flees into wilderness" },
+    { "description": "Return for brass plates (Isaiah 48)" },
+    { "description": "Return for Ishmael and his family" },
+    { "description": "Liahona discovered and guidance begins" },
+    { "description": "Nephi breaks his bow, family murmurs" },
+    { "description": "Continued journey with divine guidance" },
+    { "description": "Arrival at the promised land (America)" },
+    { "description": "Vision of the tree of life and its interpretation" },
+    { "description": "Vision of future events and the Savior" },
+    { "description": "Teachings from Isaiah 48-49" },
+    { "description": "Prophecies about the gathering of Israel" },
+    { "description": "Vision of the latter days and the Book of Mormon" },
+    { "description": "Nephi builds a ship by divine instruction" },
+    { "description": "Family sets sail for the promised land" },
+    { "description": "Arrival and settlement in the promised land" },
+    { "description": "Nephi recounts the prophecies of Isaiah" },
+    { "description": "Nephi continues to teach from the scriptures" },
+    { "description": "Nephi expounds Isaiah's prophecies" },
+    { "description": "Nephi speaks of the gathering of Israel" },
+    { "description": "Final teachings and blessings" },
+    { "description": "Conclusion of 1 Nephi" }
+  ],
+  "topic_types": [
+    {
+      "title": "Timeline",
+      "description": "Chronological events with specific dates",
+      "topics": [
+        {
+          "range": "1-2",
+          "title": "Lehi's Prophetic Call (600 BC)"
+        },
+        {
+          "range": "3-4",
+          "title": "Return for Brass Plates (592 BC)"
+        },
+        {
+          "range": "5-7",
+          "title": "Return for Ishmael (591 BC)"
+        },
+        {
+          "range": "8-15",
+          "title": "Wilderness Journey (590-589 BC)"
+        },
+        {
+          "range": "16-18",
+          "title": "Journey to Promised Land (588 BC)"
+        }
+      ]
+    },
+    {
+      "title": "Locations",
+      "description": "Key locations in the narrative",
+      "topics": [
+        {
+          "range": "1-2",
+          "title": "Jerusalem"
+        },
+        {
+          "range": "3-7",
+          "title": "Jerusalem and Wilderness"
+        },
+        {
+          "range": "8-15",
+          "title": "Wilderness Journey"
+        },
+        {
+          "range": "16-18",
+          "title": "Ocean Voyage"
+        },
+        {
+          "range": "19-22",
+          "title": "Promised Land (America)"
+        }
+      ]
+    },
+    {
+      "title": "Visions",
+      "description": "Major prophetic visions and revelations",
+      "topics": [
+        {
+          "range": "8-15",
+          "title": "Tree of Life Vision"
+        },
+        {
+          "range": "11-14",
+          "title": "Future Prophecies"
+        },
+        {
+          "range": "20-22",
+          "title": "Isaiah Prophecies"
+        }
+      ]
+    },
+    {
+      "title": "Key Events",
+      "description": "Major narrative events and turning points",
+      "topics": [
+        {
+          "range": "1-2",
+          "title": "Lehi's Ministry"
+        },
+        {
+          "range": "3-7",
+          "title": "Obtaining Records"
+        },
+        {
+          "range": "8-15",
+          "title": "Wilderness Trials"
+        },
+        {
+          "range": "16-18",
+          "title": "Shipbuilding"
+        },
+        {
+          "range": "19-22",
+          "title": "Teachings and Prophecies"
+        }
+      ]
+    }
+  ]
+}

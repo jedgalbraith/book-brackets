@@ -4,6 +4,15 @@
 .chapter {
   cursor: pointer;
 }
+.unit {
+  cursor: pointer;
+  fill: #0066cc;
+  text-decoration: underline;
+}
+.unit:hover {
+  fill: #004499;
+  text-decoration: none;
+}
 .bracket {
   stroke: black;
   fill: none;

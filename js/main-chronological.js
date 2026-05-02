@@ -5,7 +5,7 @@ const centerX = width / 2;
 
 async function fetchAndDrawData() {
   try {
-    const response = await fetch('./data/book_of_mormon.json');
+    const response = await fetch('../data/1_nephi_summary.json');
     const data = await response.json();
 
     const svg = d3.select("#chart")
@@ -17,33 +17,27 @@ async function fetchAndDrawData() {
     const units = createUnitsArray(data);
     const descriptions = createDescriptionsMap(data);
 
-    drawText(svg, "unit", centerX, units, (d) => `${d}`);
-    drawText(svg, "description", centerX + 30, units, (d) => descriptions[d] || "");
+    drawText(svg, "unit", centerX, units, (d) => `${d}`, data);
+    drawText(svg, "description", centerX + 30, units, (d) => descriptions[d] || "", data);
 
     // Buttons
-
-    // Get all titles of the topic types
-    const topicTypes = data.divisions.flatMap(division => division.topic_types.map(topic_type => topic_type.title));
-    // Get unique topic types
-    const uniqueTopicTypes = [...new Set(topicTypes)];
-
+    const topicTypes = data.topic_types.map(topic_type => topic_type.title);
     const buttonContainer = document.getElementById('buttonContainer');
 
-    // Create buttons for each unique topic type
-    uniqueTopicTypes.forEach((topicType) => {
+    // Create buttons for each topic type
+    topicTypes.forEach((topicType) => {
       const button = document.createElement('button');
       button.classList.add('level-btn');
-      button.value = topicType; // the value is now the topic type title
-      button.innerHTML = topicType; // Change it according to the content you want on buttons.
+      button.value = topicType;
+      button.innerHTML = topicType;
       buttonContainer.appendChild(button);
     });
 
-    // Modify event listener for these dynamic buttons
+    // Event listener for buttons
     window.onload = function () {
       document.getElementById('buttonContainer').addEventListener('click', function (e) {
         if (e.target && e.target.nodeName === "BUTTON") {
-          const selectedLevel = e.target.value; // 'selectedLevel' now contains the title of the topic type
-          // you must implement or update your 'drawLevel' function to handle this 'selectedLevel' based on your requirements.
+          const selectedLevel = e.target.value;
           drawLevel(svg, data, selectedLevel);
         }
       });
@@ -58,26 +52,18 @@ async function fetchAndDrawData() {
 fetchAndDrawData();
 
 function createUnitsArray(data) {
-  const units = [];
-  data.divisions.forEach(division => {
-    division.divisions.forEach(subdivision => {
-      units.push(subdivision);
-    });
-  });
-  return units.map((_, i) => i + 1);
+  return data.divisions.map((_, i) => i + 1);
 }
 
 function createDescriptionsMap(data) {
   const descriptions = {};
-  data.divisions.forEach(division => {
-    division.divisions.forEach((subdivision, i) => {
-      descriptions[i + 1] = subdivision.description;
-    });
+  data.divisions.forEach((subdivision, i) => {
+    descriptions[i + 1] = subdivision.description;
   });
   return descriptions;
 }
 
-function drawText(svg, className, x, data, textCallback) {
+function drawText(svg, className, x, data, textCallback, urlData) {
   svg.selectAll(`.${className}`)
     .data(data)
     .enter()
@@ -89,7 +75,7 @@ function drawText(svg, className, x, data, textCallback) {
     .attr("text-anchor", className === "unit" ? "middle" : undefined)
     .on("click", (event, d) => {
       if (className === "unit")
-        window.location.href = data.chapter_url_template.replace('{chapter}', d);
+        window.location.href = urlData.chapter_url_template.replace('{chapter}', d);
     });
 }
 
@@ -140,12 +126,10 @@ function drawLevel(svg, data, level) {
   clearBrackets(svg);
 
   const displayedTopics = [];
-  data.divisions.forEach(division => {
-    division.topic_types.forEach(topicType => {
-      if (topicType.title === level) {
-        topicType.topics.forEach(topic => displayedTopics.push(topic));
-      }
-    });
+  data.topic_types.forEach(topicType => {
+    if (topicType.title === level) {
+      topicType.topics.forEach(topic => displayedTopics.push(topic));
+    }
   });
 
   displayedTopics.forEach(topic => drawTopic(svg, centerX, topic));

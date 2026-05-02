@@ -2,19 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book Brackets</title>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <title>Book Brackets - Home</title>
+  <link rel="stylesheet" type="text/css" href="styles/home.css">
 </head>
 <body>
-<div id="buttonContainer"></div>
+  <div class="container">
+    <header>
+      <h1>Book Brackets</h1>
+      <p>Interactive visualizations of Book of Mormon chapters and themes</p>
+    </header>
 
-<svg width="200" height="200">
-  <path d="M 50 50 Q 100 100 50 150" stroke="black" fill="transparent" />
-</svg>
+    <main>
+      <section class="visualizations">
+        <h2>Available Visualizations</h2>
+        <div class="viz-grid">
+          <div class="viz-card">
+            <h3>1 Nephi - Thematic Analysis</h3>
+            <p>Explore 1 Nephi chapters through thematic groupings including locations, events, and years. Features rich chapter descriptions and interactive brackets.</p>
+            <a href="visualizations/1-nephi-thematic.html" class="viz-link">View Visualization</a>
+          </div>
 
-<div id="chart"></div>
+          <div class="viz-card">
+            <h3>1 Nephi - Chronological Summary</h3>
+            <p>A chronological journey through 1 Nephi with timeline-based organization, key events, and prophetic visions from the handwritten summary.</p>
+            <a href="visualizations/1-nephi-chronological.html" class="viz-link">View Visualization</a>
+          </div>
+        </div>
+      </section>
 
-<script src="js/main.js"></script>
+      <section class="about">
+        <h2>About This Project</h2>
+        <p>Book Brackets is an interactive visualization tool that helps readers understand the structural and thematic relationships within Book of Mormon chapters. By drawing visual brackets around related passages, it provides insights into how different chapters connect thematically.</p>
+        
+        <div class="features">
+          <h3>Features</h3>
+          <ul>
+            <li>Interactive bracket visualization</li>
+            <li>Multiple topic perspectives (Locations, Events, Timeline, Visions)</li>
+            <li>Clickable chapters linking to full scripture text</li>
+            <li>Rich chapter descriptions and context</li>
+            <li>Responsive design for all devices</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with D3.js • Book of Mormon Study Tool</p>
+    </footer>
+  </div>
 </body>
 </html>
