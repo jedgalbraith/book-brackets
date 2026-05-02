@@ -1,174 +1,105 @@
 # Book Brackets
 
-A web visualization tool that draws interactive brackets around Book of Mormon chapters to show thematic groupings and relationships.
+An interactive visualization that draws bracket overlays on chapter lists to show thematic groupings across books of scripture. Built with D3.js and plain HTML — no build step.
 
-## Overview
+## Demo
 
-This project creates an interactive visualization that displays:
-- A numbered list of Book of Mormon chapters with descriptions
-- Dynamic buttons for different topic categories (Locations, Events, Years)
-- Visual brackets that group chapters according to selected topics
-- Clickable chapter numbers that link to the actual scripture text
+Hosted on GitHub Pages: [jedgalbraith.github.io/book-brackets](https://jedgalbraith.github.io/book-brackets)
 
-## Tech Stack
+## How it works
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Visualization**: D3.js v7.9.0
-- **Data**: JSON structure with chapters and topic groupings
+The home page reads a manifest (`data/brackets/index.yaml`) and renders a card for each available visualization. Each visualization page loads two YAML files:
 
-## Getting Started
+- **`data/books/`** — the book content: a recursive node tree of volumes, books, and chapters with titles and descriptions
+- **`data/brackets/`** — the bracket overlays: which node to target, what topics to show, and what chapter ranges each topic covers
 
-### Prerequisites
-- Node.js (for dependency management)
-- Python 3 (for local server) or any web server
+Clicking a topic button draws SVG bracket lines grouping the relevant chapters. Clicking a chapter number opens it on ChurchofJesusChrist.org.
 
-### Installation
+## Running locally
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-### Running the Project
-
-Start a local web server:
+No install required. Serve from the project root (YAML files require HTTP — `file://` won't work):
 
 ```bash
-# Option 1: Using Python (recommended)
 python3 -m http.server 8000
-
-# Option 2: Using Node.js
-npx serve .
-
-# Option 3: Using VS Code Live Server extension
 ```
 
-Then open `http://localhost:8000` in your browser.
+Then open `http://localhost:8000`.
 
-## Project Structure
+## Adding content
 
-```
-book-brackets-js/
-├── index.html              # Main HTML file
-├── js/
-│   └── main.js            # Core visualization logic
-├── styles/
-│   └── styles.css         # Styling for brackets and UI
-├── data/
-│   ├── book_of_mormon.json # Primary data file
-│   └── book_of_mormon.yaml # Alternative data format (unused)
-├── package.json           # Dependencies and scripts
-└── README.md             # This file
-```
+### New book data
 
-## How It Works
+Add a file to `data/books/` following the recursive node schema:
 
-1. **Data Loading**: Fetches Book of Mormon data from JSON file
-2. **Chapter Rendering**: Displays numbered chapters with descriptions
-3. **Button Generation**: Creates buttons for each topic type
-4. **Bracket Drawing**: Draws SVG brackets around chapter ranges when topics are selected
-5. **Interactivity**: Chapters link to scripture; buttons toggle different topic views
-
-## JSON Schema ERD
-
-```
-Book of Mormon Data Structure
-├── title: string
-├── description: string
-├── divisions_type: "Book"
-└── divisions: Array[Division]
-    └── Division
-        ├── title: string (e.g., "1 Nephi")
-        ├── description: string
-        ├── divisions_type: "Chapter"
-        ├── divisions: Array[Chapter]
-        │   └── Chapter
-        │       └── description: string
-        └── topic_types: Array[TopicType]
-            └── TopicType
-                ├── title: string (e.g., "Locations", "Events", "Years")
-                ├── description: string
-                └── topics: Array[Topic]
-                    └── Topic
-                        ├── range: string (e.g., "1-17", "18")
-                        └── title: string (e.g., "Jerusalem and wilderness")
+```yaml
+schema_version: "1"
+root:
+  slug: my-book
+  type: volume
+  title: My Book
+  children:
+    - slug: part-one
+      type: book
+      title: Part One
+      url_template: "https://example.com/book/{index}"
+      children:
+        - slug: part-one-1
+          type: chapter
+          description: Chapter summary here.
 ```
 
-### Schema Relationships
+`url_template` is inherited by child nodes. `{index}` is replaced with the 1-based chapter number within that book.
 
-```
-Book of Mormon (Root)
-    ↓
-Divisions (Books)
-    ↓
-├── Chapters (1 per array element)
-│   └── Description
-│
-└── Topic Types (Categories)
-    └── Topics (Ranges)
-        ├── Range (Chapter numbers)
-        └── Title (Topic name)
-```
+### New bracket overlay
 
-## Data Example
+Add a file to `data/brackets/` and register it in `data/brackets/index.yaml`:
 
-```json
-{
-  "title": "Book of Mormon",
-  "divisions": [
-    {
-      "title": "1 Nephi",
-      "divisions": [
-        {"description": "Lehi's vision and prophecies..."},
-        {"description": "Lehi's family departs..."}
-      ],
-      "topic_types": [
-        {
-          "title": "Locations",
-          "topics": [
-            {"range": "1-17", "title": "Jerusalem and wilderness"},
-            {"range": "18", "title": "Ocean"}
-          ]
-        }
-      ]
-    }
-  ]
-}
+```yaml
+schema_version: "1"
+title: My Book — Thematic Analysis
+book_slug: my-book        # matches a file in data/books/
+targets:
+  - target_slug: part-one  # slug of the node whose leaves = the numbered list
+    topics:
+      - slug: themes
+        title: Themes
+        brackets:
+          - range: "1-5"   # 1-based, always quoted, must be contiguous
+            label: Introduction
 ```
 
-## Features
+Then add an entry to `data/brackets/index.yaml`:
 
-- **Interactive Brackets**: Click topic buttons to show different thematic groupings
-- **Chapter Navigation**: Click chapter numbers to open scripture in new tab
-- **Responsive Design**: Clean, readable layout with proper spacing
-- **Semantic Topics**: Meaningful categories (Locations, Events, Years)
-- **Rich Descriptions**: Detailed chapter summaries for context
+```yaml
+brackets:
+  - file: my-book.yaml
+    title: My Book — Thematic Analysis
+    description: Explore chapters by theme.
+```
 
-## Browser Compatibility
+No code changes needed.
 
-- Chrome/Edge (recommended)
-- Firefox
-- Safari
-- Modern browsers with ES6+ support
+## Tech stack
 
-## Development
+- **D3.js v7** — SVG bracket rendering
+- **js-yaml** — browser-side YAML parsing
+- **Vanilla JS / HTML / CSS** — everything else
 
-### Key Functions
+## Project structure
 
-- `fetchAndDrawData()`: Main entry point, loads data and initializes visualization
-- `drawLevel()`: Renders brackets for selected topic type
-- `drawTopic()`: Draws individual bracket around chapter range
-- `createUnitsArray()`: Creates numbered chapter list
-- `createDescriptionsMap()`: Maps chapter numbers to descriptions
-
-### Styling
-
-- `.bracket`: SVG lines for bracket visualization
-- `.bracket-label`: Topic titles next to brackets
-- `.level-btn`: Topic selection buttons
-- `.unit/.description`: Chapter text styling
-
-## License
-
-ISC License
+```
+data/
+  books/          # book content files (recursive node trees)
+  brackets/       # bracket overlay files + index.yaml manifest
+js/
+  loader.js       # fetchData(), findNodeWithTemplate(), collectLeaves()
+  main.js         # visualization: renders chapters + bracket interactivity
+  home.js         # home page: reads index.yaml, renders cards
+styles/
+  styles.css      # SVG element styles (brackets, chapter text)
+  viz.css         # visualization page layout
+  home.css        # home page layout
+visualizations/
+  visualization.html   # visualization shell (loads main.js)
+index.html        # home page shell (loads home.js)
+```
