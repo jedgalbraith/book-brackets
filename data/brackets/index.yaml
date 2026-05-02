@@ -1,0 +1,11 @@
+brackets:
+  - file: book-of-mormon.yaml
+    title: Book of Mormon — Thematic Analysis
+    description: >
+      Explore Book of Mormon chapters through thematic groupings including
+      locations, events, authors, and doctrinal themes.
+  - file: bible.yaml
+    title: Bible — Thematic Analysis
+    description: >
+      Explore Old Testament chapters through narratives, key figures,
+      covenants, and major events.

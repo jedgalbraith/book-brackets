@@ -21,3 +21,10 @@
   font-weight: bold;
   fill: black;
 }
+
+
+.description {
+  font-size: 12px;
+  fill: #555;
+  dominant-baseline: middle;
+}

@@ -38,9 +38,31 @@
   margin-bottom: 20px;
 }
 
-#buttonContainer {
-  margin-bottom: 20px;
-  text-align: center;
+.section-wrapper {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0 8px;
+  border-bottom: 2px solid #e0e4f0;
+  margin-bottom: 4px;
+}
+
+.topic-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .level-btn {
@@ -60,13 +82,13 @@
   border-color: #adb5bd;
 }
 
-.level-btn:first-child {
+.level-btn.active {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border-color: #667eea;
 }
 
-.level-btn:first-child:hover {
+.level-btn.active:hover {
   background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 }
 

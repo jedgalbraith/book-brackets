@@ -1,54 +1,88 @@
-// Constants
+const ROW_HEIGHT = 20;
 const width = 1200;
-const height = 1500;
 const centerX = width / 2;
+const BRACKET_SHIFT = 35;
+const BRACKET_DEPTH = 20;
 
 async function fetchAndDrawData() {
   try {
-    const response = await fetch('./data/book_of_mormon.json');
-    const data = await response.json();
+    const file = new URLSearchParams(window.location.search).get('file');
+    if (!file) {
+      document.getElementById('chart').textContent = 'No bracket file specified. Add ?file=filename.yaml to the URL.';
+      return;
+    }
 
-    const svg = d3.select("#chart")
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height);
+    const brackets = await fetchData(`../data/brackets/${file}`);
+    const bookData = await fetchData(`../data/books/${brackets.book_slug}.yaml`);
 
-    // Data formatting
-    const units = createUnitsArray(data);
-    const descriptions = createDescriptionsMap(data);
+    document.title = `${brackets.title} | Book Brackets`;
+    document.querySelector('.viz-nav h1').textContent = brackets.title;
 
-    drawText(svg, "unit", centerX, units, (d) => `${d}`);
-    drawText(svg, "description", centerX + 30, units, (d) => descriptions[d] || "");
+    const chart = document.getElementById('chart');
 
-    // Buttons
+    brackets.targets.forEach(target => {
+      const { node: targetNode, urlTemplate } = findNodeWithTemplate(bookData.root, target.target_slug);
+      const leaves = collectLeaves(targetNode);
 
-    // Get all titles of the topic types
-    const topicTypes = data.divisions.flatMap(division => division.topic_types.map(topic_type => topic_type.title));
-    // Get unique topic types
-    const uniqueTopicTypes = [...new Set(topicTypes)];
+      const wrapper = document.createElement('div');
+      wrapper.classList.add('section-wrapper');
 
-    const buttonContainer = document.getElementById('buttonContainer');
+      const header = document.createElement('div');
+      header.classList.add('section-header');
 
-    // Create buttons for each unique topic type
-    uniqueTopicTypes.forEach((topicType) => {
-      const button = document.createElement('button');
-      button.classList.add('level-btn');
-      button.value = topicType; // the value is now the topic type title
-      button.innerHTML = topicType; // Change it according to the content you want on buttons.
-      buttonContainer.appendChild(button);
-    });
+      const titleEl = document.createElement('h2');
+      titleEl.classList.add('section-title');
+      titleEl.textContent = targetNode.title || target.target_slug;
+      header.appendChild(titleEl);
 
-    // Modify event listener for these dynamic buttons
-    window.onload = function () {
-      document.getElementById('buttonContainer').addEventListener('click', function (e) {
-        if (e.target && e.target.nodeName === "BUTTON") {
-          const selectedLevel = e.target.value; // 'selectedLevel' now contains the title of the topic type
-          // you must implement or update your 'drawLevel' function to handle this 'selectedLevel' based on your requirements.
-          drawLevel(svg, data, selectedLevel);
-        }
+      const buttonsDiv = document.createElement('div');
+      buttonsDiv.classList.add('topic-group');
+      target.topics.forEach(topic => {
+        const button = document.createElement('button');
+        button.classList.add('level-btn');
+        button.dataset.topicSlug = topic.slug;
+        button.textContent = topic.title;
+        buttonsDiv.appendChild(button);
       });
-      document.querySelector('button').click(); // clicks on the first button
-    };
+      header.appendChild(buttonsDiv);
+      wrapper.appendChild(header);
+
+      const svgHeight = (leaves.length + 1) * ROW_HEIGHT;
+      const svg = d3.create('svg').attr('width', width).attr('height', svgHeight);
+
+      leaves.forEach((leaf, i) => {
+        const chapterNum = i + 1;
+        const y = chapterNum * ROW_HEIGHT;
+
+        svg.append('text')
+          .attr('class', 'unit')
+          .attr('x', centerX)
+          .attr('y', y)
+          .attr('text-anchor', 'middle')
+          .text(chapterNum)
+          .on('click', () => {
+            if (urlTemplate) window.open(urlTemplate.replace('{index}', chapterNum), '_blank');
+          });
+
+        svg.append('text')
+          .attr('class', 'description')
+          .attr('x', centerX + 30)
+          .attr('y', y)
+          .text(leaf.description || '');
+      });
+
+      wrapper.appendChild(svg.node());
+      chart.appendChild(wrapper);
+
+      buttonsDiv.addEventListener('click', (e) => {
+        if (e.target.nodeName !== 'BUTTON') return;
+        buttonsDiv.querySelectorAll('.level-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        drawLevel(svg, target, e.target.dataset.topicSlug);
+      });
+
+      buttonsDiv.querySelector('button')?.click();
+    });
 
   } catch (error) {
     console.error('Error:', error);
@@ -57,96 +91,43 @@ async function fetchAndDrawData() {
 
 fetchAndDrawData();
 
-function createUnitsArray(data) {
-  const units = [];
-  data.divisions.forEach(division => {
-    division.divisions.forEach(subdivision => {
-      units.push(subdivision);
-    });
-  });
-  return units.map((_, i) => i + 1);
+function chapterY(num) {
+  return num * ROW_HEIGHT;
 }
 
-function createDescriptionsMap(data) {
-  const descriptions = {};
-  data.divisions.forEach(division => {
-    division.divisions.forEach((subdivision, i) => {
-      descriptions[i + 1] = subdivision.description;
-    });
-  });
-  return descriptions;
-}
-
-function drawText(svg, className, x, data, textCallback) {
-  svg.selectAll(`.${className}`)
-    .data(data)
-    .enter()
-    .append("text")
-    .attr("class", className)
-    .attr("x", x)
-    .attr("y", (d, i) => i * 20 + 20)
-    .text(textCallback)
-    .attr("text-anchor", className === "unit" ? "middle" : undefined)
-    .on("click", (event, d) => {
-      if (className === "unit")
-        window.location.href = data.chapter_url_template.replace('{chapter}', d);
-    });
-}
-
-function clearBrackets(svg) {
-  svg.selectAll('.bracket').remove();
-  svg.selectAll('.bracket-label').remove();
-}
-
-function drawTopic(svg, centerX, topic) {
-  let [start, end] = topic.range.split('-').map(Number);
+function drawTopic(svg, bracket) {
+  let [start, end] = bracket.range.split('-').map(Number);
   end = end || start;
-  let yStart = (start - 1) * 20 + 10;
-  let yEnd = (end - 1) * 20 + 30;
-  const bracketShift = 35;
-  const bracketDepth = 20;
+  const yStart = chapterY(start) - ROW_HEIGHT / 2;
+  const yEnd = chapterY(end) + ROW_HEIGHT / 2;
 
-  svg.append("line")
-    .attr("class", "bracket level-bracket")
-    .attr("x1", centerX - bracketShift)
-    .attr("x2", centerX - bracketShift)
-    .attr("y1", yStart)
-    .attr("y2", yEnd);
+  svg.append('line')
+    .attr('class', 'bracket level-bracket')
+    .attr('x1', centerX - BRACKET_SHIFT).attr('x2', centerX - BRACKET_SHIFT)
+    .attr('y1', yStart).attr('y2', yEnd);
 
-  svg.append("line")
-    .attr("class", "bracket")
-    .attr("x1", centerX - bracketShift)
-    .attr("x2", centerX - bracketShift + bracketDepth)
-    .attr("y1", yStart)
-    .attr("y2", yStart);
+  svg.append('line')
+    .attr('class', 'bracket')
+    .attr('x1', centerX - BRACKET_SHIFT).attr('x2', centerX - BRACKET_SHIFT + BRACKET_DEPTH)
+    .attr('y1', yStart).attr('y2', yStart);
 
-  svg.append("line")
-    .attr("class", "bracket")
-    .attr("x1", centerX - bracketShift)
-    .attr("x2", centerX - bracketShift + bracketDepth)
-    .attr("y1", yEnd)
-    .attr("y2", yEnd);
+  svg.append('line')
+    .attr('class', 'bracket')
+    .attr('x1', centerX - BRACKET_SHIFT).attr('x2', centerX - BRACKET_SHIFT + BRACKET_DEPTH)
+    .attr('y1', yEnd).attr('y2', yEnd);
 
-  svg.append("text")
-    .attr("class", "bracket-label")
-    .attr("x", centerX - bracketShift - 25)
-    .attr("y", (yStart + yEnd) / 2)
-    .attr("dy", ".35em")
-    .attr("text-anchor", "end")
-    .text(topic.title);
+  svg.append('text')
+    .attr('class', 'bracket-label')
+    .attr('x', centerX - BRACKET_SHIFT - 25)
+    .attr('y', (yStart + yEnd) / 2)
+    .attr('dy', '.35em')
+    .attr('text-anchor', 'end')
+    .text(bracket.label);
 }
 
-function drawLevel(svg, data, level) {
-  clearBrackets(svg);
-
-  const displayedTopics = [];
-  data.divisions.forEach(division => {
-    division.topic_types.forEach(topicType => {
-      if (topicType.title === level) {
-        topicType.topics.forEach(topic => displayedTopics.push(topic));
-      }
-    });
-  });
-
-  displayedTopics.forEach(topic => drawTopic(svg, centerX, topic));
+function drawLevel(svg, target, topicSlug) {
+  svg.selectAll('.bracket, .bracket-label').remove();
+  const topic = target.topics.find(t => t.slug === topicSlug);
+  if (!topic) return;
+  topic.brackets.forEach(bracket => drawTopic(svg, bracket));
 }

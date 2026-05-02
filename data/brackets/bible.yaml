@@ -1,0 +1,93 @@
+schema_version: "1"
+title: Bible — Thematic Analysis
+book_slug: bible
+targets:
+  - target_slug: genesis
+    topics:
+      - slug: narratives
+        title: Narratives
+        description: The major narrative cycles of Genesis.
+        brackets:
+          - range: "1-11"
+            label: Primeval history
+          - range: "12-25"
+            label: Abraham
+          - range: "25-36"
+            label: Isaac and Jacob
+          - range: "37-50"
+            label: Joseph
+
+      - slug: key-figures
+        title: Key Figures
+        description: Chapters centered on each patriarch.
+        brackets:
+          - range: "1-5"
+            label: Adam and Eve
+          - range: "6-10"
+            label: Noah
+          - range: "11-25"
+            label: Abraham
+          - range: "25-36"
+            label: Jacob
+          - range: "37-50"
+            label: Joseph
+
+      - slug: covenants
+        title: Covenants
+        description: The progressive unfolding of God's covenant.
+        brackets:
+          - range: "1-3"
+            label: Creation and the fall
+          - range: "6-9"
+            label: Covenant with Noah
+          - range: "12-17"
+            label: Abrahamic covenant established
+          - range: "18-25"
+            label: Promise of Isaac fulfilled
+          - range: "26-36"
+            label: Covenant renewed with Isaac and Jacob
+          - range: "37-50"
+            label: Providence over Joseph
+
+  - target_slug: exodus
+    topics:
+      - slug: phases
+        title: Phases
+        description: The major phases of the Exodus narrative.
+        brackets:
+          - range: "1-12"
+            label: Plagues and Passover
+          - range: "13-18"
+            label: Journey to Sinai
+          - range: "19-24"
+            label: The law at Sinai
+          - range: "25-40"
+            label: Tabernacle
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in Israel's deliverance.
+        brackets:
+          - range: "1-4"
+            label: Moses's call
+          - range: "5-11"
+            label: The ten plagues
+          - range: "12-15"
+            label: Passover and Red Sea
+          - range: "16-18"
+            label: Wilderness provision
+          - range: "19-24"
+            label: Sinai covenant
+          - range: "32-34"
+            label: The golden calf and renewal
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-15"
+            label: Egypt
+          - range: "16-18"
+            label: Wilderness of Sinai
+          - range: "19-40"
+            label: Mount Sinai

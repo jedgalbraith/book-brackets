@@ -1,0 +1,107 @@
+schema_version: "1"
+title: Book of Mormon — Thematic Analysis
+book_slug: book-of-mormon
+targets:
+  - target_slug: 1-nephi
+    topics:
+      - slug: locations
+        title: Locations
+        description: The locations where the chapters took place.
+        brackets:
+          - range: "1-17"
+            label: Jerusalem and wilderness
+          - range: "18"
+            label: Ocean
+          - range: "19-22"
+            label: Promised Land
+
+      - slug: events
+        title: Events
+        description: The events that occur in the chapters.
+        brackets:
+          - range: "3-5"
+            label: Return for plates
+          - range: "8"
+            label: "Lehi's vision of the Tree of Life"
+
+      - slug: years
+        title: Years
+        description: The years that the chapters took place.
+        brackets:
+          - range: "1-16"
+            label: "600 B.C."
+
+  - target_slug: 2-nephi
+    topics:
+      - slug: sections
+        title: Sections
+        description: Major structural divisions of the book.
+        brackets:
+          - range: "1-4"
+            label: Lehi's farewell
+          - range: "5"
+            label: Nephite separation
+          - range: "6-10"
+            label: Jacob's discourses
+          - range: "11-24"
+            label: Isaiah passages
+          - range: "25-33"
+            label: Nephi's doctrine
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-4"
+            label: Lehi
+          - range: "6-10"
+            label: Jacob
+          - range: "12-24"
+            label: Isaiah (quoted)
+          - range: "5"
+            label: Nephi
+          - range: "11"
+            label: Nephi
+          - range: "25-33"
+            label: Nephi
+
+      - slug: themes
+        title: Themes
+        description: Major doctrinal and narrative themes.
+        brackets:
+          - range: "1-5"
+            label: Family and covenant inheritance
+          - range: "6-24"
+            label: Isaiah's prophecies of Christ and Israel
+          - range: "25-33"
+            label: The doctrine of Christ
+
+  - target_slug: jacob
+    topics:
+      - slug: content
+        title: Content
+        description: What each section contains.
+        brackets:
+          - range: "1"
+            label: Succession and priesthood
+          - range: "2-3"
+            label: Sermon on chastity
+          - range: "4"
+            label: Testimony of Christ
+          - range: "5-6"
+            label: Allegory of the olive tree
+          - range: "7"
+            label: Sherem's apostasy
+
+      - slug: themes
+        title: Themes
+        description: Major doctrinal themes.
+        brackets:
+          - range: "1-3"
+            label: Social righteousness
+          - range: "4"
+            label: Christ as the foundation stone
+          - range: "5-6"
+            label: The destiny of Israel
+          - range: "7"
+            label: Apostasy and testimony

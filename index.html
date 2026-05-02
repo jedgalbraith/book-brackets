@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Book Brackets - Home</title>
   <link rel="stylesheet" type="text/css" href="styles/home.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -15,19 +16,7 @@
     <main>
       <section class="visualizations">
         <h2>Available Visualizations</h2>
-        <div class="viz-grid">
-          <div class="viz-card">
-            <h3>1 Nephi - Thematic Analysis</h3>
-            <p>Explore 1 Nephi chapters through thematic groupings including locations, events, and years. Features rich chapter descriptions and interactive brackets.</p>
-            <a href="visualizations/1-nephi-thematic.html" class="viz-link">View Visualization</a>
-          </div>
-
-          <div class="viz-card">
-            <h3>1 Nephi - Chronological Summary</h3>
-            <p>A chronological journey through 1 Nephi with timeline-based organization, key events, and prophetic visions from the handwritten summary.</p>
-            <a href="visualizations/1-nephi-chronological.html" class="viz-link">View Visualization</a>
-          </div>
-        </div>
+        <div class="viz-grid"></div>
       </section>
 
       <section class="about">
@@ -38,7 +27,7 @@
           <h3>Features</h3>
           <ul>
             <li>Interactive bracket visualization</li>
-            <li>Multiple topic perspectives (Locations, Events, Timeline, Visions)</li>
+            <li>Multiple topic perspectives (Locations, Events, Years)</li>
             <li>Clickable chapters linking to full scripture text</li>
             <li>Rich chapter descriptions and context</li>
             <li>Responsive design for all devices</li>
@@ -51,5 +40,7 @@
       <p>Built with D3.js • Book of Mormon Study Tool</p>
     </footer>
   </div>
+  <script src="js/loader.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>

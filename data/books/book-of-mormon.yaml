@@ -1,0 +1,220 @@
+schema_version: "1"
+root:
+  slug: book-of-mormon
+  type: volume
+  title: Book of Mormon
+  description: >
+    The Book of Mormon is a sacred text of the Latter-day Saint movement,
+    regarded by its adherents as scripture comparable to the Bible. It narrates
+    the history, teachings, and spiritual experiences of ancient civilizations
+    in the Americas, primarily focusing on the journey of a prophet named Lehi
+    and his descendants. The book covers a period from roughly 600 B.C. to
+    400 A.D. and emphasizes themes of faith, repentance, and salvation through
+    Jesus Christ.
+  children:
+    - slug: 1-nephi
+      type: book
+      title: 1 Nephi
+      description: 1 Nephi details the journey of Lehi's family from Jerusalem to the promised land.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/{index}?lang=eng"
+      children:
+        - slug: 1-nephi-1
+          type: chapter
+          description: "Lehi's vision and prophecies; his call to preach repentance to Jerusalem."
+        - slug: 1-nephi-2
+          type: chapter
+          description: Lehi's family departs into the wilderness.
+        - slug: 1-nephi-3
+          type: chapter
+          description: Nephi and his brothers return to Jerusalem to obtain the plates of brass.
+        - slug: 1-nephi-4
+          type: chapter
+          description: "Nephi and his brothers attempt to obtain the plates; Laman and Lemuel murmur."
+        - slug: 1-nephi-5
+          type: chapter
+          description: "Nephi and his brothers return with gold and silver to barter for the plates; Laban steals their property."
+        - slug: 1-nephi-6
+          type: chapter
+          description: Nephi returns to Jerusalem and is guided by the Spirit to obtain the plates of brass.
+        - slug: 1-nephi-7
+          type: chapter
+          description: "The family of Lehi offers sacrifices and gives thanks; Nephi and his brothers return to Jerusalem to bring Ishmael's family."
+        - slug: 1-nephi-8
+          type: chapter
+          description: "Lehi has a vision of the tree of life; Nephi desires to know its meaning."
+        - slug: 1-nephi-9
+          type: chapter
+          description: Nephi sees the vision of the tree of life and learns its meaning.
+        - slug: 1-nephi-10
+          type: chapter
+          description: Nephi sees the vision of the tree of life and learns of the coming of the Son of God.
+        - slug: 1-nephi-11
+          type: chapter
+          description: Nephi sees the land of promise and the future of his seed and the seed of his brothers.
+        - slug: 1-nephi-12
+          type: chapter
+          description: Nephi sees the final destruction of his people and the coming forth of the Book of Mormon.
+        - slug: 1-nephi-13
+          type: chapter
+          description: "Nephi sees the events leading up to the latter days, including the discovery and colonization of America."
+        - slug: 1-nephi-14
+          type: chapter
+          description: "Lehi's family continues their journey in the wilderness; they find the Liahona."
+        - slug: 1-nephi-15
+          type: chapter
+          description: "Lehi's family is instructed by the Liahona; Nephi breaks his bow and makes a new one."
+        - slug: 1-nephi-16
+          type: chapter
+          description: "Lehi's family continues their journey; Nephi's ship is driven to the promised land."
+        - slug: 1-nephi-17
+          type: chapter
+          description: "Nephi teaches his brethren from the scriptures; Nephi's ship is finished."
+        - slug: 1-nephi-18
+          type: chapter
+          description: Nephi and his family set sail for the promised land.
+        - slug: 1-nephi-19
+          type: chapter
+          description: Nephi recounts the prophecies of Isaiah about the house of Israel.
+        - slug: 1-nephi-20
+          type: chapter
+          description: "Nephi continues to teach his brethren from the scriptures; Nephi exhorts his brethren to have faith in the Lord."
+        - slug: 1-nephi-21
+          type: chapter
+          description: Nephi expounds Isaiah's prophecies regarding the redemption of Israel.
+        - slug: 1-nephi-22
+          type: chapter
+          description: Nephi speaks of the gathering of Israel and the coming forth of the Book of Mormon.
+
+    - slug: 2-nephi
+      type: book
+      title: 2 Nephi
+      description: 2 Nephi contains the final teachings of Lehi, extensive Isaiah passages quoted by Nephi, and Nephi's testimony of Christ.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/{index}?lang=eng"
+      children:
+        - slug: 2-nephi-1
+          type: chapter
+          description: "Lehi's last counsel to his sons; he blesses them and exhorts them to righteousness."
+        - slug: 2-nephi-2
+          type: chapter
+          description: "Lehi teaches Jacob about the fall of man, opposition in all things, and the redemption of Christ."
+        - slug: 2-nephi-3
+          type: chapter
+          description: "Lehi's prophecy of Joseph in Egypt; a choice seer to be raised up."
+        - slug: 2-nephi-4
+          type: chapter
+          description: "Lehi blesses his posterity and dies; Nephi's psalm of faith and trust in God."
+        - slug: 2-nephi-5
+          type: chapter
+          description: "Nephi's people separate from the Lamanites; they build a temple and prosper."
+        - slug: 2-nephi-6
+          type: chapter
+          description: Jacob reads Isaiah; the ministry of Christ among the Jews and their eventual restoration.
+        - slug: 2-nephi-7
+          type: chapter
+          description: Isaiah 50 — the arm of the Lord and the obedience of the servant.
+        - slug: 2-nephi-8
+          type: chapter
+          description: Isaiah 51-52 — comfort to Zion; the redemption of Israel.
+        - slug: 2-nephi-9
+          type: chapter
+          description: "Jacob teaches the atonement and resurrection; conditions of salvation."
+        - slug: 2-nephi-10
+          type: chapter
+          description: "Christ shall minister to the Gentiles; Israel shall be gathered and restored."
+        - slug: 2-nephi-11
+          type: chapter
+          description: "Nephi delights in the words of Isaiah; types and symbols pointing to Christ."
+        - slug: 2-nephi-12
+          type: chapter
+          description: Isaiah 2 — the mountain of the Lord's house established in the last days.
+        - slug: 2-nephi-13
+          type: chapter
+          description: Isaiah 3 — judgments upon Jerusalem and Judah.
+        - slug: 2-nephi-14
+          type: chapter
+          description: Isaiah 4 — the branch of the Lord; those who remain in Zion.
+        - slug: 2-nephi-15
+          type: chapter
+          description: Isaiah 5 — the vineyard of the Lord; woes to the wicked.
+        - slug: 2-nephi-16
+          type: chapter
+          description: "Isaiah 6 — Isaiah's vision of the Lord; his call as a prophet."
+        - slug: 2-nephi-17
+          type: chapter
+          description: Isaiah 7 — the sign of Immanuel; the virgin birth foretold.
+        - slug: 2-nephi-18
+          type: chapter
+          description: Isaiah 8 — Immanuel as a sanctuary; testimony and the law.
+        - slug: 2-nephi-19
+          type: chapter
+          description: "Isaiah 9 — a child is born; the government shall be upon his shoulder."
+        - slug: 2-nephi-20
+          type: chapter
+          description: Isaiah 10 — woe to Assyria; a remnant of Israel shall return.
+        - slug: 2-nephi-21
+          type: chapter
+          description: Isaiah 11 — the stem of Jesse; the millennial reign.
+        - slug: 2-nephi-22
+          type: chapter
+          description: Isaiah 12 — praise and thanksgiving in the millennium.
+        - slug: 2-nephi-23
+          type: chapter
+          description: Isaiah 13 — the burden of Babylon; the day of the Lord.
+        - slug: 2-nephi-24
+          type: chapter
+          description: Isaiah 14 — the fall of the king of Babylon; Israel restored.
+        - slug: 2-nephi-25
+          type: chapter
+          description: "Nephi glories in plainness; prophecies of Christ's coming and atonement."
+        - slug: 2-nephi-26
+          type: chapter
+          description: "Christ shall appear to the Nephites; plain and precious truths removed from the Bible."
+        - slug: 2-nephi-27
+          type: chapter
+          description: The Book of Mormon to come forth; the sealed portion withheld.
+        - slug: 2-nephi-28
+          type: chapter
+          description: "False churches in the last days; the devil's strategy against the truth."
+        - slug: 2-nephi-29
+          type: chapter
+          description: The Bible and Book of Mormon are complementary witnesses of Christ.
+        - slug: 2-nephi-30
+          type: chapter
+          description: "A few Gentile converts; the scattered Israel to be gathered."
+        - slug: 2-nephi-31
+          type: chapter
+          description: "The doctrine of Christ — faith, repentance, baptism, the Holy Ghost."
+        - slug: 2-nephi-32
+          type: chapter
+          description: The words of Christ will tell all things to do.
+        - slug: 2-nephi-33
+          type: chapter
+          description: "Nephi's final words; his testimony of the plainness and truth of his record."
+
+    - slug: jacob
+      type: book
+      title: Jacob
+      description: The book of Jacob contains sermons on chastity and the allegory of the olive tree, along with a record of Jacob's ministry among the Nephites.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/{index}?lang=eng"
+      children:
+        - slug: jacob-1
+          type: chapter
+          description: "Jacob and Joseph consecrated priests; Nephi's final instructions before his death."
+        - slug: jacob-2
+          type: chapter
+          description: "Jacob reproves the Nephites for pride, unchastity, and unauthorized plural marriage."
+        - slug: jacob-3
+          type: chapter
+          description: "The pure in heart shall see God; the Lamanites are more righteous than the Nephites."
+        - slug: jacob-4
+          type: chapter
+          description: "All prophets worshipped Christ; the Jews will reject him as the foundation stone."
+        - slug: jacob-5
+          type: chapter
+          description: Zenos's allegory of the tame and wild olive trees — the history and destiny of Israel.
+        - slug: jacob-6
+          type: chapter
+          description: "The Lord's vineyard shall be preserved; beware of false teachings and hardness of heart."
+        - slug: jacob-7
+          type: chapter
+          description: "Sherem denies Christ and demands a sign; he is struck down; Jacob's concluding words."
