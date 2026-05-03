@@ -55,6 +55,61 @@ targets:
           - range: "14-15"
             label: Moroni
 
+      - slug: christ-arc
+        title: Christ Arc
+        description: Each book's relationship to Christ's mortal ministry among the Nephites.
+        brackets:
+          - range: "1-10"
+            label: Prophesying of Christ's coming
+          - range: "11"
+            label: Christ ministers personally
+          - range: "12-13"
+            label: Post-Christ Nephite era
+          - range: "14"
+            label: Jaredite faith — without his mortal visit
+          - range: "15"
+            label: Final witness and invitation
+
+      - slug: narrative-form
+        title: Narrative Form
+        description: The literary form of each book.
+        brackets:
+          - range: "1-2"
+            label: First-person spiritual autobiography
+          - range: "3-6"
+            label: Brief successive personal records
+          - range: "7"
+            label: Editorial bridge
+          - range: "8-13"
+            label: Abridged historical narrative
+          - range: "14"
+            label: Abridged ancient record
+          - range: "15"
+            label: Doctrinal writings and epistles
+
+      - slug: pride-cycle
+        title: Pride Cycle
+        description: Where each book falls in the recurring pattern of righteousness, pride, apostasy, and destruction.
+        brackets:
+          - range: "1-3"
+            label: Founding the covenant community
+          - range: "4-6"
+            label: Passing the record through generations
+          - range: "7"
+            label: Historical pivot point
+          - range: "8-10"
+            label: Cycles of faith, apostasy, and war
+          - range: "11"
+            label: The pinnacle — Christ visits
+          - range: "12"
+            label: Zion achieved, then lost
+          - range: "13"
+            label: Final Nephite collapse
+          - range: "14"
+            label: The Jaredite parallel — same cycle, complete destruction
+          - range: "15"
+            label: Witness preserved for the latter days
+
       - slug: years
         title: Years
         description: Approximate time period covered by each book.
