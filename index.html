@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book Brackets - Home</title>
+  <title>Book Brackets</title>
   <link rel="stylesheet" type="text/css" href="styles/home.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
@@ -10,34 +10,38 @@
   <div class="container">
     <header>
       <h1>Book Brackets</h1>
-      <p>Interactive visualizations of Book of Mormon chapters and themes</p>
+      <p>A visual method for annotating scripture — grouping chapters by theme, location, author, and more</p>
     </header>
 
     <main>
       <section class="visualizations">
-        <h2>Available Visualizations</h2>
+        <h2>Visualizations</h2>
         <div class="viz-grid"></div>
       </section>
 
       <section class="about">
         <h2>About This Project</h2>
-        <p>Book Brackets is an interactive visualization tool that helps readers understand the structural and thematic relationships within Book of Mormon chapters. By drawing visual brackets around related passages, it provides insights into how different chapters connect thematically.</p>
-        
+        <p>During my mission to the Australia Perth Mission (1997–99), I developed a method of annotating scripture by drawing bracket lines in the margins of my scriptures to group chapters by theme — marking where a narrative arc began and ended, where the same locations appeared, which chapters shared an author, and so on. The physical brackets made it easy to see structure at a glance without losing your place in the text.</p>
+        <p>I always wanted to digitize that idea. Book Brackets is that attempt: an interactive visualization that draws bracket overlays on chapter lists, letting you switch between different ways of grouping the same text.</p>
+
         <div class="features">
-          <h3>Features</h3>
+          <h3>How it works</h3>
           <ul>
-            <li>Interactive bracket visualization</li>
-            <li>Multiple topic perspectives (Locations, Events, Years)</li>
-            <li>Clickable chapters linking to full scripture text</li>
-            <li>Rich chapter descriptions and context</li>
-            <li>Responsive design for all devices</li>
+            <li>Each visualization shows a numbered chapter list with descriptive summaries</li>
+            <li>Topic buttons draw bracket overlays grouping chapters by theme, location, author, or chronology</li>
+            <li>Overview visualizations let you drill into individual books</li>
+            <li>Chapter numbers link directly to the full scripture text on ChurchofJesusChrist.org</li>
           </ul>
         </div>
       </section>
     </main>
 
+    <section class="disclaimer">
+      <p>This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors, particularly for content added during early development. Always refer to the official scriptures for authoritative text.</p>
+    </section>
+
     <footer>
-      <p>Built with D3.js • Book of Mormon Study Tool</p>
+      <p>Built with D3.js</p>
     </footer>
   </div>
   <script src="js/loader.js"></script>

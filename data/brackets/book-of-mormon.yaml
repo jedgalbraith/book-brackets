@@ -3,6 +3,22 @@ title: Book of Mormon — Thematic Analysis
 book_slug: book-of-mormon
 targets:
   - target_slug: overview
+    drills_into:
+      - 1-nephi
+      - 2-nephi
+      - jacob
+      - enos
+      - jarom
+      - omni
+      - words-of-mormon
+      - mosiah
+      - alma
+      - helaman
+      - 3-nephi
+      - 4-nephi
+      - mormon
+      - ether
+      - moroni
     topics:
       - slug: source-records
         title: Source Records

@@ -119,6 +119,11 @@ targets:
             label: ~1446–1445 BC (at Sinai)
 
   - target_slug: gospels-overview
+    drills_into:
+      - matthew
+      - mark
+      - luke
+      - john
     topics:
       - slug: gospel-tradition
         title: Gospel Tradition
