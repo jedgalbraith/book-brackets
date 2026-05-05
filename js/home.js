@@ -1,12 +1,12 @@
 async function loadHome() {
   try {
-    const index = await fetchData('data/brackets/index.yaml');
+    const index = await fetchData('data/books/index.yaml');
     const grid = document.querySelector('.viz-grid');
-    grid.innerHTML = index.brackets.map(entry => `
+    grid.innerHTML = index.books.map(book => `
       <div class="viz-card">
-        <h3>${entry.title}</h3>
-        <p>${entry.description}</p>
-        <a href="visualizations/visualization.html?file=${entry.file}" class="viz-link">View Visualization</a>
+        <h3>${book.title}</h3>
+        <p>${book.description}</p>
+        <a href="visualizations/visualization.html?book=${book.slug}" class="viz-link">View Visualization</a>
       </div>
     `).join('');
   } catch (error) {

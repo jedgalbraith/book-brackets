@@ -23,6 +23,15 @@
 }
 
 
+.unit.drillable {
+  fill: #764ba2;
+  cursor: pointer;
+}
+
+.unit.drillable:hover {
+  fill: #5a3578;
+}
+
 .description {
   font-size: 14px;
   fill: #555;

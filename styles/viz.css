@@ -40,6 +40,7 @@
 
 .section-wrapper {
   margin-bottom: 48px;
+  scroll-margin-top: 52px;
 }
 
 .section-title {
@@ -97,6 +98,50 @@
   padding: 20px;
   background: #f8f9fa;
   border-radius: 5px;
+}
+
+.brackets-select {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.brackets-select option {
+  background: #764ba2;
+  color: white;
+}
+
+.jump-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 10px 0 12px;
+  background: #f8f9fa;
+  border-bottom: 2px solid #e0e4f0;
+  margin-bottom: 16px;
+}
+
+.jump-link {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.jump-link:hover {
+  background: #e8eaff;
+  color: #4a5bc8;
 }
 
 @media (max-width: 768px) {

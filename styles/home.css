@@ -116,6 +116,66 @@ header p {
   line-height: 1.7;
 }
 
+.photo-gallery {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 8px 0 16px;
+  flex-wrap: wrap;
+}
+
+.photo-gallery img {
+  width: 240px;
+  height: auto;
+  border: 5px solid white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  border-radius: 2px;
+  object-fit: cover;
+  cursor: zoom-in;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.photo-gallery img:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border: 4px solid white;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+}
+
+.photo-gallery img:nth-child(1) { transform: rotate(-1.5deg); }
+.photo-gallery img:nth-child(2) { transform: rotate(0.8deg); }
+.photo-gallery img:nth-child(3) { transform: rotate(-0.6deg); }
+
+.gallery-caption {
+  text-align: center;
+  font-size: 0.85rem !important;
+  color: #999 !important;
+  margin-top: 0 !important;
+  margin-bottom: 28px !important;
+  font-style: italic;
+}
+
 .features h3 {
   color: #2c3e50;
   margin-bottom: 15px;

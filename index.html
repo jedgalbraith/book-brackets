@@ -22,6 +22,14 @@
       <section class="about">
         <h2>About This Project</h2>
         <p>During my mission to the Australia Perth Mission (1997–99), I developed a method of annotating scripture by drawing bracket lines in the margins of my scriptures to group chapters by theme — marking where a narrative arc began and ended, where the same locations appeared, which chapters shared an author, and so on. The physical brackets made it easy to see structure at a glance without losing your place in the text.</p>
+
+        <div class="photo-gallery">
+          <img src="images/Book-Brackets-Alma-1.jpg" alt="Original bracket annotations, page 1">
+          <img src="images/Book-Brackets-Alma-2.jpg" alt="Original bracket annotations, page 2">
+          <img src="images/Book-Brackets-Alma-3.jpg" alt="Original bracket annotations, page 3">
+        </div>
+        <p class="gallery-caption">Original bracket annotations from the Book of Alma, made during the Australia Perth Mission (1997–99)</p>
+
         <p>I always wanted to digitize that idea. Book Brackets is that attempt: an interactive visualization that draws bracket overlays on chapter lists, letting you switch between different ways of grouping the same text.</p>
 
         <div class="features">
@@ -44,7 +52,28 @@
       <p>Built with D3.js</p>
     </footer>
   </div>
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
   <script src="js/loader.js"></script>
   <script src="js/home.js"></script>
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.photo-gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('open');
+      });
+    });
+
+    lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') lightbox.classList.remove('open');
+    });
+  </script>
 </body>
 </html>

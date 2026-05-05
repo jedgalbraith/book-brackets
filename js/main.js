@@ -1,31 +1,78 @@
 const ROW_HEIGHT = 20;
-const width = 1200;
-const centerX = width / 2;
+const centerX = 340;
 const BRACKET_SHIFT = 35;
 const BRACKET_DEPTH = 20;
 
 async function fetchAndDrawData() {
   try {
-    const file = new URLSearchParams(window.location.search).get('file');
-    if (!file) {
-      document.getElementById('chart').textContent = 'No bracket file specified. Add ?file=filename.yaml to the URL.';
+    const params = new URLSearchParams(window.location.search);
+    const bookSlug = params.get('book');
+    const bracketsParam = params.get('brackets');
+
+    if (!bookSlug) {
+      document.getElementById('chart').textContent = 'No book specified. Add ?book=<slug> to the URL.';
       return;
     }
 
-    const brackets = await fetchData(`../data/brackets/${file}`);
+    const booksIndex = await fetchData('../data/books/index.yaml');
+    const bookEntry = booksIndex.books.find(b => b.slug === bookSlug);
+    if (!bookEntry) {
+      document.getElementById('chart').textContent = `Book "${bookSlug}" not found.`;
+      return;
+    }
+
+    const bracketEntry = bracketsParam
+      ? bookEntry.brackets.find(b => b.file === bracketsParam) || bookEntry.brackets[0]
+      : bookEntry.brackets[0];
+
+    const brackets = await fetchData(`../data/brackets/${bracketEntry.file}`);
     const bookData = await fetchData(`../data/books/${brackets.book_slug}.yaml`);
 
-    document.title = `${brackets.title} | Book Brackets`;
-    document.querySelector('.viz-nav h1').textContent = brackets.title;
+    document.title = `${bookEntry.title} | Book Brackets`;
+    document.querySelector('.viz-nav h1').textContent = bookEntry.title;
+
+    const select = document.getElementById('brackets-select');
+    if (bookEntry.brackets.length > 1) {
+      select.style.display = '';
+      bookEntry.brackets.forEach(b => {
+        const option = document.createElement('option');
+        option.value = b.file;
+        option.textContent = b.title;
+        option.selected = b.file === bracketEntry.file;
+        select.appendChild(option);
+      });
+      select.addEventListener('change', () => {
+        const next = new URLSearchParams(window.location.search);
+        next.set('brackets', select.value);
+        window.location.search = next.toString();
+      });
+    }
 
     const chart = document.getElementById('chart');
+
+    // Jump-nav (only if multiple targets)
+    if (brackets.targets.length > 1) {
+      const jumpNav = document.createElement('div');
+      jumpNav.classList.add('jump-nav');
+      brackets.targets.forEach(target => {
+        const { node: targetNode } = findNodeWithTemplate(bookData.root, target.target_slug);
+        const link = document.createElement('a');
+        link.href = `#section-${target.target_slug}`;
+        link.textContent = targetNode.title || target.target_slug;
+        link.classList.add('jump-link');
+        jumpNav.appendChild(link);
+      });
+      chart.parentElement.insertBefore(jumpNav, chart);
+    }
 
     brackets.targets.forEach(target => {
       const { node: targetNode, urlTemplate } = findNodeWithTemplate(bookData.root, target.target_slug);
       const leaves = collectLeaves(targetNode);
+      const isDrillable = target.drills_into && target.drills_into.length > 0;
 
       const wrapper = document.createElement('div');
       wrapper.classList.add('section-wrapper');
+      wrapper.id = `section-${target.target_slug}`;
 
       const header = document.createElement('div');
       header.classList.add('section-header');
@@ -47,21 +94,27 @@ async function fetchAndDrawData() {
       header.appendChild(buttonsDiv);
       wrapper.appendChild(header);
 
+      const svgWidth = chart.clientWidth || 1200;
       const svgHeight = (leaves.length + 1) * ROW_HEIGHT;
-      const svg = d3.create('svg').attr('width', width).attr('height', svgHeight);
+      const svg = d3.create('svg').attr('width', svgWidth).attr('height', svgHeight);
 
       leaves.forEach((leaf, i) => {
         const chapterNum = i + 1;
         const y = chapterNum * ROW_HEIGHT;
+        const drillTarget = isDrillable ? target.drills_into[i] : null;
 
         svg.append('text')
-          .attr('class', 'unit')
+          .attr('class', isDrillable ? 'unit drillable' : 'unit')
           .attr('x', centerX)
           .attr('y', y)
           .attr('text-anchor', 'middle')
           .text(chapterNum)
           .on('click', () => {
-            if (urlTemplate) window.open(urlTemplate.replace('{index}', chapterNum), '_blank');
+            if (drillTarget) {
+              document.getElementById(`section-${drillTarget}`)?.scrollIntoView({ behavior: 'smooth' });
+            } else if (urlTemplate) {
+              window.open(urlTemplate.replace('{index}', chapterNum), '_blank');
+            }
           });
 
         svg.append('text')
