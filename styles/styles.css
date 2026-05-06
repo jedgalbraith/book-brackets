@@ -1,54 +1,57 @@
-.body {
-  font-family: 'Inter', Arial, sans-serif;
-}
 .chapter {
   cursor: pointer;
 }
+
 .unit {
   cursor: pointer;
-  fill: #0066cc;
-  font-family: 'Inter', Arial, sans-serif;
-  font-size: 13px;
+  fill: #a87c0a;
+  font-family: 'EB Garamond', Garamond, Georgia, serif;
+  font-size: 14px;
   text-decoration: underline;
 }
+
 .unit:hover {
-  fill: #004499;
+  fill: #1a1410;
   text-decoration: none;
 }
+
 .bracket {
-  stroke: #1a3a5c;
+  stroke: #0f2540;
   stroke-width: 1.5;
   fill: none;
 }
+
 .bracket-label {
-  font-family: 'Inter', Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  fill: #b8860b;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  fill: #a87c0a;
 }
 
-
 .chapter-row:hover .row-bg {
-  fill: rgba(26, 58, 92, 0.08) !important;
+  fill: rgba(168, 124, 10, 0.06) !important;
 }
 
 .unit.drillable {
-  fill: #b8860b;
+  fill: #a87c0a;
   cursor: pointer;
 }
 
 .unit.drillable:hover {
-  fill: #8b6508;
+  fill: #1a1410;
 }
 
 .leaf-title {
+  font-family: 'EB Garamond', Garamond, Georgia, serif;
+  font-size: 14px;
   font-weight: 500;
-  fill: #333;
+  fill: #1a1410;
 }
 
 .description {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'EB Garamond', Garamond, Georgia, serif;
   font-size: 13px;
-  fill: #555;
+  fill: #5c4f43;
   dominant-baseline: middle;
 }

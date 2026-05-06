@@ -37,6 +37,15 @@ books:
       - file: pearl-of-great-price.yaml
         title: Thematic Analysis
         default_target: pgp-overview
+  - slug: alma-32
+    title: Alma 32
+    description: >
+      Verse-by-verse: Alma teaches the poor Zoramites cast from their
+      synagogues — from humility and being compelled, to the seed of faith
+      and the promise of fruit.
+    brackets:
+      - file: alma-32.yaml
+        title: Thematic Analysis
   - slug: moby-dick
     title: "Moby-Dick; or, The Whale"
     description: >

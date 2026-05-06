@@ -102,7 +102,7 @@ async function fetchAndDrawData() {
 
       const svgWidth = chart.clientWidth || 1200;
       const svgHeight = (leaves.length + 1) * ROW_HEIGHT;
-      const svg = d3.create('svg').attr('width', svgWidth).attr('height', svgHeight);
+      const svg = d3.create('svg').attr('width', svgWidth).attr('height', svgHeight).attr('overflow', 'visible');
 
       leaves.forEach((leaf, i) => {
         const chapterNum = i + 1;
@@ -112,6 +112,7 @@ async function fetchAndDrawData() {
 
         const row = svg.append('g')
           .attr('class', 'chapter-row')
+          .attr('data-chapter', chapterNum)
           .style('cursor', isClickable ? 'pointer' : 'default')
           .on('click', () => {
             if (drillTarget) {
@@ -133,14 +134,16 @@ async function fetchAndDrawData() {
         row.append('text')
           .attr('class', isDrillable ? 'unit drillable' : 'unit')
           .attr('x', centerX)
-          .attr('y', y - 6)
+          .attr('y', y - ROW_HEIGHT / 2)
           .attr('text-anchor', 'middle')
+          .attr('dominant-baseline', 'central')
           .text(chapterNum);
 
         const descText = row.append('text')
           .attr('class', 'description')
-          .attr('x', centerX + 60)
-          .attr('y', y - 6);
+          .attr('x', centerX + 20)
+          .attr('y', y - ROW_HEIGHT / 2)
+          .attr('dominant-baseline', 'central');
 
         if (leaf.title) {
           descText.append('tspan').attr('class', 'leaf-title').text(leaf.title);
@@ -179,8 +182,8 @@ function chapterY(num) {
 function drawTopic(svg, bracket) {
   let [start, end] = bracket.range.split('-').map(Number);
   end = end || start;
-  const yStart = chapterY(start) - ROW_HEIGHT / 2;
-  const yEnd = chapterY(end) + ROW_HEIGHT / 2;
+  const yStart = chapterY(start) - ROW_HEIGHT;
+  const yEnd = chapterY(end);
 
   svg.append('line')
     .attr('class', 'bracket level-bracket')
@@ -211,4 +214,31 @@ function drawLevel(svg, target, topicSlug) {
   const topic = target.topics.find(t => t.slug === topicSlug);
   if (!topic) return;
   topic.brackets.forEach(bracket => drawTopic(svg, bracket));
+  applyBracketHighlight(svg, topic);
+}
+
+function applyBracketHighlight(svg, topic) {
+  const chapterBracket = new Map(); // chapter num → bracket index
+  topic.brackets.forEach((b, idx) => {
+    let [start, end] = b.range.split('-').map(Number);
+    end = end || start;
+    for (let i = start; i <= end; i++) chapterBracket.set(i, idx);
+  });
+
+  const tints = [
+    'rgba(168, 124, 10, 0.09)',  // amber
+    'rgba(15, 37, 64, 0.07)',    // navy
+  ];
+
+  svg.selectAll('.chapter-row').each(function() {
+    const row = d3.select(this);
+    const num = +row.attr('data-chapter');
+    if (chapterBracket.has(num)) {
+      row.attr('opacity', 1);
+      row.select('.row-bg').attr('fill', tints[chapterBracket.get(num) % 2]);
+    } else {
+      row.attr('opacity', 0.35);
+      row.select('.row-bg').attr('fill', 'none');
+    }
+  });
 }
