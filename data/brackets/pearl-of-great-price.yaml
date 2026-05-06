@@ -15,9 +15,9 @@ targets:
         description: The origin and translation history of each book.
         brackets:
           - range: "1-2"
-            label: Ancient records (restored through Joseph Smith)
+            label: Ancient records restored by Joseph Smith
           - range: "3"
-            label: New Testament context (inspired translation)
+            label: New Testament (inspired translation)
           - range: "4-5"
             label: 19th-century writings by Joseph Smith
 
@@ -26,7 +26,7 @@ targets:
         description: The main subject matter of each book.
         brackets:
           - range: "1-2"
-            label: Creation, pre-mortal life, and early humanity
+            label: Creation, pre-mortal life and humanity
           - range: "3"
             label: Signs of the Second Coming
           - range: "4"
@@ -56,7 +56,7 @@ targets:
         description: Major thematic movements in Moses.
         brackets:
           - range: "1"
-            label: Moses's vision — God's glory and Satan's rejection
+            label: Moses — God's glory; Satan's rejection
           - range: "2-3"
             label: The creation and Garden of Eden
           - range: "4-5"
@@ -86,7 +86,7 @@ targets:
           - range: "1"
             label: Moses's time (~1400s BC)
           - range: "2-5"
-            label: Pre-Abrahamic (creation through Adam's era)
+            label: Pre-Abrahamic (creation to Adam's era)
           - range: "6-7"
             label: ~3000 BC (Enoch's era)
           - range: "8"
@@ -114,7 +114,7 @@ targets:
           - range: "2"
             label: Covenant confirmed; Egypt
           - range: "3"
-            label: Kolob; pre-mortal life; the council in heaven
+            label: Kolob; pre-mortal life; the council
           - range: "4-5"
             label: The creation (cosmological account)
 
@@ -134,7 +134,7 @@ targets:
         description: The content of Joseph Smith—Matthew.
         brackets:
           - range: "1"
-            label: Destruction of Jerusalem and signs of the Second Coming
+            label: Jerusalem's fall; signs of Second Coming
 
   - target_slug: joseph-smith-history
     topics:
@@ -143,7 +143,7 @@ targets:
         description: The content of Joseph Smith—History.
         brackets:
           - range: "1"
-            label: The First Vision, Moroni, the plates, and the Aaronic Priesthood
+            label: First Vision to the Aaronic Priesthood
 
   - target_slug: articles-of-faith
     topics:
@@ -152,4 +152,4 @@ targets:
         description: The content of the Articles of Faith.
         brackets:
           - range: "1"
-            label: Thirteen foundational statements of LDS belief
+            label: Thirteen Articles of Faith

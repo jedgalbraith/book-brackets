@@ -54,7 +54,7 @@ targets:
         description: Approximate chronological timeline of Genesis.
         brackets:
           - range: "1-11"
-            label: Pre-Abrahamic (creation through ~2100 BC)
+            label: Pre-Abrahamic (creation to ~2100 BC)
           - range: "12-24"
             label: ~2100–1900 BC (Abraham)
           - range: "25-36"
@@ -193,7 +193,7 @@ targets:
         description: Major thematic movements in Matthew.
         brackets:
           - range: "1-12"
-            label: The King arrives and demonstrates authority
+            label: The King arrives with authority
           - range: "13-20"
             label: Parables, faith, and discipleship
           - range: "21-28"
@@ -243,7 +243,7 @@ targets:
         description: Major thematic movements in Mark.
         brackets:
           - range: "1-8"
-            label: The Servant acts with power and authority
+            label: The Servant acts with authority
           - range: "9-13"
             label: Teaching on discipleship and the future
           - range: "14-16"
@@ -293,7 +293,7 @@ targets:
         description: Major thematic movements in Luke.
         brackets:
           - range: "1-9"
-            label: The Savior comes for the poor and outcast
+            label: Savior comes for the poor and outcast
           - range: "10-19"
             label: Teaching on discipleship and prayer
           - range: "20-24"
@@ -347,7 +347,7 @@ targets:
           - range: "1-12"
             label: Signs and "I AM" declarations
           - range: "13-17"
-            label: Love, the Comforter, and union with Christ
+            label: Love, Comforter, and union with Christ
           - range: "18-21"
             label: Sacrifice and resurrection life
 
@@ -360,7 +360,7 @@ targets:
           - range: "5-12"
             label: Jerusalem (repeated festival visits)
           - range: "13-20"
-            label: Jerusalem (upper room through resurrection)
+            label: Jerusalem — upper room to resurrection
           - range: "21"
             label: Sea of Galilee
 
@@ -388,9 +388,9 @@ targets:
         description: Approximate timeline of events in John.
         brackets:
           - range: "1-4"
-            label: ~AD 26–27 (early ministry, Judea and Samaria)
+            label: ~AD 26–27 (Judea and Samaria)
           - range: "5-12"
-            label: ~AD 27–29 (Jerusalem feasts and controversies)
+            label: ~AD 27–29 (Jerusalem controversies)
           - range: "13-17"
             label: ~AD 30 (upper room, night of betrayal)
           - range: "18-21"

@@ -44,7 +44,7 @@ targets:
           - range: "7"
             label: Editorial transition
           - range: "8-12"
-            label: Historical narrative (wars, migrations, society)
+            label: Historical narrative — wars, society
           - range: "13"
             label: Final wars and destruction
           - range: "14"
@@ -82,7 +82,7 @@ targets:
           - range: "12-13"
             label: Post-Christ Nephite era
           - range: "14"
-            label: Jaredite faith — without his mortal visit
+            label: Jaredite faith — no mortal visit
           - range: "15"
             label: Final witness and invitation
 
@@ -122,7 +122,7 @@ targets:
           - range: "13"
             label: Final Nephite collapse
           - range: "14"
-            label: The Jaredite parallel — same cycle, complete destruction
+            label: Jaredite parallel — same cycle
           - range: "15"
             label: Witness preserved for the latter days
 
@@ -141,7 +141,7 @@ targets:
           - range: "12-13"
             label: "A.D. 35–385"
           - range: "14"
-            label: "Jaredite era (Tower of Babel to ~600 B.C.)"
+            label: Tower of Babel to ~600 B.C.
           - range: "15"
             label: "A.D. 385–421"
 
@@ -290,7 +290,7 @@ targets:
         description: Major themes in the book of Enos.
         brackets:
           - range: "1"
-            label: Prayer, forgiveness, and covenant for the Lamanites
+            label: Prayer and covenant for the Lamanites
 
       - slug: locations
         title: Locations
@@ -320,7 +320,7 @@ targets:
         description: Major themes in the book of Jarom.
         brackets:
           - range: "1"
-            label: Nephite wars, prosperity, and the law of Moses
+            label: Wars, prosperity, and the law of Moses
 
       - slug: locations
         title: Locations
@@ -350,7 +350,7 @@ targets:
         description: Major themes in the book of Omni.
         brackets:
           - range: "1"
-            label: Record-keeping across generations; discovery of Zarahemla
+            label: Record-keeping; discovery of Zarahemla
 
       - slug: locations
         title: Locations
@@ -364,7 +364,7 @@ targets:
         description: Who is writing.
         brackets:
           - range: "1"
-            label: "Multiple authors: Omni, Amaron, Chemish, Abinadom, Amaleki"
+            label: Omni, Amaron, Chemish, Abinadom, Amaleki
 
       - slug: years
         title: Years
@@ -380,14 +380,14 @@ targets:
         description: Major themes in the Words of Mormon.
         brackets:
           - range: "1"
-            label: Mormon's editorial bridge connecting the two sets of plates
+            label: "Mormon's bridge: two sets of plates"
 
       - slug: locations
         title: Locations
         description: Where the events take place.
         brackets:
           - range: "1"
-            label: "Written by Mormon (A.D. 385); describes Zarahemla (~130 B.C.)"
+            label: "A.D. 385 writing; events ~130 B.C."
 
       - slug: authors
         title: Authors
@@ -401,7 +401,7 @@ targets:
         description: Approximate time period.
         brackets:
           - range: "1"
-            label: "Written A.D. 385; describes events ~130 B.C."
+            label: "A.D. 385; describes events ~130 B.C."
 
   - target_slug: mosiah
     topics:
@@ -412,9 +412,9 @@ targets:
           - range: "1-6"
             label: King Benjamin's address and covenant
           - range: "7-22"
-            label: Zeniff's colony, Abinadi's martyrdom, and Alma's church
+            label: Zeniff, Abinadi, and Alma's church
           - range: "23-29"
-            label: Return to Zarahemla and the reign of judges
+            label: Return to Zarahemla; reign of judges
 
       - slug: locations
         title: Locations
@@ -456,9 +456,9 @@ targets:
         description: Major narrative and doctrinal themes.
         brackets:
           - range: "1-16"
-            label: Alma's ministry in Zarahemla and surrounding cities
+            label: Alma's ministry in Zarahemla
           - range: "17-29"
-            label: Sons of Mosiah's mission to the Lamanites
+            label: Sons of Mosiah's Lamanite mission
           - range: "30-35"
             label: The Zoramite mission
           - range: "36-42"
@@ -473,13 +473,13 @@ targets:
           - range: "1-16"
             label: Zarahemla and surrounding Nephite cities
           - range: "17-29"
-            label: Lamanite lands (Ishmael, Middoni, and others)
+            label: Lamanite lands (Ishmael, Middoni)
           - range: "30-35"
             label: Land of Antionum (Zoramite territory)
           - range: "36-42"
             label: Zarahemla (private counsel)
           - range: "43-63"
-            label: Various battle sites throughout Nephite lands
+            label: Battle sites throughout Nephite lands
 
       - slug: authors
         title: Authors
@@ -510,11 +510,11 @@ targets:
         description: Major narrative and doctrinal themes.
         brackets:
           - range: "1-6"
-            label: Political upheaval and the rise of the Gadianton robbers
+            label: Political upheaval; Gadianton robbers
           - range: "7-12"
-            label: Nephi's prophetic ministry and the sealing power
+            label: Nephi's ministry and the sealing power
           - range: "13-16"
-            label: Samuel the Lamanite's prophecies of Christ
+            label: Samuel the Lamanite's prophecies
 
       - slug: locations
         title: Locations
@@ -523,7 +523,7 @@ targets:
           - range: "1-6"
             label: Zarahemla and Lamanite lands
           - range: "7-12"
-            label: Zarahemla (Nephi's garden tower and surrounding area)
+            label: Nephi's garden tower, Zarahemla
           - range: "13-16"
             label: City of Zarahemla (the city wall)
 
@@ -536,7 +536,7 @@ targets:
           - range: "12"
             label: Mormon's personal commentary
           - range: "13-16"
-            label: Mormon's abridgment (Samuel's words quoted)
+            label: Mormon's abridgment; Samuel quoted
 
       - slug: years
         title: Years
@@ -556,11 +556,11 @@ targets:
         description: Major narrative and doctrinal themes.
         brackets:
           - range: "1-10"
-            label: Signs of Christ, the Gadianton wars, and the destruction
+            label: Signs, Gadianton wars, and destruction
           - range: "11-26"
-            label: Christ's personal ministry at the temple in Bountiful
+            label: Christ ministers at Bountiful temple
           - range: "27-30"
-            label: Final teachings, commission, and the three Nephites
+            label: Final teachings and the three Nephites
 
       - slug: locations
         title: Locations
@@ -578,7 +578,7 @@ targets:
         description: Who is speaking or writing each section.
         brackets:
           - range: "1-30"
-            label: Mormon's abridgment of Nephi son of Nephi's record
+            label: Mormon's abridgment of Nephi's record
 
       - slug: years
         title: Years
@@ -596,7 +596,7 @@ targets:
         description: Major themes in 4 Nephi.
         brackets:
           - range: "1"
-            label: "Zion society (A.D. 35–200), then gradual apostasy (A.D. 200–321)"
+            label: Zion achieved, then gradual apostasy
 
       - slug: locations
         title: Locations
@@ -610,7 +610,7 @@ targets:
         description: Who is writing.
         brackets:
           - range: "1"
-            label: "Multiple: Nephi, Amos, Amos son of Amos, Ammaron"
+            label: Nephi, Amos, Amos son of Amos, Ammaron
 
       - slug: years
         title: Years
@@ -626,16 +626,16 @@ targets:
         description: Major narrative and doctrinal themes.
         brackets:
           - range: "1-7"
-            label: Mormon's witness of the final Nephite wars
+            label: Mormon witnesses the final Nephite wars
           - range: "8-9"
-            label: Moroni's additions and warnings to future readers
+            label: Moroni's warnings to future readers
 
       - slug: locations
         title: Locations
         description: Where the events take place.
         brackets:
           - range: "1-7"
-            label: "Various battle sites, culminating at Cumorah"
+            label: Battle sites culminating at Cumorah
           - range: "8-9"
             label: Written in hiding (location unknown)
 
@@ -664,11 +664,11 @@ targets:
         description: Major narrative and doctrinal themes.
         brackets:
           - range: "1-5"
-            label: Jaredite origins and the brother of Jared's vision
+            label: Jaredite origins; the brother of Jared
           - range: "6-11"
-            label: Jaredite kings, dynasties, and cycles of faith and wickedness
+            label: Jaredite kings and cycles of wickedness
           - range: "12-15"
-            label: Moroni on faith; Ether's prophecy; the final Jaredite wars
+            label: Moroni on faith; the final Jaredite wars
 
       - slug: locations
         title: Locations
@@ -695,9 +695,9 @@ targets:
         description: Approximate time period of the events.
         brackets:
           - range: "1-6"
-            label: "~2200 B.C. (tower of Babel through ocean crossing)"
+            label: "~2200 B.C. — tower of Babel; ocean"
           - range: "7-15"
-            label: "~2200–600 B.C. (Jaredite era in the Americas)"
+            label: "~2200–600 B.C. (Jaredite Americas)"
 
   - target_slug: moroni
     topics:
@@ -708,16 +708,16 @@ targets:
           - range: "1-6"
             label: Church ordinances and membership
           - range: "7-9"
-            label: Mormon's epistles on faith, hope, and charity
+            label: Mormon's epistles on faith and charity
           - range: "10"
-            label: Moroni's farewell and the promise of the Book of Mormon
+            label: Moroni's farewell and promise
 
       - slug: locations
         title: Locations
         description: Where the events take place.
         brackets:
           - range: "1-10"
-            label: Written in hiding while fleeing the Lamanites
+            label: Written in hiding, fleeing Lamanites
 
       - slug: authors
         title: Authors

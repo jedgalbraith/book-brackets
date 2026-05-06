@@ -9,7 +9,7 @@ targets:
         title: Narratives
         brackets:
           - range: "1-8"
-            label: Alma's early ministry in Zarahemla and Gideon
+            label: Alma's ministry in Zarahemla and Gideon
           - range: "9-16"
             label: Alma & Amulek in Ammonihah
           - range: "17-26"
