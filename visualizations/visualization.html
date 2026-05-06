@@ -5,6 +5,15 @@
   <title>Book Brackets</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B82V5ZT17"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3B82V5ZT17');
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
   <link rel="stylesheet" type="text/css" href="../styles/viz.css">
 </head>
@@ -14,6 +23,8 @@
     <h1></h1>
     <select id="brackets-select" class="brackets-select" style="display:none"></select>
   </nav>
+
+  <div id="book-description" class="book-description" style="display:none"></div>
 
   <div class="viz-container">
     <div id="chart"></div>

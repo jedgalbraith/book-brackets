@@ -1,5 +1,5 @@
 .body {
-  font-family: Arial,serif;
+  font-family: 'Inter', Arial, sans-serif;
 }
 .chapter {
   cursor: pointer;
@@ -7,6 +7,8 @@
 .unit {
   cursor: pointer;
   fill: #0066cc;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 13px;
   text-decoration: underline;
 }
 .unit:hover {
@@ -14,14 +16,21 @@
   text-decoration: none;
 }
 .bracket {
-  stroke: black;
+  stroke: #1a3a5c;
+  stroke-width: 1.5;
   fill: none;
 }
 .bracket-label {
-  font-weight: bold;
-  fill: black;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  fill: #b8860b;
 }
 
+
+.chapter-row:hover .row-bg {
+  fill: rgba(26, 58, 92, 0.08) !important;
+}
 
 .unit.drillable {
   fill: #b8860b;
@@ -32,8 +41,14 @@
   fill: #8b6508;
 }
 
+.leaf-title {
+  font-weight: 500;
+  fill: #333;
+}
+
 .description {
-  font-size: 14px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 13px;
   fill: #555;
   dominant-baseline: middle;
 }

@@ -1,4 +1,4 @@
-const ROW_HEIGHT = 20;
+const ROW_HEIGHT = 28;
 const centerX = 340;
 const BRACKET_SHIFT = 35;
 const BRACKET_DEPTH = 20;
@@ -30,6 +30,12 @@ async function fetchAndDrawData() {
 
     document.title = `${bookEntry.title} | Book Brackets`;
     document.querySelector('.viz-nav h1').textContent = bookEntry.title;
+
+    const descEl = document.getElementById('book-description');
+    if (descEl && bookData.root.description) {
+      descEl.textContent = bookData.root.description.trim();
+      descEl.style.display = '';
+    }
 
     const select = document.getElementById('brackets-select');
     if (bookEntry.brackets.length > 1) {
@@ -102,13 +108,11 @@ async function fetchAndDrawData() {
         const chapterNum = i + 1;
         const y = chapterNum * ROW_HEIGHT;
         const drillTarget = isDrillable ? target.drills_into[i] : null;
+        const isClickable = drillTarget || urlTemplate;
 
-        svg.append('text')
-          .attr('class', isDrillable ? 'unit drillable' : 'unit')
-          .attr('x', centerX)
-          .attr('y', y)
-          .attr('text-anchor', 'middle')
-          .text(chapterNum)
+        const row = svg.append('g')
+          .attr('class', 'chapter-row')
+          .style('cursor', isClickable ? 'pointer' : 'default')
           .on('click', () => {
             if (drillTarget) {
               document.getElementById(`section-${drillTarget}`)?.scrollIntoView({ behavior: 'smooth' });
@@ -117,11 +121,35 @@ async function fetchAndDrawData() {
             }
           });
 
-        svg.append('text')
+        const stripeX = centerX - BRACKET_SHIFT;
+        row.append('rect')
+          .attr('class', 'row-bg')
+          .attr('x', stripeX)
+          .attr('y', y - ROW_HEIGHT)
+          .attr('width', svgWidth - stripeX)
+          .attr('height', ROW_HEIGHT)
+          .attr('fill', i % 2 === 0 ? 'rgba(26,58,92,0.04)' : 'none');
+
+        row.append('text')
+          .attr('class', isDrillable ? 'unit drillable' : 'unit')
+          .attr('x', centerX)
+          .attr('y', y - 6)
+          .attr('text-anchor', 'middle')
+          .text(chapterNum);
+
+        const descText = row.append('text')
           .attr('class', 'description')
-          .attr('x', centerX + 30)
-          .attr('y', y)
-          .text(leaf.description || '');
+          .attr('x', centerX + 60)
+          .attr('y', y - 6);
+
+        if (leaf.title) {
+          descText.append('tspan').attr('class', 'leaf-title').text(leaf.title);
+          if (leaf.description) {
+            descText.append('tspan').attr('dx', 10).text('— ' + leaf.description);
+          }
+        } else {
+          descText.text(leaf.description || '');
+        }
       });
 
       wrapper.appendChild(svg.node());
