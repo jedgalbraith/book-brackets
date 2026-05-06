@@ -37,3 +37,12 @@ books:
       - file: pearl-of-great-price.yaml
         title: Thematic Analysis
         default_target: pgp-overview
+  - slug: moby-dick
+    title: "Moby-Dick; or, The Whale"
+    description: >
+      Explore Melville's 135 chapters by voyage phase, ship encounters (the gams),
+      and the cetology digressions scattered throughout the narrative.
+    brackets:
+      - file: moby-dick.yaml
+        title: Thematic Analysis
+        default_target: md-chapters

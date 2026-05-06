@@ -22,3 +22,9 @@ brackets:
     description: >
       Explore the Pearl of Great Price — Moses, Abraham, Joseph Smith's history,
       and the Articles of Faith — by provenance, content, and era.
+  - file: moby-dick.yaml
+    title: Moby-Dick — Thematic Analysis
+    default_target: md-chapters
+    description: >
+      Explore Melville's 135 chapters by voyage phase, ship encounters (the gams),
+      and the cetology digressions scattered throughout the narrative.

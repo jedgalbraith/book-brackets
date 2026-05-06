@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a3a5c 0%, #0f2540 100%);
   color: white;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -56,7 +56,7 @@
   align-items: center;
   gap: 16px;
   padding: 10px 0 8px;
-  border-bottom: 2px solid #e0e4f0;
+  border-bottom: 2px solid #c8d4e0;
   margin-bottom: 4px;
 }
 
@@ -84,13 +84,13 @@
 }
 
 .level-btn.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a3a5c 0%, #0f2540 100%);
   color: white;
-  border-color: #667eea;
+  border-color: #1a3a5c;
 }
 
 .level-btn.active:hover {
-  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  background: linear-gradient(135deg, #163350 0%, #0c1e35 100%);
 }
 
 #chart {
@@ -111,7 +111,7 @@
 }
 
 .brackets-select option {
-  background: #764ba2;
+  background: #0f2540;
   color: white;
 }
 
@@ -124,12 +124,12 @@
   gap: 4px;
   padding: 10px 0 12px;
   background: #f8f9fa;
-  border-bottom: 2px solid #e0e4f0;
+  border-bottom: 2px solid #c8d4e0;
   margin-bottom: 16px;
 }
 
 .jump-link {
-  color: #667eea;
+  color: #b8860b;
   text-decoration: none;
   font-size: 12px;
   font-weight: 500;
@@ -140,8 +140,8 @@
 }
 
 .jump-link:hover {
-  background: #e8eaff;
-  color: #4a5bc8;
+  background: #fdf3dc;
+  color: #8b6508;
 }
 
 @media (max-width: 768px) {

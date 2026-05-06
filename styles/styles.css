@@ -24,12 +24,12 @@
 
 
 .unit.drillable {
-  fill: #764ba2;
+  fill: #b8860b;
   cursor: pointer;
 }
 
 .unit.drillable:hover {
-  fill: #5a3578;
+  fill: #8b6508;
 }
 
 .description {

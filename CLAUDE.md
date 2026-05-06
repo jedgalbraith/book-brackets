@@ -56,6 +56,10 @@ targets:
 
 **Range rule:** Both ends of a `range` must be leaf nodes of their `target_slug` node — no cross-level ranges. Use a deeper `target_slug` to get finer-grained brackets.
 
+**Character limits:**
+- Bracket `label` values: 40 characters max
+- Leaf node `description` values: 90 characters max
+
 ### Visualization layer (currently being refactored)
 
 - `js/main.js` — thematic visualization, reads `data/book_of_mormon.json` (legacy)
