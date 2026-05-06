@@ -4,13 +4,12 @@ root:
   type: volume
   title: Book of Mormon
   description: >
-    The Book of Mormon is a sacred text of the Latter-day Saint movement,
-    regarded by its adherents as scripture comparable to the Bible. It narrates
-    the history, teachings, and spiritual experiences of ancient civilizations
-    in the Americas, primarily focusing on the journey of a prophet named Lehi
-    and his descendants. The book covers a period from roughly 600 B.C. to
-    400 A.D. and emphasizes themes of faith, repentance, and salvation through
-    Jesus Christ.
+    The Book of Mormon is scripture, a companion volume to the Bible and a
+    second witness of Jesus Christ. It narrates the history, teachings, and
+    spiritual experiences of ancient civilizations in the Americas, primarily
+    focusing on the journey of a prophet named Lehi and his descendants. The
+    book covers a period from roughly 600 B.C. to 400 A.D. and emphasizes
+    themes of faith, repentance, and salvation through Jesus Christ.
   children:
     - slug: overview
       type: overview
