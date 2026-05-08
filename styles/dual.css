@@ -1,0 +1,105 @@
+
+/* === Right-side bracket colors (overrides styles.css defaults) === */
+.bracket-right {
+  stroke: #a87c0a;
+}
+
+.bracket-label-right {
+  fill: #0f2540;
+}
+
+/* SVG is 1152px (90-char descriptions + 40-char labels at 5.5px) + 48px padding */
+body {
+  max-width: 1200px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* === Dual header: subtitle above, then L dropdown | title | R dropdown === */
+.section-header-dual {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.dual-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.dual-header-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.topic-dropdown-group:last-child {
+  justify-self: end;
+}
+
+.topic-dropdown-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.dropdown-label-left {
+  color: var(--gold);
+}
+
+.dropdown-label-right {
+  color: var(--navy);
+}
+
+.topic-select {
+  background: transparent;
+  border: 1px solid var(--cream-mid);
+  color: var(--ink);
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-style: italic;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.topic-select option {
+  background: var(--cream);
+  color: var(--ink);
+  font-style: normal;
+}
+
+.topic-select-left {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.topic-select-left option {
+  color: var(--ink);
+}
+
+.topic-select-right {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.topic-select-right option {
+  color: var(--ink);
+}

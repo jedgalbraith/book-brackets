@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Brackets — Dual View</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles/viz.css">
+  <link rel="stylesheet" type="text/css" href="../styles/dual.css">
+</head>
+<body>
+  <nav class="viz-nav">
+    <a href="../index.html" class="back-link">← Back to Home</a>
+    <h1></h1>
+    <select id="brackets-select" class="brackets-select" style="display:none"></select>
+  </nav>
+
+  <div id="book-description" class="book-description" style="display:none"></div>
+
+  <div class="viz-container">
+    <div id="chart"></div>
+  </div>
+
+  <script src="../js/loader.js"></script>
+  <script src="../js/main-dual.js"></script>
+</body>
+</html>
