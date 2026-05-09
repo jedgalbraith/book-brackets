@@ -23,7 +23,7 @@
 
 .bracket-label {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 12px;
+  font-size: 13px;
   font-style: italic;
   font-weight: 400;
   fill: #a87c0a;
@@ -51,7 +51,7 @@
 
 .description {
   font-family: 'EB Garamond', Garamond, Georgia, serif;
-  font-size: 13px;
+  font-size: 14px;
   fill: #5c4f43;
   dominant-baseline: middle;
 }

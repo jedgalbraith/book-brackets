@@ -1,17 +1,17 @@
 const ROW_HEIGHT = 28;
 const BRACKET_DEPTH = 20;
-const CHAPTER_X = 340;
-const LEFT_X = CHAPTER_X - 35;    // 305 — left bracket vertical line
-const LEFT_LABEL_X = LEFT_X - 25; // 280 — text-anchor: end
+const CHAPTER_X = 300;
+const LEFT_X = CHAPTER_X - 35;    // 265 — left bracket vertical line
+const LEFT_LABEL_X = LEFT_X - 25; // 240 — text-anchor: end
 
 // Derived from data constraints:
-//   descriptions ≤ 90 chars × 6px (EB Garamond 13px) = 540px → end at x=900
+//   descriptions ≤ 90 chars × 6px (EB Garamond 13px) = 540px → end at x=860
 //   bracket labels ≤ 40 chars × 5.5px (Playfair 12px italic) = 220px
-const DESC_X = CHAPTER_X + 20;                                    // 360
-const RIGHT_X = DESC_X + 90 * 6 + 20;                             // 920
-const RIGHT_LABEL_X = RIGHT_X + 12;                               // 932
-const STRIPE_RIGHT = RIGHT_X;                                      // 920 — row bg stops at right bracket
-const MIN_SVG_WIDTH = RIGHT_LABEL_X + 40 * 5.5;                   // 1152
+const DESC_X = CHAPTER_X + 20;                                    // 320
+const RIGHT_X = DESC_X + 90 * 6 + 10;                             // 870
+const RIGHT_LABEL_X = RIGHT_X + 12;                               // 882
+const STRIPE_RIGHT = RIGHT_X;                                      // 870 — row bg stops at right bracket
+const MIN_SVG_WIDTH = RIGHT_LABEL_X + 40 * 5.5;                   // 1102
 
 async function fetchAndDrawData() {
   try {
