@@ -63,6 +63,7 @@ async function fetchAndDrawData() {
     }
 
     const chart = document.getElementById('chart');
+    const sections = [];
 
     // Jump-nav (only if multiple targets)
     if (brackets.targets.length > 1) {
@@ -166,11 +167,21 @@ async function fetchAndDrawData() {
       wrapper.appendChild(svg.node());
       chart.appendChild(wrapper);
 
+      sections.push({ buttonsDiv, svg, target });
+    });
+
+    sections.forEach(({ buttonsDiv, svg, target }) => {
       buttonsDiv.addEventListener('click', (e) => {
         if (e.target.nodeName !== 'BUTTON') return;
-        buttonsDiv.querySelectorAll('.level-btn').forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
-        drawLevel(svg, target, e.target.dataset.topicSlug);
+        const clickedSlug = e.target.dataset.topicSlug;
+        sections.forEach(({ buttonsDiv: bd, svg: sv, target: t }) => {
+          const match = bd.querySelector(`[data-topic-slug="${clickedSlug}"]`);
+          if (match) {
+            bd.querySelectorAll('.level-btn').forEach(b => b.classList.remove('active'));
+            match.classList.add('active');
+            drawLevel(sv, t, clickedSlug);
+          }
+        });
       });
 
       buttonsDiv.querySelector('button')?.click();
