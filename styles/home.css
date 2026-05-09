@@ -122,29 +122,37 @@ header {
 }
 
 .viz-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .viz-card {
-  display: block;
-  padding: 28px 0;
-  border-bottom: 1px solid var(--cream-mid);
+  display: flex;
+  flex-direction: column;
+  padding: 28px 32px 24px;
+  background: var(--surface);
+  border: 1px solid var(--cream-mid);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(26, 20, 16, 0.07);
   position: relative;
   text-decoration: none;
   cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }
 
-.viz-card:first-child {
-  border-top: 1px solid var(--cream-mid);
+.viz-card:hover {
+  box-shadow: 0 8px 28px rgba(26, 20, 16, 0.14);
+  transform: translateY(-3px);
+  border-color: var(--gold);
 }
 
 .viz-card h3 {
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: var(--ink);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   letter-spacing: -0.01em;
   transition: color 0.15s ease;
 }
@@ -158,35 +166,42 @@ header {
   color: var(--ink-muted);
   font-size: 0.95rem;
   line-height: 1.55;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  flex: 1;
 }
 
 .viz-link {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  padding: 8px 18px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
   color: var(--gold);
   font-family: var(--font-body);
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-style: italic;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  transition: gap 0.2s ease, color 0.15s ease;
+  align-self: flex-start;
+  transition: background 0.18s ease, color 0.18s ease, gap 0.18s ease;
 }
 
 .viz-link::after {
   content: '→';
   font-style: normal;
-  transition: transform 0.2s ease;
   display: inline-block;
+  transition: transform 0.18s ease;
 }
 
-.viz-link:hover {
-  color: var(--ink);
-  gap: 8px;
+.viz-card:hover .viz-link {
+  background: var(--gold);
+  color: var(--surface);
+  gap: 9px;
 }
 
-.viz-link:hover::after {
+.viz-card:hover .viz-link::after {
   transform: translateX(2px);
 }
 
