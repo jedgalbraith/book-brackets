@@ -15,21 +15,9 @@ body {
   padding-right: 24px;
 }
 
-/* === Dual header: subtitle above, then L dropdown | title | R dropdown === */
+/* === Dual header: L dropdown | title | R dropdown === */
 .section-header-dual {
-  flex-direction: column;
-  align-items: stretch;
-  gap: 6px;
-}
-
-.dual-subtitle {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-style: italic;
-  color: var(--ink-muted);
-  margin: 0;
-  text-align: center;
-  letter-spacing: 0.01em;
+  display: block;
 }
 
 .dual-header-row {
@@ -38,6 +26,10 @@ body {
   grid-template-columns: 265px auto 265px;
   align-items: center;
   gap: 16px;
+}
+
+.dual-header-row .section-title {
+  text-align: center;
 }
 
 /* Left dropdown: right-aligned within its column, sitting just left of the bracket */
@@ -74,17 +66,25 @@ body {
 }
 
 .topic-select {
-  background: transparent;
-  border: 1px solid var(--cream-mid);
+  background-color: var(--surface);
+  border: 1.5px solid var(--cream-mid);
   color: var(--ink);
-  padding: 4px 8px;
+  padding: 6px 28px 6px 12px;
   border-radius: 3px;
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-style: italic;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 6px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.topic-select:hover {
+  box-shadow: 0 1px 6px rgba(26, 20, 16, 0.1);
 }
 
 .topic-select option {
@@ -96,6 +96,7 @@ body {
 .topic-select-left {
   border-color: var(--gold);
   color: var(--gold);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23a87c0a' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 .topic-select-left option {
@@ -105,6 +106,7 @@ body {
 .topic-select-right {
   border-color: var(--navy);
   color: var(--navy);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%230f2540' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 .topic-select-right option {

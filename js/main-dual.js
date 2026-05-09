@@ -55,6 +55,12 @@ async function fetchAndDrawData() {
       attrEl.style.display = '';
     }
 
+    const disclaimerEl = document.getElementById('book-disclaimer');
+    if (disclaimerEl && bookData.disclaimer) {
+      disclaimerEl.textContent = bookData.disclaimer;
+      disclaimerEl.style.display = '';
+    }
+
     const select = document.getElementById('brackets-select');
     if (bookEntry.brackets.length > 1) {
       select.style.display = '';
@@ -131,11 +137,6 @@ async function fetchAndDrawData() {
 
       const { groupDiv: leftGroup, select: leftSelect } = makeDropdown('left');
       const { groupDiv: rightGroup, select: rightSelect } = makeDropdown('right');
-
-      const subtitle = document.createElement('p');
-      subtitle.classList.add('dual-subtitle');
-      subtitle.textContent = 'Compare two bracket views side by side';
-      header.appendChild(subtitle);
 
       const headerRow = document.createElement('div');
       headerRow.classList.add('dual-header-row');

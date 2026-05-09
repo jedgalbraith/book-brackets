@@ -17,6 +17,7 @@
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
   <link rel="stylesheet" type="text/css" href="../styles/viz.css">
   <link rel="stylesheet" type="text/css" href="../styles/dual.css">
+  <link rel="stylesheet" type="text/css" href="../styles/notify.css">
 </head>
 <body>
   <nav class="viz-nav">
@@ -32,6 +33,22 @@
   <div class="viz-container">
     <div id="chart"></div>
   </div>
+
+  <div id="book-disclaimer" class="disclaimer" style="display:none"></div>
+
+  <section class="notify">
+    <div class="notify-inner">
+      <div class="notify-text">
+        <h3>Annotate your own books</h3>
+        <p>Tools to create bracket overlays for any text are in development. Get notified when they launch.</p>
+      </div>
+      <form class="notify-form" action="https://formspree.io/f/xjglaaoz" method="POST">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <input type="hidden" name="_subject" value="New Book Brackets notification signup">
+        <button type="submit">Notify me</button>
+      </form>
+    </div>
+  </section>
 
   <script src="../js/loader.js"></script>
   <script src="../js/main-dual.js"></script>

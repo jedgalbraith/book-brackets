@@ -38,7 +38,7 @@ body {
 header {
   padding: 80px 0 60px;
   border-bottom: 1px solid var(--cream-mid);
-  margin-bottom: 72px;
+  margin-bottom: 40px;
   opacity: 0;
   animation: fadeUp 0.8s ease 0.1s forwards;
 }
@@ -112,6 +112,68 @@ header {
   font-weight: 400;
   color: var(--ink);
   letter-spacing: -0.01em;
+}
+
+/* === How it works === */
+.how-it-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-bottom: 1px solid var(--cream-mid);
+  margin-bottom: 72px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.25s forwards;
+}
+
+.hiw-item {
+  padding: 36px 32px 36px 0;
+  border-right: 1px solid var(--cream-mid);
+  padding-right: 32px;
+}
+
+.hiw-item:first-child {
+  padding-left: 0;
+}
+
+.hiw-item:last-child {
+  border-right: none;
+  padding-right: 0;
+  padding-left: 32px;
+}
+
+.hiw-item:nth-child(2) {
+  padding-left: 32px;
+}
+
+.hiw-num {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.hiw-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.hiw-item p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+/* === Notify (home-page animation override) === */
+.notify {
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.45s forwards;
 }
 
 /* === Visualizations === */
@@ -334,21 +396,6 @@ header {
   border-radius: 1px;
 }
 
-/* === Disclaimer === */
-.disclaimer {
-  border-top: 1px solid var(--cream-mid);
-  padding-top: 28px;
-  margin-bottom: 20px;
-}
-
-.disclaimer p {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  color: var(--cream-dark);
-  line-height: 1.7;
-  font-style: italic;
-}
-
 /* === Footer === */
 footer {
   text-align: center;
@@ -396,6 +443,24 @@ footer {
 
   .header-subtitle {
     font-size: 1rem;
+  }
+
+  .how-it-works {
+    grid-template-columns: 1fr;
+    margin-bottom: 52px;
+  }
+
+  .hiw-item {
+    border-right: none;
+    border-bottom: 1px solid var(--cream-mid);
+    padding: 24px 0;
+  }
+
+  .hiw-item:first-child { padding-left: 0; }
+  .hiw-item:nth-child(2) { padding-left: 0; }
+  .hiw-item:last-child {
+    border-bottom: none;
+    padding-left: 0;
   }
 
   .photo-gallery {

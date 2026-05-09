@@ -13,6 +13,7 @@
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/home.css">
+  <link rel="stylesheet" type="text/css" href="styles/notify.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 <body>
@@ -39,10 +40,28 @@
         <div class="header-text">
           <p class="header-kicker">A Visual Annotation System</p>
           <h1>Book Brackets</h1>
-          <p class="header-subtitle">Grouping chapters by theme, location, author, and more — the margins made visible</p>
+          <p class="header-subtitle">Most books have hidden structure — arcs that span dozens of chapters, recurring locations, interwoven authors. Book Brackets makes that structure visible.</p>
         </div>
       </div>
     </header>
+
+    <section class="how-it-works">
+      <div class="hiw-item">
+        <span class="hiw-num">01</span>
+        <h3>Pick a text</h3>
+        <p>Any book with chapters — scripture, novels, histories, technical texts.</p>
+      </div>
+      <div class="hiw-item">
+        <span class="hiw-num">02</span>
+        <h3>Choose a lens</h3>
+        <p>Toggle between themes, locations, authors, or chronology with one click.</p>
+      </div>
+      <div class="hiw-item">
+        <span class="hiw-num">03</span>
+        <h3>See the structure</h3>
+        <p>Bracket overlays reveal arcs and patterns invisible in the prose.</p>
+      </div>
+    </section>
 
     <main>
       <section class="visualizations">
@@ -51,6 +70,20 @@
           <h2>Visualizations</h2>
         </div>
         <div class="viz-grid"></div>
+      </section>
+
+      <section class="notify">
+        <div class="notify-inner">
+          <div class="notify-text">
+            <h3>Annotate your own books</h3>
+            <p>Tools to create bracket overlays for any text are in development. Get notified when they launch.</p>
+          </div>
+          <form class="notify-form" action="https://formspree.io/f/xjglaaoz" method="POST">
+            <input type="email" name="email" placeholder="your@email.com" required>
+            <input type="hidden" name="_subject" value="New Book Brackets notification signup">
+            <button type="submit">Notify me</button>
+          </form>
+        </div>
       </section>
 
       <section class="about">
@@ -82,10 +115,6 @@
         </div>
       </section>
     </main>
-
-    <section class="disclaimer">
-      <p>This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors, particularly for content added during early development. Always refer to the official scriptures for authoritative text.</p>
-    </section>
 
     <footer>
       <p>Built with D3.js</p>

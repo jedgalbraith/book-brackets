@@ -1,0 +1,96 @@
+/* === Notify section (shared across all pages) === */
+.notify {
+  margin-bottom: 72px;
+}
+
+.notify-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: var(--surface);
+  border: 1px solid var(--cream-mid);
+  border-radius: 3px;
+  padding: 32px 40px;
+}
+
+.notify-text h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.notify-text p {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--ink-muted);
+  line-height: 1.55;
+}
+
+.notify-form {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.notify-form input[type="email"] {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 9px 16px;
+  border: 1px solid var(--cream-dark);
+  border-radius: 2px;
+  background: var(--cream);
+  color: var(--ink);
+  width: 220px;
+  outline: none;
+  transition: border-color 0.18s ease;
+}
+
+.notify-form input[type="email"]::placeholder {
+  color: var(--cream-dark);
+}
+
+.notify-form input[type="email"]:focus {
+  border-color: var(--gold);
+}
+
+.notify-form button {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-style: italic;
+  padding: 9px 20px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  color: var(--gold);
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.18s ease, color 0.18s ease;
+  white-space: nowrap;
+}
+
+.notify-form button:hover {
+  background: var(--gold);
+  color: var(--surface);
+}
+
+@media (max-width: 768px) {
+  .notify-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .notify-form {
+    width: 100%;
+  }
+
+  .notify-form input[type="email"] {
+    width: 100%;
+    flex: 1;
+  }
+}
