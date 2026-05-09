@@ -4,6 +4,7 @@ title: Pearl of Great Price — Thematic Analysis
 book_slug: pearl-of-great-price
 targets:
   - target_slug: pgp-overview
+    default_right: years
     drills_into:
       - moses
       - abraham
@@ -51,6 +52,8 @@ targets:
             label: Written 1842 (Articles of Faith)
 
   - target_slug: moses
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -94,6 +97,8 @@ targets:
             label: ~2400 BC (Noah's flood)
 
   - target_slug: abraham
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -129,6 +134,7 @@ targets:
             label: Pre-mortal and creation periods
 
   - target_slug: joseph-smith-matthew
+    default_left: themes
     topics:
       - slug: themes
         title: Themes
@@ -138,6 +144,7 @@ targets:
             label: Jerusalem's fall; signs of Second Coming
 
   - target_slug: joseph-smith-history
+    default_left: themes
     topics:
       - slug: themes
         title: Themes
@@ -147,6 +154,7 @@ targets:
             label: First Vision to the Aaronic Priesthood
 
   - target_slug: articles-of-faith
+    default_left: themes
     topics:
       - slug: themes
         title: Themes

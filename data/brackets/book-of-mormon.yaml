@@ -4,6 +4,7 @@ title: Book of Mormon — Thematic Analysis
 book_slug: book-of-mormon
 targets:
   - target_slug: overview
+    default_right: years
     drills_into:
       - 1-nephi
       - 2-nephi
@@ -147,6 +148,8 @@ targets:
             label: "A.D. 385–421"
 
   - target_slug: 1-nephi
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -193,6 +196,8 @@ targets:
             label: "~589 B.C."
 
   - target_slug: 2-nephi
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -241,6 +246,8 @@ targets:
             label: "~570–545 B.C."
 
   - target_slug: jacob
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -285,6 +292,8 @@ targets:
             label: "~530–500 B.C."
 
   - target_slug: enos
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -315,6 +324,8 @@ targets:
             label: "~544–421 B.C."
 
   - target_slug: jarom
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -345,6 +356,8 @@ targets:
             label: "~399–361 B.C."
 
   - target_slug: omni
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -375,6 +388,8 @@ targets:
             label: "~361–130 B.C."
 
   - target_slug: words-of-mormon
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -405,6 +420,8 @@ targets:
             label: "A.D. 385; describes events ~130 B.C."
 
   - target_slug: mosiah
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -451,6 +468,8 @@ targets:
             label: "~100–91 B.C."
 
   - target_slug: alma
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -505,6 +524,8 @@ targets:
             label: "~74–52 B.C."
 
   - target_slug: helaman
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -551,6 +572,8 @@ targets:
             label: "~6–1 B.C."
 
   - target_slug: 3-nephi
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -591,6 +614,8 @@ targets:
             label: "A.D. 34–36"
 
   - target_slug: 4-nephi
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -621,6 +646,8 @@ targets:
             label: "A.D. 35–321"
 
   - target_slug: mormon
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -659,6 +686,8 @@ targets:
             label: "A.D. 385–421"
 
   - target_slug: ether
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
@@ -701,6 +730,8 @@ targets:
             label: "~2200–600 B.C. (Jaredite Americas)"
 
   - target_slug: moroni
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes

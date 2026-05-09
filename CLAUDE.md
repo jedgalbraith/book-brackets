@@ -44,6 +44,8 @@ schema_version: "1"
 book_slug: book-of-mormon        # → data/books/book-of-mormon.yaml
 targets:
   - target_slug: 1-nephi         # node whose leaf children = the numbered list
+    default_left: locations      # optional: topic slug to pre-select on left in dual view
+    default_right: themes        # optional: topic slug to pre-select on right in dual view
     topics:
       - slug: locations          # slug defines this topic (no _slug suffix)
         title: Locations         # button label
@@ -51,6 +53,8 @@ targets:
           - range: "1-17"        # always quoted; 1-based index into target's leaves
             label: Jerusalem and wilderness
 ```
+
+`default_left` / `default_right` are optional. If absent or the slug is not found, the dual view falls back to selecting the first topic on the left and the second on the right.
 
 **Naming convention:** `_slug` suffix on a field means it references another entity's slug (e.g. `book_slug`, `target_slug`). Fields that *define* a slug use `slug` without a suffix.
 

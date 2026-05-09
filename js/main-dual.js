@@ -47,6 +47,14 @@ async function fetchAndDrawData() {
       descEl.style.display = '';
     }
 
+    const attrEl = document.getElementById('attribution');
+    if (attrEl) {
+      const bracketAuthor = brackets.author || 'Unknown';
+      const bookAuthor = bookData.author || 'Unknown';
+      attrEl.textContent = `Brackets by ${bracketAuthor} · Book data by ${bookAuthor}`;
+      attrEl.style.display = '';
+    }
+
     const select = document.getElementById('brackets-select');
     if (bookEntry.brackets.length > 1) {
       select.style.display = '';
@@ -65,6 +73,7 @@ async function fetchAndDrawData() {
     }
 
     const chart = document.getElementById('chart');
+    const sections = [];
 
     if (brackets.targets.length > 1) {
       const jumpNav = document.createElement('div');
@@ -92,10 +101,6 @@ async function fetchAndDrawData() {
       const header = document.createElement('div');
       header.classList.add('section-header', 'section-header-dual');
 
-      let svgRef = null;
-      let activeLeftSlug = null;
-      let activeRightSlug = null;
-
       function makeDropdown(side) {
         const groupDiv = document.createElement('div');
         groupDiv.classList.add('topic-dropdown-group');
@@ -120,22 +125,12 @@ async function fetchAndDrawData() {
           select.appendChild(opt);
         });
 
-        select.addEventListener('change', () => {
-          const slug = select.value === '__none__' ? null : select.value;
-          if (side === 'left') activeLeftSlug = slug;
-          else activeRightSlug = slug;
-          if (svgRef) {
-            drawLevel(svgRef, target, slug, side);
-            applyDualHighlight(svgRef, target, activeLeftSlug, activeRightSlug);
-          }
-        });
-
         groupDiv.appendChild(select);
         return { groupDiv, select };
       }
 
       const { groupDiv: leftGroup, select: leftSelect } = makeDropdown('left');
-      const { groupDiv: rightGroup } = makeDropdown('right');
+      const { groupDiv: rightGroup, select: rightSelect } = makeDropdown('right');
 
       const subtitle = document.createElement('p');
       subtitle.classList.add('dual-subtitle');
@@ -158,7 +153,6 @@ async function fetchAndDrawData() {
       const svgWidth = Math.max(chart.clientWidth || MIN_SVG_WIDTH, MIN_SVG_WIDTH);
       const svgHeight = (leaves.length + 1) * ROW_HEIGHT;
       const svg = d3.create('svg').attr('width', svgWidth).attr('height', svgHeight).attr('overflow', 'visible');
-      svgRef = svg;
 
       const stripeLeft = LEFT_X;
       leaves.forEach((leaf, i) => {
@@ -214,13 +208,38 @@ async function fetchAndDrawData() {
       wrapper.appendChild(svg.node());
       chart.appendChild(wrapper);
 
-      // Auto-activate: select first topic on left, leave right at "—"
-      if (leftSelect.options.length > 1) {
-        leftSelect.selectedIndex = 1;
-        activeLeftSlug = leftSelect.value;
-        drawLevel(svg, target, activeLeftSlug, 'left');
-        applyDualHighlight(svg, target, activeLeftSlug, activeRightSlug);
+      sections.push({ svg, target, leftSelect, rightSelect, leftSlug: null, rightSlug: null });
+    });
+
+    sections.forEach(sec => {
+      ['left', 'right'].forEach(side => {
+        const sel = side === 'left' ? sec.leftSelect : sec.rightSelect;
+        sel.addEventListener('change', () => {
+          const slug = sel.value === '__none__' ? null : sel.value;
+          sections.forEach(s => {
+            const other = side === 'left' ? s.leftSelect : s.rightSelect;
+            const hasSlug = slug === null || !!other.querySelector(`option[value="${slug}"]`);
+            if (!hasSlug) return;
+            other.value = slug ?? '__none__';
+            if (side === 'left') s.leftSlug = slug;
+            else s.rightSlug = slug;
+            drawLevel(s.svg, s.target, slug, side);
+            applyDualHighlight(s.svg, s.target, s.leftSlug, s.rightSlug);
+          });
+        });
+      });
+
+      // Auto-activate: use config defaults if declared, else first on left / second on right
+      function resolveDefault(sel, configSlug, fallbackIndex) {
+        if (configSlug && sel.querySelector(`option[value="${configSlug}"]`)) return configSlug;
+        if (sel.options.length > fallbackIndex) return sel.options[fallbackIndex].value;
+        return null;
       }
+      const defaultLeft  = resolveDefault(sec.leftSelect,  sec.target.default_left,  1);
+      const defaultRight = resolveDefault(sec.rightSelect, sec.target.default_right, sec.rightSelect.options.length > 2 ? 2 : 1);
+      if (defaultLeft)  { sec.leftSelect.value  = defaultLeft;  sec.leftSlug  = defaultLeft;  drawLevel(sec.svg, sec.target, sec.leftSlug,  'left');  }
+      if (defaultRight) { sec.rightSelect.value = defaultRight; sec.rightSlug = defaultRight; drawLevel(sec.svg, sec.target, sec.rightSlug, 'right'); }
+      applyDualHighlight(sec.svg, sec.target, sec.leftSlug, sec.rightSlug);
     });
 
   } catch (error) {

@@ -4,6 +4,8 @@ title: Doctrine and Covenants — Thematic Analysis
 book_slug: doctrine-and-covenants
 targets:
   - target_slug: doctrine-and-covenants
+    default_left: themes
+    default_right: years
     topics:
       - slug: themes
         title: Themes
