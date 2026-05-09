@@ -78,6 +78,17 @@ body {
   margin-bottom: 24px;
 }
 
+/* === Attribution === */
+.attribution {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  letter-spacing: 0.01em;
+  padding: 0 0 18px;
+  opacity: 0.75;
+}
+
 /* === Viz container === */
 .viz-container {
   background: transparent;

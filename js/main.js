@@ -37,6 +37,14 @@ async function fetchAndDrawData() {
       descEl.style.display = '';
     }
 
+    const attrEl = document.getElementById('attribution');
+    if (attrEl) {
+      const bracketAuthor = brackets.author || 'Unknown';
+      const bookAuthor = bookData.author || 'Unknown';
+      attrEl.textContent = `Brackets by ${bracketAuthor} · Book data by ${bookAuthor}`;
+      attrEl.style.display = '';
+    }
+
     const select = document.getElementById('brackets-select');
     if (bookEntry.brackets.length > 1) {
       select.style.display = '';
