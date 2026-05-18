@@ -604,504 +604,504 @@ root:
           description: "Moses views Canaan from Pisgah; his death and burial; Joshua succeeds him."
 
 
-        - slug: joshua
-          type: book
-          title: Joshua
-          description: Joshua records Israel's conquest of Canaan, the allotment of the land to the twelve tribes, and the covenant renewal at Shechem.
-          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/josh/{index}?lang=eng"
-          children:
-            - slug: joshua-1
-              type: chapter
-              description: "God commissions Joshua; Israel prepares to cross the Jordan."
-            - slug: joshua-2
-              type: chapter
-              description: "Two spies sent to Jericho; Rahab hides them and receives a promise."
-            - slug: joshua-3
-              type: chapter
-              description: "Israel crosses the Jordan on dry ground; the ark leads the way."
-            - slug: joshua-4
-              type: chapter
-              description: "Twelve memorial stones set up at Gilgal; the crossing remembered."
-            - slug: joshua-5
-              type: chapter
-              description: "Israel circumcised; manna ceases; Passover kept; the captain appears."
-            - slug: joshua-6
-              type: chapter
-              description: "The fall of Jericho; Rahab and her family spared."
-            - slug: joshua-7
-              type: chapter
-              description: "Achan's sin brings defeat at Ai; he and his family are stoned."
-            - slug: joshua-8
-              type: chapter
-              description: "Ai defeated and burned; the law read at Mount Ebal."
-            - slug: joshua-9
-              type: chapter
-              description: "The Gibeonites deceive Israel into a treaty of peace."
-            - slug: joshua-10
-              type: chapter
-              description: "The sun stands still; southern Canaan conquered by Joshua."
-            - slug: joshua-11
-              type: chapter
-              description: "The northern coalition defeated; the land of Canaan subdued."
-            - slug: joshua-12
-              type: chapter
-              description: Kings defeated by Moses and Joshua east and west of the Jordan.
-            - slug: joshua-13
-              type: chapter
-              description: "Territory not yet taken; the eastern tribes' allotments reviewed."
-            - slug: joshua-14
-              type: chapter
-              description: "Caleb claims his inheritance at Hebron by faith."
-            - slug: joshua-15
-              type: chapter
-              description: "The territory and towns allotted to the tribe of Judah."
-            - slug: joshua-16
-              type: chapter
-              description: The territory allotted to Ephraim.
-            - slug: joshua-17
-              type: chapter
-              description: "Territory allotted to Manasseh; Zelophehad's daughters receive land."
-            - slug: joshua-18
-              type: chapter
-              description: "The tabernacle set up at Shiloh; lots cast for the remaining tribes."
-            - slug: joshua-19
-              type: chapter
-              description: "Territories of six remaining tribes; Joshua receives his inheritance."
-            - slug: joshua-20
-              type: chapter
-              description: Six cities of refuge designated throughout the land.
-            - slug: joshua-21
-              type: chapter
-              description: Forty-eight towns allotted to the Levites throughout Israel.
-            - slug: joshua-22
-              type: chapter
-              description: "The eastern tribes return home; their altar causes alarm but is explained."
-            - slug: joshua-23
-              type: chapter
-              description: "Joshua's farewell — serve the Lord; avoid foreign entanglements."
-            - slug: joshua-24
-              type: chapter
-              description: "Covenant renewed at Shechem; Joshua's death and burial."
+    - slug: joshua
+      type: book
+      title: Joshua
+      description: Joshua records Israel's conquest of Canaan, the allotment of the land to the twelve tribes, and the covenant renewal at Shechem.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/josh/{index}?lang=eng"
+      children:
+        - slug: joshua-1
+          type: chapter
+          description: "God commissions Joshua; Israel prepares to cross the Jordan."
+        - slug: joshua-2
+          type: chapter
+          description: "Two spies sent to Jericho; Rahab hides them and receives a promise."
+        - slug: joshua-3
+          type: chapter
+          description: "Israel crosses the Jordan on dry ground; the ark leads the way."
+        - slug: joshua-4
+          type: chapter
+          description: "Twelve memorial stones set up at Gilgal; the crossing remembered."
+        - slug: joshua-5
+          type: chapter
+          description: "Israel circumcised; manna ceases; Passover kept; the captain appears."
+        - slug: joshua-6
+          type: chapter
+          description: "The fall of Jericho; Rahab and her family spared."
+        - slug: joshua-7
+          type: chapter
+          description: "Achan's sin brings defeat at Ai; he and his family are stoned."
+        - slug: joshua-8
+          type: chapter
+          description: "Ai defeated and burned; the law read at Mount Ebal."
+        - slug: joshua-9
+          type: chapter
+          description: "The Gibeonites deceive Israel into a treaty of peace."
+        - slug: joshua-10
+          type: chapter
+          description: "The sun stands still; southern Canaan conquered by Joshua."
+        - slug: joshua-11
+          type: chapter
+          description: "The northern coalition defeated; the land of Canaan subdued."
+        - slug: joshua-12
+          type: chapter
+          description: Kings defeated by Moses and Joshua east and west of the Jordan.
+        - slug: joshua-13
+          type: chapter
+          description: "Territory not yet taken; the eastern tribes' allotments reviewed."
+        - slug: joshua-14
+          type: chapter
+          description: "Caleb claims his inheritance at Hebron by faith."
+        - slug: joshua-15
+          type: chapter
+          description: "The territory and towns allotted to the tribe of Judah."
+        - slug: joshua-16
+          type: chapter
+          description: The territory allotted to Ephraim.
+        - slug: joshua-17
+          type: chapter
+          description: "Territory allotted to Manasseh; Zelophehad's daughters receive land."
+        - slug: joshua-18
+          type: chapter
+          description: "The tabernacle set up at Shiloh; lots cast for the remaining tribes."
+        - slug: joshua-19
+          type: chapter
+          description: "Territories of six remaining tribes; Joshua receives his inheritance."
+        - slug: joshua-20
+          type: chapter
+          description: Six cities of refuge designated throughout the land.
+        - slug: joshua-21
+          type: chapter
+          description: Forty-eight towns allotted to the Levites throughout Israel.
+        - slug: joshua-22
+          type: chapter
+          description: "The eastern tribes return home; their altar causes alarm but is explained."
+        - slug: joshua-23
+          type: chapter
+          description: "Joshua's farewell — serve the Lord; avoid foreign entanglements."
+        - slug: joshua-24
+          type: chapter
+          description: "Covenant renewed at Shechem; Joshua's death and burial."
 
-        - slug: judges
-          type: book
-          title: Judges
-          description: Judges records the cycle of apostasy, oppression, repentance, and deliverance that marked Israel's life in Canaan under a series of Spirit-empowered leaders.
-          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/judg/{index}?lang=eng"
-          children:
-            - slug: judges-1
-              type: chapter
-              description: "Judah leads the conquest; other tribes fail to drive out the Canaanites."
-            - slug: judges-2
-              type: chapter
-              description: "The angel rebukes Israel; Joshua's generation dies; the cycle of apostasy begins."
-            - slug: judges-3
-              type: chapter
-              description: "Othniel, Ehud, and Shamgar — the first three judges deliver Israel."
-            - slug: judges-4
-              type: chapter
-              description: "Deborah and Barak defeat Sisera's army; Jael kills Sisera."
-            - slug: judges-5
-              type: chapter
-              description: The Song of Deborah and Barak celebrating the victory over Sisera.
-            - slug: judges-6
-              type: chapter
-              description: "Midianite oppression; Gideon called by the angel; the fleece."
-            - slug: judges-7
-              type: chapter
-              description: "Gideon's 300 defeat the vast Midianite army."
-            - slug: judges-8
-              type: chapter
-              description: "Gideon pursues the Midianite kings; his son Abimelech born."
-            - slug: judges-9
-              type: chapter
-              description: "Abimelech kills his brothers and seizes power; Jotham's parable; his downfall."
-            - slug: judges-10
-              type: chapter
-              description: "Tola and Jair judge Israel; the Ammonites oppress Israel."
-            - slug: judges-11
-              type: chapter
-              description: "Jephthah defeats the Ammonites; his vow and his daughter."
-            - slug: judges-12
-              type: chapter
-              description: "Jephthah and Ephraim conflict; Ibzan, Elon, and Abdon judge."
-            - slug: judges-13
-              type: chapter
-              description: The birth of Samson announced to his parents by an angel.
-            - slug: judges-14
-              type: chapter
-              description: "Samson's marriage and his riddle of the lion and honey."
-            - slug: judges-15
-              type: chapter
-              description: "Samson burns Philistine fields; defeats them with a donkey's jawbone."
-            - slug: judges-16
-              type: chapter
-              description: "Samson and Delilah; his hair cut; blinded; his death in the temple."
-            - slug: judges-17
-              type: chapter
-              description: "Micah's idols; a wandering Levite hired as his priest."
-            - slug: judges-18
-              type: chapter
-              description: "The tribe of Dan steals Micah's idols and conquers Laish."
-            - slug: judges-19
-              type: chapter
-              description: "A Levite's concubine abused and killed at Gibeah."
-            - slug: judges-20
-              type: chapter
-              description: "Israel goes to war against Benjamin over the atrocity at Gibeah."
-            - slug: judges-21
-              type: chapter
-              description: "Wives found for the surviving Benjaminites; the tribe preserved."
+    - slug: judges
+      type: book
+      title: Judges
+      description: Judges records the cycle of apostasy, oppression, repentance, and deliverance that marked Israel's life in Canaan under a series of Spirit-empowered leaders.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/judg/{index}?lang=eng"
+      children:
+        - slug: judges-1
+          type: chapter
+          description: "Judah leads the conquest; other tribes fail to drive out the Canaanites."
+        - slug: judges-2
+          type: chapter
+          description: "The angel rebukes Israel; Joshua's generation dies; the cycle of apostasy begins."
+        - slug: judges-3
+          type: chapter
+          description: "Othniel, Ehud, and Shamgar — the first three judges deliver Israel."
+        - slug: judges-4
+          type: chapter
+          description: "Deborah and Barak defeat Sisera's army; Jael kills Sisera."
+        - slug: judges-5
+          type: chapter
+          description: The Song of Deborah and Barak celebrating the victory over Sisera.
+        - slug: judges-6
+          type: chapter
+          description: "Midianite oppression; Gideon called by the angel; the fleece."
+        - slug: judges-7
+          type: chapter
+          description: "Gideon's 300 defeat the vast Midianite army."
+        - slug: judges-8
+          type: chapter
+          description: "Gideon pursues the Midianite kings; his son Abimelech born."
+        - slug: judges-9
+          type: chapter
+          description: "Abimelech kills his brothers and seizes power; Jotham's parable; his downfall."
+        - slug: judges-10
+          type: chapter
+          description: "Tola and Jair judge Israel; the Ammonites oppress Israel."
+        - slug: judges-11
+          type: chapter
+          description: "Jephthah defeats the Ammonites; his vow and his daughter."
+        - slug: judges-12
+          type: chapter
+          description: "Jephthah and Ephraim conflict; Ibzan, Elon, and Abdon judge."
+        - slug: judges-13
+          type: chapter
+          description: The birth of Samson announced to his parents by an angel.
+        - slug: judges-14
+          type: chapter
+          description: "Samson's marriage and his riddle of the lion and honey."
+        - slug: judges-15
+          type: chapter
+          description: "Samson burns Philistine fields; defeats them with a donkey's jawbone."
+        - slug: judges-16
+          type: chapter
+          description: "Samson and Delilah; his hair cut; blinded; his death in the temple."
+        - slug: judges-17
+          type: chapter
+          description: "Micah's idols; a wandering Levite hired as his priest."
+        - slug: judges-18
+          type: chapter
+          description: "The tribe of Dan steals Micah's idols and conquers Laish."
+        - slug: judges-19
+          type: chapter
+          description: "A Levite's concubine abused and killed at Gibeah."
+        - slug: judges-20
+          type: chapter
+          description: "Israel goes to war against Benjamin over the atrocity at Gibeah."
+        - slug: judges-21
+          type: chapter
+          description: "Wives found for the surviving Benjaminites; the tribe preserved."
 
-        - slug: ruth
-          type: book
-          title: Ruth
-          description: Ruth tells the story of a Moabite widow's loyalty to Naomi, her encounter with the kinsman-redeemer Boaz, and her place in the lineage of David.
-          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ruth/{index}?lang=eng"
-          children:
-            - slug: ruth-1
-              type: chapter
-              description: "Naomi's family in Moab; Ruth pledges loyalty to Naomi."
-            - slug: ruth-2
-              type: chapter
-              description: "Ruth gleans in Boaz's field; Boaz shows her kindness and protection."
-            - slug: ruth-3
-              type: chapter
-              description: "Ruth at the threshing floor; Boaz pledges to redeem her."
-            - slug: ruth-4
-              type: chapter
-              description: "Boaz redeems and marries Ruth; Obed born; the lineage of David."
+    - slug: ruth
+      type: book
+      title: Ruth
+      description: Ruth tells the story of a Moabite widow's loyalty to Naomi, her encounter with the kinsman-redeemer Boaz, and her place in the lineage of David.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ruth/{index}?lang=eng"
+      children:
+        - slug: ruth-1
+          type: chapter
+          description: "Naomi's family in Moab; Ruth pledges loyalty to Naomi."
+        - slug: ruth-2
+          type: chapter
+          description: "Ruth gleans in Boaz's field; Boaz shows her kindness and protection."
+        - slug: ruth-3
+          type: chapter
+          description: "Ruth at the threshing floor; Boaz pledges to redeem her."
+        - slug: ruth-4
+          type: chapter
+          description: "Boaz redeems and marries Ruth; Obed born; the lineage of David."
 
-        - slug: 1-samuel
-          type: book
-          title: 1 Samuel
-          description: 1 Samuel records the transition from judges to kings — Samuel's ministry, Saul's rise and rejection, and the anointing of David as God's chosen king.
-          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/1-sam/{index}?lang=eng"
-          children:
-            - slug: 1-samuel-1
-              type: chapter
-              description: "Hannah's prayer at Shiloh; Samuel born and dedicated to the Lord."
-            - slug: 1-samuel-2
-              type: chapter
-              description: "Hannah's song; Eli's corrupt sons; Samuel ministers before God."
-            - slug: 1-samuel-3
-              type: chapter
-              description: "God calls Samuel in the night; Eli's house condemned."
-            - slug: 1-samuel-4
-              type: chapter
-              description: "The ark taken by the Philistines; Eli and his sons die."
-            - slug: 1-samuel-5
-              type: chapter
-              description: "The ark among the Philistines; they are afflicted with tumors."
-            - slug: 1-samuel-6
-              type: chapter
-              description: "The ark returned to Israel on a cart; the men of Beth-shemesh struck."
-            - slug: 1-samuel-7
-              type: chapter
-              description: "Samuel judges Israel; Israel repents and defeats the Philistines."
-            - slug: 1-samuel-8
-              type: chapter
-              description: "Israel demands a king; Samuel warns of kingship's burden."
-            - slug: 1-samuel-9
-              type: chapter
-              description: "Saul searches for lost donkeys; led to Samuel who will anoint him."
-            - slug: 1-samuel-10
-              type: chapter
-              description: "Samuel anoints Saul; Saul prophesies; chosen by lot at Mizpah."
-            - slug: 1-samuel-11
-              type: chapter
-              description: "Saul delivers Jabesh-gilead from Nahash; confirmed as king."
-            - slug: 1-samuel-12
-              type: chapter
-              description: "Samuel's farewell — his integrity affirmed; the covenant renewed."
-            - slug: 1-samuel-13
-              type: chapter
-              description: "Saul's unlawful sacrifice; Jonathan attacks a Philistine garrison."
-            - slug: 1-samuel-14
-              type: chapter
-              description: "Jonathan's bold victory at Michmash; Saul's rash oath against eating."
-            - slug: 1-samuel-15
-              type: chapter
-              description: "Saul disobeys God in the battle with Amalek; Samuel rejects him."
-            - slug: 1-samuel-16
-              type: chapter
-              description: "Samuel anoints David at Bethlehem; David plays harp for Saul."
-            - slug: 1-samuel-17
-              type: chapter
-              description: David kills Goliath with a sling and stone.
-            - slug: 1-samuel-18
-              type: chapter
-              description: "Jonathan's covenant with David; Saul grows jealous of David."
-            - slug: 1-samuel-19
-              type: chapter
-              description: "Saul seeks to kill David; David flees to Samuel at Ramah."
-            - slug: 1-samuel-20
-              type: chapter
-              description: "Jonathan warns David; their covenant renewed; David flees."
-            - slug: 1-samuel-21
-              type: chapter
-              description: "David at Nob; given showbread and Goliath's sword; flees to Gath."
-            - slug: 1-samuel-22
-              type: chapter
-              description: "David at Adullam; Saul massacres the priests at Nob."
-            - slug: 1-samuel-23
-              type: chapter
-              description: "David rescues Keilah; hunted by Saul in the wilderness of Ziph."
-            - slug: 1-samuel-24
-              type: chapter
-              description: "David spares Saul's life in the cave at En-gedi."
-            - slug: 1-samuel-25
-              type: chapter
-              description: "Nabal's insult; Abigail's wisdom; Nabal dies; David marries Abigail."
-            - slug: 1-samuel-26
-              type: chapter
-              description: "David again spares Saul's life in his camp at night."
-            - slug: 1-samuel-27
-              type: chapter
-              description: "David lives among the Philistines at Ziklag under Achish."
-            - slug: 1-samuel-28
-              type: chapter
-              description: "Saul consults the witch of Endor; Samuel's spirit appears."
-            - slug: 1-samuel-29
-              type: chapter
-              description: "The Philistine commanders dismiss David before the battle."
-            - slug: 1-samuel-30
-              type: chapter
-              description: "David recovers from the Amalekite raid on Ziklag; spoil divided."
-            - slug: 1-samuel-31
-              type: chapter
-              description: "Saul and his sons killed at Gilboa; their bodies hung at Beth-shan."
+    - slug: 1-samuel
+      type: book
+      title: 1 Samuel
+      description: 1 Samuel records the transition from judges to kings — Samuel's ministry, Saul's rise and rejection, and the anointing of David as God's chosen king.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/1-sam/{index}?lang=eng"
+      children:
+        - slug: 1-samuel-1
+          type: chapter
+          description: "Hannah's prayer at Shiloh; Samuel born and dedicated to the Lord."
+        - slug: 1-samuel-2
+          type: chapter
+          description: "Hannah's song; Eli's corrupt sons; Samuel ministers before God."
+        - slug: 1-samuel-3
+          type: chapter
+          description: "God calls Samuel in the night; Eli's house condemned."
+        - slug: 1-samuel-4
+          type: chapter
+          description: "The ark taken by the Philistines; Eli and his sons die."
+        - slug: 1-samuel-5
+          type: chapter
+          description: "The ark among the Philistines; they are afflicted with tumors."
+        - slug: 1-samuel-6
+          type: chapter
+          description: "The ark returned to Israel on a cart; the men of Beth-shemesh struck."
+        - slug: 1-samuel-7
+          type: chapter
+          description: "Samuel judges Israel; Israel repents and defeats the Philistines."
+        - slug: 1-samuel-8
+          type: chapter
+          description: "Israel demands a king; Samuel warns of kingship's burden."
+        - slug: 1-samuel-9
+          type: chapter
+          description: "Saul searches for lost donkeys; led to Samuel who will anoint him."
+        - slug: 1-samuel-10
+          type: chapter
+          description: "Samuel anoints Saul; Saul prophesies; chosen by lot at Mizpah."
+        - slug: 1-samuel-11
+          type: chapter
+          description: "Saul delivers Jabesh-gilead from Nahash; confirmed as king."
+        - slug: 1-samuel-12
+          type: chapter
+          description: "Samuel's farewell — his integrity affirmed; the covenant renewed."
+        - slug: 1-samuel-13
+          type: chapter
+          description: "Saul's unlawful sacrifice; Jonathan attacks a Philistine garrison."
+        - slug: 1-samuel-14
+          type: chapter
+          description: "Jonathan's bold victory at Michmash; Saul's rash oath against eating."
+        - slug: 1-samuel-15
+          type: chapter
+          description: "Saul disobeys God in the battle with Amalek; Samuel rejects him."
+        - slug: 1-samuel-16
+          type: chapter
+          description: "Samuel anoints David at Bethlehem; David plays harp for Saul."
+        - slug: 1-samuel-17
+          type: chapter
+          description: David kills Goliath with a sling and stone.
+        - slug: 1-samuel-18
+          type: chapter
+          description: "Jonathan's covenant with David; Saul grows jealous of David."
+        - slug: 1-samuel-19
+          type: chapter
+          description: "Saul seeks to kill David; David flees to Samuel at Ramah."
+        - slug: 1-samuel-20
+          type: chapter
+          description: "Jonathan warns David; their covenant renewed; David flees."
+        - slug: 1-samuel-21
+          type: chapter
+          description: "David at Nob; given showbread and Goliath's sword; flees to Gath."
+        - slug: 1-samuel-22
+          type: chapter
+          description: "David at Adullam; Saul massacres the priests at Nob."
+        - slug: 1-samuel-23
+          type: chapter
+          description: "David rescues Keilah; hunted by Saul in the wilderness of Ziph."
+        - slug: 1-samuel-24
+          type: chapter
+          description: "David spares Saul's life in the cave at En-gedi."
+        - slug: 1-samuel-25
+          type: chapter
+          description: "Nabal's insult; Abigail's wisdom; Nabal dies; David marries Abigail."
+        - slug: 1-samuel-26
+          type: chapter
+          description: "David again spares Saul's life in his camp at night."
+        - slug: 1-samuel-27
+          type: chapter
+          description: "David lives among the Philistines at Ziklag under Achish."
+        - slug: 1-samuel-28
+          type: chapter
+          description: "Saul consults the witch of Endor; Samuel's spirit appears."
+        - slug: 1-samuel-29
+          type: chapter
+          description: "The Philistine commanders dismiss David before the battle."
+        - slug: 1-samuel-30
+          type: chapter
+          description: "David recovers from the Amalekite raid on Ziklag; spoil divided."
+        - slug: 1-samuel-31
+          type: chapter
+          description: "Saul and his sons killed at Gilboa; their bodies hung at Beth-shan."
 
-        - slug: 2-samuel
-          type: book
-          title: 2 Samuel
-          description: 2 Samuel records David's reign over all Israel — his triumphs, his great sin with Bathsheba, the rebellion of Absalom, and God's covenant with his house.
-          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/2-sam/{index}?lang=eng"
-          children:
-            - slug: 2-samuel-1
-              type: chapter
-              description: "David mourns Saul and Jonathan; the song of the bow."
-            - slug: 2-samuel-2
-              type: chapter
-              description: "David anointed king over Judah; Ish-bosheth made king over Israel."
-            - slug: 2-samuel-3
-              type: chapter
-              description: "David's kingdom strengthens; Abner defects to David; Joab kills Abner."
-            - slug: 2-samuel-4
-              type: chapter
-              description: "Ish-bosheth assassinated; David executes the assassins."
-            - slug: 2-samuel-5
-              type: chapter
-              description: "David anointed king over all Israel; Jerusalem captured; palace built."
-            - slug: 2-samuel-6
-              type: chapter
-              description: "The ark brought to Jerusalem; Uzzah struck dead; David dances before the Lord."
-            - slug: 2-samuel-7
-              type: chapter
-              description: "God's covenant with David — an eternal throne and a son to build the temple."
-            - slug: 2-samuel-8
-              type: chapter
-              description: David's military victories and expansion of the kingdom.
-            - slug: 2-samuel-9
-              type: chapter
-              description: "David shows covenant kindness to Mephibosheth for Jonathan's sake."
-            - slug: 2-samuel-10
-              type: chapter
-              description: "War with the Ammonites; Joab defeats the Syrians at Helam."
-            - slug: 2-samuel-11
-              type: chapter
-              description: "David and Bathsheba; Uriah placed at the front and killed."
-            - slug: 2-samuel-12
-              type: chapter
-              description: "Nathan's parable rebukes David; he repents; the child dies; Solomon born."
-            - slug: 2-samuel-13
-              type: chapter
-              description: "Amnon violates Tamar; Absalom kills Amnon and flees to Geshur."
-            - slug: 2-samuel-14
-              type: chapter
-              description: "Joab's scheme brings Absalom back to Jerusalem."
-            - slug: 2-samuel-15
-              type: chapter
-              description: "Absalom's conspiracy grows; David flees Jerusalem weeping."
-            - slug: 2-samuel-16
-              type: chapter
-              description: "Ziba's lie; Shimei curses David; Ahithophel counsels Absalom."
-            - slug: 2-samuel-17
-              type: chapter
-              description: "Hushai foils Ahithophel's counsel; Ahithophel hangs himself."
-            - slug: 2-samuel-18
-              type: chapter
-              description: "Absalom defeated and killed by Joab; David's great grief."
-            - slug: 2-samuel-19
-              type: chapter
-              description: "David returns to Jerusalem; Shimei pardoned; Mephibosheth vindicated."
-            - slug: 2-samuel-20
-              type: chapter
-              description: "Sheba's revolt; Joab kills Amasa; Sheba killed at Abel-beth-maacah."
-            - slug: 2-samuel-21
-              type: chapter
-              description: "Famine for Saul's sin against the Gibeonites; the Philistine giants."
-            - slug: 2-samuel-22
-              type: chapter
-              description: "David's psalm of thanksgiving for deliverance from all his enemies."
-            - slug: 2-samuel-23
-              type: chapter
-              description: "David's last words and the list of his mighty men."
-            - slug: 2-samuel-24
-              type: chapter
-              description: "David's census; plague sent; the threshing floor of Araunah purchased."
+    - slug: 2-samuel
+      type: book
+      title: 2 Samuel
+      description: 2 Samuel records David's reign over all Israel — his triumphs, his great sin with Bathsheba, the rebellion of Absalom, and God's covenant with his house.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/2-sam/{index}?lang=eng"
+      children:
+        - slug: 2-samuel-1
+          type: chapter
+          description: "David mourns Saul and Jonathan; the song of the bow."
+        - slug: 2-samuel-2
+          type: chapter
+          description: "David anointed king over Judah; Ish-bosheth made king over Israel."
+        - slug: 2-samuel-3
+          type: chapter
+          description: "David's kingdom strengthens; Abner defects to David; Joab kills Abner."
+        - slug: 2-samuel-4
+          type: chapter
+          description: "Ish-bosheth assassinated; David executes the assassins."
+        - slug: 2-samuel-5
+          type: chapter
+          description: "David anointed king over all Israel; Jerusalem captured; palace built."
+        - slug: 2-samuel-6
+          type: chapter
+          description: "The ark brought to Jerusalem; Uzzah struck dead; David dances before the Lord."
+        - slug: 2-samuel-7
+          type: chapter
+          description: "God's covenant with David — an eternal throne and a son to build the temple."
+        - slug: 2-samuel-8
+          type: chapter
+          description: David's military victories and expansion of the kingdom.
+        - slug: 2-samuel-9
+          type: chapter
+          description: "David shows covenant kindness to Mephibosheth for Jonathan's sake."
+        - slug: 2-samuel-10
+          type: chapter
+          description: "War with the Ammonites; Joab defeats the Syrians at Helam."
+        - slug: 2-samuel-11
+          type: chapter
+          description: "David and Bathsheba; Uriah placed at the front and killed."
+        - slug: 2-samuel-12
+          type: chapter
+          description: "Nathan's parable rebukes David; he repents; the child dies; Solomon born."
+        - slug: 2-samuel-13
+          type: chapter
+          description: "Amnon violates Tamar; Absalom kills Amnon and flees to Geshur."
+        - slug: 2-samuel-14
+          type: chapter
+          description: "Joab's scheme brings Absalom back to Jerusalem."
+        - slug: 2-samuel-15
+          type: chapter
+          description: "Absalom's conspiracy grows; David flees Jerusalem weeping."
+        - slug: 2-samuel-16
+          type: chapter
+          description: "Ziba's lie; Shimei curses David; Ahithophel counsels Absalom."
+        - slug: 2-samuel-17
+          type: chapter
+          description: "Hushai foils Ahithophel's counsel; Ahithophel hangs himself."
+        - slug: 2-samuel-18
+          type: chapter
+          description: "Absalom defeated and killed by Joab; David's great grief."
+        - slug: 2-samuel-19
+          type: chapter
+          description: "David returns to Jerusalem; Shimei pardoned; Mephibosheth vindicated."
+        - slug: 2-samuel-20
+          type: chapter
+          description: "Sheba's revolt; Joab kills Amasa; Sheba killed at Abel-beth-maacah."
+        - slug: 2-samuel-21
+          type: chapter
+          description: "Famine for Saul's sin against the Gibeonites; the Philistine giants."
+        - slug: 2-samuel-22
+          type: chapter
+          description: "David's psalm of thanksgiving for deliverance from all his enemies."
+        - slug: 2-samuel-23
+          type: chapter
+          description: "David's last words and the list of his mighty men."
+        - slug: 2-samuel-24
+          type: chapter
+          description: "David's census; plague sent; the threshing floor of Araunah purchased."
 
-        - slug: 1-kings
-          type: book
-          title: 1 Kings
-          description: 1 Kings records Solomon's reign and the temple, the division of the kingdom, and the ministries of Elijah confronting Ahab and Jezebel in apostate Israel.
-          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/1-kgs/{index}?lang=eng"
-          children:
-            - slug: 1-kings-1
-              type: chapter
-              description: "David's last days; Solomon anointed king; Adonijah's revolt fails."
-            - slug: 1-kings-2
-              type: chapter
-              description: "David's charge to Solomon; Solomon consolidates power; key rivals removed."
-            - slug: 1-kings-3
-              type: chapter
-              description: "Solomon's dream at Gibeon; wisdom given; the two mothers' dispute."
-            - slug: 1-kings-4
-              type: chapter
-              description: "Solomon's officials and daily provisions; his wisdom renowned."
-            - slug: 1-kings-5
-              type: chapter
-              description: "Preparations for the temple; Hiram of Tyre supplies cedar and timber."
-            - slug: 1-kings-6
-              type: chapter
-              description: "The temple built in seven years — its dimensions and furnishings."
-            - slug: 1-kings-7
-              type: chapter
-              description: "Solomon's palace built; Hiram the craftsman makes the bronze furnishings."
-            - slug: 1-kings-8
-              type: chapter
-              description: "The ark brought to the temple; Solomon's great dedicatory prayer."
-            - slug: 1-kings-9
-              type: chapter
-              description: "God appears to Solomon again; blessings and warnings restated."
-            - slug: 1-kings-10
-              type: chapter
-              description: "The queen of Sheba visits; Solomon's gold, horses, and wisdom."
-            - slug: 1-kings-11
-              type: chapter
-              description: "Solomon's foreign wives lead him to idolatry; adversaries raised against him."
-            - slug: 1-kings-12
-              type: chapter
-              description: "The kingdom divided; Rehoboam's harsh reply; Jeroboam's golden calves."
-            - slug: 1-kings-13
-              type: chapter
-              description: A man of God from Judah prophesies against Jeroboam's altar.
-            - slug: 1-kings-14
-              type: chapter
-              description: "Ahijah prophesies the end of Jeroboam's line; Rehoboam's apostasy."
-            - slug: 1-kings-15
-              type: chapter
-              description: "Abijam and Asa of Judah; Nadab and Baasha of Israel."
-            - slug: 1-kings-16
-              type: chapter
-              description: "Elah, Zimri, Omri, and Ahab — kings of Israel; Jezebel introduced."
-            - slug: 1-kings-17
-              type: chapter
-              description: "Elijah at Cherith; the widow of Zarephath fed; her son raised."
-            - slug: 1-kings-18
-              type: chapter
-              description: "The contest on Mount Carmel; Baal's prophets defeated; rain returns."
-            - slug: 1-kings-19
-              type: chapter
-              description: "Elijah flees Jezebel; the still small voice at Horeb; Elisha called."
-            - slug: 1-kings-20
-              type: chapter
-              description: "Ben-hadad besieges Samaria; Israel's victories; a prophet rebukes Ahab."
-            - slug: 1-kings-21
-              type: chapter
-              description: "Ahab covets Naboth's vineyard; Jezebel kills Naboth; Elijah rebukes."
-            - slug: 1-kings-22
-              type: chapter
-              description: "Micaiah's prophecy against Ahab; Ahab killed at Ramoth-gilead."
+    - slug: 1-kings
+      type: book
+      title: 1 Kings
+      description: 1 Kings records Solomon's reign and the temple, the division of the kingdom, and the ministries of Elijah confronting Ahab and Jezebel in apostate Israel.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/1-kgs/{index}?lang=eng"
+      children:
+        - slug: 1-kings-1
+          type: chapter
+          description: "David's last days; Solomon anointed king; Adonijah's revolt fails."
+        - slug: 1-kings-2
+          type: chapter
+          description: "David's charge to Solomon; Solomon consolidates power; key rivals removed."
+        - slug: 1-kings-3
+          type: chapter
+          description: "Solomon's dream at Gibeon; wisdom given; the two mothers' dispute."
+        - slug: 1-kings-4
+          type: chapter
+          description: "Solomon's officials and daily provisions; his wisdom renowned."
+        - slug: 1-kings-5
+          type: chapter
+          description: "Preparations for the temple; Hiram of Tyre supplies cedar and timber."
+        - slug: 1-kings-6
+          type: chapter
+          description: "The temple built in seven years — its dimensions and furnishings."
+        - slug: 1-kings-7
+          type: chapter
+          description: "Solomon's palace built; Hiram the craftsman makes the bronze furnishings."
+        - slug: 1-kings-8
+          type: chapter
+          description: "The ark brought to the temple; Solomon's great dedicatory prayer."
+        - slug: 1-kings-9
+          type: chapter
+          description: "God appears to Solomon again; blessings and warnings restated."
+        - slug: 1-kings-10
+          type: chapter
+          description: "The queen of Sheba visits; Solomon's gold, horses, and wisdom."
+        - slug: 1-kings-11
+          type: chapter
+          description: "Solomon's foreign wives lead him to idolatry; adversaries raised against him."
+        - slug: 1-kings-12
+          type: chapter
+          description: "The kingdom divided; Rehoboam's harsh reply; Jeroboam's golden calves."
+        - slug: 1-kings-13
+          type: chapter
+          description: A man of God from Judah prophesies against Jeroboam's altar.
+        - slug: 1-kings-14
+          type: chapter
+          description: "Ahijah prophesies the end of Jeroboam's line; Rehoboam's apostasy."
+        - slug: 1-kings-15
+          type: chapter
+          description: "Abijam and Asa of Judah; Nadab and Baasha of Israel."
+        - slug: 1-kings-16
+          type: chapter
+          description: "Elah, Zimri, Omri, and Ahab — kings of Israel; Jezebel introduced."
+        - slug: 1-kings-17
+          type: chapter
+          description: "Elijah at Cherith; the widow of Zarephath fed; her son raised."
+        - slug: 1-kings-18
+          type: chapter
+          description: "The contest on Mount Carmel; Baal's prophets defeated; rain returns."
+        - slug: 1-kings-19
+          type: chapter
+          description: "Elijah flees Jezebel; the still small voice at Horeb; Elisha called."
+        - slug: 1-kings-20
+          type: chapter
+          description: "Ben-hadad besieges Samaria; Israel's victories; a prophet rebukes Ahab."
+        - slug: 1-kings-21
+          type: chapter
+          description: "Ahab covets Naboth's vineyard; Jezebel kills Naboth; Elijah rebukes."
+        - slug: 1-kings-22
+          type: chapter
+          description: "Micaiah's prophecy against Ahab; Ahab killed at Ramoth-gilead."
 
-        - slug: 2-kings
-          type: book
-          title: 2 Kings
-          description: 2 Kings records Elisha's ministry, the fall of the northern kingdom to Assyria, the reforms of Hezekiah and Josiah, and the final exile of Judah to Babylon.
-          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/2-kgs/{index}?lang=eng"
-          children:
-            - slug: 2-kings-1
-              type: chapter
-              description: "Ahaziah sends to Baal-zebub; Elijah rebukes him; fire from heaven."
-            - slug: 2-kings-2
-              type: chapter
-              description: "Elijah taken up in a whirlwind; Elisha receives the double portion."
-            - slug: 2-kings-3
-              type: chapter
-              description: "Jehoram and Jehoshaphat campaign against Moab; Elisha's water miracle."
-            - slug: 2-kings-4
-              type: chapter
-              description: "Elisha's miracles — widow's oil, Shunammite's son, poisoned pot, bread."
-            - slug: 2-kings-5
-              type: chapter
-              description: "Naaman healed of leprosy; Gehazi's greed and his punishment."
-            - slug: 2-kings-6
-              type: chapter
-              description: "The floating axe head; Elisha reveals Syrian plans; the blinded army."
-            - slug: 2-kings-7
-              type: chapter
-              description: "The siege of Samaria lifted; four lepers discover the abandoned camp."
-            - slug: 2-kings-8
-              type: chapter
-              description: "Elisha and Hazael; kings of Judah — Jehoram and Ahaziah."
-            - slug: 2-kings-9
-              type: chapter
-              description: "Jehu anointed king; Jehoram and Ahaziah killed; Jezebel thrown down."
-            - slug: 2-kings-10
-              type: chapter
-              description: "Jehu destroys the house of Ahab and the prophets of Baal."
-            - slug: 2-kings-11
-              type: chapter
-              description: "Joash hidden and crowned; Athaliah killed; the covenant renewed."
-            - slug: 2-kings-12
-              type: chapter
-              description: "Joash repairs the temple; Hazael threatens Jerusalem and is paid off."
-            - slug: 2-kings-13
-              type: chapter
-              description: "Jehoahaz and Jehoash of Israel; Elisha's death and his bones."
-            - slug: 2-kings-14
-              type: chapter
-              description: "Amaziah of Judah; Jeroboam II restores Israel's borders."
-            - slug: 2-kings-15
-              type: chapter
-              description: "Azariah of Judah; five rapid kings of Israel amid Assyrian pressure."
-            - slug: 2-kings-16
-              type: chapter
-              description: "Ahaz of Judah allies with Assyria; idolatry and the altar of Damascus."
-            - slug: 2-kings-17
-              type: chapter
-              description: "Israel falls to Assyria; the northern kingdom exiled; foreign peoples settled."
-            - slug: 2-kings-18
-              type: chapter
-              description: "Hezekiah's reforms; Sennacherib invades; Rabshakeh taunts Jerusalem."
-            - slug: 2-kings-19
-              type: chapter
-              description: "Isaiah prophesies deliverance; the angel strikes 185,000 Assyrians."
-            - slug: 2-kings-20
-              type: chapter
-              description: "Hezekiah's illness and recovery; Babylonian envoys see his treasures."
-            - slug: 2-kings-21
-              type: chapter
-              description: "Manasseh's long idolatry undoes Hezekiah's reforms; Amon's brief reign."
-            - slug: 2-kings-22
-              type: chapter
-              description: "Josiah repairs the temple; the book of the law found; Huldah prophesies."
-            - slug: 2-kings-23
-              type: chapter
-              description: "Josiah's great reformation; Passover kept; his death at Megiddo."
-            - slug: 2-kings-24
-              type: chapter
-              description: "Jehoiakim and Jehoiachin; the first deportation to Babylon."
-            - slug: 2-kings-25
-              type: chapter
-              description: "Jerusalem falls; the temple burned; Judah exiled; Gedaliah governs briefly."
+    - slug: 2-kings
+      type: book
+      title: 2 Kings
+      description: 2 Kings records Elisha's ministry, the fall of the northern kingdom to Assyria, the reforms of Hezekiah and Josiah, and the final exile of Judah to Babylon.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/2-kgs/{index}?lang=eng"
+      children:
+        - slug: 2-kings-1
+          type: chapter
+          description: "Ahaziah sends to Baal-zebub; Elijah rebukes him; fire from heaven."
+        - slug: 2-kings-2
+          type: chapter
+          description: "Elijah taken up in a whirlwind; Elisha receives the double portion."
+        - slug: 2-kings-3
+          type: chapter
+          description: "Jehoram and Jehoshaphat campaign against Moab; Elisha's water miracle."
+        - slug: 2-kings-4
+          type: chapter
+          description: "Elisha's miracles — widow's oil, Shunammite's son, poisoned pot, bread."
+        - slug: 2-kings-5
+          type: chapter
+          description: "Naaman healed of leprosy; Gehazi's greed and his punishment."
+        - slug: 2-kings-6
+          type: chapter
+          description: "The floating axe head; Elisha reveals Syrian plans; the blinded army."
+        - slug: 2-kings-7
+          type: chapter
+          description: "The siege of Samaria lifted; four lepers discover the abandoned camp."
+        - slug: 2-kings-8
+          type: chapter
+          description: "Elisha and Hazael; kings of Judah — Jehoram and Ahaziah."
+        - slug: 2-kings-9
+          type: chapter
+          description: "Jehu anointed king; Jehoram and Ahaziah killed; Jezebel thrown down."
+        - slug: 2-kings-10
+          type: chapter
+          description: "Jehu destroys the house of Ahab and the prophets of Baal."
+        - slug: 2-kings-11
+          type: chapter
+          description: "Joash hidden and crowned; Athaliah killed; the covenant renewed."
+        - slug: 2-kings-12
+          type: chapter
+          description: "Joash repairs the temple; Hazael threatens Jerusalem and is paid off."
+        - slug: 2-kings-13
+          type: chapter
+          description: "Jehoahaz and Jehoash of Israel; Elisha's death and his bones."
+        - slug: 2-kings-14
+          type: chapter
+          description: "Amaziah of Judah; Jeroboam II restores Israel's borders."
+        - slug: 2-kings-15
+          type: chapter
+          description: "Azariah of Judah; five rapid kings of Israel amid Assyrian pressure."
+        - slug: 2-kings-16
+          type: chapter
+          description: "Ahaz of Judah allies with Assyria; idolatry and the altar of Damascus."
+        - slug: 2-kings-17
+          type: chapter
+          description: "Israel falls to Assyria; the northern kingdom exiled; foreign peoples settled."
+        - slug: 2-kings-18
+          type: chapter
+          description: "Hezekiah's reforms; Sennacherib invades; Rabshakeh taunts Jerusalem."
+        - slug: 2-kings-19
+          type: chapter
+          description: "Isaiah prophesies deliverance; the angel strikes 185,000 Assyrians."
+        - slug: 2-kings-20
+          type: chapter
+          description: "Hezekiah's illness and recovery; Babylonian envoys see his treasures."
+        - slug: 2-kings-21
+          type: chapter
+          description: "Manasseh's long idolatry undoes Hezekiah's reforms; Amon's brief reign."
+        - slug: 2-kings-22
+          type: chapter
+          description: "Josiah repairs the temple; the book of the law found; Huldah prophesies."
+        - slug: 2-kings-23
+          type: chapter
+          description: "Josiah's great reformation; Passover kept; his death at Megiddo."
+        - slug: 2-kings-24
+          type: chapter
+          description: "Jehoiakim and Jehoiachin; the first deportation to Babylon."
+        - slug: 2-kings-25
+          type: chapter
+          description: "Jerusalem falls; the temple burned; Judah exiled; Gedaliah governs briefly."
