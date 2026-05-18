@@ -63,7 +63,7 @@ async function fetchAndDrawData() {
 
     const select = document.getElementById('brackets-select');
     if (bookEntry.brackets.length > 1) {
-      select.style.display = '';
+      document.getElementById('topic-set-bar').style.display = '';
       bookEntry.brackets.forEach(b => {
         const option = document.createElement('option');
         option.value = b.file;
@@ -113,7 +113,7 @@ async function fetchAndDrawData() {
 
         const label = document.createElement('label');
         label.classList.add('dropdown-label', `dropdown-label-${side}`);
-        label.textContent = side === 'left' ? 'Left:' : 'Right:';
+        label.textContent = side === 'left' ? 'Left Topic:' : 'Right Topic:';
         groupDiv.appendChild(label);
 
         const select = document.createElement('select');

@@ -47,7 +47,7 @@ async function fetchAndDrawData() {
 
     const select = document.getElementById('brackets-select');
     if (bookEntry.brackets.length > 1) {
-      select.style.display = '';
+      document.getElementById('topic-set-bar').style.display = '';
       bookEntry.brackets.forEach(b => {
         const option = document.createElement('option');
         option.value = b.file;
