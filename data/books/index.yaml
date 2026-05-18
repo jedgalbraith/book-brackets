@@ -11,13 +11,22 @@ books:
       - file: book-of-mormon-jeds-mission.yaml
         title: Jed's Mission Brackets
         default_target: alma
-  - slug: bible
-    title: Bible
+  - slug: bible-old-testament
+    title: Old Testament
     description: >
-      Explore Old and New Testament chapters through narratives, key figures,
-      covenants, Gospel traditions, and ministry phases.
+      Explore Old Testament chapters through key figures, covenants, and thematic
+      groupings from the law, history, and prophecy of ancient Israel.
     brackets:
-      - file: bible.yaml
+      - file: bible-old-testament.yaml
+        title: Thematic Analysis
+        default_target: genesis
+  - slug: bible-new-testament
+    title: New Testament
+    description: >
+      Explore New Testament chapters through narratives, key figures,
+      Gospel traditions, and ministry phases.
+    brackets:
+      - file: bible-new-testament.yaml
         title: Thematic Analysis
         default_target: gospels-overview
   - slug: doctrine-and-covenants
