@@ -387,6 +387,230 @@ root:
               type: chapter
               description: Laws for vows and dedications to the Lord.
 
+        - slug: numbers
+          type: book
+          title: Numbers
+          description: Numbers records Israel's wilderness journey from Sinai to the plains of Moab, including two censuses, rebellion, and preparation for entering Canaan.
+          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/num/{index}?lang=eng"
+          children:
+            - slug: numbers-1
+              type: chapter
+              description: "A census of Israel's fighting men; the Levites set apart for tabernacle service."
+            - slug: numbers-2
+              type: chapter
+              description: The arrangement of Israel's camp around the tabernacle by tribe.
+            - slug: numbers-3
+              type: chapter
+              description: "The Levites numbered and assigned; firstborn sons redeemed."
+            - slug: numbers-4
+              type: chapter
+              description: "Duties of the Kohathite, Gershonite, and Merarite clans in transporting the tabernacle."
+            - slug: numbers-5
+              type: chapter
+              description: "Laws for the unclean, restitution, and the test for suspected adultery."
+            - slug: numbers-6
+              type: chapter
+              description: "Laws for the Nazirite vow; the Aaronic blessing."
+            - slug: numbers-7
+              type: chapter
+              description: Offerings of the twelve tribal leaders for the tabernacle dedication.
+            - slug: numbers-8
+              type: chapter
+              description: "The lampstand set up; the Levites consecrated and dedicated to service."
+            - slug: numbers-9
+              type: chapter
+              description: "The second Passover celebrated; the cloud guides Israel's journeys."
+            - slug: numbers-10
+              type: chapter
+              description: "The silver trumpets made; Israel departs from Sinai."
+            - slug: numbers-11
+              type: chapter
+              description: "The people complain; quail given and plague sent; seventy elders receive the Spirit."
+            - slug: numbers-12
+              type: chapter
+              description: "Miriam and Aaron challenge Moses; Miriam struck with leprosy."
+            - slug: numbers-13
+              type: chapter
+              description: "Twelve spies sent into Canaan; they return with a mixed report."
+            - slug: numbers-14
+              type: chapter
+              description: "Israel rebels against entering Canaan; forty years of wandering decreed."
+            - slug: numbers-15
+              type: chapter
+              description: "Laws for offerings and tassels; a man stoned for gathering sticks on the Sabbath."
+            - slug: numbers-16
+              type: chapter
+              description: "Korah's rebellion; the earth swallows the rebels; Aaron's rod stops a plague."
+            - slug: numbers-17
+              type: chapter
+              description: "Aaron's rod buds and bears almonds — confirming the Levitical priesthood."
+            - slug: numbers-18
+              type: chapter
+              description: "Duties and portions for Aaron and the Levites; their portion is the Lord."
+            - slug: numbers-19
+              type: chapter
+              description: "The red heifer ritual; purification from contact with the dead."
+            - slug: numbers-20
+              type: chapter
+              description: "Death of Miriam; Moses strikes the rock at Meribah; forbidden to enter Canaan."
+            - slug: numbers-21
+              type: chapter
+              description: "The bronze serpent; victories over Sihon and Og; Israel approaches Canaan."
+            - slug: numbers-22
+              type: chapter
+              description: "Balak of Moab summons Balaam; the angel of the Lord and Balaam's donkey."
+            - slug: numbers-23
+              type: chapter
+              description: "Balaam's first and second oracles — Israel cannot be cursed."
+            - slug: numbers-24
+              type: chapter
+              description: "Balaam's third and fourth oracles — a star shall come out of Jacob."
+            - slug: numbers-25
+              type: chapter
+              description: "Israel commits fornication with Moab; Phinehas ends the plague with his zeal."
+            - slug: numbers-26
+              type: chapter
+              description: A second census of Israel after forty years in the wilderness.
+            - slug: numbers-27
+              type: chapter
+              description: "The daughters of Zelophehad; Moses shown Canaan; Joshua appointed as successor."
+            - slug: numbers-28
+              type: chapter
+              description: "Laws for daily, Sabbath, monthly, and festival offerings."
+            - slug: numbers-29
+              type: chapter
+              description: "Laws for autumn festival offerings — Trumpets, Atonement, and Tabernacles."
+            - slug: numbers-30
+              type: chapter
+              description: Laws for vows made by men and women.
+            - slug: numbers-31
+              type: chapter
+              description: "War against Midian; the spoils divided; purification of warriors."
+            - slug: numbers-32
+              type: chapter
+              description: "Reuben, Gad, and half of Manasseh settle east of the Jordan."
+            - slug: numbers-33
+              type: chapter
+              description: "A log of Israel's forty-two encampments from Egypt to the plains of Moab."
+            - slug: numbers-34
+              type: chapter
+              description: "The boundaries of Canaan; leaders appointed to allot the land."
+            - slug: numbers-35
+              type: chapter
+              description: "Cities for the Levites and cities of refuge; laws for manslaughter and murder."
+            - slug: numbers-36
+              type: chapter
+              description: "Laws to keep tribal inheritance within each tribe; daughters of Zelophehad marry."
+
+        - slug: deuteronomy
+          type: book
+          title: Deuteronomy
+          description: Deuteronomy records Moses's farewell addresses to Israel on the plains of Moab, renewing the covenant and commissioning Joshua before Moses's death.
+          url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/deut/{index}?lang=eng"
+          children:
+            - slug: deuteronomy-1
+              type: chapter
+              description: "Moses reviews Israel's journey from Horeb; judges appointed; the spies sent."
+            - slug: deuteronomy-2
+              type: chapter
+              description: "Israel's wilderness wanderings reviewed; victories over Sihon of Heshbon."
+            - slug: deuteronomy-3
+              type: chapter
+              description: "Defeat of Og of Bashan; territory divided; Moses forbidden to cross the Jordan."
+            - slug: deuteronomy-4
+              type: chapter
+              description: "Moses urges obedience to the law; warning against idolatry; cities of refuge."
+            - slug: deuteronomy-5
+              type: chapter
+              description: "The Ten Commandments repeated; Israel's fear at Horeb; Moses as mediator."
+            - slug: deuteronomy-6
+              type: chapter
+              description: "The Shema — love the Lord with all your heart; teach the commandments to children."
+            - slug: deuteronomy-7
+              type: chapter
+              description: "Drive out the Canaanites; blessings for obedience; no intermarriage with them."
+            - slug: deuteronomy-8
+              type: chapter
+              description: "Remember the Lord in the promised land; do not forget him in prosperity."
+            - slug: deuteronomy-9
+              type: chapter
+              description: "Israel's rebellions recalled; Moses's intercession saves Israel at Horeb."
+            - slug: deuteronomy-10
+              type: chapter
+              description: "New stone tablets prepared; the ark made; what the Lord requires — fear and love."
+            - slug: deuteronomy-11
+              type: chapter
+              description: "Love and obey the Lord; the blessing and the curse set before Israel."
+            - slug: deuteronomy-12
+              type: chapter
+              description: "Worship only in the one chosen place; prohibition against Canaanite practices."
+            - slug: deuteronomy-13
+              type: chapter
+              description: "Warning against false prophets and those who entice Israel to idolatry."
+            - slug: deuteronomy-14
+              type: chapter
+              description: "Clean and unclean foods; laws for tithes."
+            - slug: deuteronomy-15
+              type: chapter
+              description: "The sabbatical year — debt release and freeing Hebrew servants."
+            - slug: deuteronomy-16
+              type: chapter
+              description: "Three annual feasts — Passover, Weeks, and Tabernacles; justice for judges."
+            - slug: deuteronomy-17
+              type: chapter
+              description: "Laws for sacrificial animals; the future king; cases too hard for local courts."
+            - slug: deuteronomy-18
+              type: chapter
+              description: "Portions for the Levites; Canaanite abominations; the promise of a prophet."
+            - slug: deuteronomy-19
+              type: chapter
+              description: "Cities of refuge; property boundaries; the law of multiple witnesses."
+            - slug: deuteronomy-20
+              type: chapter
+              description: "Laws for warfare — exemptions, terms of peace, and siege of cities."
+            - slug: deuteronomy-21
+              type: chapter
+              description: "Unsolved murder; captive women; firstborn rights; the rebellious son."
+            - slug: deuteronomy-22
+              type: chapter
+              description: "Lost property; gender clothing; the fallen nest; mixed crops; marriage laws."
+            - slug: deuteronomy-23
+              type: chapter
+              description: "Those excluded from the assembly; camp cleanliness; laws for vows and wages."
+            - slug: deuteronomy-24
+              type: chapter
+              description: "Laws for divorce; protecting the vulnerable — pledges, wages, and the poor."
+            - slug: deuteronomy-25
+              type: chapter
+              description: "Flogging limits; levirate marriage; honest weights; blotting out Amalek."
+            - slug: deuteronomy-26
+              type: chapter
+              description: "Presenting firstfruits and tithes; Israel declared the Lord's treasured people."
+            - slug: deuteronomy-27
+              type: chapter
+              description: "The law written on stones at Ebal; the Levites pronounce twelve curses."
+            - slug: deuteronomy-28
+              type: chapter
+              description: "Blessings for obedience; extended curses for disobedience and exile."
+            - slug: deuteronomy-29
+              type: chapter
+              description: "The covenant renewed in Moab; Israel's call to continued faithfulness."
+            - slug: deuteronomy-30
+              type: chapter
+              description: "Return and restoration promised; the choice of life or death set before Israel."
+            - slug: deuteronomy-31
+              type: chapter
+              description: "Moses commissions Joshua; the law deposited with the priests; a song commanded."
+            - slug: deuteronomy-32
+              type: chapter
+              description: "The Song of Moses — the Lord's faithfulness and Israel's rebellion; Moses views Canaan."
+            - slug: deuteronomy-33
+              type: chapter
+              description: "Moses's final blessings on the twelve tribes of Israel."
+            - slug: deuteronomy-34
+              type: chapter
+              description: "Moses views Canaan from Pisgah; his death and burial; Joshua succeeds him."
+
     - slug: new-testament
       type: testament
       title: New Testament
