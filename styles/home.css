@@ -406,6 +406,18 @@ footer {
   font-style: italic;
 }
 
+footer a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cream-mid);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+footer a:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
 /* === Animation === */
 @keyframes fadeUp {
   from {
