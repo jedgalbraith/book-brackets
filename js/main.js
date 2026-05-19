@@ -107,7 +107,7 @@ async function fetchAndDrawData() {
       wrapper.id = `section-${target.target_slug}`;
 
       const header = document.createElement('div');
-      header.classList.add('section-header', 'section-header-dual');
+      header.classList.add('section-header');
 
       function makeDropdown(side) {
         const groupDiv = document.createElement('div');
@@ -141,7 +141,7 @@ async function fetchAndDrawData() {
       const { groupDiv: rightGroup, select: rightSelect } = makeDropdown('right');
 
       const headerRow = document.createElement('div');
-      headerRow.classList.add('dual-header-row');
+      headerRow.classList.add('header-row');
 
       const titleEl = document.createElement('h2');
       titleEl.classList.add('section-title');

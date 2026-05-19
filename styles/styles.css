@@ -1,7 +1,3 @@
-.chapter {
-  cursor: pointer;
-}
-
 .unit {
   cursor: pointer;
   fill: #a87c0a;
@@ -54,4 +50,13 @@
   font-size: 14px;
   fill: #5c4f43;
   dominant-baseline: middle;
+}
+
+/* === Right-side bracket colors === */
+.bracket-right {
+  stroke: #a87c0a;
+}
+
+.bracket-label-right {
+  fill: #0f2540;
 }
