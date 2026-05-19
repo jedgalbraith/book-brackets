@@ -23,6 +23,7 @@
   <nav class="viz-nav">
     <a href="../index.html" class="back-link">← Back to Home</a>
     <h1></h1>
+    <button class="share-btn" id="share-btn">Share</button>
   </nav>
 
   <div id="attribution" class="attribution" style="display:none"></div>
@@ -55,6 +56,19 @@
   </section>
 
   <script src="../js/loader.js"></script>
-  <script src="../js/main-dual.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    const shareBtn = document.getElementById('share-btn');
+    shareBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        shareBtn.textContent = 'Copied!';
+        shareBtn.classList.add('copied');
+        setTimeout(() => {
+          shareBtn.textContent = 'Share';
+          shareBtn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  </script>
 </body>
 </html>

@@ -1,13 +1,25 @@
 const ROW_HEIGHT = 28;
-const centerX = 340;
-const BRACKET_SHIFT = 35;
 const BRACKET_DEPTH = 20;
+const CHAPTER_X = 300;
+const LEFT_X = CHAPTER_X - 35;    // 265 — left bracket vertical line
+const LEFT_LABEL_X = LEFT_X - 25; // 240 — text-anchor: end
+
+// Derived from data constraints:
+//   descriptions ≤ 90 chars × 6px (EB Garamond 13px) = 540px → end at x=860
+//   bracket labels ≤ 40 chars × 5.5px (Playfair 12px italic) = 220px
+const DESC_X = CHAPTER_X + 20;                                    // 320
+const RIGHT_X = DESC_X + 90 * 6 + 10;                             // 870
+const RIGHT_LABEL_X = RIGHT_X + 12;                               // 882
+const STRIPE_RIGHT = RIGHT_X;                                      // 870 — row bg stops at right bracket
+const MIN_SVG_WIDTH = RIGHT_LABEL_X + 40 * 5.5;                   // 1102
 
 async function fetchAndDrawData() {
   try {
     const params = new URLSearchParams(window.location.search);
     const bookSlug = params.get('book');
     const bracketsParam = params.get('brackets');
+    const leftParam = params.get('left');
+    const rightParam = params.get('right');
 
     if (!bookSlug) {
       document.getElementById('chart').textContent = 'No book specified. Add ?book=<slug> to the URL.';
@@ -45,6 +57,12 @@ async function fetchAndDrawData() {
       attrEl.style.display = '';
     }
 
+    const disclaimerEl = document.getElementById('book-disclaimer');
+    if (disclaimerEl && bookData.disclaimer) {
+      disclaimerEl.textContent = bookData.disclaimer;
+      disclaimerEl.style.display = '';
+    }
+
     const select = document.getElementById('brackets-select');
     if (bookEntry.brackets.length > 1) {
       document.getElementById('topic-set-bar').style.display = '';
@@ -65,7 +83,6 @@ async function fetchAndDrawData() {
     const chart = document.getElementById('chart');
     const sections = [];
 
-    // Jump-nav (only if multiple targets)
     if (brackets.targets.length > 1) {
       const jumpNav = document.createElement('div');
       jumpNav.classList.add('jump-nav');
@@ -90,29 +107,57 @@ async function fetchAndDrawData() {
       wrapper.id = `section-${target.target_slug}`;
 
       const header = document.createElement('div');
-      header.classList.add('section-header');
+      header.classList.add('section-header', 'section-header-dual');
+
+      function makeDropdown(side) {
+        const groupDiv = document.createElement('div');
+        groupDiv.classList.add('topic-dropdown-group');
+
+        const label = document.createElement('label');
+        label.classList.add('dropdown-label', `dropdown-label-${side}`);
+        label.textContent = side === 'left' ? 'Left Topic:' : 'Right Topic:';
+        groupDiv.appendChild(label);
+
+        const select = document.createElement('select');
+        select.classList.add('topic-select', `topic-select-${side}`);
+
+        const noneOpt = document.createElement('option');
+        noneOpt.value = '__none__';
+        noneOpt.textContent = '—';
+        select.appendChild(noneOpt);
+
+        target.topics.forEach(topic => {
+          const opt = document.createElement('option');
+          opt.value = topic.slug;
+          opt.textContent = topic.title;
+          select.appendChild(opt);
+        });
+
+        groupDiv.appendChild(select);
+        return { groupDiv, select };
+      }
+
+      const { groupDiv: leftGroup, select: leftSelect } = makeDropdown('left');
+      const { groupDiv: rightGroup, select: rightSelect } = makeDropdown('right');
+
+      const headerRow = document.createElement('div');
+      headerRow.classList.add('dual-header-row');
 
       const titleEl = document.createElement('h2');
       titleEl.classList.add('section-title');
       titleEl.textContent = targetNode.title || target.target_slug;
-      header.appendChild(titleEl);
 
-      const buttonsDiv = document.createElement('div');
-      buttonsDiv.classList.add('topic-group');
-      target.topics.forEach(topic => {
-        const button = document.createElement('button');
-        button.classList.add('level-btn');
-        button.dataset.topicSlug = topic.slug;
-        button.textContent = topic.title;
-        buttonsDiv.appendChild(button);
-      });
-      header.appendChild(buttonsDiv);
+      headerRow.appendChild(leftGroup);
+      headerRow.appendChild(titleEl);
+      headerRow.appendChild(rightGroup);
+      header.appendChild(headerRow);
       wrapper.appendChild(header);
 
-      const svgWidth = chart.clientWidth || 1200;
+      const svgWidth = Math.max(chart.clientWidth || MIN_SVG_WIDTH, MIN_SVG_WIDTH);
       const svgHeight = (leaves.length + 1) * ROW_HEIGHT;
       const svg = d3.create('svg').attr('width', svgWidth).attr('height', svgHeight).attr('overflow', 'visible');
 
+      const stripeLeft = LEFT_X;
       leaves.forEach((leaf, i) => {
         const chapterNum = i + 1;
         const y = chapterNum * ROW_HEIGHT;
@@ -131,18 +176,17 @@ async function fetchAndDrawData() {
             }
           });
 
-        const stripeX = centerX - BRACKET_SHIFT;
         row.append('rect')
           .attr('class', 'row-bg')
-          .attr('x', stripeX)
+          .attr('x', stripeLeft)
           .attr('y', y - ROW_HEIGHT)
-          .attr('width', svgWidth - stripeX)
+          .attr('width', STRIPE_RIGHT - stripeLeft)
           .attr('height', ROW_HEIGHT)
           .attr('fill', i % 2 === 0 ? 'rgba(26,58,92,0.04)' : 'none');
 
         row.append('text')
           .attr('class', isDrillable ? 'unit drillable' : 'unit')
-          .attr('x', centerX)
+          .attr('x', CHAPTER_X)
           .attr('y', y - ROW_HEIGHT / 2)
           .attr('text-anchor', 'middle')
           .attr('dominant-baseline', 'central')
@@ -150,7 +194,7 @@ async function fetchAndDrawData() {
 
         const descText = row.append('text')
           .attr('class', 'description')
-          .attr('x', centerX + 20)
+          .attr('x', CHAPTER_X + 20)
           .attr('y', y - ROW_HEIGHT / 2)
           .attr('dominant-baseline', 'central');
 
@@ -167,25 +211,53 @@ async function fetchAndDrawData() {
       wrapper.appendChild(svg.node());
       chart.appendChild(wrapper);
 
-      sections.push({ buttonsDiv, svg, target });
+      sections.push({ svg, target, leftSelect, rightSelect, leftSlug: null, rightSlug: null });
     });
 
-    sections.forEach(({ buttonsDiv, svg, target }) => {
-      buttonsDiv.addEventListener('click', (e) => {
-        if (e.target.nodeName !== 'BUTTON') return;
-        const clickedSlug = e.target.dataset.topicSlug;
-        sections.forEach(({ buttonsDiv: bd, svg: sv, target: t }) => {
-          const match = bd.querySelector(`[data-topic-slug="${clickedSlug}"]`);
-          if (match) {
-            bd.querySelectorAll('.level-btn').forEach(b => b.classList.remove('active'));
-            match.classList.add('active');
-            drawLevel(sv, t, clickedSlug);
-          }
+    function pushSelectionToURL() {
+      const first = sections[0];
+      if (!first) return;
+      const next = new URLSearchParams(window.location.search);
+      if (first.leftSlug) next.set('left', first.leftSlug);
+      else next.delete('left');
+      if (first.rightSlug) next.set('right', first.rightSlug);
+      else next.delete('right');
+      history.replaceState(null, '', '?' + next.toString());
+    }
+
+    sections.forEach(sec => {
+      ['left', 'right'].forEach(side => {
+        const sel = side === 'left' ? sec.leftSelect : sec.rightSelect;
+        sel.addEventListener('change', () => {
+          const slug = sel.value === '__none__' ? null : sel.value;
+          sections.forEach(s => {
+            const other = side === 'left' ? s.leftSelect : s.rightSelect;
+            const hasSlug = slug === null || !!other.querySelector(`option[value="${slug}"]`);
+            if (!hasSlug) return;
+            other.value = slug ?? '__none__';
+            if (side === 'left') s.leftSlug = slug;
+            else s.rightSlug = slug;
+            drawLevel(s.svg, s.target, slug, side);
+            applyDualHighlight(s.svg, s.target, s.leftSlug, s.rightSlug);
+          });
+          pushSelectionToURL();
         });
       });
 
-      buttonsDiv.querySelector('button')?.click();
+      // Auto-activate: URL params take priority, then config defaults, then positional fallback
+      function resolveDefault(sel, configSlug, fallbackIndex) {
+        if (configSlug && sel.querySelector(`option[value="${configSlug}"]`)) return configSlug;
+        if (sel.options.length > fallbackIndex) return sel.options[fallbackIndex].value;
+        return null;
+      }
+      const initLeft  = (leftParam  && sec.leftSelect.querySelector(`option[value="${leftParam}"]`))  ? leftParam  : resolveDefault(sec.leftSelect,  sec.target.default_left,  1);
+      const initRight = (rightParam && sec.rightSelect.querySelector(`option[value="${rightParam}"]`)) ? rightParam : resolveDefault(sec.rightSelect, sec.target.default_right, sec.rightSelect.options.length > 2 ? 2 : 1);
+      if (initLeft)  { sec.leftSelect.value  = initLeft;  sec.leftSlug  = initLeft;  drawLevel(sec.svg, sec.target, sec.leftSlug,  'left');  }
+      if (initRight) { sec.rightSelect.value = initRight; sec.rightSlug = initRight; drawLevel(sec.svg, sec.target, sec.rightSlug, 'right'); }
+      applyDualHighlight(sec.svg, sec.target, sec.leftSlug, sec.rightSlug);
     });
+
+    pushSelectionToURL();
 
   } catch (error) {
     console.error('Error:', error);
@@ -198,66 +270,79 @@ function chapterY(num) {
   return num * ROW_HEIGHT;
 }
 
-function drawTopic(svg, bracket) {
+function drawTopic(svg, bracket, side) {
   let [start, end] = bracket.range.split('-').map(Number);
   end = end || start;
   const yStart = chapterY(start) - ROW_HEIGHT;
   const yEnd = chapterY(end);
 
+  const bx = side === 'right' ? RIGHT_X : LEFT_X;
+  // Caps extend into the description area: left reaches right ~120px past the bracket,
+  // right reaches left ~120px past its bracket (symmetric extension into content).
+  const capExtend = side === 'right'
+    ? RIGHT_X - BRACKET_DEPTH - 120   // 780 — into descriptions from right
+    : LEFT_X + BRACKET_DEPTH + 120;   // 445 — into descriptions from left
+  const labelX = side === 'right' ? RIGHT_LABEL_X : LEFT_LABEL_X;
+  const anchor = side === 'right' ? 'start' : 'end';
+
   svg.append('line')
-    .attr('class', 'bracket level-bracket')
-    .attr('x1', centerX - BRACKET_SHIFT).attr('x2', centerX - BRACKET_SHIFT)
+    .attr('class', `bracket bracket-${side}`)
+    .attr('x1', bx).attr('x2', bx)
     .attr('y1', yStart).attr('y2', yEnd);
 
   svg.append('line')
-    .attr('class', 'bracket')
-    .attr('x1', centerX - BRACKET_SHIFT).attr('x2', centerX - BRACKET_SHIFT + BRACKET_DEPTH)
+    .attr('class', `bracket bracket-${side}`)
+    .attr('x1', bx).attr('x2', capExtend)
     .attr('y1', yStart).attr('y2', yStart);
 
   svg.append('line')
-    .attr('class', 'bracket')
-    .attr('x1', centerX - BRACKET_SHIFT).attr('x2', centerX - BRACKET_SHIFT + BRACKET_DEPTH)
+    .attr('class', `bracket bracket-${side}`)
+    .attr('x1', bx).attr('x2', capExtend)
     .attr('y1', yEnd).attr('y2', yEnd);
 
   svg.append('text')
-    .attr('class', 'bracket-label')
-    .attr('x', centerX - BRACKET_SHIFT - 25)
+    .attr('class', `bracket-label bracket-label-${side}`)
+    .attr('x', labelX)
     .attr('y', (yStart + yEnd) / 2)
     .attr('dy', '.35em')
-    .attr('text-anchor', 'end')
+    .attr('text-anchor', anchor)
     .text(bracket.label);
 }
 
-function drawLevel(svg, target, topicSlug) {
-  svg.selectAll('.bracket, .bracket-label').remove();
+function drawLevel(svg, target, topicSlug, side) {
+  svg.selectAll(`.bracket-${side}, .bracket-label-${side}`).remove();
+  if (!topicSlug) return;
   const topic = target.topics.find(t => t.slug === topicSlug);
   if (!topic) return;
-  topic.brackets.forEach(bracket => drawTopic(svg, bracket));
-  applyBracketHighlight(svg, topic);
+  topic.brackets.forEach(bracket => drawTopic(svg, bracket, side));
 }
 
-function applyBracketHighlight(svg, topic) {
-  const chapterBracket = new Map(); // chapter num → bracket index
+function buildBracketMap(target, topicSlug) {
+  if (!topicSlug) return new Map();
+  const topic = target.topics.find(t => t.slug === topicSlug);
+  if (!topic) return new Map();
+  const map = new Map();
   topic.brackets.forEach((b, idx) => {
     let [start, end] = b.range.split('-').map(Number);
     end = end || start;
-    for (let i = start; i <= end; i++) chapterBracket.set(i, idx);
+    for (let i = start; i <= end; i++) map.set(i, idx);
   });
+  return map;
+}
 
-  const tints = [
-    'rgba(168, 124, 10, 0.09)',  // amber
-    'rgba(15, 37, 64, 0.07)',    // navy
-  ];
+function applyDualHighlight(svg, target, leftSlug, rightSlug) {
+  const leftMap = buildBracketMap(target, leftSlug);
+  const rightMap = buildBracketMap(target, rightSlug);
+  const neitherActive = !leftSlug && !rightSlug;
 
   svg.selectAll('.chapter-row').each(function() {
     const row = d3.select(this);
     const num = +row.attr('data-chapter');
-    if (chapterBracket.has(num)) {
-      row.attr('opacity', 1);
-      row.select('.row-bg').attr('fill', tints[chapterBracket.get(num) % 2]);
-    } else {
-      row.attr('opacity', 0.35);
-      row.select('.row-bg').attr('fill', 'none');
-    }
+    const inLeft  = leftMap.has(num);
+    const inRight = rightMap.has(num);
+    const stripeFill = (num - 1) % 2 === 0 ? 'rgba(26,58,92,0.04)' : 'none';
+
+    row.attr('opacity', neitherActive || inLeft || inRight ? 1 : 0.35);
+    row.select('.row-bg').attr('fill', stripeFill);
   });
 }

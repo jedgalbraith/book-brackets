@@ -64,6 +64,31 @@ body {
   border-color: transparent;
 }
 
+/* === Share button === */
+.share-btn {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  background: none;
+  border: 1px solid var(--cream-dark);
+  border-radius: 3px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.share-btn:hover {
+  color: var(--ink);
+  border-color: var(--ink-muted);
+}
+
+.share-btn.copied {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
 /* === Book description === */
 .book-description {
   font-family: var(--font-body);
