@@ -4,6 +4,8 @@
 
 A web service where anyone can create and share bracket visualizations for books, scriptures, or any structured text. AI assists in generating and refining the data, making the tool accessible to non-developers while remaining powerful for technical users.
 
+**Domain:** bookbrackets.app
+
 ## Core authoring paradigm
 
 Three-panel interface:
@@ -76,6 +78,24 @@ Goal: cover infrastructure costs (~$20–50/month). Not a primary revenue driver
 - Auth (accounts, sessions)
 - Project storage API
 - Sharing / public URL generation
+
+## Brand
+
+Book Brackets is a tool for readers who think structurally — not casual reading, but deliberate, analytical engagement with texts. The tool's purpose is making structure visible: patterns that were always in the text but hard to see.
+
+**Voice:** Precise, understated. Let the visualization carry the weight. No hype or enthusiasm-inflation. Share observations, not opinions. The brackets do the talking.
+
+**Visual identity:** The bracket lines are the anchor. A consistent screenshot format — clean background, the D3 visualization, minimal caption — becomes recognizable over time without requiring design work per post.
+
+### Post types
+
+Three repeatable formats reduce the "what do I post" decision to a template:
+
+**The observation** — share a finished bracket with one sentence about what the structure reveals. No opinion, just pattern: *"All of 1 Nephi 1–18 takes place before Lehi's family leaves the Arabian peninsula."* The visual makes it interesting; the caption just describes what it shows.
+
+**The build note** — one specific technical decision and why: a D3 rendering choice, the YAML schema, how the AI authoring loop works. Developer audience responds to concrete, specific details. One thing per post, not a comprehensive update.
+
+**The question** — something the tool surfaced that is still open: *"Thematically, does Isaiah 40–55 feel like a distinct unit to you? The bracket data suggests it."* Invites engagement without requiring a stated opinion.
 
 ## Growth and visibility
 
