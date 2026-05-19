@@ -169,6 +169,59 @@ header {
   line-height: 1.6;
 }
 
+/* === Granularity === */
+.granularity {
+  margin-bottom: 72px;
+  padding-bottom: 72px;
+  border-bottom: 1px solid var(--cream-mid);
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.28s forwards;
+}
+
+.granularity-tagline {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.granularity-levels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--surface);
+  border: 1px solid var(--cream-mid);
+  border-radius: 3px;
+}
+
+.level-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 12px 22px;
+  border-right: 1px solid var(--cream-mid);
+  color: var(--gold);
+}
+
+.level-item:last-child {
+  border-right: none;
+}
+
+.level-svg {
+  width: 48px;
+  height: auto;
+  margin-bottom: 14px;
+}
+
+.level-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
 /* === Notify (home-page animation override) === */
 .notify {
   opacity: 0;
@@ -472,6 +525,19 @@ footer a:hover {
   .hiw-item:last-child {
     border-bottom: none;
     padding-left: 0;
+  }
+
+  .granularity-levels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .level-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .level-item:nth-child(1),
+  .level-item:nth-child(2) {
+    border-bottom: 1px solid var(--cream-mid);
   }
 
   .photo-gallery {
