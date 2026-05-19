@@ -3,6 +3,230 @@ author: "AI: Claude"
 title: Old Testament — Thematic Analysis
 book_slug: bible-old-testament
 targets:
+  - target_slug: overview
+    default_right: years
+    drills_into:
+      - genesis
+      - exodus
+      - leviticus
+      - numbers
+      - deuteronomy
+      - joshua
+      - judges
+      - ruth
+      - 1-samuel
+      - 2-samuel
+      - 1-kings
+      - 2-kings
+      - 1-chronicles
+      - 2-chronicles
+      - ezra
+      - nehemiah
+      - esther
+      - job
+      - psalms
+      - proverbs
+      - ecclesiastes
+      - song-of-solomon
+      - isaiah
+      - jeremiah
+      - lamentations
+      - ezekiel
+      - daniel
+      - hosea
+      - joel
+      - amos
+      - obadiah
+      - jonah
+      - micah
+      - nahum
+      - habakkuk
+      - zephaniah
+      - haggai
+      - zechariah
+      - malachi
+    topics:
+      - slug: sections
+        title: Sections
+        description: The two major canonical divisions of the 12 books.
+        brackets:
+          - range: "1-5"
+            label: Pentateuch (Law of Moses)
+          - range: "6-17"
+            label: Historical Books
+          - range: "18-22"
+            label: Wisdom and Poetry
+          - range: "23-27"
+            label: Major Prophets
+          - range: "28-39"
+            label: Minor Prophets (The Twelve)
+
+      - slug: narrative-form
+        title: Narrative Form
+        description: The primary literary form of each book.
+        brackets:
+          - range: "1-4"
+            label: Narrative interwoven with law
+          - range: "5"
+            label: Farewell speeches and covenant
+          - range: "6"
+            label: Military history and land allotment
+          - range: "7"
+            label: Cyclical narrative — judges
+          - range: "8"
+            label: Short story (novella)
+          - range: "9-12"
+            label: Royal biography and court history
+          - range: "13-14"
+            label: Genealogy and retold royal history
+          - range: "15-16"
+            label: Post-exilic narrative and memoir
+          - range: "17"
+            label: Court narrative — short story
+          - range: "18"
+            label: Wisdom dialogue and poetry
+          - range: "19"
+            label: Collected hymns and lament poetry
+          - range: "20-21"
+            label: Wisdom sayings and reflection
+          - range: "22"
+            label: Love poetry
+          - range: "23-24"
+            label: Prophetic oracles with narrative
+          - range: "25"
+            label: Lament poetry
+          - range: "26-27"
+            label: Prophetic visions and apocalyptic
+          - range: "28-39"
+            label: Prophetic oracles — the Twelve
+
+      - slug: covenant
+        title: Covenant Arc
+        description: The covenant theme at the center of each book.
+        brackets:
+          - range: "1"
+            label: Abrahamic covenant established
+          - range: "2-5"
+            label: Mosaic covenant given at Sinai
+          - range: "6"
+            label: Covenant land fulfilled
+          - range: "7-8"
+            label: Covenant tested — faithfulness rewarded
+          - range: "9-10"
+            label: Davidic covenant established
+          - range: "11-12"
+            label: Covenant broken — judgment falls
+          - range: "13-14"
+            label: Covenant history reviewed
+          - range: "15-17"
+            label: Covenant restored — post-exile
+          - range: "18-22"
+            label: Covenant wisdom and devotion
+          - range: "23-25"
+            label: Covenant broken — calls to repent
+          - range: "26-27"
+            label: Covenant hope in exile
+          - range: "28-39"
+            label: Covenant calls to return
+
+      - slug: christ-arc
+        title: Christ Arc
+        description: How each book foreshadows or points to Jesus Christ.
+        brackets:
+          - range: "1-2"
+            label: Types of sacrifice and deliverance
+          - range: "3-4"
+            label: Atonement rituals and lifted serpent
+          - range: "5"
+            label: The prophet like Moses foretold
+          - range: "6"
+            label: Joshua — same name, leads to rest
+          - range: "7"
+            label: Deliverers as types of Christ
+          - range: "8"
+            label: Boaz as kinsman-redeemer
+          - range: "9-12"
+            label: David's line and the eternal throne
+          - range: "13-14"
+            label: Temple and Davidic dynasty reviewed
+          - range: "15-17"
+            label: Providence in restoration and diaspora
+          - range: "18"
+            label: Job as type — suffering and vindication
+          - range: "19"
+            label: Messianic psalms point to Christ
+          - range: "20-22"
+            label: Wisdom, the Word, and Solomon's type
+          - range: "23"
+            label: Isaiah's servant and Messiah
+          - range: "24-25"
+            label: Jeremiah's new covenant foretold
+          - range: "26-27"
+            label: Resurrection visions and eternal kingdom
+          - range: "28-39"
+            label: The coming King — the Twelve
+
+      - slug: years
+        title: Years
+        description: Approximate historical time period of each book.
+        brackets:
+          - range: "1"
+            label: "Primeval – ~1700 BC"
+          - range: "2-5"
+            label: "~1700–1406 BC"
+          - range: "6-8"
+            label: "~1406–1050 BC"
+          - range: "9-10"
+            label: "~1050–970 BC"
+          - range: "11-12"
+            label: "~970–586 BC"
+          - range: "13-14"
+            label: "~1000–586 BC"
+          - range: "15-17"
+            label: "~538–430 BC"
+          - range: "18"
+            label: "~Patriarchal era"
+          - range: "19"
+            label: "~1000–500 BC"
+          - range: "20-22"
+            label: "~970–700 BC"
+          - range: "23"
+            label: "~740–700 BC"
+          - range: "24-25"
+            label: "~626–586 BC"
+          - range: "26-27"
+            label: "~593–530 BC"
+          - range: "28-39"
+            label: "~760–430 BC"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        brackets:
+          - range: "1"
+            label: "Weeks 3–12 · Jan–Mar"
+          - range: "2"
+            label: "Weeks 13–18 · Mar–May"
+          - range: "3"
+            label: "Week 18 · Apr 27–May 3"
+          - range: "4"
+            label: "Week 19 · May 4–10"
+          - range: "5"
+            label: "Week 20 · May 11–17"
+          - range: "6"
+            label: "Week 21 · May 18–24"
+          - range: "7"
+            label: "Week 22 · May 25–31"
+          - range: "8"
+            label: "Week 23 · Jun 1–7"
+          - range: "9"
+            label: "Weeks 23–25 · Jun 1–21"
+          - range: "10"
+            label: "Weeks 25–26 · Jun 15–28"
+          - range: "11"
+            label: "Weeks 26–27 · Jun 22–Jul 5"
+          - range: "12"
+            label: "Weeks 28–29 · Jul 6–19"
+
   - target_slug: genesis
     default_right: years
     topics:

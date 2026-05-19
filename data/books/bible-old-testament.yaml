@@ -7,6 +7,129 @@ root:
   title: Old Testament
   description: The Old Testament contains the sacred writings of ancient Israel, including the law, history, poetry, and prophecy.
   children:
+    - slug: overview
+      type: overview
+      title: Old Testament — Overview
+      description: "The 12 Old Testament books covered here, from Genesis through 2 Kings."
+      children:
+        - slug: ov-genesis
+          type: book-entry
+          description: "Genesis — Creation, the patriarchs, and the covenant foundations of Israel."
+        - slug: ov-exodus
+          type: book-entry
+          description: "Exodus — Deliverance from Egypt, the Passover, and the law given at Sinai."
+        - slug: ov-leviticus
+          type: book-entry
+          description: "Leviticus — The laws of holiness, sacrifice, and the priesthood given through Moses."
+        - slug: ov-numbers
+          type: book-entry
+          description: "Numbers — Israel's wilderness wanderings, rebellion, and preparations to enter Canaan."
+        - slug: ov-deuteronomy
+          type: book-entry
+          description: "Deuteronomy — Moses's farewell sermons, covenant renewal, and his death on Mount Nebo."
+        - slug: ov-joshua
+          type: book-entry
+          description: "Joshua — The conquest of Canaan and the allocation of the land among the twelve tribes."
+        - slug: ov-judges
+          type: book-entry
+          description: "Judges — Cycles of apostasy, oppression, and deliverance through twelve judges."
+        - slug: ov-ruth
+          type: book-entry
+          description: "Ruth — A Moabite widow's loyalty to Naomi and her marriage to Boaz the kinsman-redeemer."
+        - slug: ov-1-samuel
+          type: book-entry
+          description: "1 Samuel — Samuel's ministry, Saul's reign, and David's rise as God's anointed king."
+        - slug: ov-2-samuel
+          type: book-entry
+          description: "2 Samuel — David's reign over Israel, his great sin, and the consequences that follow."
+        - slug: ov-1-kings
+          type: book-entry
+          description: "1 Kings — Solomon's glory, the divided kingdom, and Elijah's ministry against Baal."
+        - slug: ov-2-kings
+          type: book-entry
+          description: "2 Kings — The fall of both kingdoms of Israel and Judah and the exile of their peoples."
+        - slug: ov-1-chronicles
+          type: book-entry
+          description: "1 Chronicles — Israel's history from Adam to David, with focus on temple worship."
+        - slug: ov-2-chronicles
+          type: book-entry
+          description: "2 Chronicles — Solomon's glory, the divided kingdom, and Judah through the exile."
+        - slug: ov-ezra
+          type: book-entry
+          description: "Ezra — The return from Babylon and the rebuilding of the Jerusalem temple."
+        - slug: ov-nehemiah
+          type: book-entry
+          description: "Nehemiah — Jerusalem's walls rebuilt and the covenant community renewed."
+        - slug: ov-esther
+          type: book-entry
+          description: "Esther — A Jewish queen in Persia saves her people from a decree of genocide."
+        - slug: ov-job
+          type: book-entry
+          description: "Job — Wrestling with suffering and faith through poetic dialogue with God."
+        - slug: ov-psalms
+          type: book-entry
+          description: "Psalms — 150 sacred songs of praise, lament, thanksgiving, and Messianic prophecy."
+        - slug: ov-proverbs
+          type: book-entry
+          description: "Proverbs — Practical wisdom sayings for righteous living, largely from Solomon."
+        - slug: ov-ecclesiastes
+          type: book-entry
+          description: "Ecclesiastes — The Preacher explores the meaning of life under the sun."
+        - slug: ov-song-of-solomon
+          type: book-entry
+          description: "Song of Solomon — Lyric love poetry, often read as an allegory of divine love."
+        - slug: ov-isaiah
+          type: book-entry
+          description: "Isaiah — Judgment on Israel and Judah with sweeping visions of the coming Messiah."
+        - slug: ov-jeremiah
+          type: book-entry
+          description: "Jeremiah — Calls Judah to repentance before Babylon destroys Jerusalem."
+        - slug: ov-lamentations
+          type: book-entry
+          description: "Lamentations — Five anguished poems mourning the destruction of Jerusalem."
+        - slug: ov-ezekiel
+          type: book-entry
+          description: "Ezekiel — Dramatic visions in Babylon of God's glory, judgment, and restoration."
+        - slug: ov-daniel
+          type: book-entry
+          description: "Daniel — Faith demonstrated in Babylon alongside prophetic visions of future kingdoms."
+        - slug: ov-hosea
+          type: book-entry
+          description: "Hosea — Hosea's marriage as a mirror of God's covenant with unfaithful Israel."
+        - slug: ov-joel
+          type: book-entry
+          description: "Joel — The locust plague, the Day of the Lord, and the promise of the Spirit."
+        - slug: ov-amos
+          type: book-entry
+          description: "Amos — A shepherd-prophet denounces social injustice and religious hypocrisy in Israel."
+        - slug: ov-obadiah
+          type: book-entry
+          description: "Obadiah — Judgment on Edom for pride and treachery against God's people."
+        - slug: ov-jonah
+          type: book-entry
+          description: "Jonah — Flees God's call, is swallowed by a fish, and reluctantly preaches to Nineveh."
+        - slug: ov-micah
+          type: book-entry
+          description: "Micah — Indicts Judah for injustice and prophesies the Messiah's birth in Bethlehem."
+        - slug: ov-nahum
+          type: book-entry
+          description: "Nahum — The certain destruction of Nineveh and the Assyrian Empire foretold."
+        - slug: ov-habakkuk
+          type: book-entry
+          description: "Habakkuk — Wrestles with God over injustice and is told: the just shall live by faith."
+        - slug: ov-zephaniah
+          type: book-entry
+          description: "Zephaniah — Warns of the Day of the Lord and promises restoration for the faithful."
+        - slug: ov-haggai
+          type: book-entry
+          description: "Haggai — Urges the returned exiles to rebuild the temple above their own homes."
+        - slug: ov-zechariah
+          type: book-entry
+          description: "Zechariah — Post-exilic visions of restoration and rich Messianic prophecy."
+        - slug: ov-malachi
+          type: book-entry
+          description: "Malachi — Rebukes spiritual apathy and promises the coming forerunner of the Lord."
+
     - slug: genesis
       type: book
       title: Genesis
@@ -603,7 +726,6 @@ root:
           type: chapter
           description: "Moses views Canaan from Pisgah; his death and burial; Joshua succeeds him."
 
-
     - slug: joshua
       type: book
       title: Joshua
@@ -1105,3 +1227,165 @@ root:
         - slug: 2-kings-25
           type: chapter
           description: "Jerusalem falls; the temple burned; Judah exiled; Gedaliah governs briefly."
+
+    - slug: 1-chronicles
+      type: book
+      title: 1 Chronicles
+      description: 1 Chronicles retells Israel's history from Adam to David, emphasizing temple worship.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/1-chr/{index}?lang=eng"
+
+    - slug: 2-chronicles
+      type: book
+      title: 2 Chronicles
+      description: 2 Chronicles covers Solomon's reign, the divided kingdom, and Judah through the exile.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/2-chr/{index}?lang=eng"
+
+    - slug: ezra
+      type: book
+      title: Ezra
+      description: Ezra records the return of the Jews from Babylon and the rebuilding of the temple.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ezra/{index}?lang=eng"
+
+    - slug: nehemiah
+      type: book
+      title: Nehemiah
+      description: Nehemiah leads the rebuilding of Jerusalem's walls and renewal of the covenant.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/neh/{index}?lang=eng"
+
+    - slug: esther
+      type: book
+      title: Esther
+      description: Esther, a Jewish queen in Persia, saves her people from a royal decree of genocide.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/esth/{index}?lang=eng"
+
+    - slug: job
+      type: book
+      title: Job
+      description: Job wrestles with suffering, theodicy, and faith through a series of poetic dialogues.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/job/{index}?lang=eng"
+
+    - slug: psalms
+      type: book
+      title: Psalms
+      description: Psalms is 150 sacred songs of praise, lament, thanksgiving, and Messianic prophecy.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ps/{index}?lang=eng"
+
+    - slug: proverbs
+      type: book
+      title: Proverbs
+      description: Proverbs collects practical wisdom sayings for righteous living, largely from Solomon.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/prov/{index}?lang=eng"
+
+    - slug: ecclesiastes
+      type: book
+      title: Ecclesiastes
+      description: Ecclesiastes explores the meaning of life and the futility of earthly pursuits.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/eccl/{index}?lang=eng"
+
+    - slug: song-of-solomon
+      type: book
+      title: Song of Solomon
+      description: "Song of Solomon — lyric love poetry, often read as an allegory of divine love."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/song/{index}?lang=eng"
+
+    - slug: isaiah
+      type: book
+      title: Isaiah
+      description: Isaiah prophesies judgment and exile alongside sweeping visions of the coming Messiah.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/{index}?lang=eng"
+
+    - slug: jeremiah
+      type: book
+      title: Jeremiah
+      description: Jeremiah calls Judah to repentance before the Babylonian exile, weeping for the lost.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/jer/{index}?lang=eng"
+
+    - slug: lamentations
+      type: book
+      title: Lamentations
+      description: Lamentations mourns the destruction of Jerusalem with five anguished poems.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/lam/{index}?lang=eng"
+
+    - slug: ezekiel
+      type: book
+      title: Ezekiel
+      description: Ezekiel sees visions in Babylon of God's glory, Israel's judgment, and future restoration.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ezek/{index}?lang=eng"
+
+    - slug: daniel
+      type: book
+      title: Daniel
+      description: Daniel and his companions demonstrate faith in Babylon with visions of future kingdoms.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/dan/{index}?lang=eng"
+
+    - slug: hosea
+      type: book
+      title: Hosea
+      description: "Hosea's marriage mirrors God's covenant with unfaithful Israel and his enduring love."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/hosea/{index}?lang=eng"
+
+    - slug: joel
+      type: book
+      title: Joel
+      description: Joel calls Israel to repentance, prophesying the Day of the Lord and the Spirit.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/joel/{index}?lang=eng"
+
+    - slug: amos
+      type: book
+      title: Amos
+      description: "Amos, a shepherd-prophet, denounces social injustice and religious hypocrisy in Israel."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/amos/{index}?lang=eng"
+
+    - slug: obadiah
+      type: book
+      title: Obadiah
+      description: Obadiah pronounces judgment on Edom for its pride and treachery against Israel.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/obad/{index}?lang=eng"
+
+    - slug: jonah
+      type: book
+      title: Jonah
+      description: "Jonah flees God's call, is swallowed by a fish, and reluctantly preaches to Nineveh."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/jonah/{index}?lang=eng"
+
+    - slug: micah
+      type: book
+      title: Micah
+      description: Micah indicts Judah for injustice and prophesies the Messiah's birth in Bethlehem.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/micah/{index}?lang=eng"
+
+    - slug: nahum
+      type: book
+      title: Nahum
+      description: "Nahum announces the certain destruction of Nineveh, the capital of the Assyrian Empire."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/nahum/{index}?lang=eng"
+
+    - slug: habakkuk
+      type: book
+      title: Habakkuk
+      description: Habakkuk wrestles with God over injustice and receives the answer to live by faith.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/hab/{index}?lang=eng"
+
+    - slug: zephaniah
+      type: book
+      title: Zephaniah
+      description: Zephaniah warns of the Day of the Lord and promises restoration for the faithful remnant.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/zeph/{index}?lang=eng"
+
+    - slug: haggai
+      type: book
+      title: Haggai
+      description: Haggai urges the returned exiles to prioritize rebuilding the temple above their homes.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/hag/{index}?lang=eng"
+
+    - slug: zechariah
+      type: book
+      title: Zechariah
+      description: Zechariah encourages the exiles with visions of restoration and Messianic prophecy.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/zech/{index}?lang=eng"
+
+    - slug: malachi
+      type: book
+      title: Malachi
+      description: "Malachi rebukes spiritual apathy and priestly failures, promising the coming forerunner."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/mal/{index}?lang=eng"

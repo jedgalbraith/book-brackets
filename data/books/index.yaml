@@ -19,7 +19,7 @@ books:
     brackets:
       - file: bible-old-testament.yaml
         title: Thematic Analysis
-        default_target: genesis
+        default_target: overview
   - slug: bible-new-testament
     title: New Testament
     description: >
