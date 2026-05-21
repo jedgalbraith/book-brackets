@@ -16,9 +16,9 @@ Then open `http://localhost:8000`. The YAML data files require a server — they
 
 Book Brackets is a pure-frontend D3.js visualization. It renders a vertical numbered list of chapters and draws SVG bracket lines on the left side grouping chapters by thematic category. Topic buttons toggle between bracket views.
 
-### Data layer (in progress — JS not yet updated to consume these)
+### Data layer
 
-Two separate schemas, both YAML (human-authored) or JSON:
+Two separate schemas, both YAML (human-authored):
 
 **`data/books/`** — content files. Recursive node tree:
 ```yaml
@@ -64,25 +64,14 @@ targets:
 - Bracket `label` values: 40 characters max
 - Leaf node `description` values: 90 characters max
 
-### Visualization layer (currently being refactored)
+### Visualization layer
 
-- `js/main.js` — thematic visualization, reads `data/book_of_mormon.json` (legacy)
-- `js/main-chronological.js` — chronological visualization (deferred, not a priority)
-- `visualizations/1-nephi-thematic.html` — loads `main.js`
-- `visualizations/1-nephi-chronological.html` — loads `main-chronological.js`
+- `js/loader.js` — shared utilities: `fetchData` (fetch + YAML/JSON parse), `findNodeWithTemplate` (depth-first slug lookup that inherits `url_template`), `collectLeaves` (flat array of leaf nodes)
+- `js/main.js` — reads `data/books/index.yaml` → fetches the selected book and bracket files → renders D3 SVG with dual left/right topic dropdowns per target section
+- `visualizations/visualization.html` — single generic page; takes `?book=<slug>` (required), `?brackets=<file>` (optional), `?left=<slug>` and `?right=<slug>` (optional topic pre-selection)
 
-Both JS files share the same pattern: fetch JSON → build flat chapter list → draw D3 text elements → draw SVG bracket lines on button click. The JS has not yet been updated to consume the new `data/books/` and `data/brackets/` schemas — that is the next planned task.
-
-**Known bugs in `main.js`:**
-1. `drawText` receives `units` (an array) as its `data` param, then tries to access `data.chapter_url_template` — undefined, so chapter links are broken.
-2. `window.onload` is set inside the async `fetchAndDrawData()` callback; by the time the fetch resolves the page load event has already fired, so the first button never auto-clicks.
-
-Both bugs are fixed in `main-chronological.js`.
+**YAML parsing:** js-yaml (CDN) is loaded in `visualization.html`; `fetchData` in `loader.js` detects `.yaml`/`.yml` extensions and routes through `jsyaml.load`.
 
 ### Home page
 
-`index.html` is a landing page with cards linking to the two visualizations. Styled by `styles/home.css`. Visualization pages share `styles/styles.css` and `styles/viz.css`.
-
-### YAML parsing
-
-The new data files are YAML. The current JS uses native `fetch` + `JSON.parse`. When the JS is updated to consume YAML files, **js-yaml** (CDN) will be added as a script dependency for browser-side YAML parsing.
+`index.html` is a landing page. `js/home.js` fetches `data/books/index.yaml` and renders a card grid linking to `visualization.html?book=<slug>`. Styled by `styles/home.css`. Visualization pages share `styles/styles.css` and `styles/viz.css`.
