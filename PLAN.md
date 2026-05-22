@@ -84,14 +84,40 @@ Goal: cover infrastructure costs (~$20–50/month). Not a primary revenue driver
 - Metered AI usage resale (margin risk, accounting complexity — BYOK solves this cleanly)
 - Enterprise / teams (out of scope)
 
+## Repositories
+
+Two repos. That's it.
+
+**`bookbrackets-data`** (public GitHub repo)
+- `data/books/*.yaml` — canonical book content files
+- `data/brackets/*.yaml` — canonical bracket annotation files
+- `schema/book.schema.json` + `schema/brackets.schema.json` — the authoritative schema spec
+- Registered in the registry like any community member's files — no privileged back channel
+- Third-party authors reference the raw GitHub schema URLs in their `yaml-language-server` comments
+- Home page discovery: `bookbrackets-data` maintains an `index.yaml`; the home page fetches it by raw GitHub URL in Phase 1, switches to the registry API in Phase 2
+
+**`bookbrackets`** (Rails app, this becomes everything else)
+- Visualization engine (D3.js static files in `public/`)
+- Home / landing page (starts static in `public/`, graduates to a Rails view when it needs dynamic registry content)
+- Editor tool (client-side HTML in `public/`, local-first — no server involvement)
+- Registry (browse, search, register, fork)
+- User accounts + auth
+- Hosted YAML file storage
+- Payments
+
+The `book-brackets` JS repo is retired once its files are moved into the Rails app.
+
 ## Technical approach
 
 ### Data layer
 - Content stays in YAML/JSON documents (not normalized into relational tables) — the tree structure of books and brackets is a natural document, not a set of rows
-- Thin relational DB for metadata only: user accounts, project ownership, sharing permissions (Supabase or Neon)
+- Thin relational DB for metadata only: user accounts, registry entries, fork lineage, sharing permissions (Supabase or Neon)
 - YAML blobs in Cloudflare R2 for hosted content (zero egress fees, S3-compatible)
 
 ### Frontend
+- Visualization static files (`main.js`, `loader.js`, `visualization.html`, styles) live in Rails `public/` — served as-is, no Rails view layer needed
+- Home page starts as a static file in `public/`; graduates to a Rails view when registry entries need to appear dynamically
+- Editor is a client-side HTML file in `public/` — local-first, no server involvement regardless of which repo hosts it
 - Refactor `main.js` to separate data loading from rendering — preview must accept in-memory YAML content, not just fetched files
 - Schema validation step between editor and preview with inline error display
 - YAML editor with syntax highlighting (CodeMirror or Monaco)
