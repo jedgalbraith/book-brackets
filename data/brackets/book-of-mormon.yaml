@@ -1,0 +1,771 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/brackets.schema.json
+schema_version: "1"
+author: "AI: Claude"
+title: Book of Mormon — Thematic Analysis
+book_slug: book-of-mormon
+targets:
+  - target_slug: overview
+    default_right: years
+    drills_into:
+      - 1-nephi
+      - 2-nephi
+      - jacob
+      - enos
+      - jarom
+      - omni
+      - words-of-mormon
+      - mosiah
+      - alma
+      - helaman
+      - 3-nephi
+      - 4-nephi
+      - mormon
+      - ether
+      - moroni
+    topics:
+      - slug: source-records
+        title: Source Records
+        description: Which ancient record or plates each book derives from.
+        brackets:
+          - range: "1-6"
+            label: Small Plates of Nephi
+          - range: "7"
+            label: Words of Mormon (bridge)
+          - range: "8-13"
+            label: Mormon's abridgment of the Large Plates
+          - range: "14"
+            label: Plates of Ether (abridged by Moroni)
+          - range: "15"
+            label: Moroni's own writings
+
+      - slug: focus
+        title: Content Focus
+        description: The primary emphasis of each section, as described in the introduction to the Book of Mormon.
+        brackets:
+          - range: "1-6"
+            label: Spiritual and prophetic (small plates)
+          - range: "7"
+            label: Editorial transition
+          - range: "8-12"
+            label: Historical narrative — wars, society
+          - range: "13"
+            label: Final wars and destruction
+          - range: "14"
+            label: Ancient Jaredite history
+          - range: "15"
+            label: Doctrine, ordinances, and farewell
+
+      - slug: authors
+        title: Authors
+        description: Who wrote or compiled each book.
+        brackets:
+          - range: "1-2"
+            label: Nephi
+          - range: "3"
+            label: Jacob
+          - range: "4"
+            label: Enos
+          - range: "5"
+            label: Jarom
+          - range: "6"
+            label: Multiple authors (Omni–Amaleki)
+          - range: "7-13"
+            label: Mormon (compiler)
+          - range: "14-15"
+            label: Moroni
+
+      - slug: christ-arc
+        title: Christ Arc
+        description: Each book's relationship to Christ's mortal ministry among the Nephites.
+        brackets:
+          - range: "1-10"
+            label: Prophesying of Christ's coming
+          - range: "11"
+            label: Christ ministers personally
+          - range: "12-13"
+            label: Post-Christ Nephite era
+          - range: "14"
+            label: Jaredite faith — no mortal visit
+          - range: "15"
+            label: Final witness and invitation
+
+      - slug: narrative-form
+        title: Narrative Form
+        description: The literary form of each book.
+        brackets:
+          - range: "1-2"
+            label: First-person spiritual autobiography
+          - range: "3-6"
+            label: Brief successive personal records
+          - range: "7"
+            label: Editorial bridge
+          - range: "8-13"
+            label: Abridged historical narrative
+          - range: "14"
+            label: Abridged ancient record
+          - range: "15"
+            label: Doctrinal writings and epistles
+
+      - slug: pride-cycle
+        title: Pride Cycle
+        description: Where each book falls in the recurring pattern of righteousness, pride, apostasy, and destruction.
+        brackets:
+          - range: "1-3"
+            label: Founding the covenant community
+          - range: "4-6"
+            label: Passing the record through generations
+          - range: "7"
+            label: Historical pivot point
+          - range: "8-10"
+            label: Cycles of faith, apostasy, and war
+          - range: "11"
+            label: The pinnacle — Christ visits
+          - range: "12"
+            label: Zion achieved, then lost
+          - range: "13"
+            label: Final Nephite collapse
+          - range: "14"
+            label: Jaredite parallel — same cycle
+          - range: "15"
+            label: Witness preserved for the latter days
+
+      - slug: years
+        title: Years
+        description: Approximate time period covered by each book.
+        brackets:
+          - range: "1-3"
+            label: "~600–500 B.C."
+          - range: "4-6"
+            label: "~500–130 B.C."
+          - range: "7-10"
+            label: "~130–1 B.C."
+          - range: "11"
+            label: "~1 B.C.–A.D. 34"
+          - range: "12-13"
+            label: "A.D. 35–385"
+          - range: "14"
+            label: Tower of Babel to ~600 B.C.
+          - range: "15"
+            label: "A.D. 385–421"
+
+  - target_slug: 1-nephi
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major narrative and doctrinal themes.
+        brackets:
+          - range: "1-7"
+            label: Exodus from Jerusalem
+          - range: "8-15"
+            label: Visions of the tree of life and Christ
+          - range: "16-18"
+            label: Wilderness and ocean journey
+          - range: "19-22"
+            label: Isaiah and the covenant of Israel
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-17"
+            label: Jerusalem and wilderness
+          - range: "18"
+            label: Ocean
+          - range: "19-22"
+            label: Promised Land
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1"
+            label: From Lehi's record
+          - range: "2-22"
+            label: Nephi
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-16"
+            label: "~600–592 B.C."
+          - range: "17-18"
+            label: "~592–589 B.C."
+          - range: "19-22"
+            label: "~589 B.C."
+
+  - target_slug: 2-nephi
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major doctrinal and narrative themes.
+        brackets:
+          - range: "1-5"
+            label: Family and covenant inheritance
+          - range: "6-24"
+            label: Isaiah's prophecies of Christ and Israel
+          - range: "25-33"
+            label: The doctrine of Christ
+
+      - slug: locations
+        title: Locations
+        description: Where the events and teachings take place.
+        brackets:
+          - range: "1-4"
+            label: Lehi's encampment in the promised land
+          - range: "5-33"
+            label: Land of Nephi (after Nephite separation)
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-4"
+            label: Lehi
+          - range: "5"
+            label: Nephi
+          - range: "6-10"
+            label: Jacob
+          - range: "11"
+            label: Nephi
+          - range: "12-24"
+            label: Isaiah (quoted)
+          - range: "25-33"
+            label: Nephi
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-5"
+            label: "~588–570 B.C."
+          - range: "6-33"
+            label: "~570–545 B.C."
+
+  - target_slug: jacob
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major doctrinal themes.
+        brackets:
+          - range: "1-3"
+            label: Social righteousness
+          - range: "4"
+            label: Christ as the foundation stone
+          - range: "5-6"
+            label: The destiny of Israel
+          - range: "7"
+            label: Apostasy and testimony
+
+      - slug: locations
+        title: Locations
+        description: Where the events and teachings take place.
+        brackets:
+          - range: "1-6"
+            label: Nephite temple in the land of Nephi
+          - range: "7"
+            label: Nephite lands (Sherem encounter)
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-4"
+            label: Jacob
+          - range: "5"
+            label: Zenos (quoted)
+          - range: "6-7"
+            label: Jacob
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-4"
+            label: "~544–530 B.C."
+          - range: "5-7"
+            label: "~530–500 B.C."
+
+  - target_slug: enos
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major themes in the book of Enos.
+        brackets:
+          - range: "1"
+            label: Prayer and covenant for the Lamanites
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1"
+            label: Wilderness (while hunting)
+
+      - slug: authors
+        title: Authors
+        description: Who is writing.
+        brackets:
+          - range: "1"
+            label: Enos
+
+      - slug: years
+        title: Years
+        description: Approximate time period.
+        brackets:
+          - range: "1"
+            label: "~544–421 B.C."
+
+  - target_slug: jarom
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major themes in the book of Jarom.
+        brackets:
+          - range: "1"
+            label: Wars, prosperity, and the law of Moses
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1"
+            label: Land of Nephi
+
+      - slug: authors
+        title: Authors
+        description: Who is writing.
+        brackets:
+          - range: "1"
+            label: Jarom
+
+      - slug: years
+        title: Years
+        description: Approximate time period.
+        brackets:
+          - range: "1"
+            label: "~399–361 B.C."
+
+  - target_slug: omni
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major themes in the book of Omni.
+        brackets:
+          - range: "1"
+            label: Record-keeping; discovery of Zarahemla
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1"
+            label: Land of Nephi and Zarahemla
+
+      - slug: authors
+        title: Authors
+        description: Who is writing.
+        brackets:
+          - range: "1"
+            label: Omni, Amaron, Chemish, Abinadom, Amaleki
+
+      - slug: years
+        title: Years
+        description: Approximate time period.
+        brackets:
+          - range: "1"
+            label: "~361–130 B.C."
+
+  - target_slug: words-of-mormon
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major themes in the Words of Mormon.
+        brackets:
+          - range: "1"
+            label: "Mormon's bridge: two sets of plates"
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1"
+            label: "A.D. 385 writing; events ~130 B.C."
+
+      - slug: authors
+        title: Authors
+        description: Who is writing.
+        brackets:
+          - range: "1"
+            label: Mormon
+
+      - slug: years
+        title: Years
+        description: Approximate time period.
+        brackets:
+          - range: "1"
+            label: "A.D. 385; describes events ~130 B.C."
+
+  - target_slug: mosiah
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major narrative and doctrinal themes.
+        brackets:
+          - range: "1-6"
+            label: King Benjamin's address and covenant
+          - range: "7-22"
+            label: Zeniff, Abinadi, and Alma's church
+          - range: "23-29"
+            label: Return to Zarahemla; reign of judges
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-6"
+            label: Zarahemla
+          - range: "7-22"
+            label: Land of Lehi-Nephi and the wilderness
+          - range: "23-29"
+            label: Zarahemla (returned)
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-8"
+            label: Mormon's abridgment
+          - range: "9-22"
+            label: Zeniff's record (abridged by Mormon)
+          - range: "23-29"
+            label: Mormon's abridgment
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-8"
+            label: "~130–121 B.C."
+          - range: "9-22"
+            label: "~200–91 B.C. (Zeniff colony era)"
+          - range: "23-29"
+            label: "~100–91 B.C."
+
+  - target_slug: alma
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major narrative and doctrinal themes.
+        brackets:
+          - range: "1-16"
+            label: Alma's ministry in Zarahemla
+          - range: "17-29"
+            label: Sons of Mosiah's Lamanite mission
+          - range: "30-35"
+            label: The Zoramite mission
+          - range: "36-42"
+            label: Alma's counsel to his sons
+          - range: "43-63"
+            label: The wars of Captain Moroni
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-16"
+            label: Zarahemla and surrounding Nephite cities
+          - range: "17-29"
+            label: Lamanite lands (Ishmael, Middoni)
+          - range: "30-35"
+            label: Land of Antionum (Zoramite territory)
+          - range: "36-42"
+            label: Zarahemla (private counsel)
+          - range: "43-63"
+            label: Battle sites throughout Nephite lands
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-55"
+            label: Mormon's abridgment
+          - range: "56-58"
+            label: Helaman's epistle to Moroni (quoted)
+          - range: "59-63"
+            label: Mormon's abridgment
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-16"
+            label: "~91–83 B.C."
+          - range: "17-42"
+            label: "~91–73 B.C."
+          - range: "43-63"
+            label: "~74–52 B.C."
+
+  - target_slug: helaman
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major narrative and doctrinal themes.
+        brackets:
+          - range: "1-6"
+            label: Political upheaval; Gadianton robbers
+          - range: "7-12"
+            label: Nephi's ministry and the sealing power
+          - range: "13-16"
+            label: Samuel the Lamanite's prophecies
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-6"
+            label: Zarahemla and Lamanite lands
+          - range: "7-12"
+            label: Nephi's garden tower, Zarahemla
+          - range: "13-16"
+            label: City of Zarahemla (the city wall)
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-11"
+            label: Mormon's abridgment
+          - range: "12"
+            label: Mormon's personal commentary
+          - range: "13-16"
+            label: Mormon's abridgment; Samuel quoted
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-6"
+            label: "~52–40 B.C."
+          - range: "7-12"
+            label: "~20–6 B.C."
+          - range: "13-16"
+            label: "~6–1 B.C."
+
+  - target_slug: 3-nephi
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major narrative and doctrinal themes.
+        brackets:
+          - range: "1-10"
+            label: Signs, Gadianton wars, and destruction
+          - range: "11-26"
+            label: Christ ministers at Bountiful temple
+          - range: "27-30"
+            label: Final teachings and the three Nephites
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-10"
+            label: Nephite lands (culminating at Bountiful)
+          - range: "11-28"
+            label: Temple at Bountiful
+          - range: "29-30"
+            label: Epilogue (no specific location)
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-30"
+            label: Mormon's abridgment of Nephi's record
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-10"
+            label: "~1 B.C.–A.D. 34"
+          - range: "11-30"
+            label: "A.D. 34–36"
+
+  - target_slug: 4-nephi
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major themes in 4 Nephi.
+        brackets:
+          - range: "1"
+            label: Zion achieved, then gradual apostasy
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1"
+            label: Throughout Nephite and Lamanite lands
+
+      - slug: authors
+        title: Authors
+        description: Who is writing.
+        brackets:
+          - range: "1"
+            label: Nephi, Amos, Amos son of Amos, Ammaron
+
+      - slug: years
+        title: Years
+        description: Approximate time period.
+        brackets:
+          - range: "1"
+            label: "A.D. 35–321"
+
+  - target_slug: mormon
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major narrative and doctrinal themes.
+        brackets:
+          - range: "1-7"
+            label: Mormon witnesses the final Nephite wars
+          - range: "8-9"
+            label: Moroni's warnings to future readers
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-7"
+            label: Battle sites culminating at Cumorah
+          - range: "8-9"
+            label: Written in hiding (location unknown)
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-7"
+            label: Mormon
+          - range: "8-9"
+            label: Moroni
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-7"
+            label: "A.D. 321–385"
+          - range: "8-9"
+            label: "A.D. 385–421"
+
+  - target_slug: ether
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major narrative and doctrinal themes.
+        brackets:
+          - range: "1-5"
+            label: Jaredite origins; the brother of Jared
+          - range: "6-11"
+            label: Jaredite kings and cycles of wickedness
+          - range: "12-15"
+            label: Moroni on faith; the final Jaredite wars
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-2"
+            label: Tower of Babel and valley of Nimrod
+          - range: "3-5"
+            label: The great seashore
+          - range: "6"
+            label: The ocean
+          - range: "7-15"
+            label: Promised land (Americas)
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-15"
+            label: Moroni's abridgment of Ether's record
+
+      - slug: years
+        title: Years
+        description: Approximate time period of the events.
+        brackets:
+          - range: "1-6"
+            label: "~2200 B.C. — tower of Babel; ocean"
+          - range: "7-15"
+            label: "~2200–600 B.C. (Jaredite Americas)"
+
+  - target_slug: moroni
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major themes in the book of Moroni.
+        brackets:
+          - range: "1-6"
+            label: Church ordinances and membership
+          - range: "7-9"
+            label: Mormon's epistles on faith and charity
+          - range: "10"
+            label: Moroni's farewell and promise
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-10"
+            label: Written in hiding, fleeing Lamanites
+
+      - slug: authors
+        title: Authors
+        description: Who is speaking or writing each section.
+        brackets:
+          - range: "1-7"
+            label: Moroni
+          - range: "8-9"
+            label: Mormon (epistles quoted by Moroni)
+          - range: "10"
+            label: Moroni
+
+      - slug: years
+        title: Years
+        description: Approximate time period.
+        brackets:
+          - range: "1-10"
+            label: "A.D. 400–421"

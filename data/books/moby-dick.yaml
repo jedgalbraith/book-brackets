@@ -1,0 +1,563 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
+schema_version: "1"
+author: "AI: Claude"
+root:
+  slug: moby-dick
+  type: novel
+  title: "Moby-Dick; or, The Whale"
+  description: >
+    Herman Melville's 1851 masterpiece follows the voyage of the Pequod and its
+    obsessed captain, Ahab, in pursuit of the white sperm whale. Famous for
+    weaving gripping narrative with encyclopedic digressions on whale biology,
+    maritime law, and metaphysics.
+  url_template: "https://www.gutenberg.org/files/2701/2701-h/2701-h.htm#link2HCH00{index}"
+  children:
+    - slug: md-chapters
+      type: chapters
+      title: Moby-Dick — All Chapters
+      description: All 135 chapters and the epilogue, in order.
+      children:
+        - slug: ch-1
+          type: chapter
+          title: "Chapter 1: Loomings"
+          description: Ishmael introduces himself and explains his compulsion to go to sea.
+        - slug: ch-2
+          type: chapter
+          title: "Chapter 2: The Carpet-Bag"
+          description: Ishmael travels by night to New Bedford.
+        - slug: ch-3
+          type: chapter
+          title: "Chapter 3: The Spouter-Inn"
+          description: Ishmael finds lodging at a rough inn and is assigned to share a bed with a stranger.
+        - slug: ch-4
+          type: chapter
+          title: "Chapter 4: The Counterpane"
+          description: Ishmael wakes to find Queequeg's tattooed arm around him; a friendship begins.
+        - slug: ch-5
+          type: chapter
+          title: "Chapter 5: Breakfast"
+          description: The whalers eat breakfast in near-total silence.
+        - slug: ch-6
+          type: chapter
+          title: "Chapter 6: The Street"
+          description: Ishmael observes the remarkably diverse population of New Bedford.
+        - slug: ch-7
+          type: chapter
+          title: "Chapter 7: The Chapel"
+          description: Ishmael visits the Whalemen's Chapel and reads memorial tablets to lost sailors.
+        - slug: ch-8
+          type: chapter
+          title: "Chapter 8: The Pulpit"
+          description: Father Mapple climbs a rope ladder to his ship-shaped pulpit.
+        - slug: ch-9
+          type: chapter
+          title: "Chapter 9: The Sermon"
+          description: Father Mapple preaches on Jonah and the whale, on duty and delight.
+        - slug: ch-10
+          type: chapter
+          title: "Chapter 10: A Bosom Friend"
+          description: Ishmael and Queequeg become close friends and smoke a peace pipe together.
+        - slug: ch-11
+          type: chapter
+          title: "Chapter 11: Nightgown"
+          description: Ishmael and Queequeg spend a cozy evening in conversation and warmth.
+        - slug: ch-12
+          type: chapter
+          title: "Chapter 12: Biographical"
+          description: Queequeg tells Ishmael of his royal South Sea island origins.
+        - slug: ch-13
+          type: chapter
+          title: "Chapter 13: Wheelbarrow"
+          description: Ishmael and Queequeg travel together to Nantucket by ferry.
+        - slug: ch-14
+          type: chapter
+          title: "Chapter 14: Nantucket"
+          description: A brief meditation on the tiny island that ruled the world's oceans.
+        - slug: ch-15
+          type: chapter
+          title: "Chapter 15: Chowder"
+          description: Ishmael and Queequeg arrive at the Try Pots inn and eat excellent chowder.
+        - slug: ch-16
+          type: chapter
+          title: "Chapter 16: The Ship"
+          description: Ishmael and Queequeg choose and sign aboard the Pequod.
+        - slug: ch-17
+          type: chapter
+          title: "Chapter 17: The Ramadan"
+          description: Queequeg fasts and meditates in religious observance; Ishmael waits anxiously.
+        - slug: ch-18
+          type: chapter
+          title: "Chapter 18: His Mark"
+          description: Queequeg signs the ship's articles with his harpoon-mark tattoo.
+        - slug: ch-19
+          type: chapter
+          title: "Chapter 19: The Prophet"
+          description: A mysterious stranger named Elijah issues dark warnings about Captain Ahab.
+        - slug: ch-20
+          type: chapter
+          title: "Chapter 20: All Astir"
+          description: The Pequod is loaded with supplies and made ready to sail.
+        - slug: ch-21
+          type: chapter
+          title: "Chapter 21: Going Aboard"
+          description: Ishmael and Queequeg board the Pequod early on Christmas morning.
+        - slug: ch-22
+          type: chapter
+          title: "Chapter 22: Merry Christmas"
+          description: The Pequod sets sail from Nantucket on a cold Christmas Day.
+        - slug: ch-23
+          type: chapter
+          title: "Chapter 23: The Lee Shore"
+          description: Bulkington, just back from three years at sea, chooses the open ocean over safe land.
+        - slug: ch-24
+          type: chapter
+          title: "Chapter 24: The Advocate"
+          description: Ishmael mounts a defense of whaling as a noble, historic, and essential profession.
+        - slug: ch-25
+          type: chapter
+          title: "Chapter 25: Postscript"
+          description: A brief note that kings are anointed with sperm whale oil.
+        - slug: ch-26
+          type: chapter
+          title: "Chapter 26: Knights and Squires"
+          description: Starbuck, the first mate — a Nantucket Quaker, precise and brave — is introduced.
+        - slug: ch-27
+          type: chapter
+          title: "Chapter 27: Knights and Squires"
+          description: Stubb, Flask, and harpooneers Queequeg, Tashtego, and Daggoo are introduced.
+        - slug: ch-28
+          type: chapter
+          title: "Chapter 28: Ahab"
+          description: Captain Ahab appears on deck for the first time — scarred, with an ivory leg.
+        - slug: ch-29
+          type: chapter
+          title: "Chapter 29: Enter Ahab; to Him, Stubb"
+          description: Stubb's complaint about Ahab's pacing earns a furious rebuke revealing his obsession.
+        - slug: ch-30
+          type: chapter
+          title: "Chapter 30: The Pipe"
+          description: Ahab throws his pipe into the sea — he can no longer enjoy simple pleasures.
+        - slug: ch-31
+          type: chapter
+          title: "Chapter 31: Queen Mab"
+          description: Stubb tells Flask of a strange dream about Ahab kicking him with his ivory leg.
+        - slug: ch-32
+          type: chapter
+          title: "Chapter 32: Cetology"
+          description: An exhaustive, playful classification of all known whale species.
+        - slug: ch-33
+          type: chapter
+          title: "Chapter 33: The Specksnyder"
+          description: The historical role of the chief harpooner and shifting power dynamics aboard whale ships.
+        - slug: ch-34
+          type: chapter
+          title: "Chapter 34: The Cabin-Table"
+          description: Ahab dines in stiff, hierarchical formality with his officers.
+        - slug: ch-35
+          type: chapter
+          title: "Chapter 35: The Mast-Head"
+          description: Ishmael meditates dreamily from the lookout, musing on consciousness and the sea.
+        - slug: ch-36
+          type: chapter
+          title: "Chapter 36: The Quarter-Deck"
+          description: Ahab reveals his mission — hunt Moby Dick — and the crew takes an oath over harpoons.
+        - slug: ch-37
+          type: chapter
+          title: "Chapter 37: Sunset"
+          description: Ahab alone at sunset, brooding on his monomaniacal purpose.
+        - slug: ch-38
+          type: chapter
+          title: "Chapter 38: Dusk"
+          description: Starbuck's troubled soliloquy about Ahab's blasphemous obsession.
+        - slug: ch-39
+          type: chapter
+          title: "Chapter 39: First Night Watch"
+          description: Stubb's cheerful, fatalistic soliloquy at the helm.
+        - slug: ch-40
+          type: chapter
+          title: "Chapter 40: Midnight, Forecastle"
+          description: The crew sings, dances, drinks, and quarrels — a chaotic midnight interlude.
+        - slug: ch-41
+          type: chapter
+          title: "Chapter 41: Moby Dick"
+          description: Ishmael explains the legend and history of the white whale and past attacks on ships.
+        - slug: ch-42
+          type: chapter
+          title: "Chapter 42: The Whiteness of the Whale"
+          description: A philosophical meditation on why the color white inspires dread rather than comfort.
+        - slug: ch-43
+          type: chapter
+          title: "Chapter 43: Hark!"
+          description: Two sailors overhear strange sounds below deck — the first hint of Fedallah's crew.
+        - slug: ch-44
+          type: chapter
+          title: "Chapter 44: The Chart"
+          description: Ahab studies his charts obsessively to predict where Moby Dick will surface.
+        - slug: ch-45
+          type: chapter
+          title: "Chapter 45: The Affidavit"
+          description: Ishmael documents sworn testimony proving sperm whales attack and sink ships.
+        - slug: ch-46
+          type: chapter
+          title: "Chapter 46: Surmises"
+          description: Ahab coldly calculates how to manage his crew toward his private goal.
+        - slug: ch-47
+          type: chapter
+          title: "Chapter 47: The Mat-Maker"
+          description: Ishmael and Queequeg weave a mat; a cry of whales suddenly interrupts.
+        - slug: ch-48
+          type: chapter
+          title: "Chapter 48: The First Lowering"
+          description: The crew lowers for whales for the first time; Fedallah's secret boat crew is revealed.
+        - slug: ch-49
+          type: chapter
+          title: "Chapter 49: The Hyena"
+          description: After the chaotic first lowering, Ishmael laughs at mortality and rewrites his will.
+        - slug: ch-50
+          type: chapter
+          title: "Chapter 50: Ahab's Boat and Crew; Fedallah"
+          description: Fedallah — Ahab's mysterious Parsee shadow — is formally described.
+        - slug: ch-51
+          type: chapter
+          title: "Chapter 51: The Spirit-Spout"
+          description: A phantom silver jet appears each night, drawing the Pequod ever onward.
+        - slug: ch-52
+          type: chapter
+          title: "Chapter 52: The Albatross"
+          description: The Pequod meets the Albatross; Ahab's trumpet falls in the sea before he can speak.
+        - slug: ch-53
+          type: chapter
+          title: "Chapter 53: The Gam"
+          description: Ishmael explains the unique custom of whale ships meeting and socializing at sea.
+        - slug: ch-54
+          type: chapter
+          title: "Chapter 54: The Town-Ho's Story"
+          description: Ishmael recounts the Town-Ho's secret story — a mutiny, a whale, and justice at sea.
+        - slug: ch-55
+          type: chapter
+          title: "Chapter 55: Of the Monstrous Pictures of Whales"
+          description: A survey of wildly inaccurate whale paintings and sculptures throughout history.
+        - slug: ch-56
+          type: chapter
+          title: "Chapter 56: Of the Less Erroneous Pictures of Whales..."
+          description: More accurate whale depictions in painting and print are examined and judged.
+        - slug: ch-57
+          type: chapter
+          title: "Chapter 57: Of Whales in Paint; in Teeth; in Wood..."
+          description: Whale images in folk art, scrimshaw, and the natural world.
+        - slug: ch-58
+          type: chapter
+          title: "Chapter 58: Brit"
+          description: The Pequod sails through vast yellow fields of brit — food of the right whale.
+        - slug: ch-59
+          type: chapter
+          title: "Chapter 59: Squid"
+          description: A great white squid surfaces; Queequeg reads it as a portent.
+        - slug: ch-60
+          type: chapter
+          title: "Chapter 60: The Line"
+          description: The terrifying harpoon line that can snatch any sailor to his death in an instant.
+        - slug: ch-61
+          type: chapter
+          title: "Chapter 61: Stubb Kills a Whale"
+          description: Stubb hunts and kills a sperm whale by moonlight, singing all the while.
+        - slug: ch-62
+          type: chapter
+          title: "Chapter 62: The Dart"
+          description: Ishmael argues the harpooneer should not also row — it exhausts the throwing arm.
+        - slug: ch-63
+          type: chapter
+          title: "Chapter 63: The Crotch"
+          description: The forked post that holds the two spare irons and how it causes accidents.
+        - slug: ch-64
+          type: chapter
+          title: "Chapter 64: Stubb's Supper"
+          description: Stubb eats whale steak by lantern light while sharks gorge on the carcass alongside.
+        - slug: ch-65
+          type: chapter
+          title: "Chapter 65: The Whale as a Dish"
+          description: Whale meat in cuisine and culture across nations and history.
+        - slug: ch-66
+          type: chapter
+          title: "Chapter 66: The Shark Massacre"
+          description: Queequeg and a sailor hack at the swarming sharks through the night.
+        - slug: ch-67
+          type: chapter
+          title: "Chapter 67: Cutting In"
+          description: The methodical, dangerous process of stripping the whale's blubber.
+        - slug: ch-68
+          type: chapter
+          title: "Chapter 68: The Blanket"
+          description: The whale's thick blubber analyzed as insulation, skin, and philosophical symbol.
+        - slug: ch-69
+          type: chapter
+          title: "Chapter 69: The Funeral"
+          description: The stripped carcass drifts away as a sea-hawk circles — an omen of death misread.
+        - slug: ch-70
+          type: chapter
+          title: "Chapter 70: The Sphynx"
+          description: Ahab addresses the severed whale's head as an oracle holding the secrets of the deep.
+        - slug: ch-71
+          type: chapter
+          title: "Chapter 71: The Jeroboam's Story"
+          description: A mad prophet aboard the Jeroboam warns Ahab that Moby Dick is the archangel Michael.
+        - slug: ch-72
+          type: chapter
+          title: "Chapter 72: The Monkey-Rope"
+          description: Tied to Queequeg by rope, Ishmael meditates on the interconnection of all souls.
+        - slug: ch-73
+          type: chapter
+          title: "Chapter 73: Stubb and Flask Kill a Right Whale..."
+          description: A right whale is caught to balance the ship; Fedallah reads it as a protective charm.
+        - slug: ch-74
+          type: chapter
+          title: "Chapter 74: The Sperm Whale's Head—Contrasted View"
+          description: The sperm whale's enormous head examined as a Stoic philosopher's wall of fortitude.
+        - slug: ch-75
+          type: chapter
+          title: "Chapter 75: The Right Whale's Head—Contrasted View"
+          description: Contrasted with the right whale's head — Stoic vs. Platonic, endurance vs. passivity.
+        - slug: ch-76
+          type: chapter
+          title: "Chapter 76: The Battering-Ram"
+          description: The sperm whale's massive, oil-filled forehead as one of nature's most powerful weapons.
+        - slug: ch-77
+          type: chapter
+          title: "Chapter 77: The Great Heidelburgh Tun"
+          description: The spermaceti case in the whale's head compared to a great cask of precious oil.
+        - slug: ch-78
+          type: chapter
+          title: "Chapter 78: Cistern and Buckets"
+          description: Tashtego falls into the whale's head; Queequeg dives to rescue him.
+        - slug: ch-79
+          type: chapter
+          title: "Chapter 79: The Prairie"
+          description: Philosophical phrenology applied to the sperm whale's vast, smooth brow.
+        - slug: ch-80
+          type: chapter
+          title: "Chapter 80: The Nut"
+          description: The sperm whale's tiny brain relative to its massive body — power versus reason.
+        - slug: ch-81
+          type: chapter
+          title: "Chapter 81: The Pequod Meets the Virgin"
+          description: The German ship Jungfrau (Virgin) has caught no oil and never heard of Moby Dick.
+        - slug: ch-82
+          type: chapter
+          title: "Chapter 82: The Honor and Glory of Whaling"
+          description: Whaling traced heroically back to Perseus, St. George, Hercules, and Jonah.
+        - slug: ch-83
+          type: chapter
+          title: "Chapter 83: Jonah Historically Regarded"
+          description: A mock-scholarly debate on whether Jonah's whale story is literally possible.
+        - slug: ch-84
+          type: chapter
+          title: "Chapter 84: Pitchpoling"
+          description: Stubb demonstrates the skilled art of throwing a long lance to finish a whale.
+        - slug: ch-85
+          type: chapter
+          title: "Chapter 85: The Fountain"
+          description: The sperm whale's spout analyzed — is it water or mist? Ishmael refuses to say.
+        - slug: ch-86
+          type: chapter
+          title: "Chapter 86: The Tail"
+          description: A meditation on the whale's tail and its awesome, graceful, terrifying power.
+        - slug: ch-87
+          type: chapter
+          title: "Chapter 87: The Grand Armada"
+          description: The Pequod passes through a vast herd; at the calm center, nursing mothers and newborns.
+        - slug: ch-88
+          type: chapter
+          title: "Chapter 88: Schools and Schoolmasters"
+          description: The social organization of sperm whale herds — harems, bulls, and bachelor pods.
+        - slug: ch-89
+          type: chapter
+          title: "Chapter 89: Fast-Fish and Loose-Fish"
+          description: The legal principle of who owns a whale — extended to nations, colonies, and souls.
+        - slug: ch-90
+          type: chapter
+          title: "Chapter 90: Heads or Tails"
+          description: The English Crown's legal claim to all whales in British waters — absurdity of law.
+        - slug: ch-91
+          type: chapter
+          title: "Chapter 91: The Pequod Meets the Rose-Bud"
+          description: A French ship strips worthless whales; Stubb tricks them out of hidden ambergris.
+        - slug: ch-92
+          type: chapter
+          title: "Chapter 92: Ambergris"
+          description: The precious, sweet-smelling ambergris and its paradoxical origin inside sick whales.
+        - slug: ch-93
+          type: chapter
+          title: "Chapter 93: The Castaway"
+          description: Pip falls overboard and is left alone for hours; he returns touched by the infinite.
+        - slug: ch-94
+          type: chapter
+          title: "Chapter 94: A Squeeze of the Hand"
+          description: Sailors squeeze spermaceti together; Ishmael feels a moment of universal brotherhood.
+        - slug: ch-95
+          type: chapter
+          title: "Chapter 95: The Cassock"
+          description: The whale's foreskin repurposed as a mincer's garment — Melville at his most satirical.
+        - slug: ch-96
+          type: chapter
+          title: "Chapter 96: The Try-Works"
+          description: The ship becomes a hellish furnace at night; Ishmael nearly steers into disaster.
+        - slug: ch-97
+          type: chapter
+          title: "Chapter 97: The Lamp"
+          description: Whalers light the civilized world with oil they risk their lives to gather.
+        - slug: ch-98
+          type: chapter
+          title: "Chapter 98: Stowing Down and Clearing Up"
+          description: The ship is cleaned and restored to order after processing a whale — the cycle continues.
+        - slug: ch-99
+          type: chapter
+          title: "Chapter 99: The Doubloon"
+          description: Each sailor interprets the gold doubloon nailed to the mast according to his own nature.
+        - slug: ch-100
+          type: chapter
+          title: "Chapter 100: Leg and Arm"
+          description: The Samuel Enderby's captain lost his arm to Moby Dick; he chose peace — Ahab cannot.
+        - slug: ch-101
+          type: chapter
+          title: "Chapter 101: The Decanter"
+          description: A digression praising the excellent food and drink aboard the Samuel Enderby.
+        - slug: ch-102
+          type: chapter
+          title: "Chapter 102: A Bower in the Arsacides"
+          description: Ishmael once measured a whale skeleton used as a vine-covered temple on an island.
+        - slug: ch-103
+          type: chapter
+          title: "Chapter 103: Measuring the Whale's Skeleton"
+          description: Ishmael's measurements of the whale's skeleton for scientific record.
+        - slug: ch-104
+          type: chapter
+          title: "Chapter 104: The Fossil Whale"
+          description: Whale fossils trace the species back through geological epochs to the beginning of time.
+        - slug: ch-105
+          type: chapter
+          title: "Chapter 105: Does the Whale's Magnitude Diminish?—Will He Perish?"
+          description: Ishmael argues that the whale, unlike hunted land animals, is immortal and inexhaustible.
+        - slug: ch-106
+          type: chapter
+          title: "Chapter 106: Ahab's Leg"
+          description: The carpenter is summoned to fit Ahab with a new ivory leg; the old one cracked.
+        - slug: ch-107
+          type: chapter
+          title: "Chapter 107: The Carpenter"
+          description: The ship's carpenter — a skilled, thoughtless man, a pure instrument without a soul.
+        - slug: ch-108
+          type: chapter
+          title: "Chapter 108: Ahab and the Carpenter"
+          description: Ahab and the carpenter have a strange, comic philosophical exchange during the fitting.
+        - slug: ch-109
+          type: chapter
+          title: "Chapter 109: Ahab and Starbuck in the Cabin"
+          description: Starbuck urges Ahab to fix a leaking hold; Ahab wavers briefly, then resumes his course.
+        - slug: ch-110
+          type: chapter
+          title: "Chapter 110: Queequeg in His Coffin"
+          description: Queequeg falls ill, orders a coffin built, recovers, and repurposes it as the life buoy.
+        - slug: ch-111
+          type: chapter
+          title: "Chapter 111: The Pacific"
+          description: The Pequod enters the Pacific; Ahab feels his destiny closing around him.
+        - slug: ch-112
+          type: chapter
+          title: "Chapter 112: The Blacksmith"
+          description: Perth the blacksmith, ruined by drink, found peace at sea — Ahab envies him.
+        - slug: ch-113
+          type: chapter
+          title: "Chapter 113: The Forge"
+          description: Ahab has Perth forge a harpoon from his razors, tempered in pagan blood for the devil.
+        - slug: ch-114
+          type: chapter
+          title: "Chapter 114: The Gilder"
+          description: A brief, golden afternoon on calm seas — the world briefly seems benign and beautiful.
+        - slug: ch-115
+          type: chapter
+          title: "Chapter 115: The Pequod Meets the Bachelor"
+          description: The Bachelor, oil-full and homeward-bound in celebration, refuses to discuss Moby Dick.
+        - slug: ch-116
+          type: chapter
+          title: "Chapter 116: The Dying Whale"
+          description: Ahab watches a dying whale turn its head to the setting sun, and sees himself.
+        - slug: ch-117
+          type: chapter
+          title: "Chapter 117: The Whale Watch"
+          description: Fedallah prophesies Ahab's death in riddling terms that seem to foreclose all escape.
+        - slug: ch-118
+          type: chapter
+          title: "Chapter 118: The Quadrant"
+          description: Ahab destroys his quadrant in rage, vowing to navigate by instinct alone.
+        - slug: ch-119
+          type: chapter
+          title: "Chapter 119: The Candles"
+          description: A typhoon; St. Elmo's fire lights the masts; Ahab seizes the lightning and defies heaven.
+        - slug: ch-120
+          type: chapter
+          title: "Chapter 120: The Deck Towards the End of the First Night Watch"
+          description: Starbuck, alone with a musket, considers killing Ahab to save the ship and crew.
+        - slug: ch-121
+          type: chapter
+          title: "Chapter 121: Midnight—The Forecastle Bulwarks"
+          description: Stubb and Flask whisper about whether Starbuck will act.
+        - slug: ch-122
+          type: chapter
+          title: "Chapter 122: Midnight Aloft—Thunder and Lightning"
+          description: A sailor high in the rigging watches the storm.
+        - slug: ch-123
+          type: chapter
+          title: "Chapter 123: The Musket"
+          description: Starbuck stands over the sleeping Ahab, musket in hand — and cannot pull the trigger.
+        - slug: ch-124
+          type: chapter
+          title: "Chapter 124: The Needle"
+          description: The lightning reversed the ship's compass; Ahab fashions a new one from a needle.
+        - slug: ch-125
+          type: chapter
+          title: "Chapter 125: The Log and Line"
+          description: The log line used to measure speed rots and breaks — another instrument fails.
+        - slug: ch-126
+          type: chapter
+          title: "Chapter 126: The Life-Buoy"
+          description: A sailor falls from the mast at night; the life buoy sinks with him.
+        - slug: ch-127
+          type: chapter
+          title: "Chapter 127: The Deck"
+          description: Ahab orders Queequeg's coffin fitted as the new life buoy.
+        - slug: ch-128
+          type: chapter
+          title: "Chapter 128: The Pequod Meets the Rachel"
+          description: The Rachel lost a boat with the captain's young son; Ahab refuses to help search.
+        - slug: ch-129
+          type: chapter
+          title: "Chapter 129: The Cabin"
+          description: Ahab draws Pip close, sensing kinship in madness, then sends him away for his own sake.
+        - slug: ch-130
+          type: chapter
+          title: "Chapter 130: The Hat"
+          description: A sea-hawk snatches Ahab's hat from his head and carries it out to sea.
+        - slug: ch-131
+          type: chapter
+          title: "Chapter 131: The Pequod Meets the Delight"
+          description: The Delight was just wrecked by Moby Dick; Ahab sails on as the Delight buries her dead.
+        - slug: ch-132
+          type: chapter
+          title: "Chapter 132: The Symphony"
+          description: Ahab's one tender moment — he nearly turns back — then hardens for the final chase.
+        - slug: ch-133
+          type: chapter
+          title: "Chapter 133: The Chase—First Day"
+          description: Moby Dick is sighted; Ahab's boat is stove and he is rescued; the whale sounds.
+        - slug: ch-134
+          type: chapter
+          title: "Chapter 134: The Chase—Second Day"
+          description: Moby Dick destroys all three boats; Ahab's neck is snared by the harpoon but freed.
+        - slug: ch-135
+          type: chapter
+          title: "Chapter 135: The Chase—Third Day"
+          description: Moby Dick rams and sinks the Pequod; the vortex pulls all down; only Ishmael survives.
+        - slug: epilogue
+          type: chapter
+          title: Epilogue
+          description: Ishmael alone survives, floating on Queequeg's coffin, rescued by the searching Rachel.

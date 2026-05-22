@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/brackets.schema.json
+schema_version: "1"
+author: "Jed Galbraith"
+book_slug: book-of-mormon
+title: Book of Mormon — Jed's Mission Brackets
+
+targets:
+  - target_slug: alma
+    topics:
+      - slug: narratives
+        title: Narratives
+        brackets:
+          - range: "1-8"
+            label: Alma's ministry in Zarahemla and Gideon
+          - range: "9-16"
+            label: Alma & Amulek in Ammonihah
+          - range: "17-26"
+            label: Sons of Mosiah's mission to Lamanites
+          - range: "27-29"
+            label: Alma and the people of Ammon
+          - range: "30-35"
+            label: Korihor and the Zoramite mission
+          - range: "36-42"
+            label: Alma counsels his sons
+          - range: "43-44"
+            label: Early battles — Moroni and Zerahemnah
+          - range: "45-62"
+            label: Captain Moroni's campaigns
+          - range: "63"
+            label: Shiblon takes possession of records
+
+      - slug: source-records
+        title: Source Records
+        brackets:
+          - range: "1-44"
+            label: Record of Alma
+          - range: "45-62"
+            label: Nephite war record
+          - range: "63"
+            label: Record of Shiblon
+
+      - slug: missionaries
+        title: Sons of Mosiah
+        brackets:
+          - range: "17-26"
+            label: Ammon's mission to King Lamoni's people
+          - range: "21-26"
+            label: Aaron, Muloki & Ammah
+
+      - slug: sons
+        title: Alma's Sons
+        brackets:
+          - range: "36-37"
+            label: To Helaman
+          - range: "38"
+            label: To Shiblon
+          - range: "39-42"
+            label: To Corianton
+
+      - slug: epistles
+        title: Epistles
+        brackets:
+          - range: "59"
+            label: Moroni's epistle to Pahoran
+          - range: "60"
+            label: Moroni's second epistle to Pahoran
+          - range: "61"
+            label: Pahoran's epistle to Moroni

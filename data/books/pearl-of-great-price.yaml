@@ -1,0 +1,115 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
+schema_version: "1"
+author: "AI: Claude"
+disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
+root:
+  slug: pearl-of-great-price
+  type: volume
+  title: Pearl of Great Price
+  description: >
+    The Pearl of Great Price is a selection of materials touching on many significant
+    aspects of LDS faith and doctrine, including writings of Moses and Abraham,
+    Joseph Smith's history, and the Articles of Faith.
+  children:
+    - slug: pgp-overview
+      type: overview
+      title: Pearl of Great Price — Overview
+      children:
+        - slug: ov-moses
+          type: overview-item
+          description: Moses — Creation, fall of Adam and Eve, and Enoch's ministry, revealed to Joseph Smith.
+        - slug: ov-abraham
+          type: overview-item
+          description: Abraham — Visions of the pre-mortal council, Kolob, and the creation of the earth.
+        - slug: ov-joseph-smith-matthew
+          type: overview-item
+          description: Joseph Smith—Matthew — The Olivet Discourse clarified by Joseph Smith's translation.
+        - slug: ov-joseph-smith-history
+          type: overview-item
+          description: Joseph Smith—History — First Vision, Moroni's visits, and the translation of the plates.
+        - slug: ov-articles-of-faith
+          type: overview-item
+          description: Articles of Faith — Thirteen statements of LDS belief, written by Joseph Smith in 1842.
+
+    - slug: moses
+      type: book
+      title: Moses
+      description: A revelation to Joseph Smith in 1830 restoring ancient scripture lost from Genesis, covering creation, the fall, and the ministries of Adam and Enoch.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/{index}?lang=eng"
+      children:
+        - slug: moses-1
+          type: chapter
+          description: "God reveals himself to Moses; Satan is rejected; Moses beholds God's countless worlds."
+        - slug: moses-2
+          type: chapter
+          description: "Seven days of creation: heavens, earth, plants, animals, and man in God's image."
+        - slug: moses-3
+          type: chapter
+          description: "Spiritual creation precedes physical creation; the Garden of Eden; the tree of knowledge."
+        - slug: moses-4
+          type: chapter
+          description: "Satan's premortal rebellion; temptation in the garden; the fall of Adam and Eve."
+        - slug: moses-5
+          type: chapter
+          description: "Adam and Eve receive the gospel; Cain slays Abel; secret combinations spread wickedness."
+        - slug: moses-6
+          type: chapter
+          description: "The book of Adam; the doctrine of Christ from the beginning; Enoch called to repentance."
+        - slug: moses-7
+          type: chapter
+          description: "Zion translated to heaven; Enoch sees history, the Atonement, and the Second Coming."
+        - slug: moses-8
+          type: chapter
+          description: "The line of Enoch; Noah and the wickedness of his generation; the great flood begins."
+
+    - slug: abraham
+      type: book
+      title: Abraham
+      description: A translation by Joseph Smith of ancient records kept by Abraham, containing accounts of his covenant, the pre-mortal existence, and a creation vision.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/pgp/abr/{index}?lang=eng"
+      children:
+        - slug: abraham-1
+          type: chapter
+          description: "Abraham nearly sacrificed; rescued by an angel; receives the covenant and the priesthood."
+        - slug: abraham-2
+          type: chapter
+          description: "Covenant confirmed; Abram journeys to Canaan and Egypt; the Lord protects Abraham."
+        - slug: abraham-3
+          type: chapter
+          description: "Kolob and the stars; the pre-mortal council; a Savior chosen; the earth organized."
+        - slug: abraham-4
+          type: chapter
+          description: "The Gods organize the heavens and earth — a creation account paralleling Genesis."
+        - slug: abraham-5
+          type: chapter
+          description: "Creation of man completed; Adam placed in the garden; Eve created; living things named."
+
+    - slug: joseph-smith-matthew
+      type: book
+      title: Joseph Smith—Matthew
+      description: An extract from Joseph Smith's inspired translation of Matthew 24, clarifying the Olivet Discourse on the signs preceding the Second Coming.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/pgp/js-m/{index}?lang=eng"
+      children:
+        - slug: joseph-smith-matthew-1
+          type: chapter
+          description: "Temple destruction foretold; false Christs; signs of the Second Coming; elect gathered."
+
+    - slug: joseph-smith-history
+      type: book
+      title: Joseph Smith—History
+      description: Joseph Smith's personal account of his early life, the First Vision, visits from the Angel Moroni, receiving and translating the plates, and the restoration of the Aaronic Priesthood.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/{index}?lang=eng"
+      children:
+        - slug: joseph-smith-history-1
+          type: chapter
+          description: "The First Vision; Moroni's visits; the plates; the Urim and Thummim; Aaronic Priesthood."
+
+    - slug: articles-of-faith
+      type: book
+      title: Articles of Faith
+      description: Thirteen statements written by Joseph Smith in 1842 summarizing the foundational beliefs of The Church of Jesus Christ of Latter-day Saints.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/{index}?lang=eng"
+      children:
+        - slug: articles-of-faith-1
+          type: chapter
+          description: "The thirteen foundational statements of LDS belief — the Articles of Faith."

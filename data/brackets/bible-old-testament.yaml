@@ -1,0 +1,1408 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/brackets.schema.json
+schema_version: "1"
+author: "AI: Claude"
+title: Old Testament — Thematic Analysis
+book_slug: bible-old-testament
+targets:
+  - target_slug: overview
+    default_right: years
+    drills_into:
+      - genesis
+      - exodus
+      - leviticus
+      - numbers
+      - deuteronomy
+      - joshua
+      - judges
+      - ruth
+      - 1-samuel
+      - 2-samuel
+      - 1-kings
+      - 2-kings
+      - 1-chronicles
+      - 2-chronicles
+      - ezra
+      - nehemiah
+      - esther
+      - job
+      - psalms
+      - proverbs
+      - ecclesiastes
+      - song-of-solomon
+      - isaiah
+      - jeremiah
+      - lamentations
+      - ezekiel
+      - daniel
+      - hosea
+      - joel
+      - amos
+      - obadiah
+      - jonah
+      - micah
+      - nahum
+      - habakkuk
+      - zephaniah
+      - haggai
+      - zechariah
+      - malachi
+    topics:
+      - slug: sections
+        title: Sections
+        description: The two major canonical divisions of the 12 books.
+        brackets:
+          - range: "1-5"
+            label: Pentateuch (Law of Moses)
+          - range: "6-17"
+            label: Historical Books
+          - range: "18-22"
+            label: Wisdom and Poetry
+          - range: "23-27"
+            label: Major Prophets
+          - range: "28-39"
+            label: Minor Prophets (The Twelve)
+
+      - slug: narrative-form
+        title: Narrative Form
+        description: The primary literary form of each book.
+        brackets:
+          - range: "1-4"
+            label: Narrative interwoven with law
+          - range: "5"
+            label: Farewell speeches and covenant
+          - range: "6"
+            label: Military history and land allotment
+          - range: "7"
+            label: Cyclical narrative — judges
+          - range: "8"
+            label: Short story (novella)
+          - range: "9-12"
+            label: Royal biography and court history
+          - range: "13-14"
+            label: Genealogy and retold royal history
+          - range: "15-16"
+            label: Post-exilic narrative and memoir
+          - range: "17"
+            label: Court narrative — short story
+          - range: "18"
+            label: Wisdom dialogue and poetry
+          - range: "19"
+            label: Collected hymns and lament poetry
+          - range: "20-21"
+            label: Wisdom sayings and reflection
+          - range: "22"
+            label: Love poetry
+          - range: "23-24"
+            label: Prophetic oracles with narrative
+          - range: "25"
+            label: Lament poetry
+          - range: "26-27"
+            label: Prophetic visions and apocalyptic
+          - range: "28-39"
+            label: Prophetic oracles — the Twelve
+
+      - slug: covenant
+        title: Covenant Arc
+        description: The covenant theme at the center of each book.
+        brackets:
+          - range: "1"
+            label: Abrahamic covenant established
+          - range: "2-5"
+            label: Mosaic covenant given at Sinai
+          - range: "6"
+            label: Covenant land fulfilled
+          - range: "7-8"
+            label: Covenant tested — faithfulness rewarded
+          - range: "9-10"
+            label: Davidic covenant established
+          - range: "11-12"
+            label: Covenant broken — judgment falls
+          - range: "13-14"
+            label: Covenant history reviewed
+          - range: "15-17"
+            label: Covenant restored — post-exile
+          - range: "18-22"
+            label: Covenant wisdom and devotion
+          - range: "23-25"
+            label: Covenant broken — calls to repent
+          - range: "26-27"
+            label: Covenant hope in exile
+          - range: "28-39"
+            label: Covenant calls to return
+
+      - slug: christ-arc
+        title: Christ Arc
+        description: How each book foreshadows or points to Jesus Christ.
+        brackets:
+          - range: "1-2"
+            label: Types of sacrifice and deliverance
+          - range: "3-4"
+            label: Atonement rituals and lifted serpent
+          - range: "5"
+            label: The prophet like Moses foretold
+          - range: "6"
+            label: Joshua — same name, leads to rest
+          - range: "7"
+            label: Deliverers as types of Christ
+          - range: "8"
+            label: Boaz as kinsman-redeemer
+          - range: "9-12"
+            label: David's line and the eternal throne
+          - range: "13-14"
+            label: Temple and Davidic dynasty reviewed
+          - range: "15-17"
+            label: Providence in restoration and diaspora
+          - range: "18"
+            label: Job as type — suffering and vindication
+          - range: "19"
+            label: Messianic psalms point to Christ
+          - range: "20-22"
+            label: Wisdom, the Word, and Solomon's type
+          - range: "23"
+            label: Isaiah's servant and Messiah
+          - range: "24-25"
+            label: Jeremiah's new covenant foretold
+          - range: "26-27"
+            label: Resurrection visions and eternal kingdom
+          - range: "28-39"
+            label: The coming King — the Twelve
+
+      - slug: years
+        title: Years
+        description: Approximate historical time period of each book.
+        brackets:
+          - range: "1"
+            label: "Primeval – ~1700 BC"
+          - range: "2-5"
+            label: "~1700–1406 BC"
+          - range: "6-8"
+            label: "~1406–1050 BC"
+          - range: "9-10"
+            label: "~1050–970 BC"
+          - range: "11-12"
+            label: "~970–586 BC"
+          - range: "13-14"
+            label: "~1000–586 BC"
+          - range: "15-17"
+            label: "~538–430 BC"
+          - range: "18"
+            label: "~Patriarchal era"
+          - range: "19"
+            label: "~1000–500 BC"
+          - range: "20-22"
+            label: "~970–700 BC"
+          - range: "23"
+            label: "~740–700 BC"
+          - range: "24-25"
+            label: "~626–586 BC"
+          - range: "26-27"
+            label: "~593–530 BC"
+          - range: "28-39"
+            label: "~760–430 BC"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        brackets:
+          - range: "1"
+            label: "Weeks 3–12 · Jan–Mar"
+          - range: "2"
+            label: "Weeks 13–18 · Mar–May"
+          - range: "3"
+            label: "Week 18 · Apr 27–May 3"
+          - range: "4"
+            label: "Week 19 · May 4–10"
+          - range: "5"
+            label: "Week 20 · May 11–17"
+          - range: "6"
+            label: "Week 21 · May 18–24"
+          - range: "7"
+            label: "Week 22 · May 25–31"
+          - range: "8"
+            label: "Week 23 · Jun 1–7"
+          - range: "9"
+            label: "Weeks 23–25 · Jun 1–21"
+          - range: "10"
+            label: "Weeks 25–26 · Jun 15–28"
+          - range: "11"
+            label: "Weeks 26–27 · Jun 22–Jul 5"
+          - range: "12"
+            label: "Weeks 28–29 · Jul 6–19"
+          - range: "14"
+            label: "Week 30 · Jul 20–26"
+          - range: "15-16"
+            label: "Week 31 · Jul 27–Aug 2"
+          - range: "17"
+            label: "Week 32 · Aug 3–9"
+          - range: "18"
+            label: "Week 33 · Aug 10–16"
+          - range: "19"
+            label: "Weeks 34–36 · Aug 17–Sep 6"
+          - range: "20-21"
+            label: "Week 37 · Sep 7–13"
+          - range: "23"
+            label: "Weeks 38–42 · Sep 14–Oct 18"
+          - range: "24"
+            label: "Weeks 43–44 · Oct 19–Nov 1"
+          - range: "25"
+            label: "Week 44 · Oct 26–Nov 1"
+          - range: "26"
+            label: "Week 45 · Nov 2–8"
+          - range: "27"
+            label: "Week 46 · Nov 9–15"
+          - range: "28-29"
+            label: "Week 47 · Nov 16–22"
+          - range: "30-32"
+            label: "Week 48 · Nov 23–29"
+          - range: "33-36"
+            label: "Week 49 · Nov 30–Dec 6"
+          - range: "37-38"
+            label: "Week 50 · Dec 7–13"
+          - range: "39"
+            label: "Week 51 · Dec 14–20"
+
+  - target_slug: genesis
+    default_right: years
+    topics:
+      - slug: narratives
+        title: Narratives
+        description: The major narrative cycles of Genesis.
+        brackets:
+          - range: "1-11"
+            label: Primeval history
+          - range: "12-25"
+            label: Abraham
+          - range: "25-36"
+            label: Isaac and Jacob
+          - range: "37-50"
+            label: Joseph
+
+      - slug: key-figures
+        title: Key Figures
+        description: Chapters centered on each patriarch.
+        brackets:
+          - range: "1-5"
+            label: Adam and Eve
+          - range: "6-10"
+            label: Noah
+          - range: "11-25"
+            label: Abraham
+          - range: "25-36"
+            label: Jacob
+          - range: "37-50"
+            label: Joseph
+
+      - slug: themes
+        title: Themes
+        description: Major theological movements through Genesis.
+        brackets:
+          - range: "1-11"
+            label: Creation, fall, and human corruption
+          - range: "12-25"
+            label: "Call, covenant, and faith of Abraham"
+          - range: "26-36"
+            label: Covenant carried through Isaac and Jacob
+          - range: "37-50"
+            label: Providence and redemption through Joseph
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in the Genesis narrative.
+        brackets:
+          - range: "1-3"
+            label: Creation and the fall
+          - range: "6-9"
+            label: "The flood — Noah's covenant"
+          - range: "11"
+            label: The tower of Babel
+          - range: "12-15"
+            label: "Abram called; covenant established"
+          - range: "22"
+            label: The sacrifice of Isaac
+          - range: "28"
+            label: Jacob's vision at Bethel
+          - range: "37-45"
+            label: "Joseph sold, tested, and revealed"
+
+      - slug: covenants
+        title: Covenants
+        description: The progressive unfolding of God's covenant.
+        brackets:
+          - range: "1-3"
+            label: Creation and the fall
+          - range: "6-9"
+            label: Covenant with Noah
+          - range: "12-17"
+            label: Abrahamic covenant established
+          - range: "18-25"
+            label: Promise of Isaac fulfilled
+          - range: "26-36"
+            label: Covenant renewed with Isaac and Jacob
+          - range: "37-50"
+            label: Providence over Joseph
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of Genesis.
+        brackets:
+          - range: "1-11"
+            label: Pre-Abrahamic (creation to ~2100 BC)
+          - range: "12-24"
+            label: ~2100–1900 BC (Abraham)
+          - range: "25-36"
+            label: ~1900–1700 BC (Isaac and Jacob)
+          - range: "37-50"
+            label: ~1700–1600 BC (Joseph in Egypt)
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for Genesis.
+        brackets:
+          - range: "1-2"
+            label: "Week 3 · Jan 12–18"
+          - range: "3-4"
+            label: "Week 4 · Jan 19–25"
+          - range: "5"
+            label: "Week 5 · Jan 26–Feb 1"
+          - range: "6-11"
+            label: "Week 7 · Feb 9–15"
+          - range: "12-17"
+            label: "Week 8 · Feb 16–22"
+          - range: "18-23"
+            label: "Week 9 · Feb 23–Mar 1"
+          - range: "24-33"
+            label: "Week 10 · Mar 2–8"
+          - range: "37-41"
+            label: "Week 11 · Mar 9–15"
+          - range: "42-50"
+            label: "Week 12 · Mar 16–22"
+
+  - target_slug: exodus
+    default_right: years
+    topics:
+      - slug: phases
+        title: Phases
+        description: The major phases of the Exodus narrative.
+        brackets:
+          - range: "1-12"
+            label: Plagues and Passover
+          - range: "13-18"
+            label: Journey to Sinai
+          - range: "19-24"
+            label: The law at Sinai
+          - range: "25-40"
+            label: Tabernacle
+
+      - slug: themes
+        title: Themes
+        description: Major theological movements through Exodus.
+        brackets:
+          - range: "1-15"
+            label: "Redemption — God delivers his people"
+          - range: "16-18"
+            label: Provision in the wilderness
+          - range: "19-24"
+            label: "Covenant — the law given at Sinai"
+          - range: "25-31"
+            label: "Worship — the tabernacle designed"
+          - range: "32-34"
+            label: "Failure, forgiveness, and renewal"
+          - range: "35-40"
+            label: The tabernacle completed and filled
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in Exodus.
+        brackets:
+          - range: "2-4"
+            label: "Moses — birth, call, and commissioning"
+          - range: "5-14"
+            label: Moses and Aaron confront Pharaoh
+          - range: "15-18"
+            label: "Miriam, Jethro, and wilderness leaders"
+          - range: "19-34"
+            label: "Moses — lawgiver and covenant mediator"
+          - range: "35-40"
+            label: "Bezalel — craftsman of the tabernacle"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in Israel's deliverance.
+        brackets:
+          - range: "1-4"
+            label: Moses's call
+          - range: "5-11"
+            label: The ten plagues
+          - range: "12-15"
+            label: Passover and Red Sea
+          - range: "16-18"
+            label: Wilderness provision
+          - range: "19-24"
+            label: Sinai covenant
+          - range: "32-34"
+            label: The golden calf and renewal
+
+      - slug: locations
+        title: Locations
+        description: Where the events take place.
+        brackets:
+          - range: "1-15"
+            label: Egypt
+          - range: "16-18"
+            label: Wilderness of Sinai
+          - range: "19-40"
+            label: Mount Sinai
+
+      - slug: covenants
+        title: Covenants
+        description: The covenant structure of Exodus.
+        brackets:
+          - range: "1-18"
+            label: The covenant people redeemed from Egypt
+          - range: "19-24"
+            label: The Mosaic covenant established
+          - range: "25-31"
+            label: "Covenant worship — the tabernacle"
+          - range: "32-34"
+            label: Covenant broken and renewed
+          - range: "35-40"
+            label: Covenant dwelling completed
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of Exodus.
+        brackets:
+          - range: "1-2"
+            label: ~1526–1446 BC (Israel in bondage)
+          - range: "3-12"
+            label: ~1446 BC (Moses's call and the plagues)
+          - range: "13-18"
+            label: ~1446 BC (from Egypt to Sinai)
+          - range: "19-40"
+            label: ~1446–1445 BC (at Sinai)
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for Exodus.
+        brackets:
+          - range: "1-6"
+            label: "Week 13 · Mar 23–29"
+          - range: "7-13"
+            label: "Week 15 · Apr 6–12"
+          - range: "14-18"
+            label: "Week 16 · Apr 13–19"
+          - range: "19-20"
+            label: "Week 17 · Apr 20–26"
+          - range: "24"
+            label: "Week 17 · Apr 20–26"
+          - range: "31-34"
+            label: "Week 17 · Apr 20–26"
+          - range: "35-40"
+            label: "Week 18 · Apr 27–May 3"
+
+  - target_slug: leviticus
+    default_right: years
+    topics:
+      - slug: sections
+        title: Sections
+        description: The major structural divisions of Leviticus.
+        brackets:
+          - range: "1-7"
+            label: The sacrificial system
+          - range: "8-10"
+            label: The priesthood inaugurated
+          - range: "11-16"
+            label: Purity laws and Day of Atonement
+          - range: "17-26"
+            label: The Holiness Code
+          - range: "27"
+            label: Vows and dedications
+
+      - slug: themes
+        title: Themes
+        description: Major theological themes in Leviticus.
+        brackets:
+          - range: "1-10"
+            label: "Drawing near — sacrifice and priesthood"
+          - range: "11-16"
+            label: "Cleansing — purity laws and Atonement"
+          - range: "17-22"
+            label: Holy worship and priestly standards
+          - range: "23-26"
+            label: "Holy time — feasts and sabbath years"
+          - range: "27"
+            label: "Holy dedications — vows to the Lord"
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in Leviticus.
+        brackets:
+          - range: "1-9"
+            label: Moses and Aaron — priest and mediator
+          - range: "10"
+            label: "Nadab and Abihu — the strange fire"
+          - range: "16"
+            label: "Aaron — the high priest enters the veil"
+          - range: "17-27"
+            label: "Israel — the holy congregation"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments and laws in Leviticus.
+        brackets:
+          - range: "1-7"
+            label: Five types of offerings established
+          - range: "8-9"
+            label: Aaron and his sons consecrated
+          - range: "10"
+            label: "Nadab and Abihu — the strange fire"
+          - range: "16"
+            label: The Day of Atonement
+          - range: "23"
+            label: The seven appointed feasts
+          - range: "25"
+            label: The sabbatical year and Jubilee
+
+      - slug: covenants
+        title: Covenants
+        description: The covenant structure of Leviticus.
+        brackets:
+          - range: "1-7"
+            label: "Covenant worship — the offerings"
+          - range: "8-16"
+            label: "Covenant access — priests and atonement"
+          - range: "17-25"
+            label: "Covenant holiness — the Holiness Code"
+          - range: "26"
+            label: Covenant blessings and curses
+          - range: "27"
+            label: Covenant vows and dedications
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of Leviticus.
+        brackets:
+          - range: "1-16"
+            label: "~1446 BC (first year at Sinai)"
+          - range: "17-27"
+            label: "~1446–1445 BC (continuing at Sinai)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for Leviticus.
+        brackets:
+          - range: "1"
+            label: "Week 18 · Apr 27–May 3"
+          - range: "4"
+            label: "Week 18 · Apr 27–May 3"
+          - range: "16"
+            label: "Week 18 · Apr 27–May 3"
+          - range: "19"
+            label: "Week 18 · Apr 27–May 3"
+
+  - target_slug: numbers
+    default_right: years
+    topics:
+      - slug: phases
+        title: Phases
+        description: The three major phases of Israel's wilderness journey in Numbers.
+        brackets:
+          - range: "1-10"
+            label: Organization and departure from Sinai
+          - range: "11-25"
+            label: Wilderness wanderings and rebellion
+          - range: "26-36"
+            label: "New generation — preparing for Canaan"
+
+      - slug: themes
+        title: Themes
+        description: Major theological movements through Numbers.
+        brackets:
+          - range: "1-10"
+            label: A holy and ordered community
+          - range: "11-25"
+            label: "Rebellion, judgment, and consequences"
+          - range: "26-36"
+            label: New generation prepared for Canaan
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in Numbers.
+        brackets:
+          - range: "1-14"
+            label: Moses leads the first generation
+          - range: "16-17"
+            label: "Korah, Dathan, and Abiram"
+          - range: "20"
+            label: "Miriam's death; Moses at Meribah"
+          - range: "22-24"
+            label: Balak and Balaam
+          - range: "27-36"
+            label: "Joshua — appointed as Moses's successor"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in the Numbers narrative.
+        brackets:
+          - range: "1-10"
+            label: Census, organization, and departure
+          - range: "11-14"
+            label: "Complaints, spies, and 40 years decreed"
+          - range: "16-17"
+            label: "Korah's rebellion; Aaron's rod confirmed"
+          - range: "20-21"
+            label: Meribah and the bronze serpent
+          - range: "22-25"
+            label: "Balaam's oracles and Baal-Peor"
+          - range: "26-36"
+            label: Second census and final preparations
+
+      - slug: locations
+        title: Locations
+        description: Israel's geographic movement from Sinai to the plains of Moab.
+        brackets:
+          - range: "1-10"
+            label: Sinai (the holy mountain)
+          - range: "11-19"
+            label: Desert of Paran and Kadesh-barnea
+          - range: "20-21"
+            label: From Kadesh toward Moab
+          - range: "22-36"
+            label: Plains of Moab
+
+      - slug: covenants
+        title: Covenants
+        description: The covenant structure of Numbers.
+        brackets:
+          - range: "1-10"
+            label: Covenant community organized at Sinai
+          - range: "11-25"
+            label: "Covenant broken — rebellion and judgment"
+          - range: "26-30"
+            label: Covenant renewed for the new generation
+          - range: "31-36"
+            label: "Covenant land — borders and inheritance"
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of Numbers.
+        brackets:
+          - range: "1-14"
+            label: "~1445 BC (year 2 — Sinai to Kadesh)"
+          - range: "15-19"
+            label: "~1445–1406 BC (the 38 wilderness years)"
+          - range: "20-36"
+            label: "~1406 BC (year 40 — approach to Canaan)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for Numbers.
+        brackets:
+          - range: "11-14"
+            label: "Week 19 · May 4–10"
+          - range: "20-24"
+            label: "Week 19 · May 4–10"
+          - range: "27"
+            label: "Week 19 · May 4–10"
+
+  - target_slug: deuteronomy
+    default_right: years
+    topics:
+      - slug: speeches
+        title: Speeches
+        description: Moses's three formal addresses and the closing acts of Deuteronomy.
+        brackets:
+          - range: "1-4"
+            label: "First address — history and appeal"
+          - range: "5-26"
+            label: "Second address — the law restated"
+          - range: "27-30"
+            label: "Third address — covenant renewal"
+          - range: "31-34"
+            label: "Closing — Joshua, song, blessings, death"
+
+      - slug: themes
+        title: Themes
+        description: Major theological movements through Deuteronomy.
+        brackets:
+          - range: "1-11"
+            label: "Remember and love God — foundation"
+          - range: "12-25"
+            label: "Statutes and ordinances — the law code"
+          - range: "26-30"
+            label: Covenant ratification and renewal
+          - range: "31-34"
+            label: "Legacy — transition and Moses's death"
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in Deuteronomy.
+        brackets:
+          - range: "1-30"
+            label: "Moses — prophet and covenant mediator"
+          - range: "31-33"
+            label: "Joshua — commissioned as new leader"
+          - range: "34"
+            label: "Moses — death and legacy on Pisgah"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in Deuteronomy.
+        brackets:
+          - range: "1-3"
+            label: The wilderness journey reviewed
+          - range: "5-6"
+            label: The Decalogue and the Shema
+          - range: "27-28"
+            label: Blessings and curses at Ebal
+          - range: "30"
+            label: The choice of life or death
+          - range: "31-32"
+            label: "Joshua commissioned; Song of Moses"
+          - range: "34"
+            label: The death and burial of Moses
+
+      - slug: covenants
+        title: Covenants
+        description: The covenant structure of Deuteronomy.
+        brackets:
+          - range: "1-4"
+            label: The Horeb covenant recalled
+          - range: "5-11"
+            label: "The Decalogue and Shema — foundation"
+          - range: "12-26"
+            label: The covenant law code
+          - range: "27-30"
+            label: Covenant renewed at Moab
+          - range: "31-34"
+            label: The song as covenant witness
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of Deuteronomy.
+        brackets:
+          - range: "1-33"
+            label: "~1406 BC, month 11 — Moses's addresses"
+          - range: "34"
+            label: "~1406 BC — death and burial of Moses"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for Deuteronomy.
+        brackets:
+          - range: "6-8"
+            label: "Week 20 · May 11–17"
+          - range: "15"
+            label: "Week 20 · May 11–17"
+          - range: "18"
+            label: "Week 20 · May 11–17"
+          - range: "29-30"
+            label: "Week 20 · May 11–17"
+          - range: "34"
+            label: "Week 20 · May 11–17"
+
+
+  - target_slug: joshua
+    default_right: years
+    topics:
+      - slug: phases
+        title: Phases
+        description: The major phases of the book of Joshua.
+        brackets:
+          - range: "1-5"
+            label: Preparation and crossing the Jordan
+          - range: "6-12"
+            label: The conquest of Canaan
+          - range: "13-22"
+            label: Dividing the promised land
+          - range: "23-24"
+            label: "Joshua's farewell and covenant"
+
+      - slug: themes
+        title: Themes
+        description: Major theological themes in Joshua.
+        brackets:
+          - range: "1-12"
+            label: Obedience brings victory in Canaan
+          - range: "13-22"
+            label: Inheritance through covenant faith
+          - range: "23-24"
+            label: Choose this day whom you will serve
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in Joshua.
+        brackets:
+          - range: "1-12"
+            label: "Joshua — commander of the conquest"
+          - range: "2"
+            label: "Rahab — faith from outside Israel"
+          - range: "7"
+            label: "Achan — sin in the camp"
+          - range: "14"
+            label: "Caleb — faithful from his youth"
+          - range: "22-24"
+            label: "Eleazar, Phinehas, and Joshua"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in Joshua.
+        brackets:
+          - range: "1-2"
+            label: "Joshua commissioned; the spies and Rahab"
+          - range: "3-5"
+            label: "The Jordan crossed; Gilgal established"
+          - range: "6"
+            label: The fall of Jericho
+          - range: "7-8"
+            label: "Achan's sin; Ai defeated and destroyed"
+          - range: "9"
+            label: The Gibeonite deception
+          - range: "10"
+            label: "The sun stands still; southern Canaan"
+          - range: "23-24"
+            label: "Joshua's farewell; covenant at Shechem"
+
+      - slug: locations
+        title: Locations
+        description: Geographic movement through the book of Joshua.
+        brackets:
+          - range: "1-2"
+            label: The plains of Moab and Jericho
+          - range: "3-5"
+            label: Crossing the Jordan and Gilgal
+          - range: "6-12"
+            label: "Central, southern, and northern Canaan"
+          - range: "13-22"
+            label: Divided among the twelve tribes
+          - range: "23-24"
+            label: "Shiloh, the Jordan, and Shechem"
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of Joshua.
+        brackets:
+          - range: "1-12"
+            label: "~1406 BC (the conquest of Canaan)"
+          - range: "13-22"
+            label: "~1400–1380 BC (the land allotted)"
+          - range: "23-24"
+            label: "~1380 BC (Joshua's final years)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for Joshua.
+        brackets:
+          - range: "1-8"
+            label: "Week 21 · May 18–24"
+          - range: "23-24"
+            label: "Week 21 · May 18–24"
+
+  - target_slug: judges
+    default_right: years
+    topics:
+      - slug: phases
+        title: Phases
+        description: The major phases of the book of Judges.
+        brackets:
+          - range: "1-2"
+            label: Incomplete conquest and the cycle set
+          - range: "3-16"
+            label: The major judges deliver Israel
+          - range: "17-21"
+            label: "The dark epilogue — no king in Israel"
+
+      - slug: themes
+        title: Themes
+        description: Major theological themes in Judges.
+        brackets:
+          - range: "1-2"
+            label: Compromise leads to apostasy
+          - range: "3-16"
+            label: "Sin, oppression, repentance, deliverance"
+          - range: "17-21"
+            label: Religious and moral collapse
+
+      - slug: key-figures
+        title: Key Figures
+        description: The major judges of Israel.
+        brackets:
+          - range: "3"
+            label: Othniel and Ehud
+          - range: "4-5"
+            label: "Deborah, Barak, and Jael"
+          - range: "6-8"
+            label: Gideon
+          - range: "11-12"
+            label: Jephthah
+          - range: "13-16"
+            label: Samson
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in Judges.
+        brackets:
+          - range: "2"
+            label: The cycle of apostasy established
+          - range: "4-5"
+            label: Deborah and Barak defeat Sisera
+          - range: "7"
+            label: "Gideon's 300 defeat the Midianites"
+          - range: "11"
+            label: "Jephthah's vow and his daughter"
+          - range: "16"
+            label: "Samson's death in the Philistine temple"
+
+      - slug: locations
+        title: Locations
+        description: Geographic setting of the Judges narratives.
+        brackets:
+          - range: "1-2"
+            label: "Canaan — the incomplete conquest"
+          - range: "3-12"
+            label: Regions under various foreign rulers
+          - range: "13-16"
+            label: "Philistine territory — Dan's border"
+          - range: "17-21"
+            label: "Ephraim, Dan, and Benjamin"
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of Judges.
+        brackets:
+          - range: "1-16"
+            label: "~1380–1050 BC (the period of the judges)"
+          - range: "17-21"
+            label: "~1100–1050 BC (the dark epilogue)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for Judges.
+        brackets:
+          - range: "2-4"
+            label: "Week 22 · May 25–31"
+          - range: "6-8"
+            label: "Week 22 · May 25–31"
+          - range: "13-16"
+            label: "Week 22 · May 25–31"
+
+  - target_slug: ruth
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major theological themes in Ruth.
+        brackets:
+          - range: "1"
+            label: "Loyalty and loss — Naomi's return"
+          - range: "2-3"
+            label: "Kindness (hesed) and redemption sought"
+          - range: "4"
+            label: "Redemption fulfilled; David's lineage"
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in Ruth.
+        brackets:
+          - range: "1-4"
+            label: "Ruth — the faithful Moabite widow"
+          - range: "1"
+            label: "Naomi — the returning exile"
+          - range: "2-4"
+            label: "Boaz — the kinsman-redeemer"
+
+      - slug: key-events
+        title: Key Events
+        description: The pivotal moments in Ruth.
+        brackets:
+          - range: "1"
+            label: "Ruth pledges loyalty to Naomi"
+          - range: "2"
+            label: Ruth meets Boaz in the field
+          - range: "3"
+            label: "Ruth at the threshing floor; redemption"
+          - range: "4"
+            label: "Boaz redeems Ruth; Obed born"
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of Ruth.
+        brackets:
+          - range: "1-4"
+            label: "~1100 BC (during the judges period)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for Ruth.
+        brackets:
+          - range: "1-4"
+            label: "Week 23 · June 1–7"
+
+  - target_slug: 1-samuel
+    default_right: years
+    topics:
+      - slug: phases
+        title: Phases
+        description: The major phases of 1 Samuel.
+        brackets:
+          - range: "1-7"
+            label: "Samuel — the last judge and prophet"
+          - range: "8-15"
+            label: "Saul — first king, rise and rejection"
+          - range: "16-31"
+            label: "David — the anointed in the wilderness"
+
+      - slug: themes
+        title: Themes
+        description: Major theological themes in 1 Samuel.
+        brackets:
+          - range: "1-7"
+            label: God raises up Samuel to restore Israel
+          - range: "8-15"
+            label: "Saul — chosen but disobedient to God"
+          - range: "16-31"
+            label: "David — faithful through trial and exile"
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in 1 Samuel.
+        brackets:
+          - range: "1-7"
+            label: "Samuel — judge, prophet, and priest"
+          - range: "8-15"
+            label: "Saul — Israel's first king"
+          - range: "16-31"
+            label: "David — the anointed king in waiting"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in 1 Samuel.
+        brackets:
+          - range: "1-3"
+            label: "Samuel born, dedicated, and called"
+          - range: "4-6"
+            label: The ark captured and returned
+          - range: "8"
+            label: Israel demands a king
+          - range: "15"
+            label: Saul rejected as king
+          - range: "17"
+            label: David and Goliath
+          - range: "20"
+            label: "David and Jonathan's covenant"
+          - range: "31"
+            label: "Saul's death at Gilboa"
+
+      - slug: locations
+        title: Locations
+        description: Geographic movement through 1 Samuel.
+        brackets:
+          - range: "1-7"
+            label: "Shiloh, Ebenezer, and Mizpah"
+          - range: "8-15"
+            label: "Ramah, Gibeah, and the battlefields"
+          - range: "16-26"
+            label: "Bethlehem, Gibeah, and the wilderness"
+          - range: "27-31"
+            label: Philistia and Mount Gilboa
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of 1 Samuel.
+        brackets:
+          - range: "1-7"
+            label: "~1105–1050 BC (Samuel's ministry)"
+          - range: "8-15"
+            label: "~1050–1025 BC (Saul's reign)"
+          - range: "16-31"
+            label: "~1025–1010 BC (David's rise)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for 1 Samuel.
+        brackets:
+          - range: "1-7"
+            label: "Week 23 · June 1–7"
+          - range: "8-10"
+            label: "Week 24 · June 8–14"
+          - range: "13"
+            label: "Week 24 · June 8–14"
+          - range: "15-16"
+            label: "Week 24 · June 8–14"
+          - range: "17-18"
+            label: "Week 25 · June 15–21"
+          - range: "24-26"
+            label: "Week 25 · June 15–21"
+
+  - target_slug: 2-samuel
+    default_right: years
+    topics:
+      - slug: phases
+        title: Phases
+        description: The major phases of 2 Samuel.
+        brackets:
+          - range: "1-10"
+            label: "David's reign — unification and victory"
+          - range: "11-20"
+            label: The consequences of David's sin
+          - range: "21-24"
+            label: "Epilogue — David's songs and legacy"
+
+      - slug: themes
+        title: Themes
+        description: Major theological themes in 2 Samuel.
+        brackets:
+          - range: "1-10"
+            label: The covenant king established
+          - range: "11-20"
+            label: "Sin, suffering, and family fracture"
+          - range: "21-24"
+            label: "God's faithfulness despite human failure"
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in 2 Samuel.
+        brackets:
+          - range: "1-10"
+            label: "David and Joab — king and general"
+          - range: "11-12"
+            label: "David, Bathsheba, and Nathan"
+          - range: "13-19"
+            label: "Absalom — the rebellious son"
+          - range: "21-24"
+            label: "David — psalmist and mighty king"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in 2 Samuel.
+        brackets:
+          - range: "1-5"
+            label: David becomes king over all Israel
+          - range: "6"
+            label: The ark brought to Jerusalem
+          - range: "7"
+            label: "God's covenant with David"
+          - range: "11-12"
+            label: "David's sin; Nathan's rebuke; repentance"
+          - range: "15-18"
+            label: "Absalom's revolt and death"
+          - range: "22"
+            label: David's psalm of thanksgiving
+          - range: "24"
+            label: The census and Araunah's threshing floor
+
+      - slug: locations
+        title: Locations
+        description: Geographic setting through 2 Samuel.
+        brackets:
+          - range: "1-4"
+            label: "Hebron — David's first capital"
+          - range: "5-20"
+            label: "Jerusalem — the city of David"
+          - range: "21-24"
+            label: Various regions of Israel
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of 2 Samuel.
+        brackets:
+          - range: "1-4"
+            label: "~1010–1003 BC (David at Hebron)"
+          - range: "5-20"
+            label: "~1003–975 BC (David in Jerusalem)"
+          - range: "21-24"
+            label: "~975–970 BC (David's final years)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for 2 Samuel.
+        brackets:
+          - range: "5-7"
+            label: "Week 25 · June 15–21"
+          - range: "11-12"
+            label: "Week 26 · June 22–28"
+
+  - target_slug: 1-kings
+    default_right: years
+    topics:
+      - slug: phases
+        title: Phases
+        description: The major phases of 1 Kings.
+        brackets:
+          - range: "1-11"
+            label: "Solomon's reign — glory and decline"
+          - range: "12-22"
+            label: The divided kingdom begins
+
+      - slug: themes
+        title: Themes
+        description: Major theological themes in 1 Kings.
+        brackets:
+          - range: "1-11"
+            label: "Wisdom and its corruption — Solomon"
+          - range: "12-16"
+            label: "Division and apostasy — two kingdoms"
+          - range: "17-22"
+            label: "Elijah and the contest for Israel's soul"
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in 1 Kings.
+        brackets:
+          - range: "1-11"
+            label: "Solomon — the wise and fallen king"
+          - range: "12-16"
+            label: "Rehoboam and Jeroboam — divided rule"
+          - range: "17-19"
+            label: "Elijah — the prophet of fire"
+          - range: "20-22"
+            label: "Ahab, Jezebel, and Micaiah"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in 1 Kings.
+        brackets:
+          - range: "3"
+            label: "Solomon's prayer for wisdom"
+          - range: "6-8"
+            label: The temple built and dedicated
+          - range: "11"
+            label: "Solomon's fall into idolatry"
+          - range: "12"
+            label: The kingdom divided at Shechem
+          - range: "18"
+            label: "Elijah defeats Baal's prophets on Carmel"
+          - range: "19"
+            label: "The still small voice; Elisha called"
+          - range: "22"
+            label: Ahab killed at Ramoth-gilead
+
+      - slug: locations
+        title: Locations
+        description: Geographic setting through 1 Kings.
+        brackets:
+          - range: "1-11"
+            label: "Jerusalem — the temple and court"
+          - range: "12-16"
+            label: "Jerusalem and Bethel — divided kingdom"
+          - range: "17-22"
+            label: "Cherith, Zarephath, Carmel, and Samaria"
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of 1 Kings.
+        brackets:
+          - range: "1-11"
+            label: "~970–930 BC (Solomon's reign)"
+          - range: "12-22"
+            label: "~930–853 BC (the divided kingdom)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for 1 Kings.
+        brackets:
+          - range: "3"
+            label: "Week 26 · June 22–28"
+          - range: "6-9"
+            label: "Week 26 · June 22–28"
+          - range: "11"
+            label: "Week 26 · June 22–28"
+          - range: "12-13"
+            label: "Week 27 · June 29–July 5"
+          - range: "17-22"
+            label: "Week 27 · June 29–July 5"
+
+  - target_slug: 2-kings
+    default_right: years
+    topics:
+      - slug: phases
+        title: Phases
+        description: The major phases of 2 Kings.
+        brackets:
+          - range: "1-13"
+            label: "Elisha's ministry — miracles and signs"
+          - range: "14-17"
+            label: The fall of the northern kingdom
+          - range: "18-23"
+            label: "Hezekiah and Josiah — the last reforms"
+          - range: "24-25"
+            label: "Jerusalem falls; Judah exiled to Babylon"
+
+      - slug: themes
+        title: Themes
+        description: Major theological themes in 2 Kings.
+        brackets:
+          - range: "1-13"
+            label: "God's power through Elisha's miracles"
+          - range: "14-17"
+            label: Apostasy leads to the Assyrian exile
+          - range: "18-23"
+            label: "Reform deferred — Hezekiah and Josiah"
+          - range: "24-25"
+            label: "The wages of sin — exile in Babylon"
+
+      - slug: key-figures
+        title: Key Figures
+        description: The principal figures in 2 Kings.
+        brackets:
+          - range: "1-13"
+            label: "Elisha — the double-portion prophet"
+          - range: "9-10"
+            label: "Jehu — zealous but partial reformer"
+          - range: "18-20"
+            label: "Hezekiah and Isaiah — king and prophet"
+          - range: "22-23"
+            label: "Josiah — the last faithful king"
+          - range: "24-25"
+            label: "Zedekiah — the last king of Judah"
+
+      - slug: key-events
+        title: Key Events
+        description: Pivotal moments in 2 Kings.
+        brackets:
+          - range: "2"
+            label: "Elijah taken up; Elisha's double portion"
+          - range: "5"
+            label: Naaman healed of leprosy
+          - range: "17"
+            label: "Israel falls to Assyria — northern exile"
+          - range: "18-19"
+            label: "Sennacherib's invasion turned back"
+          - range: "22-23"
+            label: "The law found; Josiah's great reform"
+          - range: "25"
+            label: "Jerusalem destroyed; Judah exiled"
+
+      - slug: locations
+        title: Locations
+        description: Geographic setting through 2 Kings.
+        brackets:
+          - range: "1-13"
+            label: Samaria and the northern kingdom
+          - range: "14-17"
+            label: "Samaria — falling to Assyria"
+          - range: "18-23"
+            label: "Jerusalem — reform and siege"
+          - range: "24-25"
+            label: Jerusalem and Babylon
+
+      - slug: years
+        title: Years
+        description: Approximate chronological timeline of 2 Kings.
+        brackets:
+          - range: "1-13"
+            label: "~852–795 BC (Elisha's ministry)"
+          - range: "14-17"
+            label: "~795–722 BC (Israel's decline and fall)"
+          - range: "18-23"
+            label: "~715–609 BC (Judah's reforms)"
+          - range: "24-25"
+            label: "~609–586 BC (Judah's final years)"
+
+      - slug: come-follow-me
+        title: Come, Follow Me 2026
+        description: Weekly Come, Follow Me 2026 lesson assignments for 2 Kings.
+        brackets:
+          - range: "2-7"
+            label: "Week 28 · July 6–12"
+          - range: "16-25"
+            label: "Week 29 · July 13–19"

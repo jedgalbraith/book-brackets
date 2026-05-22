@@ -1,0 +1,66 @@
+books:
+  - slug: book-of-mormon
+    title: Book of Mormon
+    description: >
+      Explore Book of Mormon chapters through thematic groupings including
+      locations, events, authors, and doctrinal themes.
+    brackets:
+      - file: book-of-mormon.yaml
+        title: Thematic Analysis
+        default_target: overview
+      - file: book-of-mormon-jeds-mission.yaml
+        title: Jed's Mission Brackets
+        default_target: alma
+  - slug: bible-old-testament
+    title: Old Testament
+    description: >
+      Explore Old Testament chapters through key figures, covenants, and thematic
+      groupings from the law, history, and prophecy of ancient Israel.
+    brackets:
+      - file: bible-old-testament.yaml
+        title: Thematic Analysis
+        default_target: overview
+  - slug: bible-new-testament
+    title: New Testament
+    description: >
+      Explore New Testament chapters through narratives, key figures,
+      Gospel traditions, and ministry phases.
+    brackets:
+      - file: bible-new-testament.yaml
+        title: Thematic Analysis
+        default_target: gospels-overview
+  - slug: doctrine-and-covenants
+    title: Doctrine and Covenants
+    description: >
+      Explore Doctrine and Covenants sections by theme, recipient, and chronological
+      order of revelation. (Sections 1–10 — more coming.)
+    brackets:
+      - file: doctrine-and-covenants.yaml
+        title: Thematic Analysis
+  - slug: pearl-of-great-price
+    title: Pearl of Great Price
+    description: >
+      Explore the Pearl of Great Price — Moses, Abraham, Joseph Smith's history,
+      and the Articles of Faith — by provenance, content, and era.
+    brackets:
+      - file: pearl-of-great-price.yaml
+        title: Thematic Analysis
+        default_target: pgp-overview
+  - slug: alma-32
+    title: Alma 32
+    description: >
+      Verse-by-verse: Alma teaches the poor Zoramites cast from their
+      synagogues — from humility and being compelled, to the seed of faith
+      and the promise of fruit.
+    brackets:
+      - file: alma-32.yaml
+        title: Thematic Analysis
+  - slug: moby-dick
+    title: "Moby-Dick; or, The Whale"
+    description: >
+      Explore Melville's 135 chapters by voyage phase, ship encounters (the gams),
+      and the cetology digressions scattered throughout the narrative.
+    brackets:
+      - file: moby-dick.yaml
+        title: Thematic Analysis
+        default_target: md-chapters

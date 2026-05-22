@@ -26,7 +26,7 @@ async function fetchAndDrawData() {
       return;
     }
 
-    const booksIndex = await fetchData(`${DATA_BASE_URL}/data/books/index.yaml`);
+    const booksIndex = await fetchData('../data/books/index.yaml');
     const bookEntry = booksIndex.books.find(b => b.slug === bookSlug);
     if (!bookEntry) {
       document.getElementById('chart').textContent = `Book "${bookSlug}" not found.`;
@@ -37,8 +37,8 @@ async function fetchAndDrawData() {
       ? bookEntry.brackets.find(b => b.file === bracketsParam) || bookEntry.brackets[0]
       : bookEntry.brackets[0];
 
-    const brackets = await fetchData(`${DATA_BASE_URL}/data/brackets/${bracketEntry.file}`);
-    const bookData = await fetchData(`${DATA_BASE_URL}/data/books/${brackets.book_slug}.yaml`);
+    const brackets = await fetchData(`../data/brackets/${bracketEntry.file}`);
+    const bookData = await fetchData(`../data/books/${brackets.book_slug}.yaml`);
 
     document.title = `${bookEntry.title} | Book Brackets`;
     document.querySelector('.viz-nav h1').textContent = bookEntry.title;

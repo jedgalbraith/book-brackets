@@ -1,0 +1,165 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/brackets.schema.json
+schema_version: "1"
+author: "AI: Claude"
+title: Pearl of Great Price — Thematic Analysis
+book_slug: pearl-of-great-price
+targets:
+  - target_slug: pgp-overview
+    default_right: years
+    drills_into:
+      - moses
+      - abraham
+      - joseph-smith-matthew
+      - joseph-smith-history
+      - articles-of-faith
+    topics:
+      - slug: provenance
+        title: Provenance
+        description: The origin and translation history of each book.
+        brackets:
+          - range: "1-2"
+            label: Ancient records restored by Joseph Smith
+          - range: "3"
+            label: New Testament (inspired translation)
+          - range: "4-5"
+            label: 19th-century writings by Joseph Smith
+
+      - slug: primary-content
+        title: Primary Content
+        description: The main subject matter of each book.
+        brackets:
+          - range: "1-2"
+            label: Creation, pre-mortal life and humanity
+          - range: "3"
+            label: Signs of the Second Coming
+          - range: "4"
+            label: Restoration history
+          - range: "5"
+            label: Foundational doctrinal statements
+
+      - slug: years
+        title: Years
+        description: Approximate date of composition or translation.
+        brackets:
+          - range: "1"
+            label: Translated 1830 (Moses)
+          - range: "2"
+            label: Translated 1835 (Abraham)
+          - range: "3"
+            label: Translated 1831 (JS—Matthew)
+          - range: "4"
+            label: Written 1838 (JS—History)
+          - range: "5"
+            label: Written 1842 (Articles of Faith)
+
+  - target_slug: moses
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major thematic movements in Moses.
+        brackets:
+          - range: "1"
+            label: Moses — God's glory; Satan's rejection
+          - range: "2-3"
+            label: The creation and Garden of Eden
+          - range: "4-5"
+            label: The fall and the spread of wickedness
+          - range: "6-7"
+            label: Enoch's ministry and the city of Zion
+          - range: "8"
+            label: Noah and the flood
+
+      - slug: key-figures
+        title: Key Figures
+        description: Chapters centered on each major figure.
+        brackets:
+          - range: "1"
+            label: Moses
+          - range: "2-5"
+            label: Adam and Eve
+          - range: "6-7"
+            label: Enoch
+          - range: "8"
+            label: Noah
+
+      - slug: years
+        title: Years
+        description: Approximate time period of events in Moses.
+        brackets:
+          - range: "1"
+            label: Moses's time (~1400s BC)
+          - range: "2-5"
+            label: Pre-Abrahamic (creation to Adam's era)
+          - range: "6-7"
+            label: ~3000 BC (Enoch's era)
+          - range: "8"
+            label: ~2400 BC (Noah's flood)
+
+  - target_slug: abraham
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major thematic movements in Abraham.
+        brackets:
+          - range: "1-2"
+            label: Abraham's covenant and journeys
+          - range: "3"
+            label: The pre-mortal council and Kolob
+          - range: "4-5"
+            label: The creation of the earth
+
+      - slug: key-content
+        title: Key Content
+        description: The distinct contributions of each chapter.
+        brackets:
+          - range: "1"
+            label: Near-sacrifice; priesthood received
+          - range: "2"
+            label: Covenant confirmed; Egypt
+          - range: "3"
+            label: Kolob; pre-mortal life; the council
+          - range: "4-5"
+            label: The creation (cosmological account)
+
+      - slug: years
+        title: Years
+        description: Approximate time period of events in Abraham.
+        brackets:
+          - range: "1-2"
+            label: ~2000 BC (Abraham's lifetime)
+          - range: "3-5"
+            label: Pre-mortal and creation periods
+
+  - target_slug: joseph-smith-matthew
+    default_left: themes
+    topics:
+      - slug: themes
+        title: Themes
+        description: The content of Joseph Smith—Matthew.
+        brackets:
+          - range: "1"
+            label: Jerusalem's fall; signs of Second Coming
+
+  - target_slug: joseph-smith-history
+    default_left: themes
+    topics:
+      - slug: themes
+        title: Themes
+        description: The content of Joseph Smith—History.
+        brackets:
+          - range: "1"
+            label: First Vision to the Aaronic Priesthood
+
+  - target_slug: articles-of-faith
+    default_left: themes
+    topics:
+      - slug: themes
+        title: Themes
+        description: The content of the Articles of Faith.
+        brackets:
+          - range: "1"
+            label: Thirteen Articles of Faith

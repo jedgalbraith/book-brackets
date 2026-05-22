@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bookbrackets.app/schema/book.schema.json",
+  "title": "Book Content File",
+  "description": "Describes the hierarchical structure of a text (volume → book → chapter → verse).",
+  "type": "object",
+  "required": ["schema_version", "root"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1"
+    },
+    "author": {
+      "type": "string"
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "root": {
+      "$ref": "#/$defs/node"
+    }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": ["slug", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Kebab-case identifier, unique within the file."
+        },
+        "type": {
+          "type": "string",
+          "description": "User-defined label (volume, book, chapter, verse, etc.). The renderer ignores this value."
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "description": "Summary text. Leaf nodes (no children): one sentence, max 90 characters. Non-leaf nodes: no length limit."
+        },
+        "url_template": {
+          "type": "string",
+          "description": "URL with {index} placeholder (1-based leaf position). Inherited by descendant nodes."
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1,
+          "description": "Child nodes. Absent on leaf nodes."
+        }
+      },
+      "if": {
+        "not": { "required": ["children"] }
+      },
+      "then": {
+        "properties": {
+          "description": {
+            "maxLength": 90
+          }
+        }
+      }
+    }
+  }
+}

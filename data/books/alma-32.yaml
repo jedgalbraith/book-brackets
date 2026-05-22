@@ -1,0 +1,143 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
+schema_version: "1"
+author: "AI: Claude"
+disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
+root:
+  slug: alma-32
+  type: chapter
+  title: Alma 32
+  description: >
+    Alma teaches the poor Zoramites cast from their synagogues that humility — not
+    location — opens the door to God, then offers the famous seed of faith: plant the
+    word, nourish it, and you will one day feast on its fruit.
+  url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/32?lang=eng&id=p{index}#p{index}"
+  children:
+    - slug: alma-32-1
+      type: verse
+      description: "Poor Zoramites, cast from their synagogues, gather in a multitude around Alma."
+    - slug: alma-32-2
+      type: verse
+      description: "Cast out for poverty and coarse clothing; they have no place of worship."
+    - slug: alma-32-3
+      type: verse
+      description: "One speaks up: they are despised and have no sanctified place to pray."
+    - slug: alma-32-4
+      type: verse
+      description: "Alma's heart swells with joy — their affliction has prepared their hearts."
+    - slug: alma-32-5
+      type: verse
+      description: "He asks Amulek to stand aside so he can address the multitude himself."
+    - slug: alma-32-6
+      type: verse
+      description: "He perceives their lowliness of heart and begins to teach."
+    - slug: alma-32-7
+      type: verse
+      description: "Do ye suppose ye cannot worship God except in your synagogues only?"
+    - slug: alma-32-8
+      type: verse
+      description: "Ye are blessed — ye have been compelled to be humble by your poverty."
+    - slug: alma-32-9
+      type: verse
+      description: "A man is sometimes compelled to be humble by affliction or necessity."
+    - slug: alma-32-10
+      type: verse
+      description: "This is a blessed state, even when brought about without choosing."
+    - slug: alma-32-11
+      type: verse
+      description: "Yea, he who is compelled to be humble is blessed — but less so than he who chooses."
+    - slug: alma-32-12
+      type: verse
+      description: "Blessed is he who humbles himself without compulsion and trusts in God."
+    - slug: alma-32-13
+      type: verse
+      description: "Such a man is in the most blessed state; his knowledge is without guile."
+    - slug: alma-32-14
+      type: verse
+      description: "Being compelled does not bring the same degree of blessedness."
+    - slug: alma-32-15
+      type: verse
+      description: "But if the compelled soul remains humble, he too may receive God's grace."
+    - slug: alma-32-16
+      type: verse
+      description: "Blessed are all who humble themselves and put their trust in God always."
+    - slug: alma-32-17
+      type: verse
+      description: "How much more blessed he who believes without stubbornness of heart."
+    - slug: alma-32-18
+      type: verse
+      description: "There are those who say: show us a sign, and then we will believe."
+    - slug: alma-32-19
+      type: verse
+      description: "Faith is not a perfect knowledge — it is hope for things not seen which are true."
+    - slug: alma-32-20
+      type: verse
+      description: "Is this faith? Yes — to believe without a sign, without seeing, is faith."
+    - slug: alma-32-21
+      type: verse
+      description: "Ye receive no witness until after the trial of your faith."
+    - slug: alma-32-22
+      type: verse
+      description: "God is merciful to all who believe in his name and remain humble."
+    - slug: alma-32-23
+      type: verse
+      description: "He imparts his word to all nations; he knows all his sheep."
+    - slug: alma-32-24
+      type: verse
+      description: "Cast out your unbelief; begin to believe in the Son of God."
+    - slug: alma-32-25
+      type: verse
+      description: "May God grant your burdens to be lightened through joy in his Son."
+    - slug: alma-32-26
+      type: verse
+      description: "Faith is not a perfect knowledge — if it were, faith would cease."
+    - slug: alma-32-27
+      type: verse
+      description: "Awake, arouse your faculties; exercise a particle of faith; experiment on his word."
+    - slug: alma-32-28
+      type: verse
+      description: "Compare the word to a seed planted in your heart; do not cast it out by unbelief."
+    - slug: alma-32-29
+      type: verse
+      description: "If it is good, it will swell and sprout and enlarge your soul."
+    - slug: alma-32-30
+      type: verse
+      description: "This swelling is real, but it is not yet perfect knowledge — only a beginning."
+    - slug: alma-32-31
+      type: verse
+      description: "The swelling itself is your evidence: the seed is good; this is how you know."
+    - slug: alma-32-32
+      type: verse
+      description: "But this is not yet perfect knowledge; do not mistake a beginning for fullness."
+    - slug: alma-32-33
+      type: verse
+      description: "Neglect the tree after sprouting, give it no nourishment, and it will wither."
+    - slug: alma-32-34
+      type: verse
+      description: "Is this not real? Yes — the experiment produces real and living evidence."
+    - slug: alma-32-35
+      type: verse
+      description: "Is this faith? Yes — diligently tending the word is faith in action."
+    - slug: alma-32-36
+      type: verse
+      description: "Remember: the tree is not yet full grown; faith and nourishment are still required."
+    - slug: alma-32-37
+      type: verse
+      description: "As the tree grows, nourish it with great care; let your faith remain active."
+    - slug: alma-32-38
+      type: verse
+      description: "Neglect it, take no thought for its nourishment, and it will not take root."
+    - slug: alma-32-39
+      type: verse
+      description: "When it withers, do not blame the seed — the fault lies in the neglect."
+    - slug: alma-32-40
+      type: verse
+      description: "If ye do not nourish the word with diligence, ye will never pluck the fruit."
+    - slug: alma-32-41
+      type: verse
+      description: "Nourish it with patience, and its roots will grow deep and hold fast."
+    - slug: alma-32-42
+      type: verse
+      description: "By and by ye shall pluck the fruit — most precious, most sweet, pure and white."
+    - slug: alma-32-43
+      type: verse
+      description: "Ye shall feast upon this fruit and hunger no more; this comes through diligence."

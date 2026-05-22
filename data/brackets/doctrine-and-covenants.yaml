@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/brackets.schema.json
+schema_version: "1"
+author: "AI: Claude"
+title: Doctrine and Covenants — Thematic Analysis
+book_slug: doctrine-and-covenants
+targets:
+  - target_slug: doctrine-and-covenants
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: themes
+        title: Themes
+        description: Major themes of sections 1–10.
+        brackets:
+          - range: "1"
+            label: Lord's preface — warning to the world
+          - range: "2-4"
+            label: Priesthood, mission, and preparation
+          - range: "5-9"
+            label: The Book of Mormon and Oliver Cowdery
+          - range: "10"
+            label: Overcoming Satan's plans
+
+      - slug: recipients
+        title: Recipients
+        description: To whom each revelation was primarily directed.
+        brackets:
+          - range: "1"
+            label: The whole church (preface)
+          - range: "2"
+            label: Joseph Smith (Moroni's words recorded)
+          - range: "3"
+            label: Joseph Smith (rebuke and restoration)
+          - range: "4"
+            label: Joseph Smith Sr.
+          - range: "5"
+            label: Martin Harris
+          - range: "6-9"
+            label: Oliver Cowdery
+          - range: "10"
+            label: Joseph Smith
+
+      - slug: years
+        title: Years
+        description: When each revelation was received (sections are not in strict chronological order).
+        brackets:
+          - range: "2"
+            label: 1823 — Moroni's first visit
+          - range: "3"
+            label: 1828 — after the 116 pages lost
+          - range: "10"
+            label: 1828 — the 116 pages (cf. sec. 3)
+          - range: "4-9"
+            label: 1829 — the translation season
+          - range: "1"
+            label: 1831 — preface added at conference

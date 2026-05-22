@@ -1,0 +1,291 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/brackets.schema.json
+schema_version: "1"
+author: "AI: Claude"
+title: New Testament — Thematic Analysis
+book_slug: bible-new-testament
+targets:
+  - target_slug: gospels-overview
+    default_right: years
+    drills_into:
+      - matthew
+      - mark
+      - luke
+      - john
+    topics:
+      - slug: gospel-tradition
+        title: Gospel Tradition
+        description: Synoptic vs. Johannine tradition.
+        brackets:
+          - range: "1-3"
+            label: Synoptic Gospels
+          - range: "4"
+            label: Johannine Gospel
+
+      - slug: primary-audience
+        title: Primary Audience
+        description: The intended original readership of each Gospel.
+        brackets:
+          - range: "1"
+            label: Jewish Christians
+          - range: "2"
+            label: Gentile (Roman)
+          - range: "3"
+            label: Gentile (Greek)
+          - range: "4"
+            label: Universal
+
+      - slug: christological-portrait
+        title: Christological Portrait
+        description: How each Gospel presents the identity of Jesus.
+        brackets:
+          - range: "1"
+            label: Messiah and King
+          - range: "2"
+            label: Suffering Servant
+          - range: "3"
+            label: Son of Man
+          - range: "4"
+            label: Son of God
+
+      - slug: years
+        title: Years
+        description: Approximate dates of Gospel composition.
+        brackets:
+          - range: "2"
+            label: ~AD 65 (Mark)
+          - range: "1"
+            label: ~AD 70 (Matthew)
+          - range: "3"
+            label: ~AD 80 (Luke)
+          - range: "4"
+            label: ~AD 95 (John)
+
+  - target_slug: matthew
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: ministry-phase
+        title: Ministry Phase
+        description: The major phases of Jesus's ministry in Matthew.
+        brackets:
+          - range: "1-4"
+            label: Birth and preparation
+          - range: "5-13"
+            label: Kingdom proclaimed and taught
+          - range: "14-25"
+            label: Ministry, controversy, and eschatology
+          - range: "26-28"
+            label: Passion and resurrection
+
+      - slug: themes
+        title: Themes
+        description: Major thematic movements in Matthew.
+        brackets:
+          - range: "1-12"
+            label: The King arrives with authority
+          - range: "13-20"
+            label: Parables, faith, and discipleship
+          - range: "21-28"
+            label: Confrontation, judgment, and triumph
+
+      - slug: locations
+        title: Locations
+        description: Where the events of Matthew take place.
+        brackets:
+          - range: "1-4"
+            label: Bethlehem, Egypt, Nazareth, Jordan
+          - range: "5-20"
+            label: Galilee
+          - range: "21-28"
+            label: Jerusalem
+
+      - slug: years
+        title: Years
+        description: Approximate timeline of events in Matthew.
+        brackets:
+          - range: "1-2"
+            label: ~6–4 BC (birth and infancy)
+          - range: "3-4"
+            label: ~AD 26–27 (beginning of ministry)
+          - range: "5-18"
+            label: ~AD 27–29 (Galilean ministry)
+          - range: "19-20"
+            label: ~AD 29–30 (journey to Jerusalem)
+          - range: "21-28"
+            label: ~AD 30 (Passion Week and resurrection)
+
+  - target_slug: mark
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: ministry-phase
+        title: Ministry Phase
+        description: The major phases of Jesus's ministry in Mark.
+        brackets:
+          - range: "1-8"
+            label: Galilean ministry
+          - range: "9-10"
+            label: Journey toward Jerusalem
+          - range: "11-16"
+            label: Jerusalem and passion
+
+      - slug: themes
+        title: Themes
+        description: Major thematic movements in Mark.
+        brackets:
+          - range: "1-8"
+            label: The Servant acts with authority
+          - range: "9-13"
+            label: Teaching on discipleship and the future
+          - range: "14-16"
+            label: Suffering, death, and resurrection
+
+      - slug: locations
+        title: Locations
+        description: Where the events of Mark take place.
+        brackets:
+          - range: "1-9"
+            label: Galilee and surrounding regions
+          - range: "10"
+            label: On the road through Perea
+          - range: "11-16"
+            label: Jerusalem
+
+      - slug: years
+        title: Years
+        description: Approximate timeline of events in Mark.
+        brackets:
+          - range: "1"
+            label: ~AD 26–27 (beginning of ministry)
+          - range: "2-9"
+            label: ~AD 27–29 (Galilean ministry)
+          - range: "10"
+            label: ~AD 29–30 (journey to Jerusalem)
+          - range: "11-16"
+            label: ~AD 30 (Jerusalem and passion)
+
+  - target_slug: luke
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: ministry-phase
+        title: Ministry Phase
+        description: The major phases of Jesus's ministry in Luke.
+        brackets:
+          - range: "1-4"
+            label: Birth and preparation
+          - range: "5-9"
+            label: Galilean ministry
+          - range: "10-19"
+            label: Journey to Jerusalem
+          - range: "20-24"
+            label: Jerusalem and resurrection
+
+      - slug: themes
+        title: Themes
+        description: Major thematic movements in Luke.
+        brackets:
+          - range: "1-9"
+            label: Savior comes for the poor and outcast
+          - range: "10-19"
+            label: Teaching on discipleship and prayer
+          - range: "20-24"
+            label: The kingdom and the cross
+
+      - slug: locations
+        title: Locations
+        description: Where the events of Luke take place.
+        brackets:
+          - range: "1-4"
+            label: Judea and Galilee
+          - range: "5-9"
+            label: Galilee
+          - range: "10-18"
+            label: The road to Jerusalem
+          - range: "19-24"
+            label: Jerusalem
+
+      - slug: years
+        title: Years
+        description: Approximate timeline of events in Luke.
+        brackets:
+          - range: "1-2"
+            label: ~6–4 BC (birth narratives)
+          - range: "3-4"
+            label: ~AD 26–27 (beginning of ministry)
+          - range: "5-9"
+            label: ~AD 27–29 (Galilean ministry)
+          - range: "10-19"
+            label: ~AD 29–30 (journey to Jerusalem)
+          - range: "20-24"
+            label: ~AD 30 (Jerusalem and passion)
+
+  - target_slug: john
+    default_left: themes
+    default_right: years
+    topics:
+      - slug: ministry-phase
+        title: Ministry Phase
+        description: The major structural divisions of John's Gospel.
+        brackets:
+          - range: "1-12"
+            label: Book of Signs (public ministry)
+          - range: "13-17"
+            label: Book of Glory (upper room)
+          - range: "18-21"
+            label: Passion and resurrection
+
+      - slug: themes
+        title: Themes
+        description: Major thematic movements in John.
+        brackets:
+          - range: "1-12"
+            label: Signs and "I AM" declarations
+          - range: "13-17"
+            label: Love, Comforter, and union with Christ
+          - range: "18-21"
+            label: Sacrifice and resurrection life
+
+      - slug: locations
+        title: Locations
+        description: Where the events of John take place.
+        brackets:
+          - range: "1-4"
+            label: Judea, Samaria, and Galilee
+          - range: "5-12"
+            label: Jerusalem (repeated festival visits)
+          - range: "13-20"
+            label: Jerusalem — upper room to resurrection
+          - range: "21"
+            label: Sea of Galilee
+
+      - slug: seven-signs
+        title: Seven Signs
+        description: The seven miraculous signs John records as evidence of Jesus's divine identity.
+        brackets:
+          - range: "2"
+            label: Water to wine at Cana
+          - range: "4"
+            label: Official's son healed
+          - range: "5"
+            label: Man at Bethesda healed
+          - range: "6"
+            label: Feeding the five thousand
+          - range: "9"
+            label: Man born blind healed
+          - range: "11"
+            label: Lazarus raised
+          - range: "20"
+            label: Resurrection appearances
+
+      - slug: years
+        title: Years
+        description: Approximate timeline of events in John.
+        brackets:
+          - range: "1-4"
+            label: ~AD 26–27 (Judea and Samaria)
+          - range: "5-12"
+            label: ~AD 27–29 (Jerusalem controversies)
+          - range: "13-17"
+            label: ~AD 30 (upper room, night of betrayal)
+          - range: "18-21"

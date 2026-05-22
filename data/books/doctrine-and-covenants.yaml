@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
+schema_version: "1"
+author: "AI: Claude"
+disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
+root:
+  slug: doctrine-and-covenants
+  type: volume
+  title: Doctrine and Covenants
+  description: >
+    The Doctrine and Covenants is a collection of divine revelations and inspired
+    declarations given through Joseph Smith and subsequent presidents of The Church
+    of Jesus Christ of Latter-day Saints.
+  url_template: "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/{index}?lang=eng"
+  children:
+    - slug: dc-1
+      type: section
+      description: "Preface to the Doctrine and Covenants: warning to the world; the weak called to proclaim."
+    - slug: dc-2
+      type: section
+      description: "Elijah to turn hearts of fathers and children to each other before the Lord's great day."
+    - slug: dc-3
+      type: section
+      description: "Joseph rebuked for the 116 lost pages; God's purposes cannot fail; he is restored."
+    - slug: dc-4
+      type: section
+      description: "A marvelous work to come; missionary qualifications — faith, hope, charity, and love."
+    - slug: dc-5
+      type: section
+      description: "Martin Harris as witness; translation is Joseph's alone; three witnesses to testify."
+    - slug: dc-6
+      type: section
+      description: "Oliver Cowdery receives revelation; seek to establish Zion; a great and marvelous work."
+    - slug: dc-7
+      type: section
+      description: "A translation of John's record; John would tarry on earth until the Second Coming."
+    - slug: dc-8
+      type: section
+      description: "Oliver Cowdery's gift of revelation; the spirit of revelation; Aaron's rod as a type."
+    - slug: dc-9
+      type: section
+      description: "Cowdery failed to translate by not studying it out in his mind; he is counseled to wait."
+    - slug: dc-10
+      type: section
+      description: "God's purposes for the Book of Mormon cannot be frustrated; Satan's plan exposed."

@@ -1,0 +1,321 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
+schema_version: "1"
+author: "AI: Claude"
+disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
+root:
+  slug: bible-new-testament
+  type: testament
+  title: New Testament
+  description: The New Testament records the life and teachings of Jesus Christ, the establishment of the early church, and apostolic letters to Christian communities.
+  children:
+    - slug: gospels-overview
+      type: overview
+      title: The Gospels — Overview
+      children:
+        - slug: ov-matthew
+          type: overview-item
+          description: Matthew — A Jewish Christian account presenting Jesus as the promised Messiah and King.
+        - slug: ov-mark
+          type: overview-item
+          description: Mark — A fast-paced Gentile-oriented account of Jesus as the powerful Servant.
+        - slug: ov-luke
+          type: overview-item
+          description: Luke — A Gentile-addressed account presenting Jesus as the compassionate Son of Man.
+        - slug: ov-john
+          type: overview-item
+          description: John — A theological account presenting Jesus as the eternal Son of God.
+
+    - slug: matthew
+      type: book
+      title: Matthew
+      description: Matthew presents Jesus as the promised Messiah and King, written primarily for a Jewish audience with extensive fulfillment of Old Testament prophecy.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/nt/matt/{index}?lang=eng"
+      children:
+        - slug: matthew-1
+          type: chapter
+          description: "Jesus's genealogy through Abraham and David; the birth of Jesus announced to Joseph."
+        - slug: matthew-2
+          type: chapter
+          description: "The Magi visit the child Jesus; the flight to Egypt; the massacre of the innocents."
+        - slug: matthew-3
+          type: chapter
+          description: "John the Baptist preaches repentance; Jesus is baptized by John."
+        - slug: matthew-4
+          type: chapter
+          description: "Jesus tempted in the wilderness; Galilean ministry begins; first disciples called."
+        - slug: matthew-5
+          type: chapter
+          description: "Sermon on the Mount — Beatitudes, salt and light, fulfillment of the law."
+        - slug: matthew-6
+          type: chapter
+          description: "Sermon on the Mount — almsgiving, the Lord's Prayer, fasting, anxiety."
+        - slug: matthew-7
+          type: chapter
+          description: "Sermon on the Mount concludes — judging others, the narrow way, the two foundations."
+        - slug: matthew-8
+          type: chapter
+          description: "Jesus heals a leper, the centurion's servant, and many others; calms the storm."
+        - slug: matthew-9
+          type: chapter
+          description: "Jesus heals a paralytic, raises Jairus's daughter, and calls Matthew."
+        - slug: matthew-10
+          type: chapter
+          description: "The twelve apostles commissioned and sent out."
+        - slug: matthew-11
+          type: chapter
+          description: "John the Baptist's question from prison; Jesus commends John; 'Come unto me.'"
+        - slug: matthew-12
+          type: chapter
+          description: "Sabbath controversies; the Pharisees plot against Jesus; the sign of Jonah."
+        - slug: matthew-13
+          type: chapter
+          description: "Parables of the kingdom — sower, wheat and tares, mustard seed, treasure, pearl."
+        - slug: matthew-14
+          type: chapter
+          description: "Death of John the Baptist; feeding the five thousand; Jesus walks on water."
+        - slug: matthew-15
+          type: chapter
+          description: "Controversies over tradition; the Canaanite woman's faith; feeding the four thousand."
+        - slug: matthew-16
+          type: chapter
+          description: "Peter's confession at Caesarea Philippi; the first passion prediction."
+        - slug: matthew-17
+          type: chapter
+          description: "The Transfiguration; healing an epileptic boy; the second passion prediction."
+        - slug: matthew-18
+          type: chapter
+          description: "The greatest in the kingdom; forgiveness; the unforgiving servant."
+        - slug: matthew-19
+          type: chapter
+          description: "Teaching on divorce; children blessed; the rich young ruler."
+        - slug: matthew-20
+          type: chapter
+          description: "Workers in the vineyard; the third passion prediction; Bartimaeus healed."
+        - slug: matthew-21
+          type: chapter
+          description: "The triumphal entry; cleansing the temple; parables of the two sons and wicked tenants."
+        - slug: matthew-22
+          type: chapter
+          description: "Wedding banquet parable; debate over taxes, resurrection, and the greatest commandment."
+        - slug: matthew-23
+          type: chapter
+          description: "Jesus denounces the scribes and Pharisees — the seven woes."
+        - slug: matthew-24
+          type: chapter
+          description: "The Olivet Discourse — signs of the end times and the coming of the Son of Man."
+        - slug: matthew-25
+          type: chapter
+          description: "Parables of the ten virgins and talents; the judgment of the nations."
+        - slug: matthew-26
+          type: chapter
+          description: "Last Supper; Gethsemane; betrayal; Peter's denial; trial before the high priest."
+        - slug: matthew-27
+          type: chapter
+          description: "Trial before Pilate; crucifixion and burial of Jesus."
+        - slug: matthew-28
+          type: chapter
+          description: "The resurrection; the Great Commission given to the eleven."
+
+    - slug: mark
+      type: book
+      title: Mark
+      description: Mark presents Jesus as the powerful Servant of God, written for a Gentile audience with an emphasis on action and the immediacy of Jesus's ministry.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/nt/mark/{index}?lang=eng"
+      children:
+        - slug: mark-1
+          type: chapter
+          description: "John the Baptist; Jesus baptized and tempted; Galilean ministry; healings in Capernaum."
+        - slug: mark-2
+          type: chapter
+          description: "Healing a paralytic; calling Levi; controversies over fasting and the Sabbath."
+        - slug: mark-3
+          type: chapter
+          description: "Healing on the Sabbath; the twelve appointed; Jesus and Beelzebul; his true family."
+        - slug: mark-4
+          type: chapter
+          description: "Parables of the sower, lamp, growing seed, and mustard seed; calming the storm."
+        - slug: mark-5
+          type: chapter
+          description: "Legion of demons cast out; Jairus's daughter raised; the woman with the issue of blood."
+        - slug: mark-6
+          type: chapter
+          description: "Rejection at Nazareth; the Twelve sent out; John beheaded; feeding of the five thousand."
+        - slug: mark-7
+          type: chapter
+          description: "Traditions of the elders challenged; the Syrophoenician woman; healing a deaf man."
+        - slug: mark-8
+          type: chapter
+          description: "Feeding the four thousand; sign of Jonah; Peter's confession; first passion prediction."
+        - slug: mark-9
+          type: chapter
+          description: "Transfiguration; healing an epileptic; the second passion prediction; who is greatest."
+        - slug: mark-10
+          type: chapter
+          description: "Divorce; children; the rich young ruler; the third passion prediction; Bartimaeus healed."
+        - slug: mark-11
+          type: chapter
+          description: "The triumphal entry; the fig tree cursed; cleansing the temple."
+        - slug: mark-12
+          type: chapter
+          description: "Wicked tenants; taxes, resurrection, greatest commandment; the widow's mite."
+        - slug: mark-13
+          type: chapter
+          description: "The Olivet Discourse — signs of the end times and watchfulness."
+        - slug: mark-14
+          type: chapter
+          description: "Last Supper; Gethsemane; betrayal; Peter's denial; trial before the high priest."
+        - slug: mark-15
+          type: chapter
+          description: "Trial before Pilate; crucifixion and burial of Jesus."
+        - slug: mark-16
+          type: chapter
+          description: "The resurrection; Jesus appears to Mary and the disciples; the Great Commission."
+
+    - slug: luke
+      type: book
+      title: Luke
+      description: Luke presents Jesus as the compassionate Son of Man, written for Gentile readers with special attention to the poor, outcasts, women, and prayer.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/nt/luke/{index}?lang=eng"
+      children:
+        - slug: luke-1
+          type: chapter
+          description: "Announcement of John's and Jesus's births; Mary's Magnificat; Zechariah's prophecy."
+        - slug: luke-2
+          type: chapter
+          description: "Jesus born in Bethlehem; the shepherds; presentation at the temple; Jesus at age twelve."
+        - slug: luke-3
+          type: chapter
+          description: "John the Baptist's ministry; Jesus's baptism; genealogy traced back to Adam."
+        - slug: luke-4
+          type: chapter
+          description: "Temptation in the wilderness; rejected at Nazareth; ministry and healing in Capernaum."
+        - slug: luke-5
+          type: chapter
+          description: "The miraculous catch of fish; disciples called; healing a leper and a paralytic."
+        - slug: luke-6
+          type: chapter
+          description: "The twelve apostles chosen; the Sermon on the Plain — beatitudes, woes, love your enemies."
+        - slug: luke-7
+          type: chapter
+          description: "Centurion's servant healed; widow's son raised; John's question; the sinful woman."
+        - slug: luke-8
+          type: chapter
+          description: "Parable of the sower; calming the storm; Legion healed; Jairus's daughter raised."
+        - slug: luke-9
+          type: chapter
+          description: "Feeding five thousand; Peter's confession; the Transfiguration; second passion prediction."
+        - slug: luke-10
+          type: chapter
+          description: "The seventy sent out; the good Samaritan; Mary and Martha."
+        - slug: luke-11
+          type: chapter
+          description: "The Lord's Prayer; controversies with Pharisees; woes to the scribes and Pharisees."
+        - slug: luke-12
+          type: chapter
+          description: "Warnings about hypocrisy and anxiety; readiness for the master's return."
+        - slug: luke-13
+          type: chapter
+          description: "Repentance; the woman healed on the Sabbath; the narrow gate; Jerusalem lamented."
+        - slug: luke-14
+          type: chapter
+          description: "Healing on the Sabbath; the great banquet; counting the cost of discipleship."
+        - slug: luke-15
+          type: chapter
+          description: "Parables of the lost sheep, the lost coin, and the prodigal son."
+        - slug: luke-16
+          type: chapter
+          description: "The dishonest manager; the law and the kingdom; Lazarus and the rich man."
+        - slug: luke-17
+          type: chapter
+          description: "Forgiveness; faith; the ten lepers cleansed; the coming of the kingdom."
+        - slug: luke-18
+          type: chapter
+          description: "The persistent widow; Pharisee and tax collector; children blessed; the rich young ruler."
+        - slug: luke-19
+          type: chapter
+          description: "Zacchaeus; the parable of the ten minas; the triumphal entry; cleansing the temple."
+        - slug: luke-20
+          type: chapter
+          description: "Controversies over authority, taxes, resurrection, and David's son; the scribes warned."
+        - slug: luke-21
+          type: chapter
+          description: "The widow's mite; the Olivet Discourse — signs of the end times and Jerusalem's fall."
+        - slug: luke-22
+          type: chapter
+          description: "Last Supper; Gethsemane; betrayal; Peter's denial; trial before the council."
+        - slug: luke-23
+          type: chapter
+          description: "Trial before Pilate and Herod; crucifixion and burial of Jesus."
+        - slug: luke-24
+          type: chapter
+          description: "The resurrection; road to Emmaus; Jesus appears to the disciples; the ascension."
+
+    - slug: john
+      type: book
+      title: John
+      description: John presents Jesus as the eternal Son of God, structured around seven signs and seven "I AM" declarations, calling readers to believe and receive eternal life.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/nt/john/{index}?lang=eng"
+      children:
+        - slug: john-1
+          type: chapter
+          description: "The Word became flesh; John the Baptist's witness; Jesus calls his first disciples."
+        - slug: john-2
+          type: chapter
+          description: "Water turned to wine at Cana (1st sign); cleansing the temple."
+        - slug: john-3
+          type: chapter
+          description: "Nicodemus and the new birth; God so loved the world; John the Baptist's final witness."
+        - slug: john-4
+          type: chapter
+          description: "The woman at the well; the official's son healed at Capernaum (2nd sign)."
+        - slug: john-5
+          type: chapter
+          description: "Healing at the pool of Bethesda (3rd sign); Jesus and the Father; witnesses to Jesus."
+        - slug: john-6
+          type: chapter
+          description: "Feeding the five thousand (4th sign); walking on water; the bread of life discourse."
+        - slug: john-7
+          type: chapter
+          description: "Jesus at the Feast of Tabernacles; controversy over his identity."
+        - slug: john-8
+          type: chapter
+          description: "The woman caught in adultery; 'I am the light of the world'; Abraham's seed."
+        - slug: john-9
+          type: chapter
+          description: "Healing the man born blind (5th sign); the Pharisees interrogate the healed man."
+        - slug: john-10
+          type: chapter
+          description: "The Good Shepherd; 'I am the door'; the Feast of Dedication; 'I and the Father are one.'"
+        - slug: john-11
+          type: chapter
+          description: "The raising of Lazarus (6th sign); the Pharisees plot to kill Jesus."
+        - slug: john-12
+          type: chapter
+          description: "Mary anoints Jesus; the triumphal entry; the voice from heaven; the hour of glory."
+        - slug: john-13
+          type: chapter
+          description: "Jesus washes the disciples' feet; Judas's betrayal foretold; the new commandment."
+        - slug: john-14
+          type: chapter
+          description: "'I am the way, the truth, and the life'; the promised Comforter."
+        - slug: john-15
+          type: chapter
+          description: "The True Vine; remaining in Christ; the world's hatred of disciples."
+        - slug: john-16
+          type: chapter
+          description: "The work of the Holy Ghost; sorrow turned to joy; 'I have overcome the world.'"
+        - slug: john-17
+          type: chapter
+          description: "Jesus's great intercessory prayer for himself, his disciples, and all believers."
+        - slug: john-18
+          type: chapter
+          description: "Betrayal and arrest in Gethsemane; Peter's denial; trial before Annas and Pilate."
+        - slug: john-19
+          type: chapter
+          description: "Trial before Pilate continued; crucifixion and burial of Jesus."
+        - slug: john-20
+          type: chapter
+          description: "The resurrection; Mary Magdalene at the tomb; Jesus appears; Thomas confesses (7th sign)."
+        - slug: john-21
+          type: chapter
+          description: "Jesus appears at the Sea of Galilee; Peter restored; the beloved disciple."

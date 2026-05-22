@@ -1,0 +1,888 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
+schema_version: "1"
+author: "AI: Claude"
+disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
+root:
+  slug: book-of-mormon
+  type: volume
+  title: Book of Mormon
+  description: >
+    The Book of Mormon is scripture, a companion volume to the Bible and a
+    second witness of Jesus Christ. It narrates the history, teachings, and
+    spiritual experiences of ancient civilizations in the Americas, primarily
+    focusing on the journey of a prophet named Lehi and his descendants. The
+    book covers a period from roughly 600 B.C. to 400 A.D. and emphasizes
+    themes of faith, repentance, and salvation through Jesus Christ.
+  children:
+    - slug: overview
+      type: overview
+      title: Book of Mormon — Overview
+      description: The 15 books of the Book of Mormon, showing their source records, authors, and content focus.
+      children:
+        - slug: ov-1-nephi
+          type: book-entry
+          description: "1 Nephi — Lehi's exodus, wilderness journey, and Nephi's visions of Christ."
+        - slug: ov-2-nephi
+          type: book-entry
+          description: "2 Nephi — Lehi's final blessings, Isaiah chapters, and Nephi's doctrine of Christ."
+        - slug: ov-jacob
+          type: book-entry
+          description: "Jacob — Chastity and pride sermons, the olive tree allegory, and Sherem the anti-Christ."
+        - slug: ov-enos
+          type: book-entry
+          description: "Enos — An all-night wrestle in prayer; God covenants to preserve the Nephite record."
+        - slug: ov-jarom
+          type: book-entry
+          description: "Jarom — A brief record; Nephites prosper through obedience to the law of Moses."
+        - slug: ov-omni
+          type: book-entry
+          description: "Omni — Five authors in succession; Nephites discover Zarahemla and the Mulekites."
+        - slug: ov-wom
+          type: book-entry
+          description: "Words of Mormon — Mormon's note joining the small plates to his abridgment."
+        - slug: ov-mosiah
+          type: book-entry
+          description: "Mosiah — King Benjamin's address, Abinadi's martyrdom, and Alma founding the church."
+        - slug: ov-alma
+          type: book-entry
+          description: "Alma — Alma the Younger's ministry, the Zoramite mission, and wars with the Lamanites."
+        - slug: ov-helaman
+          type: book-entry
+          description: "Helaman — Gadianton robbers, Nephi's bold ministry, and Samuel the Lamanite's prophecies."
+        - slug: ov-3-nephi
+          type: book-entry
+          description: "3 Nephi — Destruction at Christ's death, his Nephite ministry, and founding his church."
+        - slug: ov-4-nephi
+          type: book-entry
+          description: "4 Nephi — Two centuries of Zion-like peace after Christ's visit, then slow decline."
+        - slug: ov-mormon
+          type: book-entry
+          description: "Mormon — The final Nephite wars, Mormon's compiled record, and Moroni's additions."
+        - slug: ov-ether
+          type: book-entry
+          description: "Ether — Moroni's abridgment of the Jaredites, from tower of Babel to their destruction."
+        - slug: ov-moroni
+          type: book-entry
+          description: "Moroni — Church ordinances, Mormon's epistles, faith and spiritual gifts, and farewell."
+
+    - slug: 1-nephi
+      type: book
+      title: 1 Nephi
+      description: 1 Nephi details the journey of Lehi's family from Jerusalem to the promised land.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/{index}?lang=eng"
+      children:
+        - slug: 1-nephi-1
+          type: chapter
+          description: "Lehi's vision and prophecies; his call to preach repentance to Jerusalem."
+        - slug: 1-nephi-2
+          type: chapter
+          description: Lehi's family departs into the wilderness.
+        - slug: 1-nephi-3
+          type: chapter
+          description: Nephi and his brothers return to Jerusalem to obtain the plates of brass.
+        - slug: 1-nephi-4
+          type: chapter
+          description: "Nephi and his brothers attempt to obtain the plates; Laman and Lemuel murmur."
+        - slug: 1-nephi-5
+          type: chapter
+          description: "Nephi's brothers return with gold; Laban steals their property and drives them off."
+        - slug: 1-nephi-6
+          type: chapter
+          description: Nephi returns to Jerusalem and is guided by the Spirit to obtain the plates of brass.
+        - slug: 1-nephi-7
+          type: chapter
+          description: "Nephi and his brothers return to Jerusalem to bring Ishmael's family."
+        - slug: 1-nephi-8
+          type: chapter
+          description: "Lehi has a vision of the tree of life; Nephi desires to know its meaning."
+        - slug: 1-nephi-9
+          type: chapter
+          description: Nephi sees the vision of the tree of life and learns its meaning.
+        - slug: 1-nephi-10
+          type: chapter
+          description: Nephi sees the vision of the tree of life and learns of the coming of the Son of God.
+        - slug: 1-nephi-11
+          type: chapter
+          description: Nephi sees the land of promise and the future of his seed and the seed of his brothers.
+        - slug: 1-nephi-12
+          type: chapter
+          description: Nephi sees the final destruction of his people and the coming forth of the Book of Mormon.
+        - slug: 1-nephi-13
+          type: chapter
+          description: "Nephi sees the gentile nations, Columbus, the Bible, and the latter-day Restoration."
+        - slug: 1-nephi-14
+          type: chapter
+          description: "Lehi's family continues their journey in the wilderness; they find the Liahona."
+        - slug: 1-nephi-15
+          type: chapter
+          description: "Lehi's family is instructed by the Liahona; Nephi breaks his bow and makes a new one."
+        - slug: 1-nephi-16
+          type: chapter
+          description: "Lehi's family continues their journey; Nephi's ship is driven to the promised land."
+        - slug: 1-nephi-17
+          type: chapter
+          description: "Nephi teaches his brethren from the scriptures; Nephi's ship is finished."
+        - slug: 1-nephi-18
+          type: chapter
+          description: Nephi and his family set sail for the promised land.
+        - slug: 1-nephi-19
+          type: chapter
+          description: Nephi recounts the prophecies of Isaiah about the house of Israel.
+        - slug: 1-nephi-20
+          type: chapter
+          description: "Nephi quotes Isaiah on Israel's stubbornness and God's call to flee from Babylon."
+        - slug: 1-nephi-21
+          type: chapter
+          description: Nephi expounds Isaiah's prophecies regarding the redemption of Israel.
+        - slug: 1-nephi-22
+          type: chapter
+          description: Nephi speaks of the gathering of Israel and the coming forth of the Book of Mormon.
+
+    - slug: 2-nephi
+      type: book
+      title: 2 Nephi
+      description: 2 Nephi contains the final teachings of Lehi, extensive Isaiah passages quoted by Nephi, and Nephi's testimony of Christ.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/{index}?lang=eng"
+      children:
+        - slug: 2-nephi-1
+          type: chapter
+          description: "Lehi's last counsel to his sons; he blesses them and exhorts them to righteousness."
+        - slug: 2-nephi-2
+          type: chapter
+          description: "Lehi teaches Jacob about opposition in all things, the Fall, and Christ's redemption."
+        - slug: 2-nephi-3
+          type: chapter
+          description: "Lehi's prophecy of Joseph in Egypt; a choice seer to be raised up."
+        - slug: 2-nephi-4
+          type: chapter
+          description: "Lehi blesses his posterity and dies; Nephi's psalm of faith and trust in God."
+        - slug: 2-nephi-5
+          type: chapter
+          description: "Nephi's people separate from the Lamanites; they build a temple and prosper."
+        - slug: 2-nephi-6
+          type: chapter
+          description: Jacob reads Isaiah; the ministry of Christ among the Jews and their eventual restoration.
+        - slug: 2-nephi-7
+          type: chapter
+          description: Isaiah 50 — the arm of the Lord and the obedience of the servant.
+        - slug: 2-nephi-8
+          type: chapter
+          description: Isaiah 51-52 — comfort to Zion; the redemption of Israel.
+        - slug: 2-nephi-9
+          type: chapter
+          description: "Jacob teaches the atonement and resurrection; conditions of salvation."
+        - slug: 2-nephi-10
+          type: chapter
+          description: "Christ shall minister to the Gentiles; Israel shall be gathered and restored."
+        - slug: 2-nephi-11
+          type: chapter
+          description: "Nephi delights in the words of Isaiah; types and symbols pointing to Christ."
+        - slug: 2-nephi-12
+          type: chapter
+          description: Isaiah 2 — the mountain of the Lord's house established in the last days.
+        - slug: 2-nephi-13
+          type: chapter
+          description: Isaiah 3 — judgments upon Jerusalem and Judah.
+        - slug: 2-nephi-14
+          type: chapter
+          description: Isaiah 4 — the branch of the Lord; those who remain in Zion.
+        - slug: 2-nephi-15
+          type: chapter
+          description: Isaiah 5 — the vineyard of the Lord; woes to the wicked.
+        - slug: 2-nephi-16
+          type: chapter
+          description: "Isaiah 6 — Isaiah's vision of the Lord; his call as a prophet."
+        - slug: 2-nephi-17
+          type: chapter
+          description: Isaiah 7 — the sign of Immanuel; the virgin birth foretold.
+        - slug: 2-nephi-18
+          type: chapter
+          description: Isaiah 8 — Immanuel as a sanctuary; testimony and the law.
+        - slug: 2-nephi-19
+          type: chapter
+          description: "Isaiah 9 — a child is born; the government shall be upon his shoulder."
+        - slug: 2-nephi-20
+          type: chapter
+          description: Isaiah 10 — woe to Assyria; a remnant of Israel shall return.
+        - slug: 2-nephi-21
+          type: chapter
+          description: Isaiah 11 — the stem of Jesse; the millennial reign.
+        - slug: 2-nephi-22
+          type: chapter
+          description: Isaiah 12 — praise and thanksgiving in the millennium.
+        - slug: 2-nephi-23
+          type: chapter
+          description: Isaiah 13 — the burden of Babylon; the day of the Lord.
+        - slug: 2-nephi-24
+          type: chapter
+          description: Isaiah 14 — the fall of the king of Babylon; Israel restored.
+        - slug: 2-nephi-25
+          type: chapter
+          description: "Nephi glories in plainness; prophecies of Christ's coming and atonement."
+        - slug: 2-nephi-26
+          type: chapter
+          description: "Christ shall appear to the Nephites; plain and precious truths removed from the Bible."
+        - slug: 2-nephi-27
+          type: chapter
+          description: The Book of Mormon to come forth; the sealed portion withheld.
+        - slug: 2-nephi-28
+          type: chapter
+          description: "False churches in the last days; the devil's strategy against the truth."
+        - slug: 2-nephi-29
+          type: chapter
+          description: The Bible and Book of Mormon are complementary witnesses of Christ.
+        - slug: 2-nephi-30
+          type: chapter
+          description: "A few Gentile converts; the scattered Israel to be gathered."
+        - slug: 2-nephi-31
+          type: chapter
+          description: "The doctrine of Christ — faith, repentance, baptism, the Holy Ghost."
+        - slug: 2-nephi-32
+          type: chapter
+          description: The words of Christ will tell all things to do.
+        - slug: 2-nephi-33
+          type: chapter
+          description: "Nephi's final words; his testimony of the plainness and truth of his record."
+
+    - slug: jacob
+      type: book
+      title: Jacob
+      description: The book of Jacob contains sermons on chastity and the allegory of the olive tree, along with a record of Jacob's ministry among the Nephites.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/{index}?lang=eng"
+      children:
+        - slug: jacob-1
+          type: chapter
+          description: "Jacob and Joseph consecrated priests; Nephi's final instructions before his death."
+        - slug: jacob-2
+          type: chapter
+          description: "Jacob reproves the Nephites for pride, unchastity, and unauthorized plural marriage."
+        - slug: jacob-3
+          type: chapter
+          description: "The pure in heart shall see God; the Lamanites are more righteous than the Nephites."
+        - slug: jacob-4
+          type: chapter
+          description: "All prophets worshipped Christ; the Jews will reject him as the foundation stone."
+        - slug: jacob-5
+          type: chapter
+          description: Zenos's allegory of the tame and wild olive trees — the history and destiny of Israel.
+        - slug: jacob-6
+          type: chapter
+          description: "The Lord's vineyard shall be preserved; beware of false teachings and hardness of heart."
+        - slug: jacob-7
+          type: chapter
+          description: "Sherem denies Christ and demands a sign; he is struck down; Jacob's concluding words."
+
+    - slug: enos
+      type: book
+      title: Enos
+      description: The brief record of Enos's all-night wrestle in prayer and the Lord's covenant to preserve the Nephite record for the Lamanites.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/enos/{index}?lang=eng"
+      children:
+        - slug: enos-1
+          type: chapter
+          description: "Enos prays all day and night; receives forgiveness and a covenant to preserve the record."
+
+    - slug: jarom
+      type: book
+      title: Jarom
+      description: Jarom's brief record of Nephite wars, prosperity, and keeping the law of Moses with faith in Christ to come.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/jarom/{index}?lang=eng"
+      children:
+        - slug: jarom-1
+          type: chapter
+          description: "Nephite wars and prosperity over decades; the law of Moses kept with faith in Christ."
+
+    - slug: omni
+      type: book
+      title: Omni
+      description: Brief records from five authors spanning generations, culminating in the Nephites' discovery of Zarahemla and the people of Mulek.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/omni/{index}?lang=eng"
+      children:
+        - slug: omni-1
+          type: chapter
+          description: "Five authors pass the plates; the Nephites discover Zarahemla; Mosiah becomes king."
+
+    - slug: words-of-mormon
+      type: book
+      title: Words of Mormon
+      description: Mormon's brief editorial note explaining how he compiled the small plates with his abridgment of the large plates.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/w-of-m/{index}?lang=eng"
+      children:
+        - slug: words-of-mormon-1
+          type: chapter
+          description: "Mormon explains his compilation; Benjamin subdues false prophets and establishes peace."
+
+    - slug: mosiah
+      type: book
+      title: Mosiah
+      description: Mosiah records King Benjamin's farewell address, the colony of Zeniff, Abinadi's martyrdom, Alma the Elder's conversion and church, and the institution of judges under Mosiah.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/{index}?lang=eng"
+      children:
+        - slug: mosiah-1
+          type: chapter
+          description: "King Benjamin teaches his sons the scriptures; the brass plates and Liahona are kept safe."
+        - slug: mosiah-2
+          type: chapter
+          description: "Benjamin's farewell: he served without gain and warns against sinning against the light."
+        - slug: mosiah-3
+          type: chapter
+          description: "An angel reveals Christ's coming and atonement; the natural man must yield to the Spirit."
+        - slug: mosiah-4
+          type: chapter
+          description: "The people fall to the earth; Benjamin on retaining remission by serving the poor."
+        - slug: mosiah-5
+          type: chapter
+          description: "The people covenant to take Christ's name; Benjamin exhorts steadfastness and faith."
+        - slug: mosiah-6
+          type: chapter
+          description: "Benjamin consecrates Mosiah king; Alma the Elder teaches the church throughout the land."
+        - slug: mosiah-7
+          type: chapter
+          description: "Ammon leads a search party to Lehi-Nephi; captured and brought before King Limhi."
+        - slug: mosiah-8
+          type: chapter
+          description: "Limhi tells of their bondage; Ammon speaks of seers and the Jaredite plates."
+        - slug: mosiah-9
+          type: chapter
+          description: "Zeniff leads a group back to Lehi-Nephi and makes a treaty with the Lamanite king."
+        - slug: mosiah-10
+          type: chapter
+          description: "Zeniff's people prosper then face attack; the roots of Lamanite hatred explained."
+        - slug: mosiah-11
+          type: chapter
+          description: "King Noah reigns in wickedness; Abinadi prophesies judgment and is cast out of the land."
+        - slug: mosiah-12
+          type: chapter
+          description: "Abinadi returns in disguise; arrested and brought before Noah's priests; he quotes Isaiah."
+        - slug: mosiah-13
+          type: chapter
+          description: "Abinadi, protected by the Spirit, reads the Ten Commandments and points to Christ."
+        - slug: mosiah-14
+          type: chapter
+          description: "Abinadi quotes Isaiah 53 — the suffering servant who bears the sins of many."
+        - slug: mosiah-15
+          type: chapter
+          description: "Abinadi: Christ is both Father and Son; explains resurrection and redemption."
+        - slug: mosiah-16
+          type: chapter
+          description: "Abinadi: without Christ the natural man is lost; he is condemned to death by burning."
+        - slug: mosiah-17
+          type: chapter
+          description: "Alma pleads for Abinadi; Abinadi is burned; he prophesies death upon his persecutors."
+        - slug: mosiah-18
+          type: chapter
+          description: "Alma preaches at the waters of Mormon; the church is organized; baptism explained."
+        - slug: mosiah-19
+          type: chapter
+          description: "Gideon challenges Noah; the Lamanites invade; Noah is burned by his own people."
+        - slug: mosiah-20
+          type: chapter
+          description: "Noah's priests abduct Lamanite daughters; war is averted through Limhi's negotiation."
+        - slug: mosiah-21
+          type: chapter
+          description: "Limhi's people suffer Lamanite bondage; failed military attempts; they find Ammon."
+        - slug: mosiah-22
+          type: chapter
+          description: "Limhi's people escape to Zarahemla by making the Lamanite guards drunk and slipping away."
+        - slug: mosiah-23
+          type: chapter
+          description: "Alma's people flee into the wilderness; discovered and enslaved by Lamanites under Amulon."
+        - slug: mosiah-24
+          type: chapter
+          description: "Amulon persecutes Alma's people; God lightens their burdens; they escape to freedom."
+        - slug: mosiah-25
+          type: chapter
+          description: "Alma's and Limhi's people join Zarahemla; Alma establishes churches throughout the land."
+        - slug: mosiah-26
+          type: chapter
+          description: "Many repent; God gives Alma instructions on church discipline and forgiveness of sins."
+        - slug: mosiah-27
+          type: chapter
+          description: "Alma the Younger and the sons of Mosiah persecute the church; an angel strikes Alma dumb."
+        - slug: mosiah-28
+          type: chapter
+          description: "The sons of Mosiah choose to preach to Lamanites; Mosiah translates the Jaredite record."
+        - slug: mosiah-29
+          type: chapter
+          description: "Mosiah proposes elected judges over kings; Alma the Younger becomes the first chief judge."
+
+    - slug: alma
+      type: book
+      title: Alma
+      description: The largest book in the Book of Mormon, containing Alma the Younger's ministry, the sons of Mosiah's Lamanite mission, the Zoramite mission, Alma's counsel to his sons, and decades of war under Captain Moroni.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/{index}?lang=eng"
+      children:
+        - slug: alma-1
+          type: chapter
+          description: "Nehor introduces priestcraft, kills Gideon, and is condemned; the church flourishes."
+        - slug: alma-2
+          type: chapter
+          description: "Amlici attempts to become king; the Nephites elect judges; his forces are defeated."
+        - slug: alma-3
+          type: chapter
+          description: "The Amlicites mark themselves with red fulfilling a curse; the wages of sin explained."
+        - slug: alma-4
+          type: chapter
+          description: "The church grows proud; Alma resigns as chief judge to devote himself to preaching."
+        - slug: alma-5
+          type: chapter
+          description: "Alma's great Zarahemla discourse: have you been born of God, or felt redeeming love?"
+        - slug: alma-6
+          type: chapter
+          description: "Alma cleanses the church in Zarahemla and ordains priests; he travels to Gideon."
+        - slug: alma-7
+          type: chapter
+          description: "Alma preaches in Gideon: Christ will be born of a woman and bear our infirmities."
+        - slug: alma-8
+          type: chapter
+          description: "Alma is rejected in Ammonihah; an angel directs him to return; Amulek takes him in."
+        - slug: alma-9
+          type: chapter
+          description: "Alma testifies in Ammonihah; warns of Lamanite destruction if they keep rejecting God."
+        - slug: alma-10
+          type: chapter
+          description: "Amulek testifies of his conversion; lawyers attempt to entrap him with questions."
+        - slug: alma-11
+          type: chapter
+          description: "The Nephite monetary system; Zeezrom challenges Amulek's teachings on Christ."
+        - slug: alma-12
+          type: chapter
+          description: "Alma answers Zeezrom: the plan of redemption, the fall, and the resurrection explained."
+        - slug: alma-13
+          type: chapter
+          description: "The holy order of the priesthood; Melchizedek as a type of Christ; the rest of the Lord."
+        - slug: alma-14
+          type: chapter
+          description: "Zeezrom tormented by guilt; believers burned with scriptures; Alma and Amulek delivered."
+        - slug: alma-15
+          type: chapter
+          description: "Zeezrom is healed through faith; church is established in Sidon; they return home."
+        - slug: alma-16
+          type: chapter
+          description: "Lamanites destroy Ammonihah, fulfilling prophecy; Zoram rescues Nephite captives."
+        - slug: alma-17
+          type: chapter
+          description: "Alma meets the sons of Mosiah after fourteen years; Ammon goes to serve King Lamoni."
+        - slug: alma-18
+          type: chapter
+          description: "Ammon defends Lamoni's flocks at the waters of Sebus; Lamoni desires to know God."
+        - slug: alma-19
+          type: chapter
+          description: "Lamoni falls into a trance and is transformed; his wife, servants, and household convert."
+        - slug: alma-20
+          type: chapter
+          description: "Ammon meets Lamoni's father, the Lamanite high king, and refuses to let Lamoni be slain."
+        - slug: alma-21
+          type: chapter
+          description: "Aaron is imprisoned in Jerusalem; released, he teaches and converts Lamoni's father."
+        - slug: alma-22
+          type: chapter
+          description: "Aaron teaches and converts the Lamanite high king; Nephite and Lamanite lands mapped."
+        - slug: alma-23
+          type: chapter
+          description: "Many Lamanites convert, take the name Anti-Nephi-Lehies, and bury their weapons."
+        - slug: alma-24
+          type: chapter
+          description: "Anti-Nephi-Lehies refuse to fight and are slain; their sacrifice converts their attackers."
+        - slug: alma-25
+          type: chapter
+          description: "Lamanite persecution spreads; many who slew the Anti-Nephi-Lehies are converted."
+        - slug: alma-26
+          type: chapter
+          description: "Ammon glories in God's power; the sons of Mosiah rejoice in the success of their mission."
+        - slug: alma-27
+          type: chapter
+          description: "Anti-Nephi-Lehies migrate north; Nephites give them the land of Jershon and protect them."
+        - slug: alma-28
+          type: chapter
+          description: "A great battle causes tremendous loss of life; Mormon reflects on the sorrow of sin."
+        - slug: alma-29
+          type: chapter
+          description: "Alma wishes he could be an angel; he rejoices in God's grace and his mission's fruit."
+        - slug: alma-30
+          type: chapter
+          description: "Korihor denies Christ and calls religion foolish; he demands a sign and is struck dumb."
+        - slug: alma-31
+          type: chapter
+          description: "Alma leads a mission to the apostate Zoramites; their prideful rameumptom prayer exposed."
+        - slug: alma-32
+          type: chapter
+          description: "Alma teaches the poor Zoramites: plant the word like a seed; nourish it and it will grow."
+        - slug: alma-33
+          type: chapter
+          description: "Zenos and Zenock witness of Christ and prayer; the brass serpent is a type of Christ."
+        - slug: alma-34
+          type: chapter
+          description: "Amulek: the atonement must be infinite; do not procrastinate; pray always and everywhere."
+        - slug: alma-35
+          type: chapter
+          description: "The Zoramite mission ends; converted poor are cast out; Alma counsels his sons."
+        - slug: alma-36
+          type: chapter
+          description: "Alma recounts his conversion to Helaman; the joy of forgiveness vs. the torment of sin."
+        - slug: alma-37
+          type: chapter
+          description: "Alma charges Helaman with the records; the Liahona types the word of Christ."
+        - slug: alma-38
+          type: chapter
+          description: "Alma's counsel to Shiblon: be diligent in affliction; bridle your passions; be sober."
+        - slug: alma-39
+          type: chapter
+          description: "Alma reproves Corianton for abandoning his mission and committing grave sin."
+        - slug: alma-40
+          type: chapter
+          description: "Alma teaches Corianton: souls rest in paradise or spirit prison until the resurrection."
+        - slug: alma-41
+          type: chapter
+          description: "The law of restoration: what you send returns in kind; wickedness never was happiness."
+        - slug: alma-42
+          type: chapter
+          description: "Alma explains justice and mercy: the atonement satisfies justice and enables mercy."
+        - slug: alma-43
+          type: chapter
+          description: "Moroni arms the Nephites with armor; his strategy defeats Zerahemnah at the river Sidon."
+        - slug: alma-44
+          type: chapter
+          description: "Moroni demands peace from Zerahemnah; after refusal, battle resumes and peace is granted."
+        - slug: alma-45
+          type: chapter
+          description: "Helaman preaches throughout the land; Nephite apostasy grows; Moroni prepares for war."
+        - slug: alma-46
+          type: chapter
+          description: "Moroni raises the Title of Liberty; the people rally against Amalickiah's conspiracy."
+        - slug: alma-47
+          type: chapter
+          description: "Amalickiah uses treachery and poison to become king over all the Lamanites."
+        - slug: alma-48
+          type: chapter
+          description: "Moroni prepares the Nephites; his character is praised as among the greatest of all time."
+        - slug: alma-49
+          type: chapter
+          description: "Lamanites attack Moroni's fortified cities and are repulsed; Amalickiah curses God."
+        - slug: alma-50
+          type: chapter
+          description: "Moroni fortifies the Nephite cities; peace follows; Morianton's people clash with Lehi's."
+        - slug: alma-51
+          type: chapter
+          description: "King-men rebel; Moroni forces compliance; Amalickiah invades from the east."
+        - slug: alma-52
+          type: chapter
+          description: "Teancum slays Amalickiah; Ammoron takes command; Moroni retakes the city of Mulek."
+        - slug: alma-53
+          type: chapter
+          description: "Moroni fortifies Bountiful; two thousand stripling warriors covenant to fight."
+        - slug: alma-54
+          type: chapter
+          description: "Moroni and Ammoron exchange heated letters; negotiations for prisoner exchange fail."
+        - slug: alma-55
+          type: chapter
+          description: "Moroni frees Nephite prisoners without bloodshed using a ruse involving Lamanite wine."
+        - slug: alma-56
+          type: chapter
+          description: "Helaman's epistle: the stripling warriors fight valiantly; not one is slain."
+        - slug: alma-57
+          type: chapter
+          description: "Helaman's epistle: the battle of Cumeni; all stripling warriors are wounded but none die."
+        - slug: alma-58
+          type: chapter
+          description: "Helaman takes Manti through strategy and praises God for preserving his young soldiers."
+        - slug: alma-59
+          type: chapter
+          description: "Moroni writes Pahoran demanding support; Lamanites retake the city of Nephihah."
+        - slug: alma-60
+          type: chapter
+          description: "Moroni rebukes Pahoran for government neglect and threatens to enforce accountability."
+        - slug: alma-61
+          type: chapter
+          description: "Pahoran replies: king-men have paralyzed the government; he asks for Moroni's help."
+        - slug: alma-62
+          type: chapter
+          description: "Moroni and Pahoran suppress the rebellion; Teancum slays Ammoron; peace is restored."
+        - slug: alma-63
+          type: chapter
+          description: "Shiblon receives the records; Hagoth sails ships northward; the records pass to Helaman."
+
+    - slug: helaman
+      type: book
+      title: Helaman
+      description: The book of Helaman records political upheaval, the rise of the Gadianton robbers, Nephi's powerful prophetic ministry, and Samuel the Lamanite's prophecies of Christ.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/{index}?lang=eng"
+      children:
+        - slug: helaman-1
+          type: chapter
+          description: "Pahoran is murdered; Pacumeni becomes chief judge; Coriantumr captures Zarahemla."
+        - slug: helaman-2
+          type: chapter
+          description: "Helaman becomes chief judge; Gadianton forms his robber band on secret oaths and flees."
+        - slug: helaman-3
+          type: chapter
+          description: "Many Nephites migrate northward; prosperity leads to pride; Helaman keeps the records."
+        - slug: helaman-4
+          type: chapter
+          description: "Dissenters stir the Lamanites; Nephite cities fall; the people recognize their wickedness."
+        - slug: helaman-5
+          type: chapter
+          description: "Nephi and Lehi preach throughout the land; surrounded by fire in prison, they are freed."
+        - slug: helaman-6
+          type: chapter
+          description: "Lamanites surpass the Nephites in righteousness; Gadianton robbers spread through both."
+        - slug: helaman-7
+          type: chapter
+          description: "Nephi mourns from his garden tower; crowds gather to hear him rebuke the corrupt judges."
+        - slug: helaman-8
+          type: chapter
+          description: "Judges stir the crowd against Nephi; he prophesies the murder of chief judge Seezoram."
+        - slug: helaman-9
+          type: chapter
+          description: "Five men find Seezoram dead, confirming Nephi's prophecy; the murderer is exposed."
+        - slug: helaman-10
+          type: chapter
+          description: "God grants Nephi the sealing power; the Spirit carries him from group to group preaching."
+        - slug: helaman-11
+          type: chapter
+          description: "Nephi calls for a famine to humble the people; they repent; the Gadianton robbers regroup."
+        - slug: helaman-12
+          type: chapter
+          description: "Mormon's commentary on human ingratitude and vanity, and the power and greatness of God."
+        - slug: helaman-13
+          type: chapter
+          description: "Samuel the Lamanite preaches from the city wall and pronounces cursings on the land."
+        - slug: helaman-14
+          type: chapter
+          description: "Samuel prophesies signs of Christ's birth — a night of light — and signs of his death."
+        - slug: helaman-15
+          type: chapter
+          description: "Samuel declares the Lamanites are more righteous than the Nephites; they will be blessed."
+        - slug: helaman-16
+          type: chapter
+          description: "Some Nephites believe Samuel; others try to kill him; he escapes and is never heard again."
+
+    - slug: 3-nephi
+      type: book
+      title: 3 Nephi
+      description: Third Nephi records the destruction at Christ's death, his personal appearance and three-day ministry at the temple in Bountiful, and the establishment of his church among the Nephites.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/{index}?lang=eng"
+      children:
+        - slug: 3-nephi-1
+          type: chapter
+          description: "The promised sign: a night with no darkness; a new star rises; prophecy fulfilled."
+        - slug: 3-nephi-2
+          type: chapter
+          description: "Nephites explain away the signs; the Gadianton robbers continue to grow in strength."
+        - slug: 3-nephi-3
+          type: chapter
+          description: "Giddianhi demands surrender; Lachoneus gathers the Nephites and fortifies their camp."
+        - slug: 3-nephi-4
+          type: chapter
+          description: "The Nephites defeat the Gadianton robbers; Giddianhi is killed; Zemnarihah hanged."
+        - slug: 3-nephi-5
+          type: chapter
+          description: "The Nephites subdue the robbers; Mormon introduces himself and summarizes Nephite history."
+        - slug: 3-nephi-6
+          type: chapter
+          description: "The Nephites prosper after war; pride spreads; lawyers and judges undermine the church."
+        - slug: 3-nephi-7
+          type: chapter
+          description: "The government is overthrown; tribes form; Nephi preaches with power and raises the dead."
+        - slug: 3-nephi-8
+          type: chapter
+          description: "The destruction at Christ's crucifixion: storms, earthquakes, and fire level whole cities."
+        - slug: 3-nephi-9
+          type: chapter
+          description: "Christ's voice from the darkness announces wicked cities destroyed; he invites all to him."
+        - slug: 3-nephi-10
+          type: chapter
+          description: "Silence and lamentation; Christ comforts survivors; the darkness lifts after three days."
+        - slug: 3-nephi-11
+          type: chapter
+          description: "Christ descends to the temple at Bountiful; thousands feel his wounds; he teaches baptism."
+        - slug: 3-nephi-12
+          type: chapter
+          description: "The Sermon at the Temple: the Beatitudes; the higher law replaces the law of Moses."
+        - slug: 3-nephi-13
+          type: chapter
+          description: "Do not pray or give alms to be seen; the Lord's Prayer; lay up treasures in heaven."
+        - slug: 3-nephi-14
+          type: chapter
+          description: "Judge not unrighteously; ask, seek, knock; the golden rule; the strait gate and broad way."
+        - slug: 3-nephi-15
+          type: chapter
+          description: "Christ declares he fulfills the law; the Nephites are the other sheep he spoke of."
+        - slug: 3-nephi-16
+          type: chapter
+          description: "Christ speaks of other sheep; Gentiles receive then reject the gospel; Israel gathered."
+        - slug: 3-nephi-17
+          type: chapter
+          description: "Christ heals the sick, blesses the children, weeps for joy; angels minister."
+        - slug: 3-nephi-18
+          type: chapter
+          description: "Christ institutes the sacrament; commands on prayer and not partaking unworthily."
+        - slug: 3-nephi-19
+          type: chapter
+          description: "The disciples baptize each other; the Holy Ghost falls as fire; Christ prays for unity."
+        - slug: 3-nephi-20
+          type: chapter
+          description: "Christ provides bread and wine; he teaches God's covenant with Israel and the Gentiles."
+        - slug: 3-nephi-21
+          type: chapter
+          description: "The Book of Mormon signals the gathering; the New Jerusalem to be built in America."
+        - slug: 3-nephi-22
+          type: chapter
+          description: "Christ reads Isaiah 54 — the everlasting covenant; Zion established with great glory."
+        - slug: 3-nephi-23
+          type: chapter
+          description: "Christ commands search of the scriptures; an unfulfilled prophecy of Samuel is corrected."
+        - slug: 3-nephi-24
+          type: chapter
+          description: "Christ reads Malachi 3: the Lord's messenger, tithing, and a book of remembrance."
+        - slug: 3-nephi-25
+          type: chapter
+          description: "Christ reads Malachi 4: the proud burned, righteous healed; Elijah before the great day."
+        - slug: 3-nephi-26
+          type: chapter
+          description: "Mormon summarizes Christ's ministry; the sealed portion withheld until faith grows."
+        - slug: 3-nephi-27
+          type: chapter
+          description: "Christ teaches the name of his church; summarizes the gospel; be even as I am."
+        - slug: 3-nephi-28
+          type: chapter
+          description: "Nine disciples choose to die; three Nephites choose to remain until the Second Coming."
+        - slug: 3-nephi-29
+          type: chapter
+          description: "The Book of Mormon coming forth signals God has begun fulfilling his covenant with Israel."
+        - slug: 3-nephi-30
+          type: chapter
+          description: "The Gentiles are commanded to repent, be baptized, and join the house of Israel."
+
+    - slug: 4-nephi
+      type: book
+      title: 4 Nephi
+      description: Fourth Nephi records nearly two centuries of Zion-like peace following Christ's visit, followed by gradual pride and the dissolution of the righteous society.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/4-ne/{index}?lang=eng"
+      children:
+        - slug: 4-nephi-1
+          type: chapter
+          description: "Two centuries of righteousness; pride returns, classes divide, and the church breaks up."
+
+    - slug: mormon
+      type: book
+      title: Mormon
+      description: Mormon's account of the final Nephite wars, his compilation of the sacred records, his final plea to the Lamanites, and Moroni's additions after his father's death.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/morm/{index}?lang=eng"
+      children:
+        - slug: mormon-1
+          type: chapter
+          description: "At age ten, Mormon is entrusted with the records by Ammaron; war and wickedness increase."
+        - slug: mormon-2
+          type: chapter
+          description: "Mormon leads the Nephite armies at fifteen; the people mourn but do not repent."
+        - slug: mormon-3
+          type: chapter
+          description: "Mormon refuses to lead after the Nephites vow revenge; he writes to future readers."
+        - slug: mormon-4
+          type: chapter
+          description: "Nephites and Lamanites alternate victories; Nephite wickedness exceeds the Lamanites."
+        - slug: mormon-5
+          type: chapter
+          description: "Mormon leads the failing Nephites again; he writes to the Lamanites and to future readers."
+        - slug: mormon-6
+          type: chapter
+          description: "The final battle at Cumorah; two hundred thousand Nephites fall; Mormon laments the slain."
+        - slug: mormon-7
+          type: chapter
+          description: "Mormon pleads with the Lamanites: believe in Christ, lay down your weapons."
+        - slug: mormon-8
+          type: chapter
+          description: "Moroni alone finishes Mormon's record; he foresees the day the book will come forth."
+        - slug: mormon-9
+          type: chapter
+          description: "Moroni exhorts unbelievers to repent; miracles and gifts of the Spirit have not ceased."
+
+    - slug: ether
+      type: book
+      title: Ether
+      description: Moroni's abridgment of the Jaredite record, tracing their history from the tower of Babel through their ocean crossing to the promised land and their eventual complete destruction.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/{index}?lang=eng"
+      children:
+        - slug: ether-1
+          type: chapter
+          description: "The brother of Jared prays at the tower of Babel; God promises to lead their people."
+        - slug: ether-2
+          type: chapter
+          description: "The Lord chastens the brother of Jared; the Jaredites reach the sea and design barges."
+        - slug: ether-3
+          type: chapter
+          description: "The Lord shows his finger; the brother of Jared sees the pre-mortal Christ; vision sealed."
+        - slug: ether-4
+          type: chapter
+          description: "Moroni seals the vision; it will come forth when the Gentiles repent and have faith."
+        - slug: ether-5
+          type: chapter
+          description: "Three witnesses will testify of the plates by God's power; the sealed portion remains."
+        - slug: ether-6
+          type: chapter
+          description: "The Jaredites sail in lighted barges singing praises; they arrive and give thanks."
+        - slug: ether-7
+          type: chapter
+          description: "Kings from Orihah to Shule; rebellions and captivity; prophets call the people to repent."
+        - slug: ether-8
+          type: chapter
+          description: "The first Jaredite secret combination; Akish uses oaths and plots to seize power."
+        - slug: ether-9
+          type: chapter
+          description: "Kings from Omer to Hearthom; cycles of righteousness and wickedness; prosperity under Lib."
+        - slug: ether-10
+          type: chapter
+          description: "More Jaredite kings; long prosperity under righteous rulers; then wickedness returns."
+        - slug: ether-11
+          type: chapter
+          description: "Kings from Ethem to Coriantor; prophets rejected; calamities increase."
+        - slug: ether-12
+          type: chapter
+          description: "Moroni's commentary on faith; God's strength perfected in weakness; charity is greatest."
+        - slug: ether-13
+          type: chapter
+          description: "Ether prophesies the New Jerusalem; cast out; civil war begins among the Jaredites."
+        - slug: ether-14
+          type: chapter
+          description: "Civil wars escalate; Shiz and Coriantumr gather their peoples for mutual destruction."
+        - slug: ether-15
+          type: chapter
+          description: "The last battle; all are slain until only Coriantumr and Shiz remain; prophecy fulfilled."
+
+    - slug: moroni
+      type: book
+      title: Moroni
+      description: Moroni's final writings, containing church ordinances, two epistles from his father Mormon, and his farewell invitation to come unto Christ and receive the promise of the Book of Mormon.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/{index}?lang=eng"
+      children:
+        - slug: moroni-1
+          type: chapter
+          description: "Moroni hides from the Lamanites; he writes a few more things for future readers."
+        - slug: moroni-2
+          type: chapter
+          description: "Christ gave the disciples power to bestow the Holy Ghost by the laying on of hands."
+        - slug: moroni-3
+          type: chapter
+          description: "The manner of ordaining priests and teachers in the church of Christ."
+        - slug: moroni-4
+          type: chapter
+          description: "The sacramental prayer on the bread; covenant to remember Christ and keep commandments."
+        - slug: moroni-5
+          type: chapter
+          description: "The sacramental prayer on the wine; the covenant to take upon them the name of Christ."
+        - slug: moroni-6
+          type: chapter
+          description: "Baptism requirements; meetings led by the Holy Ghost; sacrament as a regular reminder."
+        - slug: moroni-7
+          type: chapter
+          description: "Mormon's sermon on faith, hope, and charity; how to judge good from evil."
+        - slug: moroni-8
+          type: chapter
+          description: "Mormon's epistle: infant baptism is an abomination; little children are alive in Christ."
+        - slug: moroni-9
+          type: chapter
+          description: "Mormon's second epistle: both peoples are depraved; he exhorts Moroni to hold fast."
+        - slug: moroni-10
+          type: chapter
+          description: "Moroni's farewell: pray to know the Book of Mormon is true; come unto Christ."

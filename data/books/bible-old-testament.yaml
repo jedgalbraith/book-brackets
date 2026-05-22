@@ -1,0 +1,1392 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
+schema_version: "1"
+author: "AI: Claude"
+disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
+root:
+  slug: bible-old-testament
+  type: testament
+  title: Old Testament
+  description: The Old Testament contains the sacred writings of ancient Israel, including the law, history, poetry, and prophecy.
+  children:
+    - slug: overview
+      type: overview
+      title: Old Testament — Overview
+      description: "The 12 Old Testament books covered here, from Genesis through 2 Kings."
+      children:
+        - slug: ov-genesis
+          type: book-entry
+          description: "Genesis — Creation, the patriarchs, and the covenant foundations of Israel."
+        - slug: ov-exodus
+          type: book-entry
+          description: "Exodus — Deliverance from Egypt, the Passover, and the law given at Sinai."
+        - slug: ov-leviticus
+          type: book-entry
+          description: "Leviticus — The laws of holiness, sacrifice, and the priesthood given through Moses."
+        - slug: ov-numbers
+          type: book-entry
+          description: "Numbers — Israel's wilderness wanderings, rebellion, and preparations to enter Canaan."
+        - slug: ov-deuteronomy
+          type: book-entry
+          description: "Deuteronomy — Moses's farewell sermons, covenant renewal, and his death on Mount Nebo."
+        - slug: ov-joshua
+          type: book-entry
+          description: "Joshua — The conquest of Canaan and the allocation of the land among the twelve tribes."
+        - slug: ov-judges
+          type: book-entry
+          description: "Judges — Cycles of apostasy, oppression, and deliverance through twelve judges."
+        - slug: ov-ruth
+          type: book-entry
+          description: "Ruth — A Moabite widow's loyalty to Naomi and her marriage to Boaz the kinsman-redeemer."
+        - slug: ov-1-samuel
+          type: book-entry
+          description: "1 Samuel — Samuel's ministry, Saul's reign, and David's rise as God's anointed king."
+        - slug: ov-2-samuel
+          type: book-entry
+          description: "2 Samuel — David's reign over Israel, his great sin, and the consequences that follow."
+        - slug: ov-1-kings
+          type: book-entry
+          description: "1 Kings — Solomon's glory, the divided kingdom, and Elijah's ministry against Baal."
+        - slug: ov-2-kings
+          type: book-entry
+          description: "2 Kings — The fall of both kingdoms of Israel and Judah and the exile of their peoples."
+        - slug: ov-1-chronicles
+          type: book-entry
+          description: "1 Chronicles — Israel's history from Adam to David, with focus on temple worship."
+        - slug: ov-2-chronicles
+          type: book-entry
+          description: "2 Chronicles — Solomon's glory, the divided kingdom, and Judah through the exile."
+        - slug: ov-ezra
+          type: book-entry
+          description: "Ezra — The return from Babylon and the rebuilding of the Jerusalem temple."
+        - slug: ov-nehemiah
+          type: book-entry
+          description: "Nehemiah — Jerusalem's walls rebuilt and the covenant community renewed."
+        - slug: ov-esther
+          type: book-entry
+          description: "Esther — A Jewish queen in Persia saves her people from a decree of genocide."
+        - slug: ov-job
+          type: book-entry
+          description: "Job — Wrestling with suffering and faith through poetic dialogue with God."
+        - slug: ov-psalms
+          type: book-entry
+          description: "Psalms — 150 sacred songs of praise, lament, thanksgiving, and Messianic prophecy."
+        - slug: ov-proverbs
+          type: book-entry
+          description: "Proverbs — Practical wisdom sayings for righteous living, largely from Solomon."
+        - slug: ov-ecclesiastes
+          type: book-entry
+          description: "Ecclesiastes — The Preacher explores the meaning of life under the sun."
+        - slug: ov-song-of-solomon
+          type: book-entry
+          description: "Song of Solomon — Lyric love poetry, often read as an allegory of divine love."
+        - slug: ov-isaiah
+          type: book-entry
+          description: "Isaiah — Judgment on Israel and Judah with sweeping visions of the coming Messiah."
+        - slug: ov-jeremiah
+          type: book-entry
+          description: "Jeremiah — Calls Judah to repentance before Babylon destroys Jerusalem."
+        - slug: ov-lamentations
+          type: book-entry
+          description: "Lamentations — Five anguished poems mourning the destruction of Jerusalem."
+        - slug: ov-ezekiel
+          type: book-entry
+          description: "Ezekiel — Dramatic visions in Babylon of God's glory, judgment, and restoration."
+        - slug: ov-daniel
+          type: book-entry
+          description: "Daniel — Faith demonstrated in Babylon alongside prophetic visions of future kingdoms."
+        - slug: ov-hosea
+          type: book-entry
+          description: "Hosea — Hosea's marriage as a mirror of God's covenant with unfaithful Israel."
+        - slug: ov-joel
+          type: book-entry
+          description: "Joel — The locust plague, the Day of the Lord, and the promise of the Spirit."
+        - slug: ov-amos
+          type: book-entry
+          description: "Amos — A shepherd-prophet denounces social injustice and religious hypocrisy in Israel."
+        - slug: ov-obadiah
+          type: book-entry
+          description: "Obadiah — Judgment on Edom for pride and treachery against God's people."
+        - slug: ov-jonah
+          type: book-entry
+          description: "Jonah — Flees God's call, is swallowed by a fish, and reluctantly preaches to Nineveh."
+        - slug: ov-micah
+          type: book-entry
+          description: "Micah — Indicts Judah for injustice and prophesies the Messiah's birth in Bethlehem."
+        - slug: ov-nahum
+          type: book-entry
+          description: "Nahum — The certain destruction of Nineveh and the Assyrian Empire foretold."
+        - slug: ov-habakkuk
+          type: book-entry
+          description: "Habakkuk — Wrestles with God over injustice and is told: the just shall live by faith."
+        - slug: ov-zephaniah
+          type: book-entry
+          description: "Zephaniah — Warns of the Day of the Lord and promises restoration for the faithful."
+        - slug: ov-haggai
+          type: book-entry
+          description: "Haggai — Urges the returned exiles to rebuild the temple above their own homes."
+        - slug: ov-zechariah
+          type: book-entry
+          description: "Zechariah — Post-exilic visions of restoration and rich Messianic prophecy."
+        - slug: ov-malachi
+          type: book-entry
+          description: "Malachi — Rebukes spiritual apathy and promises the coming forerunner of the Lord."
+
+    - slug: genesis
+      type: book
+      title: Genesis
+      description: Genesis records the creation of the world, the fall of man, and the foundational stories of the patriarchs.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/gen/{index}?lang=eng"
+      children:
+        - slug: genesis-1
+          type: chapter
+          description: God creates the heavens and the earth in six days.
+        - slug: genesis-2
+          type: chapter
+          description: "The creation of man and woman; the garden of Eden."
+        - slug: genesis-3
+          type: chapter
+          description: "The fall of Adam and Eve; they are cast out of Eden."
+        - slug: genesis-4
+          type: chapter
+          description: "Cain slays Abel; genealogy from Adam."
+        - slug: genesis-5
+          type: chapter
+          description: Generations from Adam to Noah.
+        - slug: genesis-6
+          type: chapter
+          description: "Wickedness of man; Noah instructed to build the ark."
+        - slug: genesis-7
+          type: chapter
+          description: "The flood; Noah and his family preserved in the ark."
+        - slug: genesis-8
+          type: chapter
+          description: "The waters recede; Noah's sacrifice; God's promise."
+        - slug: genesis-9
+          type: chapter
+          description: "God's covenant with Noah; the rainbow as a sign."
+        - slug: genesis-10
+          type: chapter
+          description: Table of nations — descendants of Noah's sons.
+        - slug: genesis-11
+          type: chapter
+          description: "The tower of Babel; genealogy from Shem to Abram."
+        - slug: genesis-12
+          type: chapter
+          description: "Abram called by God; he goes to Canaan and Egypt."
+        - slug: genesis-13
+          type: chapter
+          description: "Abram and Lot separate; Abram settles at Hebron."
+        - slug: genesis-14
+          type: chapter
+          description: "Abram rescues Lot; Melchizedek blesses Abram."
+        - slug: genesis-15
+          type: chapter
+          description: "God's covenant with Abram; the promised seed and land."
+        - slug: genesis-16
+          type: chapter
+          description: "Hagar and the birth of Ishmael."
+        - slug: genesis-17
+          type: chapter
+          description: "Covenant of circumcision; Abram renamed Abraham."
+        - slug: genesis-18
+          type: chapter
+          description: "The Lord visits Abraham; promise of Isaac; Abraham pleads for Sodom."
+        - slug: genesis-19
+          type: chapter
+          description: "Destruction of Sodom and Gomorrah; Lot saved."
+        - slug: genesis-20
+          type: chapter
+          description: Abraham and Abimelech at Gerar.
+        - slug: genesis-21
+          type: chapter
+          description: "Birth of Isaac; Hagar and Ishmael sent away."
+        - slug: genesis-22
+          type: chapter
+          description: "The sacrifice of Isaac; Abraham's faith tested."
+        - slug: genesis-23
+          type: chapter
+          description: "Death and burial of Sarah."
+        - slug: genesis-24
+          type: chapter
+          description: "A wife sought for Isaac; Rebekah chosen."
+        - slug: genesis-25
+          type: chapter
+          description: "Death of Abraham; birth of Esau and Jacob; Esau sells his birthright."
+        - slug: genesis-26
+          type: chapter
+          description: "Isaac and the Philistines; covenant renewed."
+        - slug: genesis-27
+          type: chapter
+          description: "Jacob obtains Isaac's blessing by deceit."
+        - slug: genesis-28
+          type: chapter
+          description: "Jacob flees to Laban; vision of the ladder at Bethel."
+        - slug: genesis-29
+          type: chapter
+          description: "Jacob serves Laban; marries Leah and Rachel."
+        - slug: genesis-30
+          type: chapter
+          description: "Birth of Jacob's twelve children; Jacob's flocks increase."
+        - slug: genesis-31
+          type: chapter
+          description: "Jacob departs from Laban; covenant at Mizpah."
+        - slug: genesis-32
+          type: chapter
+          description: "Jacob prepares to meet Esau; wrestles with an angel and is named Israel."
+        - slug: genesis-33
+          type: chapter
+          description: "Jacob meets Esau in peace; they part amicably."
+        - slug: genesis-34
+          type: chapter
+          description: "Dinah and the Shechemites; Simeon and Levi avenge her."
+        - slug: genesis-35
+          type: chapter
+          description: "Jacob returns to Bethel; God appears; Rachel dies; Isaac dies."
+        - slug: genesis-36
+          type: chapter
+          description: Descendants and kings of Esau (Edom).
+        - slug: genesis-37
+          type: chapter
+          description: "Joseph's dreams of ruling his brothers; sold into Egypt."
+        - slug: genesis-38
+          type: chapter
+          description: "Judah and Tamar."
+        - slug: genesis-39
+          type: chapter
+          description: "Joseph in Potiphar's house; resists temptation; imprisoned."
+        - slug: genesis-40
+          type: chapter
+          description: "Joseph interprets the dreams of Pharaoh's butler and baker."
+        - slug: genesis-41
+          type: chapter
+          description: "Joseph interprets Pharaoh's dreams; appointed ruler over Egypt."
+        - slug: genesis-42
+          type: chapter
+          description: "Joseph's brothers come to Egypt for grain; Joseph tests them."
+        - slug: genesis-43
+          type: chapter
+          description: "Benjamin brought to Egypt; brothers dine with Joseph."
+        - slug: genesis-44
+          type: chapter
+          description: "Joseph's silver cup planted; Judah pleads for Benjamin."
+        - slug: genesis-45
+          type: chapter
+          description: "Joseph reveals himself to his brothers; invites family to Egypt."
+        - slug: genesis-46
+          type: chapter
+          description: "Jacob and family journey to Egypt; Jacob meets Pharaoh."
+        - slug: genesis-47
+          type: chapter
+          description: "Jacob's family settles in Goshen; Joseph manages the famine."
+        - slug: genesis-48
+          type: chapter
+          description: "Jacob blesses Ephraim and Manasseh."
+        - slug: genesis-49
+          type: chapter
+          description: "Jacob's final blessings and prophecies over his twelve sons."
+        - slug: genesis-50
+          type: chapter
+          description: "Death and burial of Jacob; Joseph forgives his brothers; death of Joseph."
+
+    - slug: exodus
+      type: book
+      title: Exodus
+      description: Exodus records Israel's deliverance from Egyptian slavery through Moses, the giving of the law at Sinai, and the construction of the tabernacle.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ex/{index}?lang=eng"
+      children:
+        - slug: exodus-1
+          type: chapter
+          description: "Israelites multiply in Egypt; Pharaoh oppresses them with forced labor."
+        - slug: exodus-2
+          type: chapter
+          description: "Birth and early life of Moses; he flees to Midian."
+        - slug: exodus-3
+          type: chapter
+          description: "Moses and the burning bush; God reveals his name and mission."
+        - slug: exodus-4
+          type: chapter
+          description: "Signs given to Moses; Aaron appointed as his spokesman."
+        - slug: exodus-5
+          type: chapter
+          description: "Moses and Aaron before Pharaoh; Israel's burdens are increased."
+        - slug: exodus-6
+          type: chapter
+          description: "God renews the covenant with Moses; genealogy of Moses and Aaron."
+        - slug: exodus-7
+          type: chapter
+          description: "Moses and Aaron before Pharaoh; the Nile turned to blood."
+        - slug: exodus-8
+          type: chapter
+          description: "The plagues of frogs, lice, and flies."
+        - slug: exodus-9
+          type: chapter
+          description: "The plagues on livestock, boils, and hail."
+        - slug: exodus-10
+          type: chapter
+          description: "The plagues of locusts and darkness."
+        - slug: exodus-11
+          type: chapter
+          description: "The final plague announced — death of the firstborn."
+        - slug: exodus-12
+          type: chapter
+          description: "The Passover instituted; the exodus from Egypt."
+        - slug: exodus-13
+          type: chapter
+          description: "Consecration of the firstborn; the pillar of cloud and fire."
+        - slug: exodus-14
+          type: chapter
+          description: "Crossing the Red Sea; the Egyptian army destroyed."
+        - slug: exodus-15
+          type: chapter
+          description: "The song of Moses; Miriam's song; bitter waters at Marah."
+        - slug: exodus-16
+          type: chapter
+          description: "Manna and quail provided in the wilderness."
+        - slug: exodus-17
+          type: chapter
+          description: "Water from the rock at Horeb; Amalek defeated."
+        - slug: exodus-18
+          type: chapter
+          description: "Jethro visits Moses; a system of judges appointed."
+        - slug: exodus-19
+          type: chapter
+          description: "Israel at Mount Sinai; God descends in fire and thunder."
+        - slug: exodus-20
+          type: chapter
+          description: "The Ten Commandments given to Israel."
+        - slug: exodus-21
+          type: chapter
+          description: "Laws concerning servants, personal injury, and restitution."
+        - slug: exodus-22
+          type: chapter
+          description: "Laws concerning theft, property, and social responsibility."
+        - slug: exodus-23
+          type: chapter
+          description: "Laws of justice and mercy; three annual feasts; the promised land."
+        - slug: exodus-24
+          type: chapter
+          description: "Moses and the seventy elders see God; the covenant confirmed."
+        - slug: exodus-25
+          type: chapter
+          description: "Instructions for the ark, table of showbread, and the lampstand."
+        - slug: exodus-26
+          type: chapter
+          description: Instructions for constructing the tabernacle.
+        - slug: exodus-27
+          type: chapter
+          description: "Instructions for the bronze altar, the courtyard, and the lamp oil."
+        - slug: exodus-28
+          type: chapter
+          description: "Aaron's priestly garments — the ephod, breastplate, and robe."
+        - slug: exodus-29
+          type: chapter
+          description: "Consecration of Aaron and his sons as priests."
+        - slug: exodus-30
+          type: chapter
+          description: "The altar of incense; the census tax; the anointing oil."
+        - slug: exodus-31
+          type: chapter
+          description: "Bezalel called to build the tabernacle; Sabbath observance."
+        - slug: exodus-32
+          type: chapter
+          description: "Israel makes a golden calf; Moses intercedes and breaks the tablets."
+        - slug: exodus-33
+          type: chapter
+          description: "Moses seeks to see God's glory; God promises his presence."
+        - slug: exodus-34
+          type: chapter
+          description: "New stone tablets given; the covenant renewed; Moses's face shines."
+        - slug: exodus-35
+          type: chapter
+          description: "Sabbath laws restated; freewill offerings gathered for the tabernacle."
+        - slug: exodus-36
+          type: chapter
+          description: "The tabernacle constructed by Bezalel and Oholiab."
+        - slug: exodus-37
+          type: chapter
+          description: "The ark, table of showbread, and lampstand crafted."
+        - slug: exodus-38
+          type: chapter
+          description: "The bronze altar and the tabernacle courtyard constructed."
+        - slug: exodus-39
+          type: chapter
+          description: "The priestly garments completed and presented to Moses."
+        - slug: exodus-40
+          type: chapter
+          description: "The tabernacle erected and dedicated; the glory of the Lord fills it."
+
+    - slug: leviticus
+      type: book
+      title: Leviticus
+      description: Leviticus records the laws of sacrifice, purity, and holiness given to Israel at Sinai, establishing the patterns of worship for the Levitical priesthood.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/lev/{index}?lang=eng"
+      children:
+        - slug: leviticus-1
+          type: chapter
+          description: Laws for burnt offerings from the herd and flock.
+        - slug: leviticus-2
+          type: chapter
+          description: Laws for grain offerings.
+        - slug: leviticus-3
+          type: chapter
+          description: Laws for peace offerings.
+        - slug: leviticus-4
+          type: chapter
+          description: Laws for sin offerings for unintentional sins.
+        - slug: leviticus-5
+          type: chapter
+          description: "Laws for guilt offerings; confession and restitution."
+        - slug: leviticus-6
+          type: chapter
+          description: "Restitution for wrongs; priestly duties for the altar fire and grain offering."
+        - slug: leviticus-7
+          type: chapter
+          description: Laws for guilt and peace offerings; portions for the priests.
+        - slug: leviticus-8
+          type: chapter
+          description: "Consecration of Aaron and his sons; Moses anoints them."
+        - slug: leviticus-9
+          type: chapter
+          description: "Aaron's first offerings as high priest; the glory of the Lord appears."
+        - slug: leviticus-10
+          type: chapter
+          description: "Nadab and Abihu offer strange fire and die; laws for priests."
+        - slug: leviticus-11
+          type: chapter
+          description: "Clean and unclean animals — dietary laws."
+        - slug: leviticus-12
+          type: chapter
+          description: Laws for purification after childbirth.
+        - slug: leviticus-13
+          type: chapter
+          description: "Laws for diagnosing leprosy and skin diseases."
+        - slug: leviticus-14
+          type: chapter
+          description: "Rituals for cleansing a leper; laws for mildew in houses."
+        - slug: leviticus-15
+          type: chapter
+          description: Laws for bodily discharges and purification.
+        - slug: leviticus-16
+          type: chapter
+          description: "The Day of Atonement — Aaron enters the holy of holies."
+        - slug: leviticus-17
+          type: chapter
+          description: "Sacrifices to be brought to the tabernacle; prohibition on eating blood."
+        - slug: leviticus-18
+          type: chapter
+          description: "Prohibited sexual relationships; Israel to be holy unlike Egypt and Canaan."
+        - slug: leviticus-19
+          type: chapter
+          description: "Various laws of holiness — love your neighbor; be holy as God is holy."
+        - slug: leviticus-20
+          type: chapter
+          description: Penalties for Molech worship and sexual sins.
+        - slug: leviticus-21
+          type: chapter
+          description: Laws of holiness for priests and the high priest.
+        - slug: leviticus-22
+          type: chapter
+          description: "Priests must be clean to eat holy things; acceptable offerings."
+        - slug: leviticus-23
+          type: chapter
+          description: "The feasts: Sabbath, Passover, Firstfruits, Pentecost, Trumpets, Atonement, Tabernacles."
+        - slug: leviticus-24
+          type: chapter
+          description: "The lamp and showbread; blasphemy and the law of retaliation."
+        - slug: leviticus-25
+          type: chapter
+          description: "The sabbatical year and the Year of Jubilee."
+        - slug: leviticus-26
+          type: chapter
+          description: "Blessings for obedience; curses for disobedience; promise of restoration."
+        - slug: leviticus-27
+          type: chapter
+          description: Laws for vows and dedications to the Lord.
+
+    - slug: numbers
+      type: book
+      title: Numbers
+      description: Numbers records Israel's wilderness journey from Sinai to the plains of Moab, including two censuses, rebellion, and preparation for entering Canaan.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/num/{index}?lang=eng"
+      children:
+        - slug: numbers-1
+          type: chapter
+          description: "A census of Israel's fighting men; the Levites set apart for tabernacle service."
+        - slug: numbers-2
+          type: chapter
+          description: The arrangement of Israel's camp around the tabernacle by tribe.
+        - slug: numbers-3
+          type: chapter
+          description: "The Levites numbered and assigned; firstborn sons redeemed."
+        - slug: numbers-4
+          type: chapter
+          description: "Duties of the Kohathite, Gershonite, and Merarite clans in transporting the tabernacle."
+        - slug: numbers-5
+          type: chapter
+          description: "Laws for the unclean, restitution, and the test for suspected adultery."
+        - slug: numbers-6
+          type: chapter
+          description: "Laws for the Nazirite vow; the Aaronic blessing."
+        - slug: numbers-7
+          type: chapter
+          description: Offerings of the twelve tribal leaders for the tabernacle dedication.
+        - slug: numbers-8
+          type: chapter
+          description: "The lampstand set up; the Levites consecrated and dedicated to service."
+        - slug: numbers-9
+          type: chapter
+          description: "The second Passover celebrated; the cloud guides Israel's journeys."
+        - slug: numbers-10
+          type: chapter
+          description: "The silver trumpets made; Israel departs from Sinai."
+        - slug: numbers-11
+          type: chapter
+          description: "The people complain; quail given and plague sent; seventy elders receive the Spirit."
+        - slug: numbers-12
+          type: chapter
+          description: "Miriam and Aaron challenge Moses; Miriam struck with leprosy."
+        - slug: numbers-13
+          type: chapter
+          description: "Twelve spies sent into Canaan; they return with a mixed report."
+        - slug: numbers-14
+          type: chapter
+          description: "Israel rebels against entering Canaan; forty years of wandering decreed."
+        - slug: numbers-15
+          type: chapter
+          description: "Laws for offerings and tassels; a man stoned for gathering sticks on the Sabbath."
+        - slug: numbers-16
+          type: chapter
+          description: "Korah's rebellion; the earth swallows the rebels; Aaron's rod stops a plague."
+        - slug: numbers-17
+          type: chapter
+          description: "Aaron's rod buds and bears almonds — confirming the Levitical priesthood."
+        - slug: numbers-18
+          type: chapter
+          description: "Duties and portions for Aaron and the Levites; their portion is the Lord."
+        - slug: numbers-19
+          type: chapter
+          description: "The red heifer ritual; purification from contact with the dead."
+        - slug: numbers-20
+          type: chapter
+          description: "Death of Miriam; Moses strikes the rock at Meribah; forbidden to enter Canaan."
+        - slug: numbers-21
+          type: chapter
+          description: "The bronze serpent; victories over Sihon and Og; Israel approaches Canaan."
+        - slug: numbers-22
+          type: chapter
+          description: "Balak of Moab summons Balaam; the angel of the Lord and Balaam's donkey."
+        - slug: numbers-23
+          type: chapter
+          description: "Balaam's first and second oracles — Israel cannot be cursed."
+        - slug: numbers-24
+          type: chapter
+          description: "Balaam's third and fourth oracles — a star shall come out of Jacob."
+        - slug: numbers-25
+          type: chapter
+          description: "Israel commits fornication with Moab; Phinehas ends the plague with his zeal."
+        - slug: numbers-26
+          type: chapter
+          description: A second census of Israel after forty years in the wilderness.
+        - slug: numbers-27
+          type: chapter
+          description: "The daughters of Zelophehad; Moses shown Canaan; Joshua appointed as successor."
+        - slug: numbers-28
+          type: chapter
+          description: "Laws for daily, Sabbath, monthly, and festival offerings."
+        - slug: numbers-29
+          type: chapter
+          description: "Laws for autumn festival offerings — Trumpets, Atonement, and Tabernacles."
+        - slug: numbers-30
+          type: chapter
+          description: Laws for vows made by men and women.
+        - slug: numbers-31
+          type: chapter
+          description: "War against Midian; the spoils divided; purification of warriors."
+        - slug: numbers-32
+          type: chapter
+          description: "Reuben, Gad, and half of Manasseh settle east of the Jordan."
+        - slug: numbers-33
+          type: chapter
+          description: "A log of Israel's forty-two encampments from Egypt to the plains of Moab."
+        - slug: numbers-34
+          type: chapter
+          description: "The boundaries of Canaan; leaders appointed to allot the land."
+        - slug: numbers-35
+          type: chapter
+          description: "Cities for the Levites and cities of refuge; laws for manslaughter and murder."
+        - slug: numbers-36
+          type: chapter
+          description: "Laws to keep tribal inheritance within each tribe; daughters of Zelophehad marry."
+
+    - slug: deuteronomy
+      type: book
+      title: Deuteronomy
+      description: Deuteronomy records Moses's farewell addresses to Israel on the plains of Moab, renewing the covenant and commissioning Joshua before Moses's death.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/deut/{index}?lang=eng"
+      children:
+        - slug: deuteronomy-1
+          type: chapter
+          description: "Moses reviews Israel's journey from Horeb; judges appointed; the spies sent."
+        - slug: deuteronomy-2
+          type: chapter
+          description: "Israel's wilderness wanderings reviewed; victories over Sihon of Heshbon."
+        - slug: deuteronomy-3
+          type: chapter
+          description: "Defeat of Og of Bashan; territory divided; Moses forbidden to cross the Jordan."
+        - slug: deuteronomy-4
+          type: chapter
+          description: "Moses urges obedience to the law; warning against idolatry; cities of refuge."
+        - slug: deuteronomy-5
+          type: chapter
+          description: "The Ten Commandments repeated; Israel's fear at Horeb; Moses as mediator."
+        - slug: deuteronomy-6
+          type: chapter
+          description: "The Shema — love the Lord with all your heart; teach the commandments to children."
+        - slug: deuteronomy-7
+          type: chapter
+          description: "Drive out the Canaanites; blessings for obedience; no intermarriage with them."
+        - slug: deuteronomy-8
+          type: chapter
+          description: "Remember the Lord in the promised land; do not forget him in prosperity."
+        - slug: deuteronomy-9
+          type: chapter
+          description: "Israel's rebellions recalled; Moses's intercession saves Israel at Horeb."
+        - slug: deuteronomy-10
+          type: chapter
+          description: "New stone tablets prepared; the ark made; what the Lord requires — fear and love."
+        - slug: deuteronomy-11
+          type: chapter
+          description: "Love and obey the Lord; the blessing and the curse set before Israel."
+        - slug: deuteronomy-12
+          type: chapter
+          description: "Worship only in the one chosen place; prohibition against Canaanite practices."
+        - slug: deuteronomy-13
+          type: chapter
+          description: "Warning against false prophets and those who entice Israel to idolatry."
+        - slug: deuteronomy-14
+          type: chapter
+          description: "Clean and unclean foods; laws for tithes."
+        - slug: deuteronomy-15
+          type: chapter
+          description: "The sabbatical year — debt release and freeing Hebrew servants."
+        - slug: deuteronomy-16
+          type: chapter
+          description: "Three annual feasts — Passover, Weeks, and Tabernacles; justice for judges."
+        - slug: deuteronomy-17
+          type: chapter
+          description: "Laws for sacrificial animals; the future king; cases too hard for local courts."
+        - slug: deuteronomy-18
+          type: chapter
+          description: "Portions for the Levites; Canaanite abominations; the promise of a prophet."
+        - slug: deuteronomy-19
+          type: chapter
+          description: "Cities of refuge; property boundaries; the law of multiple witnesses."
+        - slug: deuteronomy-20
+          type: chapter
+          description: "Laws for warfare — exemptions, terms of peace, and siege of cities."
+        - slug: deuteronomy-21
+          type: chapter
+          description: "Unsolved murder; captive women; firstborn rights; the rebellious son."
+        - slug: deuteronomy-22
+          type: chapter
+          description: "Lost property; gender clothing; the fallen nest; mixed crops; marriage laws."
+        - slug: deuteronomy-23
+          type: chapter
+          description: "Those excluded from the assembly; camp cleanliness; laws for vows and wages."
+        - slug: deuteronomy-24
+          type: chapter
+          description: "Laws for divorce; protecting the vulnerable — pledges, wages, and the poor."
+        - slug: deuteronomy-25
+          type: chapter
+          description: "Flogging limits; levirate marriage; honest weights; blotting out Amalek."
+        - slug: deuteronomy-26
+          type: chapter
+          description: "Presenting firstfruits and tithes; Israel declared the Lord's treasured people."
+        - slug: deuteronomy-27
+          type: chapter
+          description: "The law written on stones at Ebal; the Levites pronounce twelve curses."
+        - slug: deuteronomy-28
+          type: chapter
+          description: "Blessings for obedience; extended curses for disobedience and exile."
+        - slug: deuteronomy-29
+          type: chapter
+          description: "The covenant renewed in Moab; Israel's call to continued faithfulness."
+        - slug: deuteronomy-30
+          type: chapter
+          description: "Return and restoration promised; the choice of life or death set before Israel."
+        - slug: deuteronomy-31
+          type: chapter
+          description: "Moses commissions Joshua; the law deposited with the priests; a song commanded."
+        - slug: deuteronomy-32
+          type: chapter
+          description: "The Song of Moses — the Lord's faithfulness and Israel's rebellion; Moses views Canaan."
+        - slug: deuteronomy-33
+          type: chapter
+          description: "Moses's final blessings on the twelve tribes of Israel."
+        - slug: deuteronomy-34
+          type: chapter
+          description: "Moses views Canaan from Pisgah; his death and burial; Joshua succeeds him."
+
+    - slug: joshua
+      type: book
+      title: Joshua
+      description: Joshua records Israel's conquest of Canaan, the allotment of the land to the twelve tribes, and the covenant renewal at Shechem.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/josh/{index}?lang=eng"
+      children:
+        - slug: joshua-1
+          type: chapter
+          description: "God commissions Joshua; Israel prepares to cross the Jordan."
+        - slug: joshua-2
+          type: chapter
+          description: "Two spies sent to Jericho; Rahab hides them and receives a promise."
+        - slug: joshua-3
+          type: chapter
+          description: "Israel crosses the Jordan on dry ground; the ark leads the way."
+        - slug: joshua-4
+          type: chapter
+          description: "Twelve memorial stones set up at Gilgal; the crossing remembered."
+        - slug: joshua-5
+          type: chapter
+          description: "Israel circumcised; manna ceases; Passover kept; the captain appears."
+        - slug: joshua-6
+          type: chapter
+          description: "The fall of Jericho; Rahab and her family spared."
+        - slug: joshua-7
+          type: chapter
+          description: "Achan's sin brings defeat at Ai; he and his family are stoned."
+        - slug: joshua-8
+          type: chapter
+          description: "Ai defeated and burned; the law read at Mount Ebal."
+        - slug: joshua-9
+          type: chapter
+          description: "The Gibeonites deceive Israel into a treaty of peace."
+        - slug: joshua-10
+          type: chapter
+          description: "The sun stands still; southern Canaan conquered by Joshua."
+        - slug: joshua-11
+          type: chapter
+          description: "The northern coalition defeated; the land of Canaan subdued."
+        - slug: joshua-12
+          type: chapter
+          description: Kings defeated by Moses and Joshua east and west of the Jordan.
+        - slug: joshua-13
+          type: chapter
+          description: "Territory not yet taken; the eastern tribes' allotments reviewed."
+        - slug: joshua-14
+          type: chapter
+          description: "Caleb claims his inheritance at Hebron by faith."
+        - slug: joshua-15
+          type: chapter
+          description: "The territory and towns allotted to the tribe of Judah."
+        - slug: joshua-16
+          type: chapter
+          description: The territory allotted to Ephraim.
+        - slug: joshua-17
+          type: chapter
+          description: "Territory allotted to Manasseh; Zelophehad's daughters receive land."
+        - slug: joshua-18
+          type: chapter
+          description: "The tabernacle set up at Shiloh; lots cast for the remaining tribes."
+        - slug: joshua-19
+          type: chapter
+          description: "Territories of six remaining tribes; Joshua receives his inheritance."
+        - slug: joshua-20
+          type: chapter
+          description: Six cities of refuge designated throughout the land.
+        - slug: joshua-21
+          type: chapter
+          description: Forty-eight towns allotted to the Levites throughout Israel.
+        - slug: joshua-22
+          type: chapter
+          description: "The eastern tribes return home; their altar causes alarm but is explained."
+        - slug: joshua-23
+          type: chapter
+          description: "Joshua's farewell — serve the Lord; avoid foreign entanglements."
+        - slug: joshua-24
+          type: chapter
+          description: "Covenant renewed at Shechem; Joshua's death and burial."
+
+    - slug: judges
+      type: book
+      title: Judges
+      description: Judges records the cycle of apostasy, oppression, repentance, and deliverance that marked Israel's life in Canaan under a series of Spirit-empowered leaders.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/judg/{index}?lang=eng"
+      children:
+        - slug: judges-1
+          type: chapter
+          description: "Judah leads the conquest; other tribes fail to drive out the Canaanites."
+        - slug: judges-2
+          type: chapter
+          description: "The angel rebukes Israel; Joshua's generation dies; the cycle of apostasy begins."
+        - slug: judges-3
+          type: chapter
+          description: "Othniel, Ehud, and Shamgar — the first three judges deliver Israel."
+        - slug: judges-4
+          type: chapter
+          description: "Deborah and Barak defeat Sisera's army; Jael kills Sisera."
+        - slug: judges-5
+          type: chapter
+          description: The Song of Deborah and Barak celebrating the victory over Sisera.
+        - slug: judges-6
+          type: chapter
+          description: "Midianite oppression; Gideon called by the angel; the fleece."
+        - slug: judges-7
+          type: chapter
+          description: "Gideon's 300 defeat the vast Midianite army."
+        - slug: judges-8
+          type: chapter
+          description: "Gideon pursues the Midianite kings; his son Abimelech born."
+        - slug: judges-9
+          type: chapter
+          description: "Abimelech kills his brothers and seizes power; Jotham's parable; his downfall."
+        - slug: judges-10
+          type: chapter
+          description: "Tola and Jair judge Israel; the Ammonites oppress Israel."
+        - slug: judges-11
+          type: chapter
+          description: "Jephthah defeats the Ammonites; his vow and his daughter."
+        - slug: judges-12
+          type: chapter
+          description: "Jephthah and Ephraim conflict; Ibzan, Elon, and Abdon judge."
+        - slug: judges-13
+          type: chapter
+          description: The birth of Samson announced to his parents by an angel.
+        - slug: judges-14
+          type: chapter
+          description: "Samson's marriage and his riddle of the lion and honey."
+        - slug: judges-15
+          type: chapter
+          description: "Samson burns Philistine fields; defeats them with a donkey's jawbone."
+        - slug: judges-16
+          type: chapter
+          description: "Samson and Delilah; his hair cut; blinded; his death in the temple."
+        - slug: judges-17
+          type: chapter
+          description: "Micah's idols; a wandering Levite hired as his priest."
+        - slug: judges-18
+          type: chapter
+          description: "The tribe of Dan steals Micah's idols and conquers Laish."
+        - slug: judges-19
+          type: chapter
+          description: "A Levite's concubine abused and killed at Gibeah."
+        - slug: judges-20
+          type: chapter
+          description: "Israel goes to war against Benjamin over the atrocity at Gibeah."
+        - slug: judges-21
+          type: chapter
+          description: "Wives found for the surviving Benjaminites; the tribe preserved."
+
+    - slug: ruth
+      type: book
+      title: Ruth
+      description: Ruth tells the story of a Moabite widow's loyalty to Naomi, her encounter with the kinsman-redeemer Boaz, and her place in the lineage of David.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ruth/{index}?lang=eng"
+      children:
+        - slug: ruth-1
+          type: chapter
+          description: "Naomi's family in Moab; Ruth pledges loyalty to Naomi."
+        - slug: ruth-2
+          type: chapter
+          description: "Ruth gleans in Boaz's field; Boaz shows her kindness and protection."
+        - slug: ruth-3
+          type: chapter
+          description: "Ruth at the threshing floor; Boaz pledges to redeem her."
+        - slug: ruth-4
+          type: chapter
+          description: "Boaz redeems and marries Ruth; Obed born; the lineage of David."
+
+    - slug: 1-samuel
+      type: book
+      title: 1 Samuel
+      description: 1 Samuel records the transition from judges to kings — Samuel's ministry, Saul's rise and rejection, and the anointing of David as God's chosen king.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/1-sam/{index}?lang=eng"
+      children:
+        - slug: 1-samuel-1
+          type: chapter
+          description: "Hannah's prayer at Shiloh; Samuel born and dedicated to the Lord."
+        - slug: 1-samuel-2
+          type: chapter
+          description: "Hannah's song; Eli's corrupt sons; Samuel ministers before God."
+        - slug: 1-samuel-3
+          type: chapter
+          description: "God calls Samuel in the night; Eli's house condemned."
+        - slug: 1-samuel-4
+          type: chapter
+          description: "The ark taken by the Philistines; Eli and his sons die."
+        - slug: 1-samuel-5
+          type: chapter
+          description: "The ark among the Philistines; they are afflicted with tumors."
+        - slug: 1-samuel-6
+          type: chapter
+          description: "The ark returned to Israel on a cart; the men of Beth-shemesh struck."
+        - slug: 1-samuel-7
+          type: chapter
+          description: "Samuel judges Israel; Israel repents and defeats the Philistines."
+        - slug: 1-samuel-8
+          type: chapter
+          description: "Israel demands a king; Samuel warns of kingship's burden."
+        - slug: 1-samuel-9
+          type: chapter
+          description: "Saul searches for lost donkeys; led to Samuel who will anoint him."
+        - slug: 1-samuel-10
+          type: chapter
+          description: "Samuel anoints Saul; Saul prophesies; chosen by lot at Mizpah."
+        - slug: 1-samuel-11
+          type: chapter
+          description: "Saul delivers Jabesh-gilead from Nahash; confirmed as king."
+        - slug: 1-samuel-12
+          type: chapter
+          description: "Samuel's farewell — his integrity affirmed; the covenant renewed."
+        - slug: 1-samuel-13
+          type: chapter
+          description: "Saul's unlawful sacrifice; Jonathan attacks a Philistine garrison."
+        - slug: 1-samuel-14
+          type: chapter
+          description: "Jonathan's bold victory at Michmash; Saul's rash oath against eating."
+        - slug: 1-samuel-15
+          type: chapter
+          description: "Saul disobeys God in the battle with Amalek; Samuel rejects him."
+        - slug: 1-samuel-16
+          type: chapter
+          description: "Samuel anoints David at Bethlehem; David plays harp for Saul."
+        - slug: 1-samuel-17
+          type: chapter
+          description: David kills Goliath with a sling and stone.
+        - slug: 1-samuel-18
+          type: chapter
+          description: "Jonathan's covenant with David; Saul grows jealous of David."
+        - slug: 1-samuel-19
+          type: chapter
+          description: "Saul seeks to kill David; David flees to Samuel at Ramah."
+        - slug: 1-samuel-20
+          type: chapter
+          description: "Jonathan warns David; their covenant renewed; David flees."
+        - slug: 1-samuel-21
+          type: chapter
+          description: "David at Nob; given showbread and Goliath's sword; flees to Gath."
+        - slug: 1-samuel-22
+          type: chapter
+          description: "David at Adullam; Saul massacres the priests at Nob."
+        - slug: 1-samuel-23
+          type: chapter
+          description: "David rescues Keilah; hunted by Saul in the wilderness of Ziph."
+        - slug: 1-samuel-24
+          type: chapter
+          description: "David spares Saul's life in the cave at En-gedi."
+        - slug: 1-samuel-25
+          type: chapter
+          description: "Nabal's insult; Abigail's wisdom; Nabal dies; David marries Abigail."
+        - slug: 1-samuel-26
+          type: chapter
+          description: "David again spares Saul's life in his camp at night."
+        - slug: 1-samuel-27
+          type: chapter
+          description: "David lives among the Philistines at Ziklag under Achish."
+        - slug: 1-samuel-28
+          type: chapter
+          description: "Saul consults the witch of Endor; Samuel's spirit appears."
+        - slug: 1-samuel-29
+          type: chapter
+          description: "The Philistine commanders dismiss David before the battle."
+        - slug: 1-samuel-30
+          type: chapter
+          description: "David recovers from the Amalekite raid on Ziklag; spoil divided."
+        - slug: 1-samuel-31
+          type: chapter
+          description: "Saul and his sons killed at Gilboa; their bodies hung at Beth-shan."
+
+    - slug: 2-samuel
+      type: book
+      title: 2 Samuel
+      description: 2 Samuel records David's reign over all Israel — his triumphs, his great sin with Bathsheba, the rebellion of Absalom, and God's covenant with his house.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/2-sam/{index}?lang=eng"
+      children:
+        - slug: 2-samuel-1
+          type: chapter
+          description: "David mourns Saul and Jonathan; the song of the bow."
+        - slug: 2-samuel-2
+          type: chapter
+          description: "David anointed king over Judah; Ish-bosheth made king over Israel."
+        - slug: 2-samuel-3
+          type: chapter
+          description: "David's kingdom strengthens; Abner defects to David; Joab kills Abner."
+        - slug: 2-samuel-4
+          type: chapter
+          description: "Ish-bosheth assassinated; David executes the assassins."
+        - slug: 2-samuel-5
+          type: chapter
+          description: "David anointed king over all Israel; Jerusalem captured; palace built."
+        - slug: 2-samuel-6
+          type: chapter
+          description: "The ark brought to Jerusalem; Uzzah struck dead; David dances before the Lord."
+        - slug: 2-samuel-7
+          type: chapter
+          description: "God's covenant with David — an eternal throne and a son to build the temple."
+        - slug: 2-samuel-8
+          type: chapter
+          description: David's military victories and expansion of the kingdom.
+        - slug: 2-samuel-9
+          type: chapter
+          description: "David shows covenant kindness to Mephibosheth for Jonathan's sake."
+        - slug: 2-samuel-10
+          type: chapter
+          description: "War with the Ammonites; Joab defeats the Syrians at Helam."
+        - slug: 2-samuel-11
+          type: chapter
+          description: "David and Bathsheba; Uriah placed at the front and killed."
+        - slug: 2-samuel-12
+          type: chapter
+          description: "Nathan's parable rebukes David; he repents; the child dies; Solomon born."
+        - slug: 2-samuel-13
+          type: chapter
+          description: "Amnon violates Tamar; Absalom kills Amnon and flees to Geshur."
+        - slug: 2-samuel-14
+          type: chapter
+          description: "Joab's scheme brings Absalom back to Jerusalem."
+        - slug: 2-samuel-15
+          type: chapter
+          description: "Absalom's conspiracy grows; David flees Jerusalem weeping."
+        - slug: 2-samuel-16
+          type: chapter
+          description: "Ziba's lie; Shimei curses David; Ahithophel counsels Absalom."
+        - slug: 2-samuel-17
+          type: chapter
+          description: "Hushai foils Ahithophel's counsel; Ahithophel hangs himself."
+        - slug: 2-samuel-18
+          type: chapter
+          description: "Absalom defeated and killed by Joab; David's great grief."
+        - slug: 2-samuel-19
+          type: chapter
+          description: "David returns to Jerusalem; Shimei pardoned; Mephibosheth vindicated."
+        - slug: 2-samuel-20
+          type: chapter
+          description: "Sheba's revolt; Joab kills Amasa; Sheba killed at Abel-beth-maacah."
+        - slug: 2-samuel-21
+          type: chapter
+          description: "Famine for Saul's sin against the Gibeonites; the Philistine giants."
+        - slug: 2-samuel-22
+          type: chapter
+          description: "David's psalm of thanksgiving for deliverance from all his enemies."
+        - slug: 2-samuel-23
+          type: chapter
+          description: "David's last words and the list of his mighty men."
+        - slug: 2-samuel-24
+          type: chapter
+          description: "David's census; plague sent; the threshing floor of Araunah purchased."
+
+    - slug: 1-kings
+      type: book
+      title: 1 Kings
+      description: 1 Kings records Solomon's reign and the temple, the division of the kingdom, and the ministries of Elijah confronting Ahab and Jezebel in apostate Israel.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/1-kgs/{index}?lang=eng"
+      children:
+        - slug: 1-kings-1
+          type: chapter
+          description: "David's last days; Solomon anointed king; Adonijah's revolt fails."
+        - slug: 1-kings-2
+          type: chapter
+          description: "David's charge to Solomon; Solomon consolidates power; key rivals removed."
+        - slug: 1-kings-3
+          type: chapter
+          description: "Solomon's dream at Gibeon; wisdom given; the two mothers' dispute."
+        - slug: 1-kings-4
+          type: chapter
+          description: "Solomon's officials and daily provisions; his wisdom renowned."
+        - slug: 1-kings-5
+          type: chapter
+          description: "Preparations for the temple; Hiram of Tyre supplies cedar and timber."
+        - slug: 1-kings-6
+          type: chapter
+          description: "The temple built in seven years — its dimensions and furnishings."
+        - slug: 1-kings-7
+          type: chapter
+          description: "Solomon's palace built; Hiram the craftsman makes the bronze furnishings."
+        - slug: 1-kings-8
+          type: chapter
+          description: "The ark brought to the temple; Solomon's great dedicatory prayer."
+        - slug: 1-kings-9
+          type: chapter
+          description: "God appears to Solomon again; blessings and warnings restated."
+        - slug: 1-kings-10
+          type: chapter
+          description: "The queen of Sheba visits; Solomon's gold, horses, and wisdom."
+        - slug: 1-kings-11
+          type: chapter
+          description: "Solomon's foreign wives lead him to idolatry; adversaries raised against him."
+        - slug: 1-kings-12
+          type: chapter
+          description: "The kingdom divided; Rehoboam's harsh reply; Jeroboam's golden calves."
+        - slug: 1-kings-13
+          type: chapter
+          description: A man of God from Judah prophesies against Jeroboam's altar.
+        - slug: 1-kings-14
+          type: chapter
+          description: "Ahijah prophesies the end of Jeroboam's line; Rehoboam's apostasy."
+        - slug: 1-kings-15
+          type: chapter
+          description: "Abijam and Asa of Judah; Nadab and Baasha of Israel."
+        - slug: 1-kings-16
+          type: chapter
+          description: "Elah, Zimri, Omri, and Ahab — kings of Israel; Jezebel introduced."
+        - slug: 1-kings-17
+          type: chapter
+          description: "Elijah at Cherith; the widow of Zarephath fed; her son raised."
+        - slug: 1-kings-18
+          type: chapter
+          description: "The contest on Mount Carmel; Baal's prophets defeated; rain returns."
+        - slug: 1-kings-19
+          type: chapter
+          description: "Elijah flees Jezebel; the still small voice at Horeb; Elisha called."
+        - slug: 1-kings-20
+          type: chapter
+          description: "Ben-hadad besieges Samaria; Israel's victories; a prophet rebukes Ahab."
+        - slug: 1-kings-21
+          type: chapter
+          description: "Ahab covets Naboth's vineyard; Jezebel kills Naboth; Elijah rebukes."
+        - slug: 1-kings-22
+          type: chapter
+          description: "Micaiah's prophecy against Ahab; Ahab killed at Ramoth-gilead."
+
+    - slug: 2-kings
+      type: book
+      title: 2 Kings
+      description: 2 Kings records Elisha's ministry, the fall of the northern kingdom to Assyria, the reforms of Hezekiah and Josiah, and the final exile of Judah to Babylon.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/2-kgs/{index}?lang=eng"
+      children:
+        - slug: 2-kings-1
+          type: chapter
+          description: "Ahaziah sends to Baal-zebub; Elijah rebukes him; fire from heaven."
+        - slug: 2-kings-2
+          type: chapter
+          description: "Elijah taken up in a whirlwind; Elisha receives the double portion."
+        - slug: 2-kings-3
+          type: chapter
+          description: "Jehoram and Jehoshaphat campaign against Moab; Elisha's water miracle."
+        - slug: 2-kings-4
+          type: chapter
+          description: "Elisha's miracles — widow's oil, Shunammite's son, poisoned pot, bread."
+        - slug: 2-kings-5
+          type: chapter
+          description: "Naaman healed of leprosy; Gehazi's greed and his punishment."
+        - slug: 2-kings-6
+          type: chapter
+          description: "The floating axe head; Elisha reveals Syrian plans; the blinded army."
+        - slug: 2-kings-7
+          type: chapter
+          description: "The siege of Samaria lifted; four lepers discover the abandoned camp."
+        - slug: 2-kings-8
+          type: chapter
+          description: "Elisha and Hazael; kings of Judah — Jehoram and Ahaziah."
+        - slug: 2-kings-9
+          type: chapter
+          description: "Jehu anointed king; Jehoram and Ahaziah killed; Jezebel thrown down."
+        - slug: 2-kings-10
+          type: chapter
+          description: "Jehu destroys the house of Ahab and the prophets of Baal."
+        - slug: 2-kings-11
+          type: chapter
+          description: "Joash hidden and crowned; Athaliah killed; the covenant renewed."
+        - slug: 2-kings-12
+          type: chapter
+          description: "Joash repairs the temple; Hazael threatens Jerusalem and is paid off."
+        - slug: 2-kings-13
+          type: chapter
+          description: "Jehoahaz and Jehoash of Israel; Elisha's death and his bones."
+        - slug: 2-kings-14
+          type: chapter
+          description: "Amaziah of Judah; Jeroboam II restores Israel's borders."
+        - slug: 2-kings-15
+          type: chapter
+          description: "Azariah of Judah; five rapid kings of Israel amid Assyrian pressure."
+        - slug: 2-kings-16
+          type: chapter
+          description: "Ahaz of Judah allies with Assyria; idolatry and the altar of Damascus."
+        - slug: 2-kings-17
+          type: chapter
+          description: "Israel falls to Assyria; the northern kingdom exiled; foreign peoples settled."
+        - slug: 2-kings-18
+          type: chapter
+          description: "Hezekiah's reforms; Sennacherib invades; Rabshakeh taunts Jerusalem."
+        - slug: 2-kings-19
+          type: chapter
+          description: "Isaiah prophesies deliverance; the angel strikes 185,000 Assyrians."
+        - slug: 2-kings-20
+          type: chapter
+          description: "Hezekiah's illness and recovery; Babylonian envoys see his treasures."
+        - slug: 2-kings-21
+          type: chapter
+          description: "Manasseh's long idolatry undoes Hezekiah's reforms; Amon's brief reign."
+        - slug: 2-kings-22
+          type: chapter
+          description: "Josiah repairs the temple; the book of the law found; Huldah prophesies."
+        - slug: 2-kings-23
+          type: chapter
+          description: "Josiah's great reformation; Passover kept; his death at Megiddo."
+        - slug: 2-kings-24
+          type: chapter
+          description: "Jehoiakim and Jehoiachin; the first deportation to Babylon."
+        - slug: 2-kings-25
+          type: chapter
+          description: "Jerusalem falls; the temple burned; Judah exiled; Gedaliah governs briefly."
+
+    - slug: 1-chronicles
+      type: book
+      title: 1 Chronicles
+      description: 1 Chronicles retells Israel's history from Adam to David, emphasizing temple worship.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/1-chr/{index}?lang=eng"
+
+    - slug: 2-chronicles
+      type: book
+      title: 2 Chronicles
+      description: 2 Chronicles covers Solomon's reign, the divided kingdom, and Judah through the exile.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/2-chr/{index}?lang=eng"
+
+    - slug: ezra
+      type: book
+      title: Ezra
+      description: Ezra records the return of the Jews from Babylon and the rebuilding of the temple.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ezra/{index}?lang=eng"
+
+    - slug: nehemiah
+      type: book
+      title: Nehemiah
+      description: Nehemiah leads the rebuilding of Jerusalem's walls and renewal of the covenant.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/neh/{index}?lang=eng"
+
+    - slug: esther
+      type: book
+      title: Esther
+      description: Esther, a Jewish queen in Persia, saves her people from a royal decree of genocide.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/esth/{index}?lang=eng"
+
+    - slug: job
+      type: book
+      title: Job
+      description: Job wrestles with suffering, theodicy, and faith through a series of poetic dialogues.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/job/{index}?lang=eng"
+
+    - slug: psalms
+      type: book
+      title: Psalms
+      description: Psalms is 150 sacred songs of praise, lament, thanksgiving, and Messianic prophecy.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ps/{index}?lang=eng"
+
+    - slug: proverbs
+      type: book
+      title: Proverbs
+      description: Proverbs collects practical wisdom sayings for righteous living, largely from Solomon.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/prov/{index}?lang=eng"
+
+    - slug: ecclesiastes
+      type: book
+      title: Ecclesiastes
+      description: Ecclesiastes explores the meaning of life and the futility of earthly pursuits.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/eccl/{index}?lang=eng"
+
+    - slug: song-of-solomon
+      type: book
+      title: Song of Solomon
+      description: "Song of Solomon — lyric love poetry, often read as an allegory of divine love."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/song/{index}?lang=eng"
+
+    - slug: isaiah
+      type: book
+      title: Isaiah
+      description: Isaiah prophesies judgment and exile alongside sweeping visions of the coming Messiah.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/isa/{index}?lang=eng"
+
+    - slug: jeremiah
+      type: book
+      title: Jeremiah
+      description: Jeremiah calls Judah to repentance before the Babylonian exile, weeping for the lost.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/jer/{index}?lang=eng"
+
+    - slug: lamentations
+      type: book
+      title: Lamentations
+      description: Lamentations mourns the destruction of Jerusalem with five anguished poems.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/lam/{index}?lang=eng"
+
+    - slug: ezekiel
+      type: book
+      title: Ezekiel
+      description: Ezekiel sees visions in Babylon of God's glory, Israel's judgment, and future restoration.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/ezek/{index}?lang=eng"
+
+    - slug: daniel
+      type: book
+      title: Daniel
+      description: Daniel and his companions demonstrate faith in Babylon with visions of future kingdoms.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/dan/{index}?lang=eng"
+
+    - slug: hosea
+      type: book
+      title: Hosea
+      description: "Hosea's marriage mirrors God's covenant with unfaithful Israel and his enduring love."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/hosea/{index}?lang=eng"
+
+    - slug: joel
+      type: book
+      title: Joel
+      description: Joel calls Israel to repentance, prophesying the Day of the Lord and the Spirit.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/joel/{index}?lang=eng"
+
+    - slug: amos
+      type: book
+      title: Amos
+      description: "Amos, a shepherd-prophet, denounces social injustice and religious hypocrisy in Israel."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/amos/{index}?lang=eng"
+
+    - slug: obadiah
+      type: book
+      title: Obadiah
+      description: Obadiah pronounces judgment on Edom for its pride and treachery against Israel.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/obad/{index}?lang=eng"
+
+    - slug: jonah
+      type: book
+      title: Jonah
+      description: "Jonah flees God's call, is swallowed by a fish, and reluctantly preaches to Nineveh."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/jonah/{index}?lang=eng"
+
+    - slug: micah
+      type: book
+      title: Micah
+      description: Micah indicts Judah for injustice and prophesies the Messiah's birth in Bethlehem.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/micah/{index}?lang=eng"
+
+    - slug: nahum
+      type: book
+      title: Nahum
+      description: "Nahum announces the certain destruction of Nineveh, the capital of the Assyrian Empire."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/nahum/{index}?lang=eng"
+
+    - slug: habakkuk
+      type: book
+      title: Habakkuk
+      description: Habakkuk wrestles with God over injustice and receives the answer to live by faith.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/hab/{index}?lang=eng"
+
+    - slug: zephaniah
+      type: book
+      title: Zephaniah
+      description: Zephaniah warns of the Day of the Lord and promises restoration for the faithful remnant.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/zeph/{index}?lang=eng"
+
+    - slug: haggai
+      type: book
+      title: Haggai
+      description: Haggai urges the returned exiles to prioritize rebuilding the temple above their homes.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/hag/{index}?lang=eng"
+
+    - slug: zechariah
+      type: book
+      title: Zechariah
+      description: Zechariah encourages the exiles with visions of restoration and Messianic prophecy.
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/zech/{index}?lang=eng"
+
+    - slug: malachi
+      type: book
+      title: Malachi
+      description: "Malachi rebukes spiritual apathy and priestly failures, promising the coming forerunner."
+      url_template: "https://www.churchofjesuschrist.org/study/scriptures/ot/mal/{index}?lang=eng"

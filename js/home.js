@@ -1,6 +1,6 @@
 async function loadHome() {
   try {
-    const index = await fetchData(`${DATA_BASE_URL}/data/books/index.yaml`);
+    const index = await fetchData('data/books/index.yaml');
     const grid = document.querySelector('.viz-grid');
     grid.innerHTML = index.books.map(book => `
       <a href="visualizations/visualization.html?book=${book.slug}" class="viz-card">

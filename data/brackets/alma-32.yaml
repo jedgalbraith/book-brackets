@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/brackets.schema.json
+schema_version: "1"
+author: "AI: Claude"
+book_slug: alma-32
+targets:
+  - target_slug: alma-32
+    topics:
+      - slug: narrative-phases
+        title: Narrative Phases
+        brackets:
+          - range: "1-6"
+            label: The poor Zoramites
+          - range: "7-16"
+            label: Blessed are the humble
+          - range: "17-25"
+            label: Defining faith
+          - range: "26-27"
+            label: The experiment proposed
+          - range: "28-34"
+            label: Planting the seed
+          - range: "35-43"
+            label: Nourishing the tree
+      - slug: seed-metaphor
+        title: The Seed Metaphor
+        brackets:
+          - range: "26-27"
+            label: The experiment
+          - range: "28-34"
+            label: Germination
+          - range: "35-43"
+            label: Growth and fruit
+      - slug: faith-and-knowledge
+        title: Faith & Knowledge
+        brackets:
+          - range: "17-21"
+            label: Faith is not perfect knowledge
+          - range: "26-27"
+            label: Knowing by experiment
+          - range: "28-34"
+            label: Evidence of a good seed
+          - range: "35-43"
+            label: Knowledge through nourishment
