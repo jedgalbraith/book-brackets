@@ -4,7 +4,29 @@
 
 A web service where anyone can create and share bracket visualizations for books, scriptures, or any structured text. AI assists in generating and refining the data, making the tool accessible to non-developers while remaining powerful for technical users.
 
-**Domain:** bookbrackets.app
+**Domain:** bookbrackets.app — live, verified, and secured (HTTPS)
+
+## Core services
+
+Three formally-separated layers, each independently useful:
+
+**Schema (the protocol)**
+- The YAML format for book and bracket files is a public, versioned standard
+- Published as JSON Schema (`schema/book.schema.json`, `schema/brackets.schema.json`)
+- Anyone can build tooling against it; not locked to this app or editor
+
+**Authoring (the editor)**
+- Web editor for creating and editing book/bracket YAML files
+- Non-engineers use it with AI assistance; engineers can author files directly and use the editor for preview/validation
+- Two modes: local-only (BYOK, files stay on device) and cloud-connected (files saved to account)
+
+**Registry (the community)**
+- Discovery index for book and bracket files
+- Authors register a URL to their YAML file; registry stores metadata, not content
+- **Preferred registration path: GitHub raw URLs.** `raw.githubusercontent.com` supports CORS, so the frontend fetches and renders directly — no backend proxy needed. Branch links (`/main/`) auto-update when authors push; commit SHA links are pinned and immutable.
+- GitHub becomes the collaboration layer: PRs, issues, and forks on the repo are the natural editing workflow. The registry just surfaces the result.
+- Fork model: any registered file — book or bracket — can be forked; creates a new registry entry with lineage pointer. Forking a book file allows an alternative chapter structure; forking a bracket file allows a different interpretive reading.
+- Hosted storage option for authors who don't want to manage a GitHub repo (this is the paid service hook)
 
 ## Core authoring paradigm
 
@@ -66,18 +88,99 @@ Goal: cover infrastructure costs (~$20–50/month). Not a primary revenue driver
 
 ### Data layer
 - Content stays in YAML/JSON documents (not normalized into relational tables) — the tree structure of books and brackets is a natural document, not a set of rows
-- Thin relational DB for metadata only: user accounts, project ownership, sharing permissions
-- YAML blobs in object storage (S3 or equivalent) for content
+- Thin relational DB for metadata only: user accounts, project ownership, sharing permissions (Supabase or Neon)
+- YAML blobs in Cloudflare R2 for hosted content (zero egress fees, S3-compatible)
 
 ### Frontend
 - Refactor `main.js` to separate data loading from rendering — preview must accept in-memory YAML content, not just fetched files
 - Schema validation step between editor and preview with inline error display
 - YAML editor with syntax highlighting (CodeMirror or Monaco)
 
-### Backend (deferred to v2)
-- Auth (accounts, sessions)
-- Project storage API
-- Sharing / public URL generation
+### Registry data model
+
+**Book entries** and **bracket entries** are separate registry objects. A bracket entry references a book entry by slug — one canonical book structure, many bracket overlays.
+
+Each entry: `{ id, author, title, schema_version, url, url_type, content_hash, last_verified, forked_from? }`
+
+- `url` is the authoritative source; `url_type` is one of `github_branch` | `github_commit` | `hosted` | `external`
+- `github_branch` links (e.g. `/main/`) auto-update on push; `github_commit` links are pinned and immutable — registry displays which type
+- `content_hash` detects when a file has changed and enables caching a last-known-good copy for resilience if the origin goes down or the repo is deleted
+- `last_verified` + periodic re-validation flags stale or broken entries
+- `forked_from` preserves lineage in the DB — fork history is data, not just a copy
+- For GitHub-hosted files, the backend is purely an index and validator — it does not proxy or serve the file content; the frontend fetches directly
+
+**Discovery facets:** book title / text, topic/tag, author, fork lineage
+
+### Backend
+
+**When it's needed — by phase:**
+
+**Phase 1:** None. The editor runs entirely in the browser; the Anthropic API is called directly from the client via BYOK. No server required.
+
+**Phase 2 (registry launch):** Backend becomes necessary for:
+- User accounts and session management — can't be done securely client-side
+- Registry database — book/bracket entry metadata, fork lineage, author ownership
+- Hosted file storage — serving YAML files for authors who don't use GitHub
+- Periodic re-validation jobs — fetch registered URLs, check schema, update `content_hash` and `last_verified`, flag broken entries
+- Canonical public URLs (`bookbrackets.app/r/<id>`)
+- Pro tier payments (Stripe)
+- Note: for GitHub-hosted files, the backend is index-only; no file proxying needed
+
+**Auth: passwordless magic links**
+Users enter their email and receive a one-time login link — no password, no reset flow. Right for this app: users log in infrequently and low friction matters more than session security.
+
+Implementation: Rails 8 auth generator (`rails generate authentication`) scaffolds User + Session models; magic link layer is a `MagicLink` model (`token`, `user_id`, `expires_at`, `used_at`) + ActionMailer. No auth gem needed — the logic fits in ~100 lines and is easy to audit.
+
+Security checklist:
+- Tokens are single-use — `used_at` set on first click, subsequent clicks rejected
+- Tokens expire in 15–30 minutes
+- Token generated with `SecureRandom.urlsafe_base64`
+- Email sends rate-limited per address to prevent abuse
+
+**Phase 3 (broader audience):** Extends Phase 2 with:
+- Service-side Anthropic API calls for managed AI (non-BYOK users)
+- Usage metering and cost accounting per user
+
+**Technology: Ruby on Rails (full-stack)**
+
+`rails new` (not API mode) is the right fit:
+- Registry UI (browse, search, auth, registration forms, fork UI, user dashboard) is CRUD-heavy — server-rendered Rails views with Hotwire/Turbo are faster to build than a separate SPA
+- The existing visualization pages (static HTML/JS/D3) drop into Rails `/public` unchanged — no rewrite needed
+- Single repo, single deploy, one place to debug — the right tradeoff for a solo project
+- Rails ecosystem covers everything needed: Devise (auth), Active Storage (S3 file uploads), Sidekiq + Redis (background re-validation jobs), stripe-ruby (payments)
+- API-only mode would only be justified with a separate React/TypeScript frontend or separate teams — neither applies here
+
+**Deployment stack:**
+- **Kamal** (Rails 8 default) deploying to a **Hetzner** CX21 VPS, US region (~$6/month) — Rails + Kamal + Hetzner is the 37signals-endorsed stack; kamal-proxy handles SSL via Let's Encrypt automatically
+- **Supabase or Neon** for managed Postgres (free tier to start, no self-hosting)
+- **Upstash** for managed Redis / Sidekiq background jobs (free tier, serverless)
+- **Cloudflare R2** for hosted YAML file storage — S3-compatible (Active Storage works via S3 adapter, no code changes), zero egress fees, free tier covers 10GB + 10M reads/month; already in the same dashboard as DNS
+
+Estimated cost at launch: ~$6-10/month.
+
+## Security
+
+### SSRF (highest priority)
+When the backend fetches registered URLs for re-validation, attackers could register internal addresses (`http://169.254.169.254/`, `http://localhost:5432`, etc.) to probe the server's internal network. Use the `ssrf_filter` gem for all outbound URL fetches. Consider a hostname allowlist — `raw.githubusercontent.com` is the primary legitimate host; others should be explicitly opted in.
+
+### YAML parsing
+Always use `Psych.safe_load` (not `Psych.load`) when parsing externally-fetched or user-submitted YAML on the backend. `Psych.load` can execute arbitrary Ruby. The frontend uses js-yaml in safe mode by default — no action needed there.
+
+### XSS via D3 rendering
+Bracket labels and descriptions from external YAML files are rendered into the DOM. Audit `main.js` to confirm all user-controlled content uses D3's `.text()` (HTML-escaped) rather than `.html()`. An attacker's YAML file should never become an XSS vector for visitors.
+
+### Anthropic API key (BYOK)
+The editor sends the user's API key directly from the browser to Anthropic — never route it through the Book Brackets backend. Enforce by design: the backend should have no endpoint that accepts or proxies Anthropic API calls. HTTPS only.
+
+### Magic link security
+- Tokens are single-use — reject any token where `used_at` is set
+- Tokens expire in 15–30 minutes
+- Validate `return_to` redirect parameters are same-domain before redirecting (open redirect prevention)
+- Generate new session on login to prevent session fixation
+
+### Rate limiting
+- Magic link email sends: rate limit per address to prevent email bombing
+- Re-validation jobs: throttle outbound fetches — don't hammer external servers on every run; cache `last_verified` and space checks appropriately
 
 ## Brand
 
@@ -107,6 +210,12 @@ Three repeatable formats reduce the "what do I post" decision to a template:
 
 **Open source visibility.** A well-crafted README with a live demo link drives passive discovery via GitHub search and referrals. Visual output gets starred and shared without active promotion.
 
+**Schema on the home page.** The open format is a credibility and invitation signal aimed at two audiences differently:
+- *Developers:* "This is a real, versioned, public format — build on it, host files on GitHub, your data works with any compatible tool." Link "open format" to the published JSON Schema files.
+- *General users:* Don't mention the schema directly. Surface the GitHub-first workflow as a concrete benefit: "Put your file on GitHub, share a link, it just works."
+
+The home page implementation is a "How it works" section with three steps — Author (open format, or use the editor) → Host (GitHub or us) → Share (register, get a public URL) — plus a short callout near the top: *"Book Brackets uses an open YAML schema. Author files anywhere, host them on GitHub, share them with anyone."* Avoid a technical deep-dive; the schema matters to developers and they'll find it. Everyone else just needs to know their data isn't locked in.
+
 **At launch:**
 - Show HN on Hacker News (D3 + AI + YAML is a compelling technical story)
 - Product Hunt
@@ -123,6 +232,7 @@ Pure frontend visualization. Data is hand-authored YAML files. AI assistance via
 - Three-panel UI (chat + YAML editor + preview)
 - BYOK AI integration
 - Preview renders from in-memory YAML (no file fetch required)
+- **Formal schema:** publish `schema/book.schema.json` and `schema/brackets.schema.json`; editor validation uses these schemas
 - Schema validation with error display
 - Contextual idea prompts
 - Import / export YAML files
@@ -130,12 +240,14 @@ Pure frontend visualization. Data is hand-authored YAML files. AI assistance via
 
 *Marketing: build in public — post progress and demos. Recruit early testers from Phase 0 communities.*
 
-### Phase 2 — hosted service
+### Phase 2 — hosted service + registry
 - User accounts and auth
-- Cloud project storage
-- Public shareable URLs (the primary growth mechanism)
+- **Registry launch:** browse, search, and register entries (external URLs accepted)
+- **Fork:** one-click fork of any public registry entry — book or bracket files
+- Hosted storage for authors who want Book Brackets to serve their files
+- Public shareable URLs — each registry entry gets a canonical URL on bookbrackets.app (the primary growth mechanism)
 - Open source release
-- Pro tier pricing
+- Pro tier: hosted storage + multiple projects + private entries
 
 *Marketing: Show HN + Product Hunt at launch. Open source release drives GitHub discovery. Share page design ensures every shared bracket promotes the tool.*
 

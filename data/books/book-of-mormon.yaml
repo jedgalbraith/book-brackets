@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
 schema_version: "1"
 author: "AI: Claude"
 disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
@@ -59,7 +60,7 @@ root:
           description: "Mormon — The final Nephite wars, Mormon's compiled record, and Moroni's additions."
         - slug: ov-ether
           type: book-entry
-          description: "Ether — Moroni's abridgment of the Jaredites, from the tower of Babel to their destruction."
+          description: "Ether — Moroni's abridgment of the Jaredites, from tower of Babel to their destruction."
         - slug: ov-moroni
           type: book-entry
           description: "Moroni — Church ordinances, Mormon's epistles, faith and spiritual gifts, and farewell."
@@ -530,7 +531,7 @@ root:
           description: "Alma reproves Corianton for abandoning his mission and committing grave sin."
         - slug: alma-40
           type: chapter
-          description: "Alma teaches Corianton: the soul rests in paradise or spirit prison until the resurrection."
+          description: "Alma teaches Corianton: souls rest in paradise or spirit prison until the resurrection."
         - slug: alma-41
           type: chapter
           description: "The law of restoration: what you send returns in kind; wickedness never was happiness."
@@ -664,7 +665,7 @@ root:
       children:
         - slug: 3-nephi-1
           type: chapter
-          description: "The promised sign appears: a night with no darkness; a new star arises; prophecy fulfilled."
+          description: "The promised sign: a night with no darkness; a new star rises; prophecy fulfilled."
         - slug: 3-nephi-2
           type: chapter
           description: "Nephites explain away the signs; the Gadianton robbers continue to grow in strength."
@@ -709,7 +710,7 @@ root:
           description: "Christ declares he fulfills the law; the Nephites are the other sheep he spoke of."
         - slug: 3-nephi-16
           type: chapter
-          description: "Christ speaks of other sheep; Gentiles will receive then reject the gospel; Israel gathered."
+          description: "Christ speaks of other sheep; Gentiles receive then reject the gospel; Israel gathered."
         - slug: 3-nephi-17
           type: chapter
           description: "Christ heals the sick, blesses the children, weeps for joy; angels minister."
@@ -748,7 +749,7 @@ root:
           description: "Nine disciples choose to die; three Nephites choose to remain until the Second Coming."
         - slug: 3-nephi-29
           type: chapter
-          description: "The Book of Mormon's coming forth signals God has begun fulfilling his covenant with Israel."
+          description: "The Book of Mormon coming forth signals God has begun fulfilling his covenant with Israel."
         - slug: 3-nephi-30
           type: chapter
           description: "The Gentiles are commanded to repent, be baptized, and join the house of Israel."
@@ -783,10 +784,10 @@ root:
           description: "Nephites and Lamanites alternate victories; Nephite wickedness exceeds the Lamanites."
         - slug: mormon-5
           type: chapter
-          description: "Mormon leads the failing Nephites again; he writes to the Lamanites and to latter-day readers."
+          description: "Mormon leads the failing Nephites again; he writes to the Lamanites and to future readers."
         - slug: mormon-6
           type: chapter
-          description: "The final battle at Cumorah; two hundred thousand Nephites fall; Mormon laments his people."
+          description: "The final battle at Cumorah; two hundred thousand Nephites fall; Mormon laments the slain."
         - slug: mormon-7
           type: chapter
           description: "Mormon pleads with the Lamanites: believe in Christ, lay down your weapons."

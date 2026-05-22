@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
 schema_version: "1"
 author: "AI: Claude"
 disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
@@ -488,7 +489,7 @@ root:
           description: "Priests must be clean to eat holy things; acceptable offerings."
         - slug: leviticus-23
           type: chapter
-          description: "The appointed feasts — Sabbath, Passover, Firstfruits, Pentecost, Trumpets, Atonement, Tabernacles."
+          description: "The feasts: Sabbath, Passover, Firstfruits, Pentecost, Trumpets, Atonement, Tabernacles."
         - slug: leviticus-24
           type: chapter
           description: "The lamp and showbread; blasphemy and the law of retaliation."

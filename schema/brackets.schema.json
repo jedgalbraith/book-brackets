@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bookbrackets.app/schema/brackets.schema.json",
+  "title": "Bracket Overlay File",
+  "description": "Defines bracket groupings over a book's leaf nodes (chapters, verses, etc.).",
+  "type": "object",
+  "required": ["schema_version", "book_slug", "targets"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1"
+    },
+    "author": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "book_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Slug of the book file this overlay applies to (= filename stem of the book file)."
+    },
+    "targets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/target"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "target": {
+      "type": "object",
+      "required": ["target_slug", "topics"],
+      "additionalProperties": false,
+      "properties": {
+        "target_slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Slug of the node whose leaf children form the numbered list."
+        },
+        "default_left": {
+          "type": "string",
+          "description": "Topic slug to pre-select on the left panel. Falls back to first topic if absent or not found."
+        },
+        "default_right": {
+          "type": "string",
+          "description": "Topic slug to pre-select on the right panel. Falls back to second topic if absent or not found."
+        },
+        "drills_into": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "description": "Child target slugs available for drill-down navigation from this target."
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/topic"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "topic": {
+      "type": "object",
+      "required": ["slug", "title", "brackets"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "brackets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/bracket"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "bracket": {
+      "type": "object",
+      "required": ["range", "label"],
+      "additionalProperties": false,
+      "properties": {
+        "range": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]*(-[1-9][0-9]*)?$",
+          "description": "1-based index range into the target's leaf nodes. Single index ('N') or range ('N-N'). Must be quoted in YAML."
+        },
+        "label": {
+          "type": "string",
+          "maxLength": 40,
+          "description": "Bracket label displayed in the visualization. Max 40 characters."
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
 schema_version: "1"
 author: "AI: Claude"
 disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
@@ -13,31 +14,31 @@ root:
   children:
     - slug: dc-1
       type: section
-      description: "The Lord's preface to the Doctrine and Covenants; a warning voice to the world; the weak and simple to proclaim the gospel."
+      description: "Preface to the Doctrine and Covenants: warning to the world; the weak called to proclaim."
     - slug: dc-2
       type: section
-      description: "Elijah's mission to turn the hearts of fathers and children to each other before the Lord's great day; the priesthood."
+      description: "Elijah to turn hearts of fathers and children to each other before the Lord's great day."
     - slug: dc-3
       type: section
-      description: "Joseph Smith rebuked after the 116 pages are lost; the Lord's purposes cannot be frustrated; he is restored to his calling."
+      description: "Joseph rebuked for the 116 lost pages; God's purposes cannot fail; he is restored."
     - slug: dc-4
       type: section
-      description: "A marvelous work is about to come forth; qualifications for missionary service; faith, hope, charity, and love."
+      description: "A marvelous work to come; missionary qualifications — faith, hope, charity, and love."
     - slug: dc-5
       type: section
-      description: "Martin Harris to be a witness of the plates; the gift of translation belongs to Joseph alone; three witnesses to testify."
+      description: "Martin Harris as witness; translation is Joseph's alone; three witnesses to testify."
     - slug: dc-6
       type: section
-      description: "Revelation to Oliver Cowdery; the gift of revelation; seek to bring forth and establish Zion; a great and marvelous work."
+      description: "Oliver Cowdery receives revelation; seek to establish Zion; a great and marvelous work."
     - slug: dc-7
       type: section
-      description: "A translation of a record written by John; John would tarry on earth until the Second Coming."
+      description: "A translation of John's record; John would tarry on earth until the Second Coming."
     - slug: dc-8
       type: section
-      description: "Oliver Cowdery's gift of revelation explained; the spirit of revelation described; Aaron's rod as a type."
+      description: "Oliver Cowdery's gift of revelation; the spirit of revelation; Aaron's rod as a type."
     - slug: dc-9
       type: section
-      description: "Oliver Cowdery failed to translate because he did not study it out in his mind and ask; he is counseled to wait."
+      description: "Cowdery failed to translate by not studying it out in his mind; he is counseled to wait."
     - slug: dc-10
       type: section
-      description: "The Lord's purposes for the Book of Mormon cannot be frustrated; Satan's plan exposed; the 116 pages cannot be retranslated."
+      description: "God's purposes for the Book of Mormon cannot be frustrated; Satan's plan exposed."

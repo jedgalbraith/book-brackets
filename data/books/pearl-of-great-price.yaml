@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
 schema_version: "1"
 author: "AI: Claude"
 disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
@@ -16,19 +17,19 @@ root:
       children:
         - slug: ov-moses
           type: overview-item
-          description: Moses — Visions of the creation, the fall of Adam and Eve, and the ministry of Enoch, revealed to Joseph Smith.
+          description: Moses — Creation, fall of Adam and Eve, and Enoch's ministry, revealed to Joseph Smith.
         - slug: ov-abraham
           type: overview-item
-          description: Abraham — Abraham's visions of the pre-mortal council, Kolob, and the creation of the earth.
+          description: Abraham — Visions of the pre-mortal council, Kolob, and the creation of the earth.
         - slug: ov-joseph-smith-matthew
           type: overview-item
-          description: Joseph Smith—Matthew — The Olivet Discourse clarified and expanded through Joseph Smith's inspired translation.
+          description: Joseph Smith—Matthew — The Olivet Discourse clarified by Joseph Smith's translation.
         - slug: ov-joseph-smith-history
           type: overview-item
-          description: Joseph Smith—History — Joseph Smith's account of the First Vision, visits from Moroni, and the coming forth of the Book of Mormon.
+          description: Joseph Smith—History — First Vision, Moroni's visits, and the translation of the plates.
         - slug: ov-articles-of-faith
           type: overview-item
-          description: Articles of Faith — Thirteen foundational statements of LDS belief written by Joseph Smith in 1842.
+          description: Articles of Faith — Thirteen statements of LDS belief, written by Joseph Smith in 1842.
 
     - slug: moses
       type: book
@@ -38,28 +39,28 @@ root:
       children:
         - slug: moses-1
           type: chapter
-          description: "God reveals himself to Moses face to face; Satan tempts Moses and is rejected; Moses beholds God's countless worlds."
+          description: "God reveals himself to Moses; Satan is rejected; Moses beholds God's countless worlds."
         - slug: moses-2
           type: chapter
-          description: "The creation account — days one through seven; God creates the heavens, earth, living things, and man in his image."
+          description: "Seven days of creation: heavens, earth, plants, animals, and man in God's image."
         - slug: moses-3
           type: chapter
-          description: "The spiritual creation precedes the physical; the Garden of Eden; Adam and Eve commanded; the tree of knowledge."
+          description: "Spiritual creation precedes physical creation; the Garden of Eden; the tree of knowledge."
         - slug: moses-4
           type: chapter
-          description: "Satan's premortal rebellion; the temptation in the garden; the fall of Adam and Eve and its consequences."
+          description: "Satan's premortal rebellion; temptation in the garden; the fall of Adam and Eve."
         - slug: moses-5
           type: chapter
-          description: "Adam and Eve sacrifice and receive the gospel; Cain slays Abel; secret combinations and the spread of wickedness."
+          description: "Adam and Eve receive the gospel; Cain slays Abel; secret combinations spread wickedness."
         - slug: moses-6
           type: chapter
-          description: "The book of Adam; the doctrine of Christ taught from the beginning; Enoch called to preach repentance."
+          description: "The book of Adam; the doctrine of Christ from the beginning; Enoch called to repentance."
         - slug: moses-7
           type: chapter
-          description: "Enoch's powerful ministry; the city of Zion translated to heaven; Enoch's vision of history, the Atonement, and the Second Coming."
+          description: "Zion translated to heaven; Enoch sees history, the Atonement, and the Second Coming."
         - slug: moses-8
           type: chapter
-          description: "The righteous line of Enoch's descendants; Noah and the wickedness of his generation; the great flood."
+          description: "The line of Enoch; Noah and the wickedness of his generation; the great flood begins."
 
     - slug: abraham
       type: book
@@ -69,19 +70,19 @@ root:
       children:
         - slug: abraham-1
           type: chapter
-          description: "Abraham nearly sacrificed on an altar by idolatrous priests; rescued by an angel; receives the Abrahamic covenant and priesthood."
+          description: "Abraham nearly sacrificed; rescued by an angel; receives the covenant and the priesthood."
         - slug: abraham-2
           type: chapter
-          description: "The covenant confirmed; Abram journeys to Canaan and Egypt; the Lord blesses and protects Abraham."
+          description: "Covenant confirmed; Abram journeys to Canaan and Egypt; the Lord protects Abraham."
         - slug: abraham-3
           type: chapter
-          description: "The vision of the stars and Kolob; the pre-mortal existence; the grand council and the choosing of a Savior; the earth organized."
+          description: "Kolob and the stars; the pre-mortal council; a Savior chosen; the earth organized."
         - slug: abraham-4
           type: chapter
-          description: "The Gods organize the heavens and earth — a cosmological creation account paralleling Genesis."
+          description: "The Gods organize the heavens and earth — a creation account paralleling Genesis."
         - slug: abraham-5
           type: chapter
-          description: "The creation of man completed; Adam placed in the garden; Eve created; living things named."
+          description: "Creation of man completed; Adam placed in the garden; Eve created; living things named."
 
     - slug: joseph-smith-matthew
       type: book
@@ -91,7 +92,7 @@ root:
       children:
         - slug: joseph-smith-matthew-1
           type: chapter
-          description: "The destruction of the temple foretold; false Christs and prophets; signs of the Second Coming; the elect gathered; be watchful."
+          description: "Temple destruction foretold; false Christs; signs of the Second Coming; elect gathered."
 
     - slug: joseph-smith-history
       type: book
@@ -101,7 +102,7 @@ root:
       children:
         - slug: joseph-smith-history-1
           type: chapter
-          description: "Joseph's early life and the religious confusion of his day; the First Vision; Moroni's visits and the plates; the Urim and Thummim; the Aaronic Priesthood restored."
+          description: "The First Vision; Moroni's visits; the plates; the Urim and Thummim; Aaronic Priesthood."
 
     - slug: articles-of-faith
       type: book
@@ -111,4 +112,4 @@ root:
       children:
         - slug: articles-of-faith-1
           type: chapter
-          description: "The thirteen Articles of Faith: belief in God and Christ, the Fall and Atonement, gospel ordinances, spiritual gifts, scripture, gathering of Israel, and the pursuit of righteousness."
+          description: "The thirteen foundational statements of LDS belief — the Articles of Faith."

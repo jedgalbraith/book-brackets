@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://bookbrackets.app/schema/book.schema.json
 schema_version: "1"
 author: "AI: Claude"
 disclaimer: "This is a personal project and is not affiliated with, endorsed by, or sponsored by The Church of Jesus Christ of Latter-day Saints. Chapter summaries and bracket annotations are AI-assisted and may contain errors. Always refer to the official scriptures for authoritative text."
@@ -95,7 +96,7 @@ root:
           description: "The triumphal entry; cleansing the temple; parables of the two sons and wicked tenants."
         - slug: matthew-22
           type: chapter
-          description: "Parable of the wedding banquet; questions about taxes, resurrection, and the greatest commandment."
+          description: "Wedding banquet parable; debate over taxes, resurrection, and the greatest commandment."
         - slug: matthew-23
           type: chapter
           description: "Jesus denounces the scribes and Pharisees — the seven woes."
@@ -107,7 +108,7 @@ root:
           description: "Parables of the ten virgins and talents; the judgment of the nations."
         - slug: matthew-26
           type: chapter
-          description: "The Last Supper; Gethsemane; betrayal and arrest; Peter's denial; trial before the high priest."
+          description: "Last Supper; Gethsemane; betrayal; Peter's denial; trial before the high priest."
         - slug: matthew-27
           type: chapter
           description: "Trial before Pilate; crucifixion and burial of Jesus."
@@ -123,7 +124,7 @@ root:
       children:
         - slug: mark-1
           type: chapter
-          description: "John the Baptist; Jesus's baptism and temptation; Galilean ministry and healings in Capernaum."
+          description: "John the Baptist; Jesus baptized and tempted; Galilean ministry; healings in Capernaum."
         - slug: mark-2
           type: chapter
           description: "Healing a paralytic; calling Levi; controversies over fasting and the Sabbath."
@@ -138,31 +139,31 @@ root:
           description: "Legion of demons cast out; Jairus's daughter raised; the woman with the issue of blood."
         - slug: mark-6
           type: chapter
-          description: "Rejection at Nazareth; the twelve sent out; death of John the Baptist; feeding the five thousand."
+          description: "Rejection at Nazareth; the Twelve sent out; John beheaded; feeding of the five thousand."
         - slug: mark-7
           type: chapter
           description: "Traditions of the elders challenged; the Syrophoenician woman; healing a deaf man."
         - slug: mark-8
           type: chapter
-          description: "Feeding the four thousand; the sign of Jonah; Peter's confession; the first passion prediction."
+          description: "Feeding the four thousand; sign of Jonah; Peter's confession; first passion prediction."
         - slug: mark-9
           type: chapter
-          description: "The Transfiguration; healing an epileptic boy; the second passion prediction; who is greatest."
+          description: "Transfiguration; healing an epileptic; the second passion prediction; who is greatest."
         - slug: mark-10
           type: chapter
-          description: "Teaching on divorce; children blessed; the rich young ruler; the third passion prediction; Bartimaeus."
+          description: "Divorce; children; the rich young ruler; the third passion prediction; Bartimaeus healed."
         - slug: mark-11
           type: chapter
           description: "The triumphal entry; the fig tree cursed; cleansing the temple."
         - slug: mark-12
           type: chapter
-          description: "Wicked tenants; questions about taxes and resurrection; the greatest commandment; the widow's mite."
+          description: "Wicked tenants; taxes, resurrection, greatest commandment; the widow's mite."
         - slug: mark-13
           type: chapter
           description: "The Olivet Discourse — signs of the end times and watchfulness."
         - slug: mark-14
           type: chapter
-          description: "The Last Supper; Gethsemane; betrayal and arrest; Peter's denial; trial before the high priest."
+          description: "Last Supper; Gethsemane; betrayal; Peter's denial; trial before the high priest."
         - slug: mark-15
           type: chapter
           description: "Trial before Pilate; crucifixion and burial of Jesus."
@@ -178,10 +179,10 @@ root:
       children:
         - slug: luke-1
           type: chapter
-          description: "Announcement of John the Baptist's and Jesus's births; Mary's Magnificat; Zechariah's prophecy."
+          description: "Announcement of John's and Jesus's births; Mary's Magnificat; Zechariah's prophecy."
         - slug: luke-2
           type: chapter
-          description: "Birth of Jesus in Bethlehem; the shepherds; presentation at the temple; Jesus at age twelve."
+          description: "Jesus born in Bethlehem; the shepherds; presentation at the temple; Jesus at age twelve."
         - slug: luke-3
           type: chapter
           description: "John the Baptist's ministry; Jesus's baptism; genealogy traced back to Adam."
@@ -196,13 +197,13 @@ root:
           description: "The twelve apostles chosen; the Sermon on the Plain — beatitudes, woes, love your enemies."
         - slug: luke-7
           type: chapter
-          description: "The centurion's servant healed; widow's son raised at Nain; John the Baptist's question; the sinful woman."
+          description: "Centurion's servant healed; widow's son raised; John's question; the sinful woman."
         - slug: luke-8
           type: chapter
           description: "Parable of the sower; calming the storm; Legion healed; Jairus's daughter raised."
         - slug: luke-9
           type: chapter
-          description: "Feeding the five thousand; Peter's confession; the Transfiguration; the second passion prediction."
+          description: "Feeding five thousand; Peter's confession; the Transfiguration; second passion prediction."
         - slug: luke-10
           type: chapter
           description: "The seventy sent out; the good Samaritan; Mary and Martha."
@@ -229,7 +230,7 @@ root:
           description: "Forgiveness; faith; the ten lepers cleansed; the coming of the kingdom."
         - slug: luke-18
           type: chapter
-          description: "The persistent widow; the Pharisee and tax collector; children blessed; the rich young ruler."
+          description: "The persistent widow; Pharisee and tax collector; children blessed; the rich young ruler."
         - slug: luke-19
           type: chapter
           description: "Zacchaeus; the parable of the ten minas; the triumphal entry; cleansing the temple."
@@ -241,7 +242,7 @@ root:
           description: "The widow's mite; the Olivet Discourse — signs of the end times and Jerusalem's fall."
         - slug: luke-22
           type: chapter
-          description: "The Last Supper; Gethsemane; betrayal and arrest; Peter's denial; trial before the council."
+          description: "Last Supper; Gethsemane; betrayal; Peter's denial; trial before the council."
         - slug: luke-23
           type: chapter
           description: "Trial before Pilate and Herod; crucifixion and burial of Jesus."
@@ -314,7 +315,7 @@ root:
           description: "Trial before Pilate continued; crucifixion and burial of Jesus."
         - slug: john-20
           type: chapter
-          description: "The resurrection; Mary Magdalene at the tomb; Jesus appears; Thomas's confession (7th sign)."
+          description: "The resurrection; Mary Magdalene at the tomb; Jesus appears; Thomas confesses (7th sign)."
         - slug: john-21
           type: chapter
           description: "Jesus appears at the Sea of Galilee; Peter restored; the beloved disciple."
