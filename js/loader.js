@@ -1,3 +1,5 @@
+const DATA_BASE_URL = 'https://raw.githubusercontent.com/jedgalbraith/bookbrackets-data/main';
+
 async function fetchData(path) {
   const response = await fetch(path);
   const text = await response.text();
