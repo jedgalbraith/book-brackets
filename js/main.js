@@ -44,8 +44,8 @@ async function fetchAndDrawData() {
     document.querySelector('.viz-nav h1').textContent = bookEntry.title;
 
     const descEl = document.getElementById('book-description');
-    if (descEl && bookData.root.description) {
-      descEl.textContent = bookData.root.description.trim();
+    if (descEl && bookData.description) {
+      descEl.textContent = bookData.description.trim();
       descEl.style.display = '';
     }
 
@@ -87,7 +87,7 @@ async function fetchAndDrawData() {
       const jumpNav = document.createElement('div');
       jumpNav.classList.add('jump-nav');
       brackets.targets.forEach(target => {
-        const { node: targetNode } = findNodeWithTemplate(bookData.root, target.target_slug);
+        const { node: targetNode } = findNodeWithTemplate(bookData, target.target_slug);
         const link = document.createElement('a');
         link.href = `#section-${target.target_slug}`;
         link.textContent = targetNode.title || target.target_slug;
@@ -98,7 +98,7 @@ async function fetchAndDrawData() {
     }
 
     brackets.targets.forEach(target => {
-      const { node: targetNode, urlTemplate } = findNodeWithTemplate(bookData.root, target.target_slug);
+      const { node: targetNode, urlTemplate } = findNodeWithTemplate(bookData, target.target_slug);
       const leaves = collectLeaves(targetNode);
       const isDrillable = target.drills_into && target.drills_into.length > 0;
 

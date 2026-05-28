@@ -23,19 +23,18 @@ Two separate schemas, both YAML (human-authored):
 **`data/books/`** — content files. Recursive node tree:
 ```yaml
 schema_version: "1"
-root:
-  slug: book-of-mormon   # kebab-case, unique within file
-  type: volume           # user-defined label, renderer ignores it
-  title: ...
-  description: ...
-  url_template: "https://.../{index}?lang=eng"  # {index} = 1-based leaf position
-  children:              # absent on leaf nodes
-    - slug: 1-nephi
-      type: book
-      children:
-        - slug: 1-nephi-1
-          type: chapter
-          description: ...
+slug: book-of-mormon   # kebab-case, unique within file
+type: volume           # user-defined label, renderer ignores it
+title: ...
+description: ...
+url_template: "https://.../{index}?lang=eng"  # {index} = 1-based leaf position
+children:              # absent on leaf nodes
+  - slug: 1-nephi
+    type: book
+    children:
+      - slug: 1-nephi-1
+        type: chapter
+        description: ...
 ```
 
 **`data/brackets/`** — bracket overlay files. Reference a book node by slug; ranges index into that node's leaf children:
